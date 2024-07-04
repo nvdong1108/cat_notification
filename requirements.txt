@@ -1,0 +1,6 @@
+ccxt
+pandas
+ta
+asyncio
+python-telegram-bot
+tenacity
