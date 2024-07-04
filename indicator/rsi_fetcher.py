@@ -8,6 +8,7 @@ import asyncio
 from telegram import Bot
 from datetime import datetime
 from tenacity import retry, stop_after_attempt, wait_fixed
+from config.config import TELEGRAM_API_TOKEN, CHAT_ID
 
 import sys
 import os
@@ -16,8 +17,6 @@ parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
 from logger.logger_setup import logger
 
-API_TOKEN = "6837177530:AAFUTQeVB7zf7pR6z_8iJFZYxxY7WYdLSN4"
-CHAT_ID = "-4266638402"
 quantity_per_trade = 0.002
 sl_rate = 0.5
 tp_rate = 0.5
@@ -27,6 +26,7 @@ isOpenOrder = False
 stop_loss_price = 0
 take_profit_price = 0
 btc_usdt_price = 0
+cost_per_trade = 0
 
 def format_amt(amt): 
     return f"{amt:.2f} USDT"
@@ -54,7 +54,7 @@ def remove_icons(text):
     return re.sub(r'[^\w\s:.,$]', '', text)
 
 async def send(message):
-    bot = Bot(token=API_TOKEN)
+    bot = Bot(token=TELEGRAM_API_TOKEN)
     await bot.send_message(chat_id=CHAT_ID, text=message)
     logger.info(remove_icons(message))
 
@@ -92,7 +92,7 @@ async def new_order(rsi,side,btc_price):
     logger.info(f"=========== NEW ORDER {side} ===========")
     #btc_usdt_price_new = None
     index = 0
-    global take_profit_price , stop_loss_price
+    global take_profit_price , stop_loss_price, sl_rat, tp_rate, cost_per_trade
     
     formatted_rsi = f"{rsi:.2f}"
     current_time = datetime.now()
@@ -110,22 +110,26 @@ async def new_order(rsi,side,btc_price):
         f"Take Stoploss : {format_price(stop_loss_price)}\n"
         f"Take Profit : {format_price(take_profit_price)}\n"
         f"\n\n"
-        f"💲 : {format_amt(cost_per_trade)} 💪 x{leverage}\n"
+        f"💲 margin : {format_amt(cost_per_trade)} 💪 x{leverage}\n"
         f"💣 : {format_price(calcu_stop_loss(cost_per_trade,side,btc_price))}\n"
+        f"Rate : SL/TP  {sl_rat} / {tp_rate}\n"
     )
     await send(message)
 
 async def noti_done_order(type,price):
+    global cost_per_trade, sl_rate, tp_rate
     if type == "TP" :
         message = (
             "🎉🎉🎉\n\n"
             f"TAKE PROFIT Price : {format_price(price)}\n"
+            f"Profit : {format_amt(cost_per_trade*tp_rate)}\n"
             f"\n"  
         )               
     else:
         message = (
             "💣💣\n\n"
             f"STOP LOSS Price : {format_price(price)}\n"  
+            f"Lost : {format_amt(cost_per_trade*sl_rate)}\n"  
             f"\n"
         )  
     await send(message)
