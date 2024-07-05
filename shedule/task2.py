@@ -33,25 +33,23 @@ def on_message(ws, message):
     current_time = datetime.now()
     current_price =int(float(msg['p']))
     
-
-    # Cập nhật giá cao nhất trong 15 phút qua
     if current_price > highest_price or current_time - last_checked_time > timedelta(minutes=15):
         highest_price = current_price
-        lowest_price = current_price  # Reset lại giá thấp nhất nếu đã hết 15 phút
+        lowest_price = current_price  
         last_checked_time = current_time
     elif current_price < lowest_price:
         lowest_price = current_price
 
-    # Kiểm tra nếu giá hiện tại giảm ít nhất 2% so với giá cao nhất hoặc giảm 2% so với giá thấp nhất trong 15 phút qua
+    
     if highest_price > 0 and (highest_price - current_price) / highest_price * 100 >= 2:
         message = f'Giá BTC đã giảm {((highest_price - current_price) / highest_price * 100):.2f}% từ giá cao nhất trong 15 phút qua. Giá hiện tại: {current_price:.2f} USDT'
         send_telegram_message(message)
-        highest_price = current_price  # Cập nhật giá cao nhất mới
+        highest_price = current_price 
 
     if lowest_price < float('inf') and (current_price - lowest_price) / lowest_price * 100 >= 2:
         message = f'Giá BTC đã giảm {((current_price - lowest_price) / lowest_price * 100):.2f}% từ giá thấp nhất trong 15 phút qua. Giá hiện tại: {current_price:.2f} USDT'
         send_telegram_message(message)
-        lowest_price = current_price  # Cập nhật giá thấp nhất mới
+        lowest_price = current_price  
 
     print(f"Price BTC {format_price(current_price)} , Highest {format_price(highest_price)} , lowest {format_price(lowest_price)}")
 
