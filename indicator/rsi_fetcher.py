@@ -25,21 +25,34 @@ tp_rate = 0.5
 leverage = 50
 
 isOpenOrder = False
+is_side_open = ""
 stop_loss_price = 0
 take_profit_price = 0
 btc_usdt_price = 0
 cost_per_trade = 0
 
-interval_15m = '15m'
-interval_1m = '1m'
-interval_main = '15m'
+interval_15m    = '15m'
+interval_1m     = '1m'
+interval_main   = '15m'
 
 
 def format_amt(amt): 
-    return f"{amt:.2f} USDT"
+    if amt is None:
+        raise ValueError(f"E003. Value amt is None")
+    try:
+        return f"{amt:.2f} USDT"
+    except (Exception):
+        raise Exception(f"Can't format_amt value amt. Amt is {amt} ")
+    
 
 def format_price(amt):
-    return f"{int(amt):,} USDT"
+    if amt is None:
+        raise ValueError(f"E001. Value amt is None")
+    try:
+        amt_int =int(amt)
+    except (ValueError, TypeError):
+         raise ValueError(f"E002. Value amt is format wrong. Amt is {amt}, can't convert to int")
+    return f"{amt_int:,} USDT"
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(5))
 def fetch_ohlcv_with_retry(symbol, timeframe, limit):
@@ -148,16 +161,26 @@ async def noti_done_order(type,price):
 
 
 async def validateOrder(price):
-    if not isOpenOrder:
-        return False
-    if price >= take_profit_price : 
-        logger.info("CLOSE => TAKE PROFIT ")
-        await noti_done_order("TP",price)
-        return True
-    if price <= stop_loss_price :
-        logger.info("CLOSE => STOP LOSS")
-        await noti_done_order("SL",price)
-        return True
+    print(f"price {price} take_profit_price {take_profit_price} stop_loss_price {stop_loss_price} ")
+    global is_side_open
+    if is_side_open =="BUY":
+        if price > take_profit_price : 
+            logger.info(f"CLOSE => TAKE PROFIT {price}")
+            await noti_done_order("TP",price)
+            return True
+        if price < stop_loss_price :
+            logger.info(f"CLOSE => STOP LOSS {price}")
+            await noti_done_order("SL",price)
+            return True
+    elif is_side_open =="SELL":
+        if price < take_profit_price : 
+            logger.info(f"CLOSE => TAKE PROFIT {price}")
+            await noti_done_order("TP",price)
+            return True
+        if price > stop_loss_price :
+            logger.info(f"CLOSE => STOP LOSS {price}")
+            await noti_done_order("SL",price)
+            return True
     return False
 
 async def main(symbol='BTC/USDT', period=14, interval=60):
@@ -180,7 +203,6 @@ async def main(symbol='BTC/USDT', period=14, interval=60):
         price_btc =  get_current_btc_usdt_price()
         # co 1 lenh dang mo 
         if isOpenOrder : 
-            
             # kiểm tra lênh đang mở chạm TP hay SL
             is_act_close=await validateOrder(price_btc)  
             if not is_act_close:
@@ -207,16 +229,18 @@ async def main(symbol='BTC/USDT', period=14, interval=60):
         # logger.info(message)
 
         # interval 1m
-        df_1m = fetch_ohlcv(symbol, interval_15m)
+        df_1m = fetch_ohlcv(symbol, interval_1m)
         df_1m = calculate_rsi(df_1m, period)
         current_rsi_1m = df_1m['rsi'].iloc[-1]
         k = 25
         if current_rsi_1m < (50-k):
             if not isOpenOrder:
+                is_side_open = "BUY"
                 await new_order(current_rsi_1m,"BUY",price_btc,"RSI1")
                 isOpenOrder = True
         elif current_rsi_1m > (50+k):
             if not isOpenOrder:
+                is_side_open = "SELL"
                 await new_order(current_rsi_1m,"SELL",price_btc,"RSI1")
                 isOpenOrder = True
         message = f"RSI Alert! Current RSI for {symbol} on {interval_1m} is {current_rsi_1m:.2f} price {format_price(price_btc)}"
