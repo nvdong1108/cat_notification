@@ -5,6 +5,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
 
+
+import json
 import socket
 import re
 import ccxt
@@ -17,7 +19,8 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 from config.config import TELEGRAM_API_TOKEN, CHAT_ID
 from logger.logger_setup import logger
 from version import __version__
-from config.mongoDB import insert_order, update_order
+from config.mongoDB import insert_order, update_order, select_orders_by_status
+from bson import json_util
 
 quantity_per_trade = 0.002
 sl_rate = 0.3
@@ -151,28 +154,28 @@ async def new_order(rsi,side,btc_price,title):
         f"CreateTime  {formatted_time}\n"
     )
     await send(message)
-
+    time_now = datetime.now()
+    ord_id = time_now.strftime("%Y%M%d%H%M%S")
     order_data = {
-        'orderId': 'ORD001',
+        'orderId': ord_id,
         'symbol': 'BTCUSDT',
-        'side': 'buy',
-        'price': 35000.0,
-        'stop-loss': 1.0,
-        'take-profit': 1.0,
-        'leverage': 10,
+        'side': side,
+        'price': btc_price,
+        'stop-loss': stop_loss_price,
+        'take-profit': take_profit_price,
+        'leverage': leverage,
         'status': 'open',
         'result': None,
         'indicator': 'RSI',
-        'cost': 10.0,
+        'cost': cost_per_trade,
         'desc': 'New order for BTCUSD'
     }
     insert_order(order_data)
 
 
-
-async def noti_done_order(type,price):
+async def notification_close_order(type, price):
     global cost_per_trade, sl_rate, tp_rate
-    if type == "TP" :
+    if type == "TP":
         message = (
             "🎉🎉🎉\n\n"
             f"TAKE PROFIT Price : {format_price(price)}\n"
@@ -188,50 +191,46 @@ async def noti_done_order(type,price):
         )  
     await send(message)
 
+    params = {
+        'status': 'open',
+        'symbol': 'BTCUSDT',
+    }
+    update_fields = {
+        "status": "closed",
+        "result": type
+    }
+    update_order(params,update_fields)
 
-async def validateOrder(price):
+
+async def validate_order(price):
     print(f"price {price} take_profit_price {take_profit_price} stop_loss_price {stop_loss_price} ")
     global is_side_open, isOpenOrder
     if is_side_open == "BUY":
         if price > take_profit_price:
-            logger.info(f"CLOSE => TAKE PROFIT {price}")
-            await noti_done_order("TP", price)
+            logger.info(f"CLOSE => {is_side_open} TAKE PROFIT {price}")
+            await notification_close_order("TP", price)
             isOpenOrder = False
             return True
-        if price < stop_loss_price :
-            logger.info(f"CLOSE => STOP LOSS {price}")
-            await noti_done_order("SL", price)
+        elif price < stop_loss_price:
+            logger.info(f"CLOSE => {is_side_open} STOP LOSS {price}")
+            await notification_close_order("SL", price)
             isOpenOrder = False
             return True
     elif is_side_open == "SELL":
         if price < take_profit_price : 
-            logger.info(f"CLOSE => TAKE PROFIT {price}")
-            await noti_done_order("TP", price)
+            logger.info(f"CLOSE => {is_side_open} TAKE PROFIT {price}")
+            await notification_close_order("TP", price)
             isOpenOrder = False
             return True
         if price > stop_loss_price:
-            logger.info(f"CLOSE => STOP LOSS {price}")
-            await noti_done_order("SL", price)
+            logger.info(f"CLOSE => {is_side_open} STOP LOSS {price}")
+            await notification_close_order("SL", price)
             isOpenOrder = False
             return True
     return False
 
 
 async def main(symbol='BTC/USDT', period=14, interval=60):
-    try:
-        hostname = socket.gethostname()
-        ip_address = socket.gethostbyname(hostname)
-        message=(
-                f"\n"
-                f"🏃‍♂️🏃‍♂️🏃‍♂️💨\n" 
-                f"Vesion : {__version__}\n"    
-                f"Hostname : {hostname}\n"
-                f"IP Address : {ip_address}\n"
-                )
-        await send(message)
-    except Exception as e:
-        print(f"get info ip error {e}")
-
     global isOpenOrder, take_profit_price, stop_loss_price, is_side_open
     while True:
         await asyncio.sleep(interval)
@@ -242,7 +241,7 @@ async def main(symbol='BTC/USDT', period=14, interval=60):
             continue
 
         if isOpenOrder:
-            is_close = await validateOrder(price_btc)
+            is_close = await validate_order(price_btc)
             logger.info(f"Alert ! BTC price is {format_price(price_btc)}. Validate order is {is_close}")
             if is_close:
                 isOpenOrder = False
@@ -253,22 +252,76 @@ async def main(symbol='BTC/USDT', period=14, interval=60):
             df_1m = fetch_ohlcv(symbol, interval_1m)
             df_1m = calculate_rsi(df_1m, period)
             current_rsi_1m = df_1m['rsi'].iloc[-1]
-            k = 30
+            k = 5
             if current_rsi_1m < (50-k):
-                if not isOpenOrder:
-                    is_side_open = "BUY"
-                    await new_order(current_rsi_1m,"BUY", price_btc,"RSI1")
-                    isOpenOrder = True
+                is_side_open = "BUY"
+                await new_order(current_rsi_1m,"BUY", price_btc,"RSI1")
+                isOpenOrder = True
             elif current_rsi_1m > (50+k):
-                if not isOpenOrder:
-                    is_side_open = "SELL"
-                    await new_order(current_rsi_1m,"SELL", price_btc,"RSI1")
-                    isOpenOrder = True
+                is_side_open = "SELL"
+                await new_order(current_rsi_1m,"SELL", price_btc,"RSI1")
+                isOpenOrder = True
             message = f"RSI Alert! Current RSI for {symbol} on {interval_1m} is {current_rsi_1m:.2f} price {format_price(price_btc)}"
             logger.info(message)
+
+
+def notification_device_name():
+    try:
+        hostname = socket.gethostname()
+        ip_address = socket.gethostbyname(hostname)
+        message=(
+            f"\n"
+            f"🏃‍♂️🏃‍♂️🏃‍♂️💨\n"
+            f"Version: {__version__}\n"
+            f"Hostname: {hostname}\n"
+            f"IP Address: {ip_address}\n"
+        )
+        asyncio.run(send(message))
+    except Exception as e:
+        print(f"get info ip error {e}")
+
+
+def test_update_order():
+    seq = "47b337c9-fd7b-4e12-861e-2fc40d27ce0d"  # Điền _id của đơn hàng cần cập nhật
+    update_fields = {
+        "price": 36000.0,
+        "status": "close",
+        "result": "profit",
+        "desc": "Updated order details"
+    }
+    update_order(seq, update_fields)
+
+
+def select_oder():
+    orders = select_orders_by_status("open")
+    if not orders:
+        print("select order is empty")
+        return True
+    elif len(orders) > 1:
+        print(f"E005. Data wrong had {len(orders)} order")
+        return False
+    else:
+        order = orders[0]
+        global isOpenOrder, take_profit_price, stop_loss_price, is_side_open
+        isOpenOrder = True
+        is_side_open = order.get('side')
+        take_profit_price = order.get('take-profit')
+        stop_loss_price = order.get('stop-loss')
+        print(f"is_side_open: {is_side_open}")
+        print(f"take_profit_price: {take_profit_price}")
+        print(f"stop_loss_price: {stop_loss_price}")
+        return True
+
 
 if __name__ == "__main__":
     print("start ...")
     logger.info("\n\n\t===============> BEGIN RUN <===============\n")
-    
-    asyncio.run(main())
+    # test_update_order()
+    is_valid_order = select_oder()
+    if is_valid_order:
+        notification_device_name()
+        asyncio.run(main())
+    else:
+        print("... error because open than more one order")
+
+

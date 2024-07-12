@@ -10,28 +10,27 @@ password = "V@nd0ng1108"
 encoded_password = quote_plus(password)
 cluster = "cluster0.tkiscbi.mongodb.net"
 params = "?retryWrites=true&w=majority&appName=Cluster0"
-
+# mongodb+srv://nvdong:V@nd0ng1108@cluster0.tkiscbi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 connection_string = f"mongodb+srv://{username}:{encoded_password}@{cluster}/{params}"
 client = MongoClient(connection_string)
 db = client.test
 collection_name = 'tb_order'
 
 
-def update_order(seq, update_fields):
+def update_order(params, update_fields):
     try:
         collection = db[collection_name]
-        filter = {"seq": seq}
+        filter = {key: value for key, value in params.items() if value is not None}
         update_data = {key: value for key, value in update_fields.items()}
-        result = collection.update_one(filter, {"$set": update_data})
+        result = collection.update_many(filter, {"$set": update_data})
         if result.modified_count > 0:
-            print(f"Cập nhật đơn hàng '{seq}' thành công.")
+            print(f"update order success")
             return True
         else:
-            print(f"Không tìm thấy đơn hàng '{seq}' để cập nhật.")
+            print(f"Not found order data to update")
             return False
-
     except Exception as e:
-        print(f"Lỗi khi cập nhật đơn hàng '{seq}': {e}")
+        print(f"Lỗi khi cập nhật đơn hàng: {e}")
         return False
 
 
@@ -40,9 +39,7 @@ def select_orders_by_status(status):
         collection = db[collection_name]
         query = {"status": status}
         result = collection.find(query)
-        for order in result:
-            print(order)
-        return result
+        return list(result)
 
     except Exception as e:
         print(f"Lỗi khi lấy dữ liệu từ collection '{collection_name}': {e}")
@@ -124,13 +121,13 @@ if __name__ == "__main__":
     # drop_collection(collection_name)
     # create_collection(collection_name)
     # insert_order(order_data)
-
-    seq = "03c88794-2603-4628-9359-3b6fd0162e6c"  # Điền _id của đơn hàng cần cập nhật
-    update_fields = {
-        "price": 36000.0,
-        "status": "closed",
-        "result": "profit",
-        "desc": "Updated order details"
+    params = {
+        'status': "open"
     }
-    update_order(seq, update_fields)
+      # Điền _id của đơn hàng cần cập nhật
+    update_fields = {
+        "status": "closed",
+        "desc": "close all order"
+    }
+    update_order(params, update_fields)
     select_orders_by_status("open")
