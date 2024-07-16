@@ -6,7 +6,7 @@ from datetime import datetime
 from bson.objectid import ObjectId
 import uuid
 username = "nvdong"
-password = "V@nd0ng1108"
+password = "Vandong123"
 encoded_password = quote_plus(password)
 cluster = "cluster0.tkiscbi.mongodb.net"
 params = "?retryWrites=true&w=majority&appName=Cluster0"
@@ -38,6 +38,22 @@ def select_orders_by_status(status):
     try:
         collection = db[collection_name]
         query = {"status": status}
+        result = collection.find(query)
+        return list(result)
+
+    except Exception as e:
+        print(f"Lỗi khi lấy dữ liệu từ collection '{collection_name}': {e}")
+        return None
+
+
+def select_orders(params= None):
+    try:
+        collection = db[collection_name]
+
+        if params is None or not params:
+            query = {}
+        else:
+            query = {key: value for key, value in params.imtems()}
         result = collection.find(query)
         return list(result)
 
@@ -129,5 +145,7 @@ if __name__ == "__main__":
         "status": "closed",
         "desc": "close all order"
     }
-    update_order(params, update_fields)
-    select_orders_by_status("open")
+    # update_order(params, update_fields)
+    result = select_orders()
+    print("\n\n")
+    print(result)

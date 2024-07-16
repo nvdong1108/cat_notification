@@ -5,8 +5,6 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
 
-
-import json
 import socket
 import re
 import ccxt
@@ -20,11 +18,11 @@ from config.config import TELEGRAM_API_TOKEN, CHAT_ID
 from logger.logger_setup import logger
 from version import __version__
 from config.mongoDB import insert_order, update_order, select_orders_by_status
-from bson import json_util
+
 
 quantity_per_trade = 0.002
-sl_rate = 0.3
-tp_rate = 0.3
+sl_rate = 0.4
+tp_rate = 0.4
 leverage = 50
 
 isOpenOrder = False
@@ -233,36 +231,48 @@ async def validate_order(price):
 async def main(symbol='BTC/USDT', period=14, interval=60):
     global isOpenOrder, take_profit_price, stop_loss_price, is_side_open
     while True:
-        await asyncio.sleep(interval)
-        price_btc = get_current_btc_usdt_price()
-        if price_btc is None:
-            logger.error(f"E004. Can't get price BTC")
-            print(f"Error. Can't get price BTC")
+        try:
+            await asyncio.sleep(interval)
+            price_btc = get_current_btc_usdt_price()
+            if price_btc is None:
+                logger.error(f"E004. Can't get price BTC")
+                print(f"Error. Can't get price BTC")
+                continue
+
+            if isOpenOrder:
+                is_close = await validate_order(price_btc)
+                logger.info(f"Alert ! BTC price is {format_price(price_btc)}. Validate order is {is_close}")
+                if is_close:
+                    isOpenOrder = False
+                    take_profit_price = 0
+                    stop_loss_price = 0
+
+            else:
+                df_1m = fetch_ohlcv(symbol, interval_1m)
+                df_1m = calculate_rsi(df_1m, period)
+                current_rsi_1m = df_1m['rsi'].iloc[-1]
+                k = 30
+                if current_rsi_1m < (50-k):
+                    is_side_open = "BUY"
+                    await new_order(current_rsi_1m,"BUY", price_btc,"RSI1")
+                    isOpenOrder = True
+                elif current_rsi_1m > (50+k):
+                    is_side_open = "SELL"
+                    await new_order(current_rsi_1m,"SELL", price_btc,"RSI1")
+                    isOpenOrder = True
+                message = f"RSI Alert! Current RSI for {symbol} on {interval_1m} is {current_rsi_1m:.2f} price {format_price(price_btc)}"
+                logger.info(message)
+        except asyncio.CancelledError as e:
+            print(f"E006. An error occurred {e}")
+            logger.error(f"E006. An error occurred {e}")
+            continue
+        except Exception as ex:
+            print(f"E007.An error occurred {ex}")
+            logger.error(f"E007.An error occurred {ex}")
             continue
 
-        if isOpenOrder:
-            is_close = await validate_order(price_btc)
-            logger.info(f"Alert ! BTC price is {format_price(price_btc)}. Validate order is {is_close}")
-            if is_close:
-                isOpenOrder = False
-                take_profit_price = 0
-                stop_loss_price = 0
 
-        else:
-            df_1m = fetch_ohlcv(symbol, interval_1m)
-            df_1m = calculate_rsi(df_1m, period)
-            current_rsi_1m = df_1m['rsi'].iloc[-1]
-            k = 5
-            if current_rsi_1m < (50-k):
-                is_side_open = "BUY"
-                await new_order(current_rsi_1m,"BUY", price_btc,"RSI1")
-                isOpenOrder = True
-            elif current_rsi_1m > (50+k):
-                is_side_open = "SELL"
-                await new_order(current_rsi_1m,"SELL", price_btc,"RSI1")
-                isOpenOrder = True
-            message = f"RSI Alert! Current RSI for {symbol} on {interval_1m} is {current_rsi_1m:.2f} price {format_price(price_btc)}"
-            logger.info(message)
+
 
 
 def notification_device_name():
@@ -279,17 +289,6 @@ def notification_device_name():
         asyncio.run(send(message))
     except Exception as e:
         print(f"get info ip error {e}")
-
-
-def test_update_order():
-    seq = "47b337c9-fd7b-4e12-861e-2fc40d27ce0d"  # Điền _id của đơn hàng cần cập nhật
-    update_fields = {
-        "price": 36000.0,
-        "status": "close",
-        "result": "profit",
-        "desc": "Updated order details"
-    }
-    update_order(seq, update_fields)
 
 
 def select_oder():
