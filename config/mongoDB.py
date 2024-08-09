@@ -119,33 +119,7 @@ def create_collection(collection_name):
 
 
 if __name__ == "__main__":
-    order_data = {
-        'orderId': 'ORD001',
-        'symbol': 'BTCUSDT',
-        'side': 'buy',
-        'price': 35000.0,
-        'stop-loss': 1.0,
-        'take-profit': 1.0,
-        'leverage': 10,
-        'status': 'open',
-        'result': None,
-        'indicator': 'RSI',
-        'cost': 10.0,
-        'desc': 'New order for BTCUSD'
-    }
-    print(db.list_collection_names())
-    # drop_collection(collection_name)
-    # create_collection(collection_name)
-    # insert_order(order_data)
     params = {
         'status': "open"
     }
-      # Điền _id của đơn hàng cần cập nhật
-    update_fields = {
-        "status": "closed",
-        "desc": "close all order"
-    }
-    # update_order(params, update_fields)
-    result = select_orders()
     print("\n\n")
-    print(result)
