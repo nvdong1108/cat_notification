@@ -7,3 +7,4 @@ tenacity
 python-binance
 websocket-client
 python-dotenv
+telegram

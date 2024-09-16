@@ -17,7 +17,15 @@ db = client.test
 collection_name = 'tb_order'
 
 
-def update_order(params, update_fields):
+def update_order(type):
+    params = {
+        'status': 'open',
+        'symbol': 'BTCUSDT',
+    }
+    update_fields = {
+        "status": "closed",
+        "result": type
+    }
     try:
         collection = db[collection_name]
         filter = {key: value for key, value in params.items() if value is not None}
