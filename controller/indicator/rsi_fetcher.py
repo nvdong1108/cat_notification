@@ -149,7 +149,7 @@ def noti_done_order(type, price):
     send_group_telegram(message)
 
 
-async def validateOrder(price):
+def validateOrder(price):
     if price >= take_profit_price:
         logger.info("CLOSE => TAKE PROFIT ")
         noti_done_order("TP", price)
@@ -183,7 +183,7 @@ def open_ord_1m(symbol='BTC/USDT'):
         logger.info(f"Alert ! BTC price is {format_price(price_btc)}")
     else:
         current_rsi_1m = get_Value_rsi(interval_1m)
-        k = 25
+        k = 2
         if current_rsi_1m < (50 - k):
             new_order(current_rsi_1m, "BUY", price_btc, "RSI1")
             hadOrder1m = True
@@ -205,17 +205,17 @@ async def open_ord_15m(symbol='BTC/USDT'):
             stop_loss_price = 0
             return
         logger.info(f"Alert ! BTC price is {format_price(price_btc)}")
-    current_rsi_15m = get_Value_rsi(interval_15m)
-    k = 25
-    if current_rsi_15m < (50 - k):
-        new_order(current_rsi_15m, "BUY", price_btc, "RSI1")
-        hadOrder15m = True
-    elif current_rsi_15m > (50 + k):
-        new_order(current_rsi_15m, "SELL", price_btc, "RSI1")
-        hadOrder15m = True
-    message = f"RSI Alert! Current RSI for {symbol} on {interval_15m} is {current_rsi_15m:.2f} price {format_price(price_btc)}"
-    logger.info(message)
-
+    else:
+        current_rsi_15m = get_Value_rsi(interval_15m)
+        k = 5
+        if current_rsi_15m < (50 - k):
+            new_order(current_rsi_15m, "BUY", price_btc, "RSI1")
+            hadOrder15m = True
+        elif current_rsi_15m > (50 + k):
+            new_order(current_rsi_15m, "SELL", price_btc, "RSI1")
+            hadOrder15m = True
+        message = f"RSI Alert! Current RSI for {symbol} on {interval_15m} is {current_rsi_15m:.2f} price {format_price(price_btc)}"
+        logger.info(message)
 
 if __name__ == "__main__":
     print("start ...")
