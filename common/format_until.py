@@ -10,6 +10,15 @@ def format_price(amt):
     return f"{amt_int:,} USDT"
 
 
+def format_RSI(rsi):
+    if rsi is None:
+        raise ValueError(f"E001. Value amt is None")
+    try:
+        return int(rsi)
+    except (ValueError, TypeError):
+        raise ValueError(f"E002. Value amt is format wrong. Amt is {rsi}, can't convert to int")
+
+
 def format_amt(amt):
     if amt is None:
         raise ValueError(f"E003. Value amt is None")

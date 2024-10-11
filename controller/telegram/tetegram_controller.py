@@ -16,13 +16,13 @@ def remove_icons(text):
     return re.sub(r'[^\w\s:.,$]', '', text)
 
 
-def send(message):
+async def send(message):
     bot = Bot(token=TELEGRAM_API_TOKEN)
-    asyncio.run(bot.send_message(chat_id=CHAT_ID, text=message))
+    await bot.send_message(chat_id=CHAT_ID, text=message)
     logger.info(remove_icons(message))
 
 
-def notification_device_name():
+async def notification_device_name():
     try:
         hostname = socket.gethostname()
         ip_address = socket.gethostbyname(hostname)
@@ -33,28 +33,28 @@ def notification_device_name():
             f"Hostname: {hostname}\n"
             f"IP Address: {ip_address}\n"
         )
-        send(message)
+        await send(message)
     except Exception as e:
         print(f"get info ip error {e}")
 
 
-def notification_take_profit_order(price, profit):
+async def notification_take_profit_order(price, profit):
     message = (
         "🎉🎉🎉\n\n"
         f"TAKE PROFIT Price : {format_price(price)}\n"
         f"Profit : {format_amt(profit)}\n"
         f"\n"
     )
-    send(message)
+    await send(message)
 
-def notification_stop_loss_order(price, lost):
+async def notification_stop_loss_order(price, lost):
     message = (
         "💣💣\n\n"
         f"STOP LOSS Price : {format_price(price)}\n"
-        f"Lost : {format_amt()}\n"
+        f"Lost : {format_amt(lost)}\n"
         f"\n"
     )
-    send(message)
+    await send(message)
 
 
 def get_content_title(title):

@@ -3,8 +3,9 @@ from pymongo import MongoClient, errors
 from pymongo.errors import CollectionInvalid
 from urllib.parse import quote_plus
 from datetime import datetime
-from bson.objectid import ObjectId
+# from  logger.logger_setup import logger
 import uuid
+
 username = "nvdong"
 password = "Vandong123"
 encoded_password = quote_plus(password)
@@ -17,14 +18,14 @@ db = client.test
 collection_name = 'tb_order'
 
 
-def update_order(type):
+def update_order(_type):
     params = {
         'status': 'open',
         'symbol': 'BTCUSDT',
     }
     update_fields = {
         "status": "closed",
-        "result": type
+        "result": _type
     }
     try:
         collection = db[collection_name]
@@ -32,13 +33,13 @@ def update_order(type):
         update_data = {key: value for key, value in update_fields.items()}
         result = collection.update_many(filter, {"$set": update_data})
         if result.modified_count > 0:
-            print(f"update order success")
+            # logger.info(f"update order success {result.modified_count}")
             return True
         else:
-            print(f"Not found order data to update")
+            # logger.info(f"Not found order data to update")
             return False
     except Exception as e:
-        print(f"Lỗi khi cập nhật đơn hàng: {e}")
+        # logger.error(f"Lỗi khi cập nhật đơn hàng: {e}")
         return False
 
 
@@ -78,11 +79,12 @@ def insert_order(order_data):
         current_time = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
         order_data['creat-time'] = current_time
         result = collection.insert_one(order_data)
-        print(f"Đã thêm đơn hàng mới có orderId: {order_data['orderId']} vào collection 'tb_order'.")
+        # logger.info(f"Đã thêm đơn hàng mới có orderId: {order_data['orderId']} vào collection 'tb_order'.")
         return result.inserted_id
 
     except Exception as e:
         print(f"Lỗi khi thêm đơn hàng: {e}")
+        # logger.error(f"Lỗi khi thêm đơn hàng: {e}")
 
 
 def drop_collection(collection_name):
@@ -130,4 +132,5 @@ if __name__ == "__main__":
     params = {
         'status': "open"
     }
+    update_order("CL")
     print("\n\n")

@@ -1,6 +1,8 @@
 
 import sys
 import os
+from _operator import is_
+
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
@@ -9,19 +11,20 @@ import pandas as pd
 import ta
 import asyncio
 
-from common.format_until import format_price, format_amt
+from common.format_until import format_price, format_amt, format_RSI
 from datetime import datetime
 from tenacity import retry, stop_after_attempt, wait_fixed
 from controller.telegram.tetegram_controller import send, notification_device_name, get_content_title
 from controller.telegram.tetegram_controller import notification_stop_loss_order, notification_take_profit_order
 from logger.logger_setup import logger
 from config.mongoDB import insert_order, update_order, select_orders_by_status
-from controller.binace_controller import buy_futures_btcusdt, sell_futures_btcusdt
-from common.constants import *
+from controller.binace_controller import (buy_futures_btcusdt, sell_futures_btcusdt, check_order_status,check_open_order)
+from controller.binace_web_socket import start_websocket
 from common.calculater_until import *
+from config.storage import ShareState
 
-
-isOpenOrder = False
+isOpenOrder = 0
+orderId = 0
 is_side_open = ""
 stop_loss_price = 0
 take_profit_price = 0
@@ -59,7 +62,7 @@ def get_current_btc_usdt_price():
         return None
 
 
-def new_order(rsi, side, btc_price, title):
+async def new_order(rsi, side, btc_price, title):
     logger.info(f"=========== NEW ORDER {side} ===========")
     global take_profit_price, stop_loss_price, cost_per_trade
     
@@ -74,7 +77,7 @@ def new_order(rsi, side, btc_price, title):
         ""
         f"{get_content_title(title)}\n\n"
         f"Value is {formatted_rsi} advice to {side} {'📈' if side=='BUY' else '📉'} \n"
-        f"{'Buying' if side =='BUY' else 'Selling'} price is {format_price(btc_price)}\n"
+        f"{'Buying' if side == 'BUY' else 'Selling'} price is {format_price(btc_price)}\n"
         f"Take Stoploss  {format_price(stop_loss_price)}\n"
         f"Take Profit  {format_price(take_profit_price)}\n"
         f"\n"
@@ -83,7 +86,7 @@ def new_order(rsi, side, btc_price, title):
         f"Rate SL/TP is {TP_RATE}/{TP_RATE}\n"
         f"CreateTime  {formatted_time}\n"
     )
-    send(message)
+    await send(message)
     time_now = datetime.now()
     ord_id = time_now.strftime("%Y%M%d%H%M%S")
     order_data = {
@@ -110,34 +113,38 @@ async def validate_order(price):
     if is_side_open == "BUY":
         if price > take_profit_price:
             logger.info(f"CLOSE => {is_side_open} TAKE PROFIT {price}")
-            notification_take_profit_order(price, cost_per_trade*TP_RATE)
-            update_order(type)
-            isOpenOrder = False
+            await notification_take_profit_order(price, cost_per_trade*TP_RATE)
+            update_order("TP")
+            isOpenOrder = 0
             return True
         elif price < stop_loss_price:
             logger.info(f"CLOSE => {is_side_open} STOP LOSS {price}")
-            notification_stop_loss_order(price, cost_per_trade*SL_RATE)
-            update_order(type)
-            isOpenOrder = False
+            await notification_stop_loss_order(price, cost_per_trade*SL_RATE)
+            update_order("SL")
+            isOpenOrder = 0
             return True
     elif is_side_open == "SELL":
         if price < take_profit_price:
             logger.info(f"CLOSE => {is_side_open} TAKE PROFIT {price}")
-            notification_take_profit_order(price, cost_per_trade*TP_RATE)
-            update_order(type)
-            isOpenOrder = False
+            await notification_take_profit_order(price, cost_per_trade*TP_RATE)
+            update_order("TP")
+            isOpenOrder = 0
             return True
         if price > stop_loss_price:
             logger.info(f"CLOSE => {is_side_open} STOP LOSS {price}")
-            notification_stop_loss_order(price, cost_per_trade*SL_RATE)
-            update_order(type)
-            isOpenOrder = False
+            await notification_stop_loss_order(price, cost_per_trade*SL_RATE)
+            update_order("SL")
+            isOpenOrder = 0
             return True
     return False
 
 
+def select_oder():
+    return check_open_order()
+
 async def main(symbol='BTC/USDT', period=14, interval=60):
     global isOpenOrder, take_profit_price, stop_loss_price, is_side_open
+    global orderId
     while True:
         try:
             await asyncio.sleep(interval)
@@ -147,34 +154,32 @@ async def main(symbol='BTC/USDT', period=14, interval=60):
                 print(f"Error. Can't get price BTC")
                 continue
 
-            if isOpenOrder:
-                is_close = await validate_order(price_btc)
-                logger.info(f"Alert ! BTC price is {format_price(price_btc)}. Validate order is {is_close}")
-                if is_close:
-                    isOpenOrder = False
-                    take_profit_price = 0
-                    stop_loss_price = 0
-
-            else:
+            if ShareState.is_none_order():
                 df_1m = fetch_ohlcv(symbol, INTERVAL_1M)
                 df_1m = calculate_rsi(df_1m, period)
                 current_rsi_1m = df_1m['rsi'].iloc[-1]
-                k = 2
+                k = 20
+                current_rsi_1m = format_RSI(current_rsi_1m)
                 if current_rsi_1m < (50-k):
-                    is_side_open = "BUY"
-                    buy_futures_btcusdt(price_btc)
-                    new_order(current_rsi_1m,"BUY", price_btc,"RSI1")
-                    isOpenOrder = True
-                elif current_rsi_1m > (50+k):
+                    ord_new = buy_futures_btcusdt(price_btc)
+                    orderId = ord_new['orderId']
+                    logger.info(f" Open BUY new Order with ord_id = {orderId}")
+                    continue
+
+                if current_rsi_1m > (50+k):
                     is_side_open = "SELL"
-                    sell_futures_btcusdt(price_btc)
-                    new_order(current_rsi_1m,"SELL", price_btc,"RSI1")
-                    isOpenOrder = True
-                message = f"RSI Alert! Current RSI for {symbol} on {INTERVAL_1M} is {current_rsi_1m:.2f} price {format_price(price_btc)}"
+                    ord_new = sell_futures_btcusdt(price_btc)
+                    orderId = ord_new['orderId']
+                    logger.info(f" Open SELL new Order with ord_id = {orderId}")
+                    continue
+
+                message = f"RSI Alert! Current RSI for {symbol} on {INTERVAL_1M} is {current_rsi_1m} price {format_price(price_btc)}"
                 logger.info(message)
+
         except asyncio.CancelledError as e:
             print(f"E006. An error occurred {e}")
             logger.error(f"E006. An error occurred {e}")
+            isOpenOrder = -1
             continue
         except Exception as ex:
             print(f"E007.An error occurred {ex}")
@@ -182,36 +187,24 @@ async def main(symbol='BTC/USDT', period=14, interval=60):
             continue
 
 
-def select_oder():
-    orders = select_orders_by_status("open")
-    if not orders:
-        print("select order is empty")
-        return True
-    elif len(orders) > 1:
-        print(f"E005. Data wrong had {len(orders)} order")
-        return False
-    else:
-        order = orders[0]
-        global isOpenOrder, take_profit_price, stop_loss_price, is_side_open
-        isOpenOrder = True
-        is_side_open = order.get('side')
-        take_profit_price = order.get('take-profit')
-        stop_loss_price = order.get('stop-loss')
-        print(f"is_side_open: {is_side_open}")
-        print(f"take_profit_price: {take_profit_price}")
-        print(f"stop_loss_price: {stop_loss_price}")
-        return True
+async def run_all_tasks():
+    await asyncio.gather(
+        notification_device_name(),
+        start_websocket(),
+        main()
+    )
 
 
 if __name__ == "__main__":
     print("start ...")
     logger.info("\n\n\t===============> BEGIN RUN <===============\n")
-    # test_update_order()
     is_valid_order = select_oder()
+
     if is_valid_order:
-        notification_device_name()
-        asyncio.run(main())
+        asyncio.run(run_all_tasks())
     else:
         print("... error because open than more one order")
+
+
 
 
