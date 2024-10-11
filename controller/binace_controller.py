@@ -94,13 +94,13 @@ def check_open_order():
 
                     if stop_loss_order:
                         order_stop_loss_id = stop_loss_order['orderId']
-                        ShareState.update_order(order_id=order_id, stop_loss_order=order_stop_loss_id)
+                        ShareState.update_order(order_id=order_id, stop_loss=order_stop_loss_id)
                         print(f"Stop loss exists for {symbol}: Order ID = {order_stop_loss_id}")
 
                     if take_profit_order:
                         order_profit_id = take_profit_order['orderId']
-                        ShareState.update_order(order_id=order_id, stoploss_order=order_profit_id)
-                        print(f"Take profit exists for {symbol}: Order ID = {order_profit_id['orderId']}")
+                        ShareState.update_order(order_id=order_id, take_profit=order_profit_id)
+                        print(f"Take profit exists for {symbol}: Order ID = {order_profit_id}")
 
                     print(f"Info order {ShareState.order}")
                 else:

@@ -59,10 +59,5 @@ class ShareState:
             return order_id == value
         return False
 
-    @classmethod
-    def get_order_take_profit_id(cls, order_id):
-        if cls.order:
-            value = cls.order.get('takeprofit_order_id')
-            return order_id == value
-        return False
+
 
