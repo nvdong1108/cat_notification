@@ -7,7 +7,7 @@ class ShareState:
         cls.order = None
 
     @classmethod
-    def set_order(cls, order_id, side, status='NEW'):
+    def set_order(cls, order_id, side, status):
         cls.order = {
             'order_id': order_id,
             'status': status,
@@ -36,6 +36,7 @@ class ShareState:
 
     @classmethod
     def is_none_order(cls):
+        print(f"check is order None {cls.order}")
         if cls.order:
             order_id = cls.order.get('order_id')
             status = cls.order.get('status')
@@ -56,6 +57,13 @@ class ShareState:
     def get_order_stop_loss_id(cls, order_id):
         if cls.order:
             value = cls.order.get('stoploss_order_id')
+            return order_id == value
+        return False
+
+    @classmethod
+    def get_order_take_profit_id(cls, order_id):
+        if cls.order:
+            value = cls.order.get('takeprofit_order_id')
             return order_id == value
         return False
 

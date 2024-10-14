@@ -142,6 +142,7 @@ async def validate_order(price):
 def select_oder():
     return check_open_order()
 
+
 async def main(symbol='BTC/USDT', period=14, interval=60):
     global isOpenOrder, take_profit_price, stop_loss_price, is_side_open
     global orderId
@@ -160,6 +161,9 @@ async def main(symbol='BTC/USDT', period=14, interval=60):
                 current_rsi_1m = df_1m['rsi'].iloc[-1]
                 k = 20
                 current_rsi_1m = format_RSI(current_rsi_1m)
+                message = f"RSI Alert! Current RSI for {symbol} on {INTERVAL_1M} is {current_rsi_1m} price {format_price(price_btc)}"
+                logger.info(message)
+
                 if current_rsi_1m < (50-k):
                     ord_new = buy_futures_btcusdt(price_btc)
                     orderId = ord_new['orderId']
@@ -172,9 +176,6 @@ async def main(symbol='BTC/USDT', period=14, interval=60):
                     orderId = ord_new['orderId']
                     logger.info(f" Open SELL new Order with ord_id = {orderId}")
                     continue
-
-                message = f"RSI Alert! Current RSI for {symbol} on {INTERVAL_1M} is {current_rsi_1m} price {format_price(price_btc)}"
-                logger.info(message)
 
         except asyncio.CancelledError as e:
             print(f"E006. An error occurred {e}")

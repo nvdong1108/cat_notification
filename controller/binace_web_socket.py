@@ -56,19 +56,22 @@ async def process_order_update(order: dict):
             f"Average Price: {avg_price}\n"
             f"Executed Quantity: {executed_qty}\n"
         )
+        print(f" show log {status} and body {body}")
+
         if ShareState.get_order_id(order_id):
             ShareState.update_order(order_id=order_id, status=status)
             if status == 'NEW':
                 print("update info ShareState.status_order = NEW in response from websocket")
+                logger.info("update info ShareState.status_order = NEW in response from websocket")
             elif status == 'FILLED':
-                order_stop = handle_stop_market(symbol, side, price)
+                order_stop = handle_stop_market(symbol, side, int(price))
                 if order_stop:
                     stop_loss_id = order_stop['orderId']
                     ShareState.update_order(order_id=order_id, stop_loss=stop_loss_id)
                     logger.info(f"stop loss id of order {order_id} is {stop_loss_id} with price {price} + 600")
                     print(f"stop loss id of order {order_id} is {stop_loss_id} with price {price} + 600")
 
-                order_profit = handle_take_profit(symbol, side, price)
+                order_profit = handle_take_profit(symbol, side, int(price))
                 if order_profit:
                     order_profit_id = order_profit['orderId']
                     ShareState.update_order(order_id=order_id, take_profit=order_profit_id)
@@ -76,14 +79,17 @@ async def process_order_update(order: dict):
                     print(f"take profit id of order {order_id} is {order_profit_id} with price {price} + 600")
 
             if status in ['CANCELED', 'REJECTED', 'EXPIRED']:
+                """ cancel all order stop loss and take profit """
+                print(f"Response websocket order Status = {status}")
+                logger.info(f"Response websocket order Status = {status}")
                 ShareState.reset_order()
-                print(f" show log {status} and body {body}")
+
         elif ShareState.get_order_stop_loss_id(order_id):
             print(f"Response order stop loss with order_id {order_id}")
         elif ShareState.get_order_take_profit_id(order_id):
             print(f"Response order take profit with order_id {order_id}")
         else:
-            print(f"order_id {order_id} not in ShareState.orders")
+            print(f"Order_id {order_id} not in ShareState.orders")
 
     except Exception as e:
         print(f"Error processing order update: {e}")

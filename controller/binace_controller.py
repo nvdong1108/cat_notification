@@ -28,7 +28,7 @@ def synchronize_time():
         local_timestamp = int(time.time() * 1000)
         time_offset = server_timestamp - local_timestamp
         client.TIME_OFFSET = time_offset
-        logger.info(f"Time has been synchronized. Time offset: {time_offset} ms.")
+
     except BinanceAPIException as e:
         logger.error(f"Unable to synchronize time: {e}")
     except Exception as e:
@@ -52,12 +52,39 @@ def round_price(price):
     return int(price)
 
 
+def get_latest_orders(symbol, side):
+    try:
+        orders = client.futures_get_all_orders(symbol=symbol)
+        if side:
+            orders = [order for order in orders if order['side'] == side]
+
+        sorted_orders = sorted(orders, key=lambda x: x['time'], reverse=True)
+        if sorted_orders:
+            latest_order = sorted_orders[0]
+            order_id = latest_order['orderId']
+            order_time = latest_order['time']
+            order_type = latest_order['type']
+            order_status = latest_order['status']
+            print(f"Order ID: {order_id}, Time: {order_time}, Type: {order_type}, Status: {order_status}, Side: {latest_order['side']}")
+            return latest_order
+
+        return None
+
+    except BinanceAPIException as e:
+        logger.error(f"Binance API Exception while fetching orders: {e}")
+        return None
+    except Exception as e:
+        logger.error(f"Unexpected error while fetching orders: {e}")
+        return None
+
+
 def check_open_order():
     try:
         positions = client.futures_position_information()
         open_positions = [position for position in positions if float(position['positionAmt']) != 0]
 
         if open_positions:
+            print(f"open_positions = {open_positions}")
             if len(open_positions) > 1:
                 print("Error: Multiple open positions detected!")
                 logger.error(f"Error: Multiple open positions detected {len(open_positions)} !")
@@ -69,7 +96,7 @@ def check_open_order():
                 entry_price = position['entryPrice']
                 status = 'FILLED'
 
-                print(f"entryPrice: {entry_price} - side {side} ")
+                print(f"Begin check_open_order: entryPrice: {entry_price} - side {side} ")
                 main_order = None
                 stop_loss_order = None
                 take_profit_order = None
@@ -77,7 +104,17 @@ def check_open_order():
                     logger.error(f"ignore order {symbol} ")
                     continue
 
+                orders_open_filled = get_latest_orders('BTCUSDT', side)
+
+                if orders_open_filled is None:
+                    print("Error check_open_order. not get history position ")
+                    return False
+
+                order_id = orders_open_filled['orderId']
+                ShareState.set_order(order_id, side, status)
+
                 orders = client.futures_get_open_orders(symbol='BTCUSDT')
+
                 for order in orders:
                     order_type = order.get('type')
                     print(f" order_type = {order_type}")
@@ -86,25 +123,19 @@ def check_open_order():
                     elif order_type in ['TAKE_PROFIT_LIMIT', 'TAKE_PROFIT_MARKET', 'TAKE_PROFIT']:
                         take_profit_order = order
                     elif order_type == 'LIMIT':
-                        main_order = order
+                        print("begin check order: had order_type = LIMIT, warning, check order had stop or profit")
 
-                if main_order:
-                    order_id = main_order['orderId']
-                    ShareState.set_order(order_id, side, status)
+                if stop_loss_order:
+                    order_stop_loss_id = stop_loss_order['orderId']
+                    ShareState.update_order(order_id=order_id, stop_loss=order_stop_loss_id)
+                    print(f"Stop loss exists for {symbol}: Order ID = {order_stop_loss_id}")
 
-                    if stop_loss_order:
-                        order_stop_loss_id = stop_loss_order['orderId']
-                        ShareState.update_order(order_id=order_id, stop_loss=order_stop_loss_id)
-                        print(f"Stop loss exists for {symbol}: Order ID = {order_stop_loss_id}")
-
-                    if take_profit_order:
-                        order_profit_id = take_profit_order['orderId']
-                        ShareState.update_order(order_id=order_id, take_profit=order_profit_id)
-                        print(f"Take profit exists for {symbol}: Order ID = {order_profit_id}")
+                if take_profit_order:
+                    order_profit_id = take_profit_order['orderId']
+                    ShareState.update_order(order_id=order_id, take_profit=order_profit_id)
+                    print(f"Take profit exists for {symbol}: Order ID = {order_profit_id}")
 
                     print(f"Info order {ShareState.order}")
-                else:
-                    print("WHY 1 ? had position open order_type not LIMIT")
 
             return True
         else:
@@ -161,50 +192,52 @@ def open_stop_market(stop_side, quantity, stop_price, reduce_only=True):
             type="STOP_MARKET",
             quantity=quantity,
             stopPrice=str(stop_price),
-            closePosition=True,
-            reduceOnly=reduce_only
+            closePosition=True
         )
 
-        logger.info(f"Stop Loss Order placed: {stop_order}")
-        print(f"Stop Loss Order placed: {stop_order}")
+        logger.info(f"Create order stop loss success : {stop_order}")
+        print(f"Create order stop loss success : {stop_order}")
         return stop_order
 
     except BinanceAPIException as e:
-        logger.error(f"Error placing Stop Loss order: {e}")
-        print(f"Error placing Stop Loss order: {e}")
+        logger.error(f"Error: open_stop_market placing Stop Loss order: {e}")
+        print(f"Error: open_stop_market placing Stop Loss order: {e}")
         return None
     except Exception as e:
-        logger.error(f"Unexpected error placing Stop Loss order: {e}")
-        print(f"Unexpected error placing Stop Loss order: {e}")
+        logger.error(f"Error: open_stop_market Unexpected error placing Stop Loss order: {e}")
+        print(f"Error: open_stop_market Unexpected error placing Stop Loss order: {e}")
         return None
 
 
-async def create_take_profit_order(side, quantity, takeprofit_price):
+def create_take_profit_order(side, quantity, takeprofit_price):
     """
     Tạo lệnh take profit.
     """
     try:
-        takeprofit_response = await client.futures_create_order(
+        takeprofit_response = client.futures_create_order(
             symbol='BTCUSDT',
             side=side,
-            type='TAKE_PROFIT',
+            type='TAKE_PROFIT_LIMIT',
             stopPrice=takeprofit_price,
             quantity=quantity,
             reduceOnly=True,
         )
+        logger.info(f"Create Take profir success: {takeprofit_response}")
+        print(f"Create Take profir success: {takeprofit_response}")
         return takeprofit_response
 
     except BinanceAPIException as e:
-        print(f"Binance API Exception: {e}")
+        print(f"Error: Create_take_profit_order Binance API Exception: {e}")
+        logger.error(f"Error: Create_take_profit_order Binance API Exception: {e}")
         return None
     except Exception as e:
-        print(f"Unexpected error creating take profit order: {e}")
+        print(f"Error: Create_take_profit_order Unexpected error creating take profit order: {e}")
+        logger.error(f"Error: Create_take_profit_order Unexpected error creating take profit order: {e}")
         return None
 
 
 def open_orders(side,  symbol, quantity, leverage=1, price=None):
     try:
-        print(f"buy_futures leverage = {leverage}")
         client.futures_change_leverage(symbol=symbol, leverage=leverage)
         if price is None:
             order = client.futures_create_order(
@@ -214,8 +247,7 @@ def open_orders(side,  symbol, quantity, leverage=1, price=None):
                 quantity=quantity
             )
         else:
-            if price is not None:
-                price = round_price(price)
+            price = round_price(price)
             order = client.futures_create_order(
                 symbol=symbol,
                 side=side,
@@ -227,12 +259,10 @@ def open_orders(side,  symbol, quantity, leverage=1, price=None):
 
         order_id = order['orderId']
         order_status = order['status']
-        ShareState.set_order(order_id, order_status, side)
+        ShareState.set_order(order_id, side, order_status)
 
-
-        print("Order placed:", order)
-        logger.info(f" orderId {order}")
-        logger.info(f" end new orders on binance")
+        print(f"Open new order Success {ShareState.order}")
+        logger.info(f"Open new order Success {ShareState.order}")
         return order
 
     except Exception as e:
@@ -242,13 +272,13 @@ def open_orders(side,  symbol, quantity, leverage=1, price=None):
 
 
 def buy_futures_btcusdt(price):
-    logger.info(f" new buy order")
+    logger.info(f"===> NEW BUY order with price {price}")
     synchronize_time()
     return open_orders("BUY", "BTCUSDT", QUANTITY_PER_TRADE, LEVERAGE, price)
 
 
 def sell_futures_btcusdt(price):
-    logger.info(f" new sell order")
+    logger.info(f"===> NEW SELL order with price {price}")
     synchronize_time()
     return open_orders("SELL", "BTCUSDT", QUANTITY_PER_TRADE, LEVERAGE, price)
 
@@ -257,11 +287,12 @@ def handle_stop_market(symbol, side, price):
     if symbol != 'BTCUSDT':
         return None
     order_stop = None
+
     if side == 'SELL':
-        price = price + 600
+        price = int(price) + 600
         order_stop = open_stop_market('BUY', QUANTITY_PER_TRADE, price)
     elif side == 'BUY':
-        price = price - 600
+        price = int(price) - 600
         order_stop = open_stop_market('SELL', QUANTITY_PER_TRADE, price)
     else:
         print(f"Error: Side handle stop market order wrong side = {side}")
@@ -275,15 +306,15 @@ def handle_take_profit(symbol, side, price):
         return None
     order_stop = None
     if side == 'SELL':
-        price = price - 660
+        price = int(price) - 660
         order_stop = create_take_profit_order('BUY',  QUANTITY_PER_TRADE, price)
     elif side == 'BUY':
-        price = price + 660
+        price = int(price) + 660
         order_stop = create_take_profit_order('SELL', QUANTITY_PER_TRADE, price)
     else:
         print(f"Error: Side handle stop market order wrong side = {side}")
 
-    logger.info(f"handle stop market order success with info order = {order_stop}")
+    logger.info(f"handle handle_take_profit order success with info order = {order_stop}")
     return order_stop
 
 
