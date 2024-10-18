@@ -1,4 +1,4 @@
-
+from datetime import datetime
 
 def format_price(amt):
     if amt is None:
@@ -10,7 +10,7 @@ def format_price(amt):
     return f"{amt_int:,} USDT"
 
 
-def format_RSI(rsi):
+def format_rsi(rsi):
     if rsi is None:
         raise ValueError(f"E001. Value amt is None")
     try:
@@ -23,7 +23,25 @@ def format_amt(amt):
     if amt is None:
         raise ValueError(f"E003. Value amt is None")
     try:
-        return f"{amt:.2f} USDT"
+        return f"{amt: .2f} USDT"
     except (Exception):
         raise Exception(f"Can't format_amt value amt. Amt is {amt} ")
+
+
+def format_percent(percent):
+    if percent is None:
+        raise ValueError(f"E003. Value amt is None")
+    try:
+        return f"{percent: .2f} %"
+    except (Exception):
+        raise Exception(f"Can't format_amt value amt. Amt is {percent} ")
+
+
+def current_time():
+   return f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+
+
+
+
+
 

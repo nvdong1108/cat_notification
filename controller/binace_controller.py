@@ -2,12 +2,16 @@
 import uuid
 import threading
 
-import config.config
+from common.format_until import format_percent, format_amt, format_rsi
 from logger.logger_setup import logger
 from binance.client import Client
 import time
 
+import pandas as pd
+import pandas_ta as ta
 
+
+from datetime import datetime
 from binance.exceptions import BinanceAPIException
 from config.config import BINANCE_API_KEY, BINANCE_API_SECRET
 from config.storage import ShareState
@@ -17,18 +21,62 @@ client = Client(BINANCE_API_KEY, BINANCE_API_SECRET)
 listen_key = client.futures_stream_get_listen_key()
 
 
+def fetch_rsi(interval):
+
+    klines = client.futures_klines(symbol='BTCUSDT', interval=interval, limit='500')
+
+    df = pd.DataFrame(klines, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume',
+                                       'close_time', 'quote_asset_volume', 'number_of_trades',
+                                       'taker_buy_base_asset_volume', 'taker_buy_quote_asset_volume', 'ignore'])
+    df['close'] = df['close'].astype(float)
+
+    df['rsi'] = ta.rsi(df['close'], length=14)
+
+    return format_rsi(df['rsi'].iloc[-1])
+
+
+def get_btcusdt_price():
+    try:
+        ticker = client.futures_symbol_ticker(symbol="BTCUSDT")
+        current_price = float(ticker['price'])
+        return current_price
+    except Exception as e:
+        logger.error(f"Error fetching BTCUSDT price: {e}")
+        print("Error fetching BTCUSDT price:", e)
+        return None
+
+
 def generate_client_order_id():
     return f"order_{uuid.uuid4()}"
 
 
 def synchronize_time():
     try:
-        server_time = client.get_server_time()
+        server_time = client.futures_time()
         server_timestamp = server_time['serverTime']
         local_timestamp = int(time.time() * 1000)
         time_offset = server_timestamp - local_timestamp
         client.TIME_OFFSET = time_offset
+        #client._timestamp = lambda: int(time.time() * 1000 + client.TIME_OFFSET)
+        """
+        max_tries = 5
+        time_offset = 0
+        for attempt in range(max_tries):
+            server_time = client.futures_time()
+            server_timestamp = server_time['serverTime']
+            local_timestamp = int(time.time() * 1000)
+            time_offset = server_timestamp - local_timestamp
+            client.TIME_OFFSET = time_offset
+            #client._timestamp = lambda: int(time.time() * 1000 + client.TIME_OFFSET)
+            if abs(time_offset) < 900:
+                break
+            time.sleep(2)
 
+        client._timestamp = lambda: int(time.time() * 1000 + client.TIME_OFFSET)
+        if abs(time_offset) > 1000:
+            print(f"\n *** Final time_offset = {time_offset}")
+            time.sleep(2)
+        """
     except BinanceAPIException as e:
         logger.error(f"Unable to synchronize time: {e}")
     except Exception as e:
@@ -61,11 +109,6 @@ def get_latest_orders(symbol, side):
         sorted_orders = sorted(orders, key=lambda x: x['time'], reverse=True)
         if sorted_orders:
             latest_order = sorted_orders[0]
-            order_id = latest_order['orderId']
-            order_time = latest_order['time']
-            order_type = latest_order['type']
-            order_status = latest_order['status']
-            print(f"Order ID: {order_id}, Time: {order_time}, Type: {order_type}, Status: {order_status}, Side: {latest_order['side']}")
             return latest_order
 
         return None
@@ -78,13 +121,33 @@ def get_latest_orders(symbol, side):
         return None
 
 
+def get_profit_position():
+    synchronize_time()
+    positions = client.futures_position_information()
+    open_positions = [position for position in positions if float(position['positionAmt']) != 0]
+    if open_positions:
+        if len(open_positions) > 1:
+            print("Error: Multiple open positions detected!")
+            logger.error(f"Error: Multiple open positions detected {len(open_positions)} !")
+            return False
+        amt_profit = float(open_positions[0]['unRealizedProfit'])
+        total_amt = float(open_positions[0]['isolatedWallet'])
+        profit_percentage = (amt_profit / total_amt) * 100
+
+        print(f"*** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} POSITIONS profit {format_amt(amt_profit)} percentage is {format_percent(profit_percentage)} ")
+
+
+def get_current_timestamp():
+    return int(time.time() * 1000 + client.TIME_OFFSET)
+
+
 def check_open_order():
     try:
-        positions = client.futures_position_information()
+        synchronize_time()
+        positions = client.futures_position_information(timestamp=get_current_timestamp())
         open_positions = [position for position in positions if float(position['positionAmt']) != 0]
-
+        print("****************** goto *********************** ")
         if open_positions:
-            print(f"open_positions = {open_positions}")
             if len(open_positions) > 1:
                 print("Error: Multiple open positions detected!")
                 logger.error(f"Error: Multiple open positions detected {len(open_positions)} !")
@@ -93,11 +156,8 @@ def check_open_order():
             for position in open_positions:
                 symbol = position['symbol']
                 side = 'BUY' if float(position['positionAmt']) > 0 else 'SELL'
-                entry_price = position['entryPrice']
                 status = 'FILLED'
 
-                print(f"Begin check_open_order: entryPrice: {entry_price} - side {side} ")
-                main_order = None
                 stop_loss_order = None
                 take_profit_order = None
                 if symbol != 'BTCUSDT':
@@ -108,6 +168,7 @@ def check_open_order():
 
                 if orders_open_filled is None:
                     print("Error check_open_order. not get history position ")
+                    logger.error("Error check_open_order. not get history position ")
                     return False
 
                 order_id = orders_open_filled['orderId']
@@ -117,51 +178,56 @@ def check_open_order():
 
                 for order in orders:
                     order_type = order.get('type')
-                    print(f" order_type = {order_type}")
                     if order_type == 'STOP_MARKET':
                         stop_loss_order = order
                     elif order_type in ['TAKE_PROFIT_LIMIT', 'TAKE_PROFIT_MARKET', 'TAKE_PROFIT']:
                         take_profit_order = order
                     elif order_type == 'LIMIT':
-                        print("begin check order: had order_type = LIMIT, warning, check order had stop or profit")
+                        print("WARNING: a position already exists, but an order with type LIMIT is still being opened.")
+                        logger.warn("WARNING: a position already exists, but an order with type LIMIT is still being opened.")
 
                 if stop_loss_order:
                     order_stop_loss_id = stop_loss_order['orderId']
                     ShareState.update_order(order_id=order_id, stop_loss=order_stop_loss_id)
-                    print(f"Stop loss exists for {symbol}: Order ID = {order_stop_loss_id}")
 
                 if take_profit_order:
                     order_profit_id = take_profit_order['orderId']
                     ShareState.update_order(order_id=order_id, take_profit=order_profit_id)
-                    print(f"Take profit exists for {symbol}: Order ID = {order_profit_id}")
 
-                    print(f"Info order {ShareState.order}")
-
-            return True
         else:
             """check order open
             """
             orders = client.futures_get_open_orders(symbol='BTCUSDT')
+            count_order_type_limit = 0
             for order in orders:
-                print(f"order = {order} ")
                 order_type = order.get('type')
-
-                print(f"order type of order is {order_type}")
-
                 if order_type == 'STOP_MARKET':
                     """todo cancel
                     """
                     cancel_response = client.futures_cancel_order(symbol='BTCUSDT', orderId=order['orderId'])
-                    print(f"cancel order stop market success because not position open {cancel_response}")
+                    print(f"cancel order stop market success because not position open")
                     logger.info(f"cancel order stop market success because not position open {cancel_response}")
-                elif order_type == 'TAKE_PROFIT' or order_type == 'TAKE_PROFIT_LIMIT':
+
+                elif order_type == 'TAKE_PROFIT_MARKET' or order_type == 'TAKE_PROFIT_LIMIT':
                     cancel_response = client.futures_cancel_order(symbol='BTCUSDT', orderId=order['orderId'])
-                    print(f"cancel order take profit success because not position open {cancel_response}")
+                    print(f"cancel order take profit success because not position open")
                     logger.info(f"cancel order take profit success because not position open {cancel_response}")
 
-            ShareState.reset_order()
-            print(f"not had order open")
-            return True
+                elif order_type == 'LIMIT':
+                    count_order_type_limit += 1
+                    print(f"Had order open Type LIMIT this is order waiting entry Price")
+                    logger.info(f"Had order open Type LIMIT this is order waiting entry Price ")
+                    if count_order_type_limit < 2:
+                        order_id = order.get('orderId')
+                        status = order.get('status')
+                        side = order.get('side')
+                        ShareState.set_order(order_id, side, status)
+                    else:
+                        print(f"WARNING: ################## had {count_order_type_limit} order open LIMIT ##################")
+                        logger.warn(f"WARNING: ################## had {count_order_type_limit} order open LIMIT ##################")
+
+        print(f"\n*** INFO ORDER {ShareState.order}\n")
+        return True
 
     except BinanceAPIException as e:
         print(f"Error fetching open positions: {e}")
@@ -184,7 +250,7 @@ def check_order_status(order_id):
         return None
 
 
-def open_stop_market(stop_side, quantity, stop_price, reduce_only=True):
+def open_stop_market(stop_side, quantity, stop_price):
     try:
         stop_order = client.futures_create_order(
             symbol='BTCUSDT',
@@ -195,8 +261,8 @@ def open_stop_market(stop_side, quantity, stop_price, reduce_only=True):
             closePosition=True
         )
 
-        logger.info(f"Create order stop loss success : {stop_order}")
-        print(f"Create order stop loss success : {stop_order}")
+        logger.info(f"*** CREATE ORDER STOP LOSS SUCCESS {stop_order}")
+        print(f"\n*** CREATE ORDER STOP LOSS SUCCESS")
         return stop_order
 
     except BinanceAPIException as e:
@@ -209,7 +275,7 @@ def open_stop_market(stop_side, quantity, stop_price, reduce_only=True):
         return None
 
 
-def create_take_profit_order(side, quantity, takeprofit_price):
+def create_take_profit_order(side, price):
     """
     Tạo lệnh take profit.
     """
@@ -217,13 +283,13 @@ def create_take_profit_order(side, quantity, takeprofit_price):
         takeprofit_response = client.futures_create_order(
             symbol='BTCUSDT',
             side=side,
-            type='TAKE_PROFIT_LIMIT',
-            stopPrice=takeprofit_price,
-            quantity=quantity,
-            reduceOnly=True,
+            type='TAKE_PROFIT_MARKET',
+            timeInForce='GTC',
+            stopPrice=str(price),
+            closePosition=True
         )
-        logger.info(f"Create Take profir success: {takeprofit_response}")
-        print(f"Create Take profir success: {takeprofit_response}")
+        logger.info(f"\n*** CREATE TAKE PROFIT SUCCESS: {takeprofit_response}")
+        print(f"\n*** CREATE TAKE PROFIt SUCCESS")
         return takeprofit_response
 
     except BinanceAPIException as e:
@@ -236,8 +302,10 @@ def create_take_profit_order(side, quantity, takeprofit_price):
         return None
 
 
-def open_orders(side,  symbol, quantity, leverage=1, price=None):
+def open_orders(side,  symbol, quantity, leverage=1):
     try:
+        price = None #get_btcusdt_price()
+        logger.info(f"\n===> BEGIN OPEN NEW {side} ORDER WITH PRICE {price}")
         client.futures_change_leverage(symbol=symbol, leverage=leverage)
         if price is None:
             order = client.futures_create_order(
@@ -260,27 +328,22 @@ def open_orders(side,  symbol, quantity, leverage=1, price=None):
         order_id = order['orderId']
         order_status = order['status']
         ShareState.set_order(order_id, side, order_status)
-
-        print(f"Open new order Success {ShareState.order}")
-        logger.info(f"Open new order Success {ShareState.order}")
         return order
 
     except Exception as e:
-        logger.error(f" An error occurred buy order {e}")
-        print("An error occurred:", e)
+        logger.error(f"Error: open_orders  An error occurred buy order {e}")
+        print("Error: open_orders An error occurred:", e)
         return None
 
 
-def buy_futures_btcusdt(price):
-    logger.info(f"===> NEW BUY order with price {price}")
+def buy_futures_btcusdt():
     synchronize_time()
-    return open_orders("BUY", "BTCUSDT", QUANTITY_PER_TRADE, LEVERAGE, price)
+    return open_orders("BUY", "BTCUSDT", QUANTITY_PER_TRADE, LEVERAGE)
 
 
-def sell_futures_btcusdt(price):
-    logger.info(f"===> NEW SELL order with price {price}")
+def sell_futures_btcusdt():
     synchronize_time()
-    return open_orders("SELL", "BTCUSDT", QUANTITY_PER_TRADE, LEVERAGE, price)
+    return open_orders("SELL", "BTCUSDT", QUANTITY_PER_TRADE, LEVERAGE)
 
 
 def handle_stop_market(symbol, side, price):
@@ -306,15 +369,117 @@ def handle_take_profit(symbol, side, price):
         return None
     order_stop = None
     if side == 'SELL':
-        price = int(price) - 660
-        order_stop = create_take_profit_order('BUY',  QUANTITY_PER_TRADE, price)
+        price_stop = int(price) - 600
+        order_stop = create_take_profit_order('BUY', price_stop)
     elif side == 'BUY':
-        price = int(price) + 660
-        order_stop = create_take_profit_order('SELL', QUANTITY_PER_TRADE, price)
+        price_stop = int(price) + 600
+        order_stop = create_take_profit_order('SELL', price_stop)
     else:
         print(f"Error: Side handle stop market order wrong side = {side}")
 
     logger.info(f"handle handle_take_profit order success with info order = {order_stop}")
     return order_stop
 
+
+def handle_recheck_bug_stop_profit():
+    """
+    1. lấy position nếu không có return
+    2. lấy open_order
+    3. check
+    """
+    positions = client.futures_position_information()
+    open_positions = [position for position in positions if float(position['positionAmt']) != 0]
+
+    if open_positions is None or len(open_positions) == 0:
+        print("Error: Don't recheck open positions.")
+        logger.error("Error: Don't recheck open positions.!")
+        return False
+
+    orders_open_filled = get_latest_orders('BTCUSDT', ShareState.get_side())
+    if orders_open_filled is None:
+        print("Error: Don't get_latest_orders")
+        logger.error("Error: get_latest_orders")
+        return False
+    position = open_positions[0]
+    symbol = position['symbol']
+    side = 'BUY' if float(position['positionAmt']) > 0 else 'SELL'
+    price = float(position.get('entryPrice', 0))
+    order_id = orders_open_filled['orderId']
+
+    if ShareState.get_order_id(order_id):
+        orders = client.futures_get_open_orders(symbol='BTCUSDT')
+
+        if orders is None or len(orders) == 0:
+            """create stop loss and take profit"""
+            order_sp_old = ShareState.get_order_stop_loss_id()
+            if order_sp_old is None:
+                order_stop = handle_stop_market(symbol, side, int(price))
+                if order_stop:
+                    stop_loss_id = order_stop['orderId']
+                    ShareState.update_order(order_id=order_id, stop_loss=stop_loss_id)
+                    logger.info(f"stop loss id of order {order_id} is {stop_loss_id} with price {price} + 600")
+                    print(f"stop loss id of order {order_id} is {stop_loss_id} with price {price} + 600")
+                else:
+                    print(f"1. Don't Update id stop for position because order_sp_old already exists.")
+
+            order_tp_old = ShareState.get_order_take_profit_id()
+            if order_tp_old is None:
+                order_profit = handle_take_profit(symbol, side, int(price))
+                if order_profit:
+                    order_profit_id = order_profit['orderId']
+                    ShareState.update_order(order_id=order_id, take_profit=order_profit_id)
+                    logger.info(f"take profit id of order {order_id} is {order_profit_id} with price {price} + 600")
+                    print(f"take profit id of order {order_id} is {order_profit_id} with price {price} + 600")
+            else:
+                print(f"2. Don't Update id take profit for position because order_tp_old already exists.")
+
+        else:
+            order_stop_loss_id = None
+            order_take_profit_id = None
+            for order in orders:
+                order_type = order.get('type')
+                if order_type == 'STOP_MARKET':
+                    order_stop_loss_id = order['orderId']
+                if order_type in ['TAKE_PROFIT_MARKET', 'TAKE_PROFIT_LIMIT']:
+                    order_take_profit_id = order['orderId']
+
+            if order_stop_loss_id:
+                order_sp_old = ShareState.get_order_stop_loss_id()
+                if order_sp_old is None:
+                    ShareState.update_order(order_id=order_id, stop_loss=order_stop_loss_id)
+                else:
+                    print(f"3. Don't Update id stop loss for position because order_sp_old already exists.")
+            else:
+                """create stop loss"""
+                order_sp_old = ShareState.get_order_stop_loss_id()
+                if order_sp_old:
+                    print("WARNING: *** why storage already exists but create open new stop loss")
+
+                order_stop = handle_stop_market(symbol, side, int(price))
+                if order_stop:
+                    stop_loss_id = order_stop['orderId']
+                    ShareState.update_order(order_id=order_id, stop_loss=stop_loss_id)
+                    logger.info(f"stop loss id of order {order_id} is {stop_loss_id} with price {price} + 600")
+                    print(f"stop loss id of order {order_id} is {stop_loss_id} with price {price} + 600")
+
+            if order_take_profit_id:
+                order_sp_old = ShareState.get_order_take_profit_id()
+                if order_sp_old is None:
+                    ShareState.update_order(order_id=order_id, take_profit=order_take_profit_id)
+                else:
+                    print(f"4. Don't Update id take profit for position because order_sp_old already exists.")
+            else:
+                """create take profit"""
+                order_sp_old = ShareState.get_order_take_profit_id()
+                if order_sp_old:
+                    print("WARNING: *** why storage order take profit already exists but create open new take profit")
+
+                order_profit = handle_take_profit(symbol, side, int(price))
+                if order_profit:
+                    order_profit_id = order_profit['orderId']
+                    ShareState.update_order(order_id=order_id, take_profit=order_profit_id)
+                    logger.info(f"take profit id of order {order_id} is {order_profit_id} with price {price} + 600")
+                    print(f"take profit id of order {order_id} is {order_profit_id} with price {price} + 600")
+    else:
+        print(f"*** WARNING: GET_LATEST_ORDERS {orders_open_filled} NOT IN ShareState.order")
 
