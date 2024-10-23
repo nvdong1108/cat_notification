@@ -1,4 +1,4 @@
-from datetime import datetime
+
 
 def format_price(amt):
     if amt is None:
@@ -36,9 +36,6 @@ def format_percent(percent):
     except (Exception):
         raise Exception(f"Can't format_amt value amt. Amt is {percent} ")
 
-
-def current_time():
-   return f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
 
 
 

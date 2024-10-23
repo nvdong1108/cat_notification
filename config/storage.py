@@ -4,22 +4,38 @@ class ShareState:
     count_call_api_position = 0
 
     @classmethod
+    def get_oder_info(cls):
+        if cls.order is None:
+            return "ShareState.Order is None"
+        return f"ShareState.Order is {cls.order}"
+
+    @classmethod
     def reset_order(cls):
         cls.order = None
 
+    """
+    1. check_open_order
+        - had position
+        - open order
+    2. open_orders
+    """
     @classmethod
-    def set_order(cls, order_id, side, status):
+    def set_order(cls, order_id, side, status,target_profit=0.5):
         print(f"\n*** SET NEW ORDER: {order_id} STATUS {status} SIDE {side} SUCCESS\n")
         cls.order = {
             'order_id': order_id,
             'side': side,
             'status': status,
             'stoploss_order_id': None,
-            'takeprofit_order_id': None
+            'takeprofit_order_id': None,
+            'target_profit': target_profit,
+            'price_next_profit': None
         }
 
+
     @classmethod
-    def update_order(cls, order_id, status=None, stop_loss=None, take_profit=None):
+    def update_order(cls, order_id, status=None, stop_loss=None, take_profit=None,
+                     target_profit=None):
         if cls.order and cls.order.get('order_id') == order_id:
             if status is not None:
                 cls.order['status'] = status
@@ -30,9 +46,11 @@ class ShareState:
             if take_profit is not None:
                 cls.order['takeprofit_order_id'] = take_profit
                 print(f"*** UPDATE STORAGE ORDER TAKEPROFIT_ORDER_ID = {take_profit} SUCCESS ")
+            if target_profit is not None:
+                cls.order['target_profit'] = target_profit
+                print(f"*** UPDATE STORAGE ORDER TARGET_PROFIT = {target_profit} SUCCESS ")
         else:
             print(f"Order with ID {order_id} not found or doesn't exist.")
-
 
 
     @classmethod
@@ -109,10 +127,23 @@ class ShareState:
         return False
 
     @classmethod
+    def get_target_profit(cls):
+        if cls.order:
+            return cls.order.get('target_profit')
+        return None
+
+    @classmethod
     def check_order_stop_loss_id(cls, order_id):
         if cls.order:
             value = cls.order.get('stoploss_order_id')
             return order_id == value
+        return False
+
+    @classmethod
+    def update_order_stop_loss_id(cls, stop_loss_id):
+        if cls.order:
+            cls.order['stoploss_order_id'] = stop_loss_id
+            print(f"*** UPDATE STORAGE ORDER STOPLOSS_ORDER_ID = {stop_loss_id} SUCCESS ")
         return False
 
     @classmethod

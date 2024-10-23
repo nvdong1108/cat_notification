@@ -9,7 +9,10 @@ import ccxt
 import pandas as pd
 import ta
 import asyncio
+import itertools
 
+from logger.print_until import print_time
+from  common.date_until import current_time
 from tenacity import retry, stop_after_attempt, wait_fixed
 from logger.logger_setup import logger
 from controller.binace_controller import (buy_futures_btcusdt, sell_futures_btcusdt, fetch_rsi,
@@ -50,11 +53,18 @@ def get_current_btc_usdt_price():
         return None
 
 
-async def main(symbol='BTC/USDT', period=14, interval=30):
+async def main(symbol='BTC/USDT', period=14, interval=60):
     """ todo loop """
-    while True:
+    three_minutes = 180
+    thirty_minutes = 1800
+    # ten_minutes = 600
+    for count in itertools.count():
         try:
             await asyncio.sleep(interval)
+
+            if count % (thirty_minutes // interval) == 0:
+                print_time(f"{ShareState.get_oder_info()}")
+                logger.info(f"{ShareState.get_oder_info()}")
 
             if ShareState.is_none_order():
                 current_rsi_1m = fetch_rsi('1m')
@@ -62,6 +72,7 @@ async def main(symbol='BTC/USDT', period=14, interval=30):
                 k = 25
                 message = f"*** RSI 1m = {current_rsi_1m}, RSI 15m ={current_rsi_15m}"
                 logger.info(message)
+                print_time(message)
 
                 if current_rsi_1m < (50-k):
                     buy_futures_btcusdt()
@@ -80,8 +91,7 @@ async def main(symbol='BTC/USDT', period=14, interval=30):
                 handle_recheck_bug_stop_profit()
 
             elif ShareState.is_handle_price_stop_loss():
-                ShareState.count_call_api_position += 1
-                if ShareState.count_call_api_position % 10 == 0:
+                if count % (three_minutes // interval) == 0:
                     get_profit_position()
 
         except asyncio.CancelledError as e:
