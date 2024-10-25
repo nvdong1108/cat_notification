@@ -1,95 +1,26 @@
 
-import uuid
-import threading
-from http.client import RemoteDisconnected
-
-from common.format_until import format_percent, format_amt, format_rsi
+from common.format_until import format_percent, format_amt
 from logger.logger_setup import logger
-from binance.client import Client
-import time
 
-import pandas as pd
-import pandas_ta as ta
+from controller.binace.time_server import synchronize_time
+from controller.binace.send_api import create_take_profit_order, open_stop_market, open_orders
+from config.storage import ShareState
+from common.constants import *
 
 from logger.print_until import print_time
 from requests import Session
 from binance.exceptions import BinanceAPIException
-from config.config import BINANCE_API_KEY, BINANCE_API_SECRET
-from config.storage import ShareState
 
-from common.constants import *
+from binance.client import Client
+from config.config import BINANCE_API_KEY, BINANCE_API_SECRET
+
+from controller.binace.change_order import handle_change_stop_loss, handle_change_profit
 
 session = Session()
 session.timeout = 20
 
 client = Client(BINANCE_API_KEY, BINANCE_API_SECRET)
-
 listen_key = client.futures_stream_get_listen_key()
-
-
-def fetch_rsi(interval):
-
-    klines = client.futures_klines(symbol='BTCUSDT', interval=interval, limit='500')
-    df = pd.DataFrame(klines, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume',
-                                       'close_time', 'quote_asset_volume', 'number_of_trades',
-                                       'taker_buy_base_asset_volume', 'taker_buy_quote_asset_volume', 'ignore'])
-    df['close'] = df['close'].astype(float)
-
-    df['rsi'] = ta.rsi(df['close'], length=14)
-
-    return format_rsi(df['rsi'].iloc[-1])
-
-
-def get_btcusdt_price():
-    try:
-        ticker = client.futures_symbol_ticker(symbol="BTCUSDT")
-        current_price = float(ticker['price'])
-        return current_price
-    except Exception as e:
-        logger.error(f"Error fetching BTCUSDT price: {e}")
-        print("Error fetching BTCUSDT price:", e)
-        return None
-
-
-def generate_client_order_id():
-    return f"order_{uuid.uuid4()}"
-
-
-def synchronize_time():
-    try:
-        server_time = client.futures_time()
-        server_timestamp = server_time['serverTime']
-        local_timestamp = int(time.time() * 1000)
-        time_offset = server_timestamp - local_timestamp
-        client.TIME_OFFSET = time_offset
-        print_time(f"Time offset {time_offset}")
-        return server_timestamp
-    except RemoteDisconnected:
-        logger.warning(f"At synchronize_time: Remote server disconnected, retrying...")
-        return int(time.time() * 1000)
-    except BinanceAPIException as e:
-        logger.error(f"At synchronize_time: Unable to synchronize time: {e}")
-        return int(time.time() * 1000)
-    except Exception as e:
-        logger.error(f"At synchronize_time: An unexpected error occurred during time synchronization: {e}")
-        return int(time.time() * 1000)
-
-
-# def periodic_time_sync(interval=120):
-#     while True:
-#         try:
-#             synchronize_time()
-#         except Exception as e:
-#             logger.error(f"Error while synchronizing time: {e}")
-#         time.sleep(interval)
-
-
-# sync_thread = threading.Thread(target=periodic_time_sync, args=(60,), daemon=True)
-# sync_thread.start()
-
-
-def round_price(price):
-    return int(price)
 
 
 def get_latest_orders(symbol, side):
@@ -134,16 +65,21 @@ def get_profit_position():
             total_amt = float(open_positions[0]['isolatedWallet'])
             mark_price = round(float(open_positions[0]['markPrice']), 2)
             profit_percentage = (amt_profit / total_amt) * 100
-            if amt_profit > ShareState.get_target_profit():
+            if amt_profit > ShareState.get_condition_change_loss():
                 """ change stop loss"""
-                handle_change_stop_loss(mark_price)
+                print_time("todo handle_change_stop_loss")
+                logger.info("todo handle_change_stop_loss")
+                # handle_change_stop_loss(mark_price)
+                # handle_change_profit(mark_price)
 
             message = f"*** POSITIONS profit {format_amt(amt_profit)} percentage is {format_percent(profit_percentage)} "
             print_time(message)
             logger.info(message)
 
     except Exception as e:
-        logger.error(f"Error at get_profit_position {e}")
+        ms = f"Error at get_profit_position: {e}"
+        print_time(ms)
+        logger.error(ms)
 
 
 def check_open_order():
@@ -230,7 +166,7 @@ def check_open_order():
                         print(f"WARNING: ################## had {count_order_type_limit} order open LIMIT ##################")
                         logger.warn(f"WARNING: ################## had {count_order_type_limit} order open LIMIT ##################")
 
-        print(f"\n*** INFO ORDER {ShareState.order}\n")
+        print(f"{ShareState.get_oder_info()}\n")
         return True
 
     except BinanceAPIException as e:
@@ -243,94 +179,6 @@ def check_open_order():
         return False
 
 
-def open_stop_market(stop_side, quantity, stop_price):
-    try:
-        stop_order = client.futures_create_order(
-            symbol='BTCUSDT',
-            side=stop_side,
-            type="STOP_MARKET",
-            quantity=quantity,
-            stopPrice=str(stop_price),
-            closePosition=True,
-            timestamp=synchronize_time()
-        )
-
-        logger.info(f"*** CREATE ORDER STOP LOSS SUCCESS {stop_order}")
-        print(f"\n*** CREATE ORDER STOP LOSS SUCCESS")
-        return stop_order
-
-    except BinanceAPIException as e:
-        logger.error(f"Error: open_stop_market placing Stop Loss order: {e}")
-        print(f"Error: open_stop_market placing Stop Loss order: {e}")
-        return None
-    except Exception as e:
-        logger.error(f"Error: open_stop_market Unexpected error placing Stop Loss order: {e}")
-        print(f"Error: open_stop_market Unexpected error placing Stop Loss order: {e}")
-        return None
-
-
-def create_take_profit_order(side, price):
-    """
-    Tạo lệnh take profit.
-    """
-    try:
-        takeprofit_response = client.futures_create_order(
-            symbol='BTCUSDT',
-            side=side,
-            type='TAKE_PROFIT_MARKET',
-            timeInForce='GTC',
-            stopPrice=str(price),
-            closePosition=True,
-            timestamp=synchronize_time()
-        )
-        logger.info(f"\n*** CREATE TAKE PROFIT SUCCESS: {takeprofit_response}")
-        print(f"\n*** CREATE TAKE PROFIt SUCCESS")
-        return takeprofit_response
-
-    except BinanceAPIException as e:
-        print(f"Error: Create_take_profit_order Binance API Exception: {e}")
-        logger.error(f"Error: Create_take_profit_order Binance API Exception: {e}")
-        return None
-    except Exception as e:
-        print(f"Error: Create_take_profit_order Unexpected error creating take profit order: {e}")
-        logger.error(f"Error: Create_take_profit_order Unexpected error creating take profit order: {e}")
-        return None
-
-
-def open_orders(side,  symbol, quantity, leverage=1):
-    try:
-        price = None #get_btcusdt_price()
-        logger.info(f"\n===> BEGIN OPEN NEW {side} ORDER WITH PRICE {price}")
-        client.futures_change_leverage(symbol=symbol, leverage=leverage)
-        if price is None:
-            order = client.futures_create_order(
-                symbol=symbol,
-                side=side,
-                type="MARKET",
-                quantity=quantity,
-                timestamp=synchronize_time()
-            )
-        else:
-            price = round_price(price)
-            order = client.futures_create_order(
-                symbol=symbol,
-                side=side,
-                type="LIMIT",
-                timeInForce="GTC",
-                quantity=quantity,
-                price=str(price),
-                timestamp=synchronize_time()
-            )
-
-        order_id = order['orderId']
-        order_status = order['status']
-        ShareState.set_order(order_id, side, order_status)
-        return order
-
-    except Exception as e:
-        logger.error(f"Error: open_orders  An error occurred buy order {e}")
-        print("Error: open_orders An error occurred:", e)
-        return None
 
 
 def buy_futures_btcusdt():
@@ -402,7 +250,7 @@ def handle_recheck_bug_stop_profit():
     price = float(position.get('entryPrice', 0))
     order_id = orders_open_filled['orderId']
 
-    if ShareState.get_order_id(order_id):
+    if ShareState.equals_order_id(order_id):
         orders = client.futures_get_open_orders(symbol='BTCUSDT')
 
         if orders is None or len(orders) == 0:
@@ -479,67 +327,4 @@ def handle_recheck_bug_stop_profit():
     else:
         print(f"*** WARNING: GET_LATEST_ORDERS {orders_open_filled} NOT IN ShareState.order")
 
-
-def handle_change_stop_loss(mark_price):
-    print_time(f"*** Begin handle_change_stop_loss {mark_price}")
-    logger.info(f"*** Begin handle_change_stop_loss {mark_price}")
-    order_id = ShareState.get_order_stop_loss_id()
-    side = ShareState.get_side()
-    space_price = 600
-
-    order = client.futures_get_order(
-        symbol='BTCUSDT',
-        orderId=order_id
-    )
-
-    if order is None:
-        print_time("Không thể lấy thông tin lệnh stop loss")
-        logger.error("Không thể lấy thông tin lệnh stop loss")
-        return None
-
-    if order:
-        if side is None:
-            logger.error("Invalid stop_side provided")
-            print_time("Invalid stop_side provided")
-            return None
-
-        new_stop_price = 0
-        side_stop_loss = ''
-        if side == 'BUY':
-            new_stop_price = mark_price - space_price
-            side_stop_loss = 'SELL'
-        elif side == 'SELL':
-            new_stop_price = mark_price + space_price
-            side_stop_loss = 'BUY'
-
-        try:
-            if order['status'] in ['NEW', 'PARTIALLY_FILLED']:
-                cancel_order = client.futures_cancel_order(symbol='BTCUSDT', orderId=order_id)
-                if cancel_order is None:
-                    print_time(f"Check again Error at handle_change_stop_loss: cancel order stop loss fail")
-                else:
-                    logger.info(f"*** CANCEL ORDER SUCCESS {cancel_order}")
-
-            order_stop_new = open_stop_market(side_stop_loss, QUANTITY_PER_TRADE, new_stop_price)
-            if order_stop_new is None:
-                mess = f"Error at handle_change_stop_loss: open new order stop new fail"
-                print_time(mess)
-                logger.error(f"{mess}")
-                return None
-
-            mess = "change order stop loss success"
-            print_time(mess)
-            logger.info(f"{mess} order = {order_stop_new}")
-
-            stop_loss_id = order_stop_new['orderId']
-            target_profit = ShareState.get_target_profit() + 0.5
-            ShareState.update_order(order_id=order_id, stop_loss=stop_loss_id, target_profit=target_profit)
-
-            print_time(f"*** end handle_change_stop_loss: success")
-            logger.info(f"*** end handle_change_stop_loss: success")
-        except BinanceAPIException as e:
-            message = f"Error at handle_change_stop_loss: canceling stop loss order: {e}"
-            logger.error(message)
-            print_time(message)
-        return None
 

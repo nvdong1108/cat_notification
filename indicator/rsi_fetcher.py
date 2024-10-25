@@ -12,13 +12,12 @@ import asyncio
 import itertools
 
 from logger.print_until import print_time
-from  common.date_until import current_time
 from tenacity import retry, stop_after_attempt, wait_fixed
 from logger.logger_setup import logger
-from controller.binace_controller import (buy_futures_btcusdt, sell_futures_btcusdt, fetch_rsi,
+from controller.binace_controller import (buy_futures_btcusdt, sell_futures_btcusdt,
                                           check_open_order, get_profit_position, handle_recheck_bug_stop_profit)
+from controller.binace.indicator import fetch_rsi
 from controller.binace_web_socket import start_websocket
-from common.calculater_until import *
 from config.storage import ShareState
 
 
@@ -66,11 +65,12 @@ async def main(symbol='BTC/USDT', period=14, interval=60):
                 print_time(f"{ShareState.get_oder_info()}")
                 logger.info(f"{ShareState.get_oder_info()}")
 
-            if ShareState.is_none_order():
+            if ShareState.is_true_none_order():
                 current_rsi_1m = fetch_rsi('1m')
+                current_rsi_5m = fetch_rsi('5m')
                 current_rsi_15m = fetch_rsi('15m')
                 k = 25
-                message = f"*** RSI 1m = {current_rsi_1m}, RSI 15m ={current_rsi_15m}"
+                message = f"*** RSI 1m = {current_rsi_1m}, 5m ={current_rsi_5m}, 15m ={current_rsi_15m}"
                 logger.info(message)
                 print_time(message)
 
@@ -82,11 +82,11 @@ async def main(symbol='BTC/USDT', period=14, interval=60):
                     sell_futures_btcusdt()
                     continue
 
-            elif ShareState.is_bug_miss_open_order_stop_loss():
+            elif ShareState.is_true_bug_miss_open_order_stop_loss():
                 """create position success but don't create order stop loss """
                 handle_recheck_bug_stop_profit()
 
-            elif ShareState.is_bug_miss_open_order_take_profit():
+            elif ShareState.is_true_bug_miss_open_order_take_profit():
                 """create position success but don't create order stop loss """
                 handle_recheck_bug_stop_profit()
 

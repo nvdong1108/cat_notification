@@ -50,7 +50,7 @@ async def process_order_update(order: dict):
         print(body)
         logger.info(body)
 
-        if ShareState.get_order_id(order_id):
+        if ShareState.equals_order_id(order_id):
             ShareState.update_order(order_id=order_id, status=status)
             if status == 'NEW':
                 print("update info ShareState.status_order = NEW in response from websocket")
@@ -88,26 +88,33 @@ async def process_order_update(order: dict):
 
                 ShareState.reset_order()
 
-        elif ShareState.check_order_stop_loss_id(order_id):
+        elif ShareState.equals_order_stop_loss_id(order_id):
             """ 
             even order stop loss cancel expired 
             """
             print(f"Response STOP LOSS with order_id {order_id}, status = {status}")
             logger.info(f"Response STOP LOSS with order_id {order_id}, status = {status}")
             if status in ['CANCELED', 'REJECTED', 'EXPIRED']:
-                ShareState.update_order_stop_loss_id(order_id)
-                position = get_position_information()
-                if position is None:
-                    ord_id_profit = ShareState.get_order_take_profit_id()
-                    if ord_id_profit:
-                        client.futures_cancel_order(symbol='BTCUSDT', orderId=ord_id_profit)
-                        print(f"Cancel TAKE PROFIT open success ")
-                        logger.info(f"Cancel TAKE PROFIT open success ")
-                    ShareState.reset_order()
-                else:
-                    print(f'*** EVENT STOP LOSS OF CHANGE PRICE STOP LOST')
+                ord_id_profit = ShareState.get_order_take_profit_id()
+                if ord_id_profit:
+                    client.futures_cancel_order(symbol='BTCUSDT', orderId=ord_id_profit)
+                    print(f"Cancel TAKE PROFIT open success ")
+                    logger.info(f"Cancel TAKE PROFIT open success ")
+                ShareState.reset_order()
 
-        elif ShareState.check_order_take_profit_id(order_id):
+                # ShareState.update_order_stop_loss_id(order_id)
+                # position = get_position_information()
+                # if position is None:
+                #     ord_id_profit = ShareState.get_order_take_profit_id()
+                #     if ord_id_profit:
+                #         client.futures_cancel_order(symbol='BTCUSDT', orderId=ord_id_profit)
+                #         print(f"Cancel TAKE PROFIT open success ")
+                #         logger.info(f"Cancel TAKE PROFIT open success ")
+                #     ShareState.reset_order()
+                # else:
+                #     print(f'*** EVENT STOP LOSS OF CHANGE PRICE STOP LOST')
+
+        elif ShareState.equals_order_take_profit_id(order_id):
             print(f"Response PROFIT with order_id {order_id}, status = {status}")
             logger.info(f"Response PROFIT with order_id {order_id}, status = {status}")
             if status in ['CANCELED', 'REJECTED', 'EXPIRED']:
