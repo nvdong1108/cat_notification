@@ -31,6 +31,7 @@ async def process_order_update(order: dict):
             print(f"[process_order_update] not had info order from socket do handle")
             logger.error(f"[process_order_update] not had info order from socket do handle")
             return
+
         logger.info(f"response information order from websocket {order}")
         order_id = order.get('i')  # Order ID
         symbol = order.get('s')  # Symbol

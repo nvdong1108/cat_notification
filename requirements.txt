@@ -5,7 +5,9 @@ asyncio
 python-telegram-bot
 tenacity
 python-binance
-python-binance TA-Lib
 websocket-client
 python-dotenv
 telegram
+pymongo
+pandas_ta
+daemon

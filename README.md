@@ -1,9 +1,17 @@
+# Step 1.  import project
+pip instell -r .\requirements.txt
+
+ 
+
 # build Docker image 
 docker build -t cat-notification .
 
 # run docker
-docker run -d --name  cat-notification-container cat-notification
-docker run -d --name cat-notification -v C:\SourceCode\DongNV\Git\BotTradingBinace\Docker_logs:/logs cat-notification
+docker run -d --name cat-bot-1 cat-notification
+
+
+
+docker run -d --name cat-notification -v C:\SourceCode\DongNV\Git:/logs cat-notification
 
 #đi đên thư mục Source 
 docker exec -it cat-notification sh
@@ -22,4 +30,22 @@ docker push nvdong1108/cat-notification:latest
 docker pull nvdong1108/cat-notification:latest
 # run docker 
 docker run -d --name my-container nvdong1108/cat-notification:latest
+
+# xem log 
+
+docker logs cat-bot-1
+
+
+docker exec -it <container_id_or_name> date
+
+
+
+
+docker run -d --name cat1  -v C:\SourceCode\DongNV\Git\Bot_cat\logs:/logs cat1
+
+/etc/localtime:/etc/localtime:ro -d 
+
+docker run -e TZ=Asia/Ho_Chi_Minh -d cat1
+
+
 

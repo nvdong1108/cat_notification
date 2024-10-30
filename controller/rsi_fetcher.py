@@ -1,4 +1,3 @@
-
 import sys
 import os
 
@@ -19,37 +18,6 @@ from controller.binace_controller import (buy_futures_btcusdt, sell_futures_btcu
 from controller.binace.indicator import fetch_rsi
 from controller.binace_web_socket import start_websocket
 from config.storage import ShareState
-
-
-
-@retry(stop=stop_after_attempt(3), wait=wait_fixed(5))
-def fetch_ohlcv_with_retry(symbol, timeframe, limit):
-    binance = ccxt.binance()
-    return binance.fetch_ohlcv(symbol, timeframe, limit=limit)
-
-
-def fetch_ohlcv(symbol, timeframe, limit=100):
-    ohlcv = fetch_ohlcv_with_retry(symbol, timeframe, limit=limit)
-    df = pd.DataFrame(ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
-    df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
-    return df
-
-
-def calculate_rsi(df, period=14):
-    df['rsi'] = ta.momentum.RSIIndicator(df['close'], window=period).rsi()
-    return df
-
-
-@retry(stop=stop_after_attempt(3), wait=wait_fixed(5))
-def get_current_btc_usdt_price():
-    binance = ccxt.binance()
-    try:
-        ticker = binance.fetch_ticker('BTC/USDT')
-        current_price = ticker['last']
-        return current_price
-    except Exception as e:
-        logger.info(f"Error fetching BTC/USDT price: {e}")
-        return None
 
 
 async def main(symbol='BTC/USDT', period=14, interval=60):
@@ -112,6 +80,9 @@ async def run_all_tasks():
 
 
 if __name__ == "__main__":
+    if sys.platform.startswith('win'):
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
     print("start ...")
     logger.info("\n\n\t===============> BEGIN RUN <===============\n")
     is_valid_order = check_open_order()
@@ -120,6 +91,7 @@ if __name__ == "__main__":
         asyncio.run(run_all_tasks())
     else:
         print("... error because open than more one order")
+
 
 
 

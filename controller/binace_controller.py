@@ -48,33 +48,45 @@ def get_position_information():
     """
     :return:
     """
-    positions = client.futures_position_information(timestamp=synchronize_time())
-    open_positions = [position for position in positions if float(position['positionAmt']) != 0]
-    return open_positions
+    try:
+        positions = client.futures_position_information(timestamp=synchronize_time(),
+                                                        recvWindow=10000)
+        open_positions = [position for position in positions if float(position['positionAmt']) != 0]
+        return open_positions
+    except Exception as e:
+        ms = f"Error at get_position_information: {e}"
+        print_time(ms)
+        logger.error(ms)
+        return None
+    
+    
 
 
 def get_profit_position():
     try:
         open_positions = get_position_information()
-        if open_positions:
-            if len(open_positions) > 1:
-                print("Error: Multiple open positions detected!")
-                logger.error(f"Error: Multiple open positions detected {len(open_positions)} !")
-                return False
-            amt_profit = float(open_positions[0]['unRealizedProfit'])
-            total_amt = float(open_positions[0]['isolatedWallet'])
-            mark_price = round(float(open_positions[0]['markPrice']), 2)
-            profit_percentage = (amt_profit / total_amt) * 100
-            if amt_profit > ShareState.get_condition_change_loss():
-                """ change stop loss"""
-                print_time("todo handle_change_stop_loss")
-                logger.info("todo handle_change_stop_loss")
-                # handle_change_stop_loss(mark_price)
-                # handle_change_profit(mark_price)
+        if open_positions is None:
+            message = f"*** POSITIONS profit None percentage is None "
+            return None
+        
+        if len(open_positions) > 1:
+            print("Error: Multiple open positions detected!")
+            logger.error(f"Error: Multiple open positions detected {len(open_positions)} !")
+            return False
+        amt_profit = float(open_positions[0]['unRealizedProfit'])
+        total_amt = float(open_positions[0]['isolatedWallet'])
+        mark_price = round(float(open_positions[0]['markPrice']), 2)
+        profit_percentage = (amt_profit / total_amt) * 100
+        if amt_profit > ShareState.get_condition_change_loss():
+            """ change stop loss"""
+            print_time("todo handle_change_stop_loss")
+            logger.info("todo handle_change_stop_loss")
+            # handle_change_stop_loss(mark_price)
+            # handle_change_profit(mark_price)
 
-            message = f"*** POSITIONS profit {format_amt(amt_profit)} percentage is {format_percent(profit_percentage)} "
-            print_time(message)
-            logger.info(message)
+        message = f"*** POSITIONS profit {format_amt(amt_profit)} percentage is {format_percent(profit_percentage)} "
+        print_time(message)
+        logger.info(message)
 
     except Exception as e:
         ms = f"Error at get_profit_position: {e}"
