@@ -150,6 +150,12 @@ class ShareState:
     # *********************** GET *********************** #
 
     @classmethod
+    def get_order_id(cls):
+        if cls.order:
+            return cls.order.get('order_id')
+        return None
+
+    @classmethod
     def get_order_status(cls):
         if cls.order:
             return cls.order.get('status')

@@ -21,4 +21,4 @@ COPY ./lib/squeeze_pro.py /usr/local/lib/python3.12/site-packages/pandas_ta/mome
 
 # Chạy ứng dụng Python của bạn
 #CMD ["python", "app.py"]
-CMD ["python", "./indicator/rsi_fetcher.py"]
+CMD ["python", "./main.py"]

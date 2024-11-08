@@ -1,0 +1,32 @@
+time 2024-11-06 08:10:00, Price = 71282 , RSI 1m = 81, max = 81, min  = 81, signal_type = SELL
+Time 2024-11-06 09:15:00, Price = 71960 , RSI 1m = 78 , ADX 1m = 24
+===========> LOSS ,percent (-) 112
+
+time 2024-11-06 09:15:00, Price = 71960 , RSI 1m = 78, max = 78, min  = 61, signal_type = SELL
+Time 2024-11-06 09:30:00, Price = 72754 , RSI 1m = 84 , ADX 1m = 33
+===========> LOSS ,percent (-) 132
+
+time 2024-11-06 09:30:00, Price = 72754 , RSI 1m = 84, max = 84, min  = 61, signal_type = SELL
+Time 2024-11-06 10:00:00, Price = 73939 , RSI 1m = 89 , ADX 1m = 46
+===========> LOSS ,percent (-) 197
+
+time 2024-11-06 10:00:00, Price = 73939 , RSI 1m = 89, max = 89, min  = 67, signal_type = SELL
+Time 2024-11-06 11:20:00, Price = 74852 , RSI 1m = 76 , ADX 1m = 61
+===========> LOSS ,percent (-) 152
+
+time 2024-11-06 11:20:00, Price = 74852 , RSI 1m = 76, max = 77, min  = 68, signal_type = SELL
+Time 2024-11-06 12:00:00, Price = 73959 , RSI 1m = 49 , ADX 1m = 54
+===========> WIN ,percent (+) 148
+
+time 2024-11-06 15:00:00, Price = 72993 , RSI 1m = 25, max = 48, min  = 25, signal_type = BUY
+Time 2024-11-06 16:00:00, Price = 73770 , RSI 1m = 52 , ADX 1m = 39
+===========> WIN ,percent (+) 129
+
+time 2024-11-07 13:10:00, Price = 74465 , RSI 1m = 25, max = 48, min  = 25, signal_type = BUY
+Time 2024-11-07 15:05:00, Price = 75071 , RSI 1m = 61 , ADX 1m = 12
+===========> WIN ,percent (+) 101
+
+time 2024-11-07 22:50:00, Price = 75952 , RSI 1m = 76, max = 76, min  = 51, signal_type = SELL
+Time 2024-11-08 01:35:00, Price = 76617 , RSI 1m = 70 , ADX 1m = 29
+===========> LOSS ,percent (-) 110
+

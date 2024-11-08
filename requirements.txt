@@ -11,3 +11,4 @@ telegram
 pymongo
 pandas_ta
 daemon
+schedule

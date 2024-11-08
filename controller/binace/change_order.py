@@ -78,16 +78,7 @@ def handle_change_stop_loss(mark_price):
         return None
 
 
-def handle_change_profit(mark_price):
-    """
-    1. check condition change
-    2. cancel profit current
-    3. open new profit
-    4. update id profit new
-    :return:
-    """
 
-    return True
 
 
 

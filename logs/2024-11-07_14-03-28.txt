@@ -1,0 +1,1501 @@
+time 2023-11-07 16:35:00, Price = 34764 , RSI 1m = 24, max = 49, min  = 24, signal_type = BUY
+Time 2023-11-08 01:45:00, Price = 35449 , RSI 1m = 78 , ADX 1m = 39
+===========> WIN ,percent (+) 114
+
+time 2023-11-08 01:45:00, Price = 35449 , RSI 1m = 78, max = 86, min  = 65, signal_type = SELL
+Time 2023-11-09 08:45:00, Price = 36055 , RSI 1m = 71 , ADX 1m = 40
+===========> LOSS ,percent (-) 101
+
+time 2023-11-09 09:20:00, Price = 36316 , RSI 1m = 76, max = 76, min  = 55, signal_type = SELL
+Time 2023-11-09 19:15:00, Price = 36961 , RSI 1m = 69 , ADX 1m = 22
+===========> LOSS ,percent (-) 107
+
+time 2023-11-09 21:10:00, Price = 37634 , RSI 1m = 81, max = 81, min  = 46, signal_type = SELL
+Time 2023-11-09 23:05:00, Price = 36948 , RSI 1m = 33 , ADX 1m = 40
+===========> WIN ,percent (+) 114
+
+time 2023-11-09 23:30:00, Price = 36513 , RSI 1m = 25, max = 48, min  = 25, signal_type = BUY
+Time 2023-11-10 18:45:00, Price = 37132 , RSI 1m = 69 , ADX 1m = 38
+===========> WIN ,percent (+) 103
+
+time 2023-11-12 05:10:00, Price = 36819 , RSI 1m = 22, max = 44, min  = 22, signal_type = BUY
+Time 2023-11-14 22:30:00, Price = 35990 , RSI 1m = 19 , ADX 1m = 22
+===========> LOSS ,percent (-) 138
+
+time 2023-11-14 22:30:00, Price = 35990 , RSI 1m = 19, max = 59, min  = 19, signal_type = BUY
+Time 2023-11-15 01:50:00, Price = 35136 , RSI 1m = 14 , ADX 1m = 42
+===========> LOSS ,percent (-) 142
+
+time 2023-11-15 01:50:00, Price = 35136 , RSI 1m = 14, max = 36, min  = 14, signal_type = BUY
+Time 2023-11-15 15:15:00, Price = 35756 , RSI 1m = 68 , ADX 1m = 21
+===========> WIN ,percent (+) 103
+
+time 2023-11-15 18:20:00, Price = 36130 , RSI 1m = 78, max = 78, min  = 50, signal_type = SELL
+Time 2023-11-16 01:10:00, Price = 37092 , RSI 1m = 85 , ADX 1m = 28
+===========> LOSS ,percent (-) 160
+
+time 2023-11-16 01:10:00, Price = 37092 , RSI 1m = 85, max = 85, min  = 54, signal_type = SELL
+Time 2023-11-16 03:05:00, Price = 37704 , RSI 1m = 68 , ADX 1m = 42
+===========> LOSS ,percent (-) 102
+
+time 2023-11-17 02:20:00, Price = 35783 , RSI 1m = 24, max = 42, min  = 24, signal_type = BUY
+Time 2023-11-17 08:05:00, Price = 36385 , RSI 1m = 65 , ADX 1m = 18
+===========> WIN ,percent (+) 100
+
+time 2023-11-17 08:55:00, Price = 36572 , RSI 1m = 75, max = 75, min  = 57, signal_type = SELL
+Time 2023-11-17 21:50:00, Price = 35907 , RSI 1m = 23 , ADX 1m = 24
+===========> WIN ,percent (+) 110
+
+time 2023-11-17 21:50:00, Price = 35907 , RSI 1m = 23, max = 49, min  = 23, signal_type = BUY
+Time 2023-11-18 00:05:00, Price = 36560 , RSI 1m = 70 , ADX 1m = 35
+===========> WIN ,percent (+) 108
+
+time 2023-11-18 14:00:00, Price = 36222 , RSI 1m = 22, max = 51, min  = 22, signal_type = BUY
+Time 2023-11-20 01:45:00, Price = 36829 , RSI 1m = 80 , ADX 1m = 30
+===========> WIN ,percent (+) 101
+
+time 2023-11-20 01:45:00, Price = 36829 , RSI 1m = 80, max = 80, min  = 58, signal_type = SELL
+Time 2023-11-20 06:20:00, Price = 37511 , RSI 1m = 84 , ADX 1m = 42
+===========> LOSS ,percent (-) 113
+
+time 2023-11-20 06:20:00, Price = 37511 , RSI 1m = 84, max = 84, min  = 49, signal_type = SELL
+Time 2023-11-20 21:10:00, Price = 36890 , RSI 1m = 26 , ADX 1m = 20
+===========> WIN ,percent (+) 103
+
+time 2023-11-21 18:25:00, Price = 37213 , RSI 1m = 23, max = 62, min  = 23, signal_type = BUY
+Time 2023-11-21 21:50:00, Price = 36531 , RSI 1m = 10 , ADX 1m = 64
+===========> LOSS ,percent (-) 113
+
+time 2023-11-21 21:50:00, Price = 36531 , RSI 1m = 10, max = 28, min  = 10, signal_type = BUY
+Time 2023-11-21 23:55:00, Price = 37198 , RSI 1m = 65 , ADX 1m = 32
+===========> WIN ,percent (+) 111
+
+time 2023-11-22 06:00:00, Price = 36278 , RSI 1m = 24, max = 40, min  = 24, signal_type = BUY
+Time 2023-11-23 01:15:00, Price = 36974 , RSI 1m = 76 , ADX 1m = 25
+===========> WIN ,percent (+) 115
+
+time 2023-11-23 01:15:00, Price = 36974 , RSI 1m = 76, max = 76, min  = 51, signal_type = SELL
+Time 2023-11-23 03:55:00, Price = 37629 , RSI 1m = 79 , ADX 1m = 50
+===========> LOSS ,percent (-) 109
+
+time 2023-11-23 03:55:00, Price = 37629 , RSI 1m = 79, max = 79, min  = 59, signal_type = SELL
+Time 2023-11-23 22:45:00, Price = 37005 , RSI 1m = 28 , ADX 1m = 37
+===========> WIN ,percent (+) 104
+
+time 2023-11-23 22:50:00, Price = 36922 , RSI 1m = 23, max = 44, min  = 23, signal_type = BUY
+Time 2023-11-24 14:55:00, Price = 37531 , RSI 1m = 75 , ADX 1m = 29
+===========> WIN ,percent (+) 101
+
+time 2023-11-24 14:55:00, Price = 37531 , RSI 1m = 75, max = 75, min  = 45, signal_type = SELL
+Time 2023-11-24 22:20:00, Price = 38156 , RSI 1m = 74 , ADX 1m = 20
+===========> LOSS ,percent (-) 104
+
+time 2023-11-24 22:25:00, Price = 38287 , RSI 1m = 78, max = 78, min  = 45, signal_type = SELL
+Time 2023-11-25 00:00:00, Price = 37680 , RSI 1m = 33 , ADX 1m = 32
+===========> WIN ,percent (+) 101
+
+time 2023-11-26 19:05:00, Price = 37622 , RSI 1m = 25, max = 45, min  = 25, signal_type = BUY
+Time 2023-11-27 18:05:00, Price = 36958 , RSI 1m = 23 , ADX 1m = 42
+===========> LOSS ,percent (-) 110
+
+time 2023-11-27 18:05:00, Price = 36958 , RSI 1m = 23, max = 37, min  = 18, signal_type = BUY
+Time 2023-11-28 23:00:00, Price = 37578 , RSI 1m = 65 , ADX 1m = 29
+===========> WIN ,percent (+) 103
+
+time 2023-11-29 00:20:00, Price = 38180 , RSI 1m = 77, max = 77, min  = 62, signal_type = SELL
+Time 2023-11-30 21:00:00, Price = 37564 , RSI 1m = 30 , ADX 1m = 28
+===========> WIN ,percent (+) 102
+
+time 2023-12-01 08:35:00, Price = 37943 , RSI 1m = 76, max = 76, min  = 40, signal_type = SELL
+Time 2023-12-01 16:15:00, Price = 38579 , RSI 1m = 78 , ADX 1m = 34
+===========> LOSS ,percent (-) 106
+
+time 2023-12-01 16:15:00, Price = 38579 , RSI 1m = 78, max = 78, min  = 47, signal_type = SELL
+Time 2023-12-03 02:05:00, Price = 39224 , RSI 1m = 86 , ADX 1m = 45
+===========> LOSS ,percent (-) 107
+
+time 2023-12-03 02:05:00, Price = 39224 , RSI 1m = 86, max = 86, min  = 58, signal_type = SELL
+Time 2023-12-04 05:20:00, Price = 39928 , RSI 1m = 79 , ADX 1m = 37
+===========> LOSS ,percent (-) 117
+
+time 2023-12-04 05:20:00, Price = 39928 , RSI 1m = 79, max = 79, min  = 61, signal_type = SELL
+Time 2023-12-04 08:20:00, Price = 40651 , RSI 1m = 80 , ADX 1m = 42
+===========> LOSS ,percent (-) 120
+
+time 2023-12-04 08:20:00, Price = 40651 , RSI 1m = 80, max = 80, min  = 57, signal_type = SELL
+Time 2023-12-04 12:15:00, Price = 41295 , RSI 1m = 83 , ADX 1m = 51
+===========> LOSS ,percent (-) 107
+
+time 2023-12-04 12:15:00, Price = 41295 , RSI 1m = 83, max = 83, min  = 52, signal_type = SELL
+Time 2023-12-04 17:35:00, Price = 41924 , RSI 1m = 67 , ADX 1m = 24
+===========> LOSS ,percent (-) 104
+
+time 2023-12-04 22:30:00, Price = 41190 , RSI 1m = 25, max = 49, min  = 25, signal_type = BUY
+Time 2023-12-05 02:00:00, Price = 41799 , RSI 1m = 64 , ADX 1m = 23
+===========> WIN ,percent (+) 101
+
+time 2023-12-05 05:10:00, Price = 42318 , RSI 1m = 75, max = 75, min  = 49, signal_type = SELL
+Time 2023-12-05 08:20:00, Price = 41702 , RSI 1m = 37 , ADX 1m = 22
+===========> WIN ,percent (+) 102
+
+time 2023-12-05 14:20:00, Price = 41523 , RSI 1m = 25, max = 38, min  = 25, signal_type = BUY
+Time 2023-12-05 21:30:00, Price = 42145 , RSI 1m = 70 , ADX 1m = 34
+===========> WIN ,percent (+) 103
+
+time 2023-12-06 00:10:00, Price = 43199 , RSI 1m = 77, max = 77, min  = 60, signal_type = SELL
+Time 2023-12-06 01:35:00, Price = 43899 , RSI 1m = 71 , ADX 1m = 60
+===========> LOSS ,percent (-) 116
+
+time 2023-12-06 05:25:00, Price = 44428 , RSI 1m = 75, max = 75, min  = 55, signal_type = SELL
+Time 2023-12-06 08:45:00, Price = 43795 , RSI 1m = 36 , ADX 1m = 11
+===========> WIN ,percent (+) 105
+
+time 2023-12-07 15:20:00, Price = 43688 , RSI 1m = 23, max = 50, min  = 23, signal_type = BUY
+Time 2023-12-07 16:25:00, Price = 43083 , RSI 1m = 8 , ADX 1m = 53
+===========> LOSS ,percent (-) 100
+
+time 2023-12-07 16:25:00, Price = 43083 , RSI 1m = 8, max = 33, min  = 8, signal_type = BUY
+Time 2023-12-07 22:20:00, Price = 43773 , RSI 1m = 76 , ADX 1m = 28
+===========> WIN ,percent (+) 114
+
+time 2023-12-07 22:20:00, Price = 43773 , RSI 1m = 76, max = 76, min  = 56, signal_type = SELL
+Time 2023-12-08 02:25:00, Price = 43160 , RSI 1m = 31 , ADX 1m = 32
+===========> WIN ,percent (+) 102
+
+time 2023-12-08 14:20:00, Price = 43219 , RSI 1m = 24, max = 44, min  = 24, signal_type = BUY
+Time 2023-12-08 21:35:00, Price = 43918 , RSI 1m = 68 , ADX 1m = 23
+===========> WIN ,percent (+) 116
+
+time 2023-12-09 03:30:00, Price = 44175 , RSI 1m = 78, max = 78, min  = 62, signal_type = SELL
+Time 2023-12-11 08:00:00, Price = 43565 , RSI 1m = 28 , ADX 1m = 32
+===========> WIN ,percent (+) 101
+
+time 2023-12-11 08:05:00, Price = 43384 , RSI 1m = 20, max = 47, min  = 20, signal_type = BUY
+Time 2023-12-11 09:05:00, Price = 42736 , RSI 1m = 14 , ADX 1m = 61
+===========> LOSS ,percent (-) 108
+
+time 2023-12-11 09:05:00, Price = 42736 , RSI 1m = 14, max = 33, min  = 14, signal_type = BUY
+Time 2023-12-11 09:10:00, Price = 41725 , RSI 1m = 7 , ADX 1m = 64
+===========> LOSS ,percent (-) 168
+
+time 2023-12-11 09:10:00, Price = 41725 , RSI 1m = 7, max = 33, min  = 7, signal_type = BUY
+Time 2023-12-11 10:30:00, Price = 42376 , RSI 1m = 46 , ADX 1m = 67
+===========> WIN ,percent (+) 108
+
+time 2023-12-11 23:15:00, Price = 41420 , RSI 1m = 23, max = 44, min  = 23, signal_type = BUY
+Time 2023-12-12 01:25:00, Price = 40745 , RSI 1m = 23 , ADX 1m = 49
+===========> LOSS ,percent (-) 112
+
+time 2023-12-12 01:25:00, Price = 40745 , RSI 1m = 23, max = 44, min  = 23, signal_type = BUY
+Time 2023-12-12 05:45:00, Price = 41365 , RSI 1m = 65 , ADX 1m = 29
+===========> WIN ,percent (+) 103
+
+time 2023-12-12 11:55:00, Price = 41411 , RSI 1m = 25, max = 47, min  = 25, signal_type = BUY
+Time 2023-12-12 14:45:00, Price = 42026 , RSI 1m = 70 , ADX 1m = 33
+===========> WIN ,percent (+) 102
+
+time 2023-12-12 21:50:00, Price = 41401 , RSI 1m = 23, max = 52, min  = 23, signal_type = BUY
+Time 2023-12-13 00:55:00, Price = 40734 , RSI 1m = 29 , ADX 1m = 45
+===========> LOSS ,percent (-) 111
+
+time 2023-12-13 08:25:00, Price = 41033 , RSI 1m = 25, max = 59, min  = 25, signal_type = BUY
+Time 2023-12-13 22:00:00, Price = 41815 , RSI 1m = 77 , ADX 1m = 23
+===========> WIN ,percent (+) 130
+
+time 2023-12-13 22:00:00, Price = 41815 , RSI 1m = 77, max = 77, min  = 53, signal_type = SELL
+Time 2023-12-14 02:30:00, Price = 42475 , RSI 1m = 73 , ADX 1m = 20
+===========> LOSS ,percent (-) 110
+
+time 2023-12-14 02:35:00, Price = 42796 , RSI 1m = 82, max = 82, min  = 57, signal_type = SELL
+Time 2023-12-14 20:30:00, Price = 41960 , RSI 1m = 16 , ADX 1m = 36
+===========> WIN ,percent (+) 139
+
+time 2023-12-14 20:30:00, Price = 41960 , RSI 1m = 16, max = 60, min  = 16, signal_type = BUY
+Time 2023-12-14 20:55:00, Price = 42564 , RSI 1m = 43 , ADX 1m = 45
+===========> WIN ,percent (+) 100
+
+time 2023-12-15 00:30:00, Price = 43159 , RSI 1m = 76, max = 76, min  = 53, signal_type = SELL
+Time 2023-12-15 13:15:00, Price = 42556 , RSI 1m = 30 , ADX 1m = 50
+===========> WIN ,percent (+) 100
+
+time 2023-12-15 16:00:00, Price = 42984 , RSI 1m = 75, max = 75, min  = 48, signal_type = SELL
+Time 2023-12-15 20:35:00, Price = 42321 , RSI 1m = 22 , ADX 1m = 48
+===========> WIN ,percent (+) 110
+
+time 2023-12-15 20:35:00, Price = 42321 , RSI 1m = 22, max = 44, min  = 22, signal_type = BUY
+Time 2023-12-17 21:30:00, Price = 41705 , RSI 1m = 30 , ADX 1m = 17
+===========> LOSS ,percent (-) 102
+
+time 2023-12-18 00:00:00, Price = 42254 , RSI 1m = 75, max = 75, min  = 45, signal_type = SELL
+Time 2023-12-18 06:20:00, Price = 41640 , RSI 1m = 28 , ADX 1m = 35
+===========> WIN ,percent (+) 102
+
+time 2023-12-18 06:30:00, Price = 41301 , RSI 1m = 16, max = 39, min  = 16, signal_type = BUY
+Time 2023-12-18 17:30:00, Price = 40699 , RSI 1m = 27 , ADX 1m = 30
+===========> LOSS ,percent (-) 100
+
+time 2023-12-18 21:45:00, Price = 41772 , RSI 1m = 75, max = 75, min  = 57, signal_type = SELL
+Time 2023-12-19 04:05:00, Price = 42427 , RSI 1m = 86 , ADX 1m = 40
+===========> LOSS ,percent (-) 109
+
+time 2023-12-19 04:05:00, Price = 42427 , RSI 1m = 86, max = 86, min  = 50, signal_type = SELL
+Time 2023-12-19 08:45:00, Price = 43060 , RSI 1m = 69 , ADX 1m = 46
+===========> LOSS ,percent (-) 105
+
+time 2023-12-19 08:50:00, Price = 43275 , RSI 1m = 76, max = 76, min  = 49, signal_type = SELL
+Time 2023-12-19 21:10:00, Price = 42649 , RSI 1m = 20 , ADX 1m = 19
+===========> WIN ,percent (+) 104
+
+time 2023-12-19 21:10:00, Price = 42649 , RSI 1m = 20, max = 51, min  = 20, signal_type = BUY
+Time 2023-12-20 00:10:00, Price = 42038 , RSI 1m = 23 , ADX 1m = 36
+===========> LOSS ,percent (-) 101
+
+time 2023-12-20 00:10:00, Price = 42038 , RSI 1m = 23, max = 45, min  = 23, signal_type = BUY
+Time 2023-12-20 11:30:00, Price = 42656 , RSI 1m = 72 , ADX 1m = 27
+===========> WIN ,percent (+) 103
+
+time 2023-12-20 11:35:00, Price = 42724 , RSI 1m = 76, max = 76, min  = 47, signal_type = SELL
+Time 2023-12-20 20:25:00, Price = 43430 , RSI 1m = 77 , ADX 1m = 27
+===========> LOSS ,percent (-) 117
+
+time 2023-12-20 20:25:00, Price = 43430 , RSI 1m = 77, max = 77, min  = 52, signal_type = SELL
+Time 2023-12-20 21:25:00, Price = 44112 , RSI 1m = 76 , ADX 1m = 52
+===========> LOSS ,percent (-) 113
+
+time 2023-12-20 21:25:00, Price = 44112 , RSI 1m = 76, max = 82, min  = 66, signal_type = SELL
+Time 2023-12-21 03:05:00, Price = 43405 , RSI 1m = 20 , ADX 1m = 25
+===========> WIN ,percent (+) 117
+
+time 2023-12-21 03:05:00, Price = 43405 , RSI 1m = 20, max = 57, min  = 20, signal_type = BUY
+Time 2023-12-21 17:50:00, Price = 44040 , RSI 1m = 71 , ADX 1m = 26
+===========> WIN ,percent (+) 105
+
+time 2023-12-21 21:55:00, Price = 43547 , RSI 1m = 25, max = 48, min  = 25, signal_type = BUY
+Time 2023-12-22 08:35:00, Price = 44242 , RSI 1m = 75 , ADX 1m = 21
+===========> WIN ,percent (+) 115
+
+time 2023-12-22 08:35:00, Price = 44242 , RSI 1m = 75, max = 75, min  = 44, signal_type = SELL
+Time 2023-12-22 14:55:00, Price = 43614 , RSI 1m = 27 , ADX 1m = 27
+===========> WIN ,percent (+) 104
+
+time 2023-12-23 01:30:00, Price = 43960 , RSI 1m = 76, max = 76, min  = 56, signal_type = SELL
+Time 2023-12-25 05:10:00, Price = 43058 , RSI 1m = 18 , ADX 1m = 27
+===========> WIN ,percent (+) 150
+
+time 2023-12-25 05:10:00, Price = 43058 , RSI 1m = 18, max = 53, min  = 18, signal_type = BUY
+Time 2023-12-25 19:55:00, Price = 43700 , RSI 1m = 80 , ADX 1m = 23
+===========> WIN ,percent (+) 107
+
+time 2023-12-25 19:55:00, Price = 43700 , RSI 1m = 80, max = 80, min  = 42, signal_type = SELL
+Time 2023-12-26 12:30:00, Price = 42895 , RSI 1m = 11 , ADX 1m = 39
+===========> WIN ,percent (+) 134
+
+time 2023-12-26 12:30:00, Price = 42895 , RSI 1m = 11, max = 50, min  = 11, signal_type = BUY
+Time 2023-12-26 23:20:00, Price = 42218 , RSI 1m = 26 , ADX 1m = 34
+===========> LOSS ,percent (-) 112
+
+time 2023-12-27 00:35:00, Price = 41836 , RSI 1m = 24, max = 44, min  = 24, signal_type = BUY
+Time 2023-12-27 05:10:00, Price = 42479 , RSI 1m = 71 , ADX 1m = 19
+===========> WIN ,percent (+) 107
+
+time 2023-12-27 05:15:00, Price = 42564 , RSI 1m = 76, max = 76, min  = 56, signal_type = SELL
+Time 2023-12-27 17:35:00, Price = 43179 , RSI 1m = 84 , ADX 1m = 32
+===========> LOSS ,percent (-) 102
+
+time 2023-12-27 17:35:00, Price = 43179 , RSI 1m = 84, max = 84, min  = 59, signal_type = SELL
+Time 2023-12-28 07:35:00, Price = 43791 , RSI 1m = 77 , ADX 1m = 21
+===========> LOSS ,percent (-) 102
+
+time 2023-12-28 07:35:00, Price = 43791 , RSI 1m = 77, max = 77, min  = 48, signal_type = SELL
+Time 2023-12-28 12:25:00, Price = 43190 , RSI 1m = 32 , ADX 1m = 27
+===========> WIN ,percent (+) 100
+
+time 2023-12-28 20:10:00, Price = 42724 , RSI 1m = 24, max = 39, min  = 24, signal_type = BUY
+Time 2023-12-29 23:50:00, Price = 42090 , RSI 1m = 27 , ADX 1m = 49
+===========> LOSS ,percent (-) 105
+
+time 2023-12-29 23:55:00, Price = 42002 , RSI 1m = 24, max = 35, min  = 24, signal_type = BUY
+Time 2023-12-31 00:30:00, Price = 42609 , RSI 1m = 64 , ADX 1m = 35
+===========> WIN ,percent (+) 101
+
+time 2023-12-31 14:20:00, Price = 42474 , RSI 1m = 76, max = 76, min  = 52, signal_type = SELL
+Time 2024-01-02 01:10:00, Price = 43148 , RSI 1m = 78 , ADX 1m = 21
+===========> LOSS ,percent (-) 112
+
+time 2024-01-02 01:10:00, Price = 43148 , RSI 1m = 78, max = 78, min  = 46, signal_type = SELL
+Time 2024-01-02 03:25:00, Price = 43750 , RSI 1m = 80 , ADX 1m = 60
+===========> LOSS ,percent (-) 100
+
+time 2024-01-02 03:25:00, Price = 43750 , RSI 1m = 80, max = 88, min  = 77, signal_type = SELL
+Time 2024-01-02 07:05:00, Price = 44468 , RSI 1m = 83 , ADX 1m = 48
+===========> LOSS ,percent (-) 119
+
+time 2024-01-02 07:05:00, Price = 44468 , RSI 1m = 83, max = 83, min  = 68, signal_type = SELL
+Time 2024-01-02 07:55:00, Price = 45179 , RSI 1m = 78 , ADX 1m = 66
+===========> LOSS ,percent (-) 118
+
+time 2024-01-02 07:55:00, Price = 45179 , RSI 1m = 78, max = 88, min  = 68, signal_type = SELL
+Time 2024-01-02 15:20:00, Price = 45843 , RSI 1m = 72 , ADX 1m = 33
+===========> LOSS ,percent (-) 110
+
+time 2024-01-03 18:10:00, Price = 44757 , RSI 1m = 25, max = 51, min  = 25, signal_type = BUY
+Time 2024-01-03 18:50:00, Price = 44100 , RSI 1m = 22 , ADX 1m = 45
+===========> LOSS ,percent (-) 109
+
+time 2024-01-03 18:50:00, Price = 44100 , RSI 1m = 22, max = 39, min  = 21, signal_type = BUY
+Time 2024-01-03 19:00:00, Price = 42967 , RSI 1m = 12 , ADX 1m = 51
+===========> LOSS ,percent (-) 188
+
+time 2024-01-03 19:00:00, Price = 42967 , RSI 1m = 12, max = 31, min  = 12, signal_type = BUY
+Time 2024-01-03 19:05:00, Price = 40436 , RSI 1m = 5 , ADX 1m = 54
+===========> LOSS ,percent (-) 421
+
+time 2024-01-03 19:05:00, Price = 40436 , RSI 1m = 5, max = 31, min  = 5, signal_type = BUY
+Time 2024-01-03 19:10:00, Price = 41948 , RSI 1m = 29 , ADX 1m = 57
+===========> WIN ,percent (+) 252
+
+time 2024-01-04 22:10:00, Price = 43821 , RSI 1m = 75, max = 75, min  = 47, signal_type = SELL
+Time 2024-01-05 03:35:00, Price = 44454 , RSI 1m = 69 , ADX 1m = 19
+===========> LOSS ,percent (-) 105
+
+time 2024-01-05 08:45:00, Price = 43173 , RSI 1m = 14, max = 51, min  = 14, signal_type = BUY
+Time 2024-01-05 13:50:00, Price = 43879 , RSI 1m = 67 , ADX 1m = 12
+===========> WIN ,percent (+) 117
+
+time 2024-01-06 03:50:00, Price = 44126 , RSI 1m = 78, max = 78, min  = 54, signal_type = SELL
+Time 2024-01-06 13:50:00, Price = 43508 , RSI 1m = 32 , ADX 1m = 47
+===========> WIN ,percent (+) 103
+
+time 2024-01-07 07:45:00, Price = 44232 , RSI 1m = 78, max = 78, min  = 58, signal_type = SELL
+Time 2024-01-08 06:40:00, Price = 43599 , RSI 1m = 29 , ADX 1m = 41
+===========> WIN ,percent (+) 105
+
+time 2024-01-08 09:50:00, Price = 43295 , RSI 1m = 24, max = 51, min  = 24, signal_type = BUY
+Time 2024-01-08 13:20:00, Price = 44050 , RSI 1m = 77 , ADX 1m = 22
+===========> WIN ,percent (+) 125
+
+time 2024-01-08 13:20:00, Price = 44050 , RSI 1m = 77, max = 77, min  = 48, signal_type = SELL
+Time 2024-01-08 19:00:00, Price = 44963 , RSI 1m = 87 , ADX 1m = 31
+===========> LOSS ,percent (-) 152
+
+time 2024-01-08 19:00:00, Price = 44963 , RSI 1m = 87, max = 87, min  = 55, signal_type = SELL
+Time 2024-01-09 00:55:00, Price = 45643 , RSI 1m = 79 , ADX 1m = 41
+===========> LOSS ,percent (-) 113
+
+time 2024-01-09 00:55:00, Price = 45643 , RSI 1m = 79, max = 79, min  = 54, signal_type = SELL
+Time 2024-01-09 01:35:00, Price = 46664 , RSI 1m = 85 , ADX 1m = 60
+===========> LOSS ,percent (-) 170
+
+time 2024-01-09 01:35:00, Price = 46664 , RSI 1m = 85, max = 85, min  = 72, signal_type = SELL
+Time 2024-01-10 04:10:00, Price = 47983 , RSI 1m = 84 , ADX 1m = 16
+===========> LOSS ,percent (-) 219
+
+time 2024-01-10 04:10:00, Price = 47983 , RSI 1m = 84, max = 84, min  = 41, signal_type = SELL
+Time 2024-01-10 04:15:00, Price = 46543 , RSI 1m = 45 , ADX 1m = 15
+===========> WIN ,percent (+) 240
+
+time 2024-01-10 15:50:00, Price = 45535 , RSI 1m = 24, max = 44, min  = 24, signal_type = BUY
+Time 2024-01-10 19:50:00, Price = 44705 , RSI 1m = 18 , ADX 1m = 47
+===========> LOSS ,percent (-) 138
+
+time 2024-01-10 19:50:00, Price = 44705 , RSI 1m = 18, max = 52, min  = 18, signal_type = BUY
+Time 2024-01-10 21:25:00, Price = 45331 , RSI 1m = 57 , ADX 1m = 27
+===========> WIN ,percent (+) 104
+
+time 2024-01-11 00:40:00, Price = 46299 , RSI 1m = 77, max = 77, min  = 49, signal_type = SELL
+Time 2024-01-11 03:10:00, Price = 45553 , RSI 1m = 33 , ADX 1m = 22
+===========> WIN ,percent (+) 124
+
+time 2024-01-11 06:10:00, Price = 47491 , RSI 1m = 75, max = 75, min  = 58, signal_type = SELL
+Time 2024-01-11 06:25:00, Price = 46827 , RSI 1m = 54 , ADX 1m = 28
+===========> WIN ,percent (+) 110
+
+time 2024-01-11 12:40:00, Price = 46027 , RSI 1m = 23, max = 47, min  = 23, signal_type = BUY
+Time 2024-01-11 17:40:00, Price = 46725 , RSI 1m = 77 , ADX 1m = 30
+===========> WIN ,percent (+) 116
+
+time 2024-01-11 17:40:00, Price = 46725 , RSI 1m = 77, max = 77, min  = 49, signal_type = SELL
+Time 2024-01-11 19:50:00, Price = 47359 , RSI 1m = 68 , ADX 1m = 39
+===========> LOSS ,percent (-) 105
+
+time 2024-01-11 21:40:00, Price = 48569 , RSI 1m = 80, max = 80, min  = 57, signal_type = SELL
+Time 2024-01-11 22:15:00, Price = 47621 , RSI 1m = 46 , ADX 1m = 26
+===========> WIN ,percent (+) 158
+
+time 2024-01-12 22:20:00, Price = 44772 , RSI 1m = 23, max = 41, min  = 23, signal_type = BUY
+Time 2024-01-12 23:15:00, Price = 44036 , RSI 1m = 23 , ADX 1m = 49
+===========> LOSS ,percent (-) 122
+
+time 2024-01-12 23:15:00, Price = 44036 , RSI 1m = 23, max = 35, min  = 23, signal_type = BUY
+Time 2024-01-12 23:50:00, Price = 43275 , RSI 1m = 25 , ADX 1m = 57
+===========> LOSS ,percent (-) 126
+
+time 2024-01-12 23:50:00, Price = 43275 , RSI 1m = 25, max = 35, min  = 21, signal_type = BUY
+Time 2024-01-13 01:00:00, Price = 43905 , RSI 1m = 48 , ADX 1m = 50
+===========> WIN ,percent (+) 105
+
+time 2024-01-13 05:00:00, Price = 42529 , RSI 1m = 22, max = 53, min  = 22, signal_type = BUY
+Time 2024-01-13 05:25:00, Price = 41906 , RSI 1m = 19 , ADX 1m = 48
+===========> LOSS ,percent (-) 103
+
+time 2024-01-13 05:25:00, Price = 41906 , RSI 1m = 19, max = 43, min  = 19, signal_type = BUY
+Time 2024-01-13 05:55:00, Price = 42517 , RSI 1m = 39 , ADX 1m = 56
+===========> WIN ,percent (+) 101
+
+time 2024-01-13 17:10:00, Price = 42713 , RSI 1m = 25, max = 45, min  = 25, signal_type = BUY
+Time 2024-01-15 06:05:00, Price = 42094 , RSI 1m = 34 , ADX 1m = 42
+===========> LOSS ,percent (-) 103
+
+time 2024-01-15 21:50:00, Price = 42206 , RSI 1m = 24, max = 54, min  = 24, signal_type = BUY
+Time 2024-01-16 01:20:00, Price = 42932 , RSI 1m = 71 , ADX 1m = 36
+===========> WIN ,percent (+) 121
+
+time 2024-01-16 01:25:00, Price = 43171 , RSI 1m = 78, max = 78, min  = 59, signal_type = SELL
+Time 2024-01-16 05:10:00, Price = 42488 , RSI 1m = 26 , ADX 1m = 18
+===========> WIN ,percent (+) 113
+
+time 2024-01-16 05:15:00, Price = 42465 , RSI 1m = 25, max = 44, min  = 25, signal_type = BUY
+Time 2024-01-16 16:20:00, Price = 43154 , RSI 1m = 70 , ADX 1m = 38
+===========> WIN ,percent (+) 114
+
+time 2024-01-16 21:35:00, Price = 42375 , RSI 1m = 19, max = 43, min  = 19, signal_type = BUY
+Time 2024-01-16 22:15:00, Price = 43006 , RSI 1m = 58 , ADX 1m = 32
+===========> WIN ,percent (+) 105
+
+time 2024-01-18 17:45:00, Price = 42528 , RSI 1m = 23, max = 48, min  = 23, signal_type = BUY
+Time 2024-01-18 23:45:00, Price = 41828 , RSI 1m = 15 , ADX 1m = 28
+===========> LOSS ,percent (-) 116
+
+time 2024-01-18 23:45:00, Price = 41828 , RSI 1m = 15, max = 48, min  = 15, signal_type = BUY
+Time 2024-01-19 02:50:00, Price = 41161 , RSI 1m = 32 , ADX 1m = 39
+===========> LOSS ,percent (-) 111
+
+time 2024-01-19 03:30:00, Price = 40756 , RSI 1m = 25, max = 39, min  = 25, signal_type = BUY
+Time 2024-01-19 13:40:00, Price = 41358 , RSI 1m = 73 , ADX 1m = 17
+===========> WIN ,percent (+) 100
+
+time 2024-01-19 13:45:00, Price = 41459 , RSI 1m = 80, max = 80, min  = 58, signal_type = SELL
+Time 2024-01-19 22:25:00, Price = 40826 , RSI 1m = 34 , ADX 1m = 24
+===========> WIN ,percent (+) 105
+
+time 2024-01-19 23:40:00, Price = 40373 , RSI 1m = 25, max = 47, min  = 25, signal_type = BUY
+Time 2024-01-20 00:35:00, Price = 41062 , RSI 1m = 63 , ADX 1m = 27
+===========> WIN ,percent (+) 114
+
+time 2024-01-20 01:45:00, Price = 41622 , RSI 1m = 76, max = 76, min  = 60, signal_type = SELL
+Time 2024-01-22 11:25:00, Price = 41007 , RSI 1m = 25 , ADX 1m = 43
+===========> WIN ,percent (+) 102
+
+time 2024-01-22 11:25:00, Price = 41007 , RSI 1m = 25, max = 40, min  = 25, signal_type = BUY
+Time 2024-01-22 17:25:00, Price = 40376 , RSI 1m = 22 , ADX 1m = 41
+===========> LOSS ,percent (-) 105
+
+time 2024-01-22 17:25:00, Price = 40376 , RSI 1m = 22, max = 47, min  = 22, signal_type = BUY
+Time 2024-01-22 20:05:00, Price = 41143 , RSI 1m = 70 , ADX 1m = 18
+===========> WIN ,percent (+) 127
+
+time 2024-01-23 02:40:00, Price = 39553 , RSI 1m = 24, max = 46, min  = 24, signal_type = BUY
+Time 2024-01-23 03:25:00, Price = 40236 , RSI 1m = 54 , ADX 1m = 32
+===========> WIN ,percent (+) 113
+
+time 2024-01-23 14:50:00, Price = 39688 , RSI 1m = 24, max = 45, min  = 24, signal_type = BUY
+Time 2024-01-23 16:25:00, Price = 38922 , RSI 1m = 20 , ADX 1m = 55
+===========> LOSS ,percent (-) 127
+
+time 2024-01-23 16:25:00, Price = 38922 , RSI 1m = 20, max = 30, min  = 18, signal_type = BUY
+Time 2024-01-24 00:30:00, Price = 39588 , RSI 1m = 71 , ADX 1m = 33
+===========> WIN ,percent (+) 111
+
+time 2024-01-24 07:45:00, Price = 40090 , RSI 1m = 75, max = 75, min  = 62, signal_type = SELL
+Time 2024-01-26 18:00:00, Price = 40855 , RSI 1m = 78 , ADX 1m = 38
+===========> LOSS ,percent (-) 127
+
+time 2024-01-26 18:00:00, Price = 40855 , RSI 1m = 78, max = 78, min  = 47, signal_type = SELL
+Time 2024-01-26 21:55:00, Price = 41581 , RSI 1m = 73 , ADX 1m = 25
+===========> LOSS ,percent (-) 121
+
+time 2024-01-27 14:15:00, Price = 41637 , RSI 1m = 25, max = 48, min  = 25, signal_type = BUY
+Time 2024-01-28 11:00:00, Price = 42293 , RSI 1m = 78 , ADX 1m = 23
+===========> WIN ,percent (+) 109
+
+time 2024-01-28 11:00:00, Price = 42293 , RSI 1m = 78, max = 78, min  = 49, signal_type = SELL
+Time 2024-01-29 03:10:00, Price = 41686 , RSI 1m = 29 , ADX 1m = 51
+===========> WIN ,percent (+) 101
+
+time 2024-01-29 10:15:00, Price = 42419 , RSI 1m = 76, max = 76, min  = 59, signal_type = SELL
+Time 2024-01-29 23:30:00, Price = 43107 , RSI 1m = 78 , ADX 1m = 42
+===========> LOSS ,percent (-) 114
+
+time 2024-01-29 23:30:00, Price = 43107 , RSI 1m = 78, max = 78, min  = 55, signal_type = SELL
+Time 2024-01-30 09:40:00, Price = 43708 , RSI 1m = 73 , ADX 1m = 44
+===========> LOSS ,percent (-) 100
+
+time 2024-01-30 19:15:00, Price = 43698 , RSI 1m = 78, max = 78, min  = 54, signal_type = SELL
+Time 2024-01-31 06:25:00, Price = 42874 , RSI 1m = 15 , ADX 1m = 36
+===========> WIN ,percent (+) 137
+
+time 2024-01-31 06:25:00, Price = 42874 , RSI 1m = 15, max = 43, min  = 15, signal_type = BUY
+Time 2024-01-31 23:10:00, Price = 43496 , RSI 1m = 76 , ADX 1m = 39
+===========> WIN ,percent (+) 103
+
+time 2024-01-31 23:10:00, Price = 43496 , RSI 1m = 76, max = 76, min  = 55, signal_type = SELL
+Time 2024-02-01 03:05:00, Price = 42855 , RSI 1m = 26 , ADX 1m = 30
+===========> WIN ,percent (+) 106
+
+time 2024-02-01 03:55:00, Price = 42534 , RSI 1m = 25, max = 37, min  = 25, signal_type = BUY
+Time 2024-02-01 08:35:00, Price = 41907 , RSI 1m = 20 , ADX 1m = 39
+===========> LOSS ,percent (-) 104
+
+time 2024-02-01 08:35:00, Price = 41907 , RSI 1m = 20, max = 45, min  = 20, signal_type = BUY
+Time 2024-02-01 21:35:00, Price = 42507 , RSI 1m = 73 , ADX 1m = 24
+===========> WIN ,percent (+) 100
+
+time 2024-02-01 21:50:00, Price = 42550 , RSI 1m = 75, max = 75, min  = 55, signal_type = SELL
+Time 2024-02-02 02:45:00, Price = 43156 , RSI 1m = 69 , ADX 1m = 15
+===========> LOSS ,percent (-) 101
+
+time 2024-02-02 07:15:00, Price = 43303 , RSI 1m = 77, max = 77, min  = 55, signal_type = SELL
+Time 2024-02-02 20:45:00, Price = 42669 , RSI 1m = 22 , ADX 1m = 25
+===========> WIN ,percent (+) 105
+
+time 2024-02-02 20:45:00, Price = 42669 , RSI 1m = 22, max = 50, min  = 22, signal_type = BUY
+Time 2024-02-02 23:00:00, Price = 43382 , RSI 1m = 72 , ADX 1m = 33
+===========> WIN ,percent (+) 118
+
+time 2024-02-03 07:25:00, Price = 43341 , RSI 1m = 75, max = 75, min  = 54, signal_type = SELL
+Time 2024-02-04 13:55:00, Price = 42729 , RSI 1m = 24 , ADX 1m = 60
+===========> WIN ,percent (+) 102
+
+time 2024-02-04 13:55:00, Price = 42729 , RSI 1m = 24, max = 49, min  = 24, signal_type = BUY
+Time 2024-02-05 20:15:00, Price = 43347 , RSI 1m = 68 , ADX 1m = 25
+===========> WIN ,percent (+) 103
+
+time 2024-02-05 22:15:00, Price = 42844 , RSI 1m = 24, max = 55, min  = 24, signal_type = BUY
+Time 2024-02-08 00:25:00, Price = 43531 , RSI 1m = 78 , ADX 1m = 27
+===========> WIN ,percent (+) 114
+
+time 2024-02-08 00:25:00, Price = 43531 , RSI 1m = 78, max = 78, min  = 48, signal_type = SELL
+Time 2024-02-08 03:20:00, Price = 44137 , RSI 1m = 81 , ADX 1m = 29
+===========> LOSS ,percent (-) 101
+
+time 2024-02-08 03:20:00, Price = 44137 , RSI 1m = 81, max = 81, min  = 45, signal_type = SELL
+Time 2024-02-08 16:35:00, Price = 44747 , RSI 1m = 65 , ADX 1m = 23
+===========> LOSS ,percent (-) 101
+
+time 2024-02-08 21:10:00, Price = 45159 , RSI 1m = 78, max = 78, min  = 47, signal_type = SELL
+Time 2024-02-09 09:25:00, Price = 45775 , RSI 1m = 81 , ADX 1m = 33
+===========> LOSS ,percent (-) 102
+
+time 2024-02-09 09:25:00, Price = 45775 , RSI 1m = 81, max = 81, min  = 53, signal_type = SELL
+Time 2024-02-09 15:15:00, Price = 46385 , RSI 1m = 64 , ADX 1m = 21
+===========> LOSS ,percent (-) 101
+
+time 2024-02-09 18:45:00, Price = 47128 , RSI 1m = 78, max = 78, min  = 58, signal_type = SELL
+Time 2024-02-10 01:00:00, Price = 47760 , RSI 1m = 70 , ADX 1m = 25
+===========> LOSS ,percent (-) 105
+
+time 2024-02-10 01:20:00, Price = 48128 , RSI 1m = 77, max = 77, min  = 58, signal_type = SELL
+Time 2024-02-10 02:00:00, Price = 47512 , RSI 1m = 44 , ADX 1m = 34
+===========> WIN ,percent (+) 102
+
+time 2024-02-10 17:55:00, Price = 46872 , RSI 1m = 25, max = 49, min  = 25, signal_type = BUY
+Time 2024-02-11 02:30:00, Price = 47549 , RSI 1m = 79 , ADX 1m = 38
+===========> WIN ,percent (+) 112
+
+time 2024-02-11 02:30:00, Price = 47549 , RSI 1m = 79, max = 79, min  = 56, signal_type = SELL
+Time 2024-02-11 10:30:00, Price = 48179 , RSI 1m = 82 , ADX 1m = 30
+===========> LOSS ,percent (-) 105
+
+time 2024-02-11 10:30:00, Price = 48179 , RSI 1m = 82, max = 82, min  = 52, signal_type = SELL
+Time 2024-02-12 21:55:00, Price = 48815 , RSI 1m = 88 , ADX 1m = 39
+===========> LOSS ,percent (-) 106
+
+time 2024-02-12 21:55:00, Price = 48815 , RSI 1m = 88, max = 88, min  = 62, signal_type = SELL
+Time 2024-02-12 22:35:00, Price = 49507 , RSI 1m = 80 , ADX 1m = 59
+===========> LOSS ,percent (-) 115
+
+time 2024-02-12 22:35:00, Price = 49507 , RSI 1m = 80, max = 91, min  = 65, signal_type = SELL
+Time 2024-02-13 00:15:00, Price = 50120 , RSI 1m = 75 , ADX 1m = 42
+===========> LOSS ,percent (-) 102
+
+time 2024-02-13 00:15:00, Price = 50120 , RSI 1m = 75, max = 75, min  = 59, signal_type = SELL
+Time 2024-02-13 21:05:00, Price = 49438 , RSI 1m = 33 , ADX 1m = 32
+===========> WIN ,percent (+) 113
+
+time 2024-02-13 21:20:00, Price = 48701 , RSI 1m = 21, max = 44, min  = 21, signal_type = BUY
+Time 2024-02-14 03:35:00, Price = 49303 , RSI 1m = 62 , ADX 1m = 14
+===========> WIN ,percent (+) 100
+
+time 2024-02-14 15:50:00, Price = 50237 , RSI 1m = 80, max = 80, min  = 54, signal_type = SELL
+Time 2024-02-14 16:05:00, Price = 50988 , RSI 1m = 90 , ADX 1m = 51
+===========> LOSS ,percent (-) 125
+
+time 2024-02-14 16:05:00, Price = 50988 , RSI 1m = 90, max = 90, min  = 55, signal_type = SELL
+Time 2024-02-14 16:45:00, Price = 51672 , RSI 1m = 92 , ADX 1m = 69
+===========> LOSS ,percent (-) 113
+
+time 2024-02-14 16:45:00, Price = 51672 , RSI 1m = 92, max = 92, min  = 88, signal_type = SELL
+Time 2024-02-15 07:20:00, Price = 52379 , RSI 1m = 82 , ADX 1m = 38
+===========> LOSS ,percent (-) 117
+
+time 2024-02-15 07:20:00, Price = 52379 , RSI 1m = 82, max = 82, min  = 52, signal_type = SELL
+Time 2024-02-15 08:30:00, Price = 51762 , RSI 1m = 33 , ADX 1m = 34
+===========> WIN ,percent (+) 102
+
+time 2024-02-16 04:55:00, Price = 51349 , RSI 1m = 24, max = 44, min  = 24, signal_type = BUY
+Time 2024-02-16 07:40:00, Price = 51989 , RSI 1m = 62 , ADX 1m = 21
+===========> WIN ,percent (+) 106
+
+time 2024-02-17 15:30:00, Price = 51792 , RSI 1m = 25, max = 49, min  = 25, signal_type = BUY
+Time 2024-02-17 20:50:00, Price = 51184 , RSI 1m = 24 , ADX 1m = 38
+===========> LOSS ,percent (-) 101
+
+time 2024-02-17 20:50:00, Price = 51184 , RSI 1m = 24, max = 47, min  = 21, signal_type = BUY
+Time 2024-02-18 04:20:00, Price = 51917 , RSI 1m = 81 , ADX 1m = 39
+===========> WIN ,percent (+) 122
+
+time 2024-02-18 04:20:00, Price = 51917 , RSI 1m = 81, max = 81, min  = 58, signal_type = SELL
+Time 2024-02-18 09:45:00, Price = 51285 , RSI 1m = 27 , ADX 1m = 29
+===========> WIN ,percent (+) 105
+
+time 2024-02-18 16:15:00, Price = 51963 , RSI 1m = 75, max = 75, min  = 57, signal_type = SELL
+Time 2024-02-20 08:20:00, Price = 51330 , RSI 1m = 25 , ADX 1m = 36
+===========> WIN ,percent (+) 105
+
+time 2024-02-20 08:20:00, Price = 51330 , RSI 1m = 25, max = 46, min  = 25, signal_type = BUY
+Time 2024-02-20 12:25:00, Price = 51942 , RSI 1m = 70 , ADX 1m = 20
+===========> WIN ,percent (+) 102
+
+time 2024-02-20 15:20:00, Price = 51637 , RSI 1m = 24, max = 53, min  = 24, signal_type = BUY
+Time 2024-02-20 18:00:00, Price = 52338 , RSI 1m = 77 , ADX 1m = 37
+===========> WIN ,percent (+) 116
+
+time 2024-02-20 18:00:00, Price = 52338 , RSI 1m = 77, max = 77, min  = 58, signal_type = SELL
+Time 2024-02-20 20:35:00, Price = 52988 , RSI 1m = 80 , ADX 1m = 33
+===========> LOSS ,percent (-) 108
+
+time 2024-02-20 20:35:00, Price = 52988 , RSI 1m = 80, max = 80, min  = 45, signal_type = SELL
+Time 2024-02-20 21:10:00, Price = 52290 , RSI 1m = 43 , ADX 1m = 36
+===========> WIN ,percent (+) 116
+
+time 2024-02-21 00:20:00, Price = 50850 , RSI 1m = 19, max = 43, min  = 19, signal_type = BUY
+Time 2024-02-21 01:40:00, Price = 51527 , RSI 1m = 56 , ADX 1m = 35
+===========> WIN ,percent (+) 112
+
+time 2024-02-21 02:45:00, Price = 52015 , RSI 1m = 75, max = 75, min  = 52, signal_type = SELL
+Time 2024-02-21 16:25:00, Price = 51377 , RSI 1m = 27 , ADX 1m = 25
+===========> WIN ,percent (+) 106
+
+time 2024-02-21 16:55:00, Price = 51115 , RSI 1m = 22, max = 37, min  = 22, signal_type = BUY
+Time 2024-02-22 06:15:00, Price = 51721 , RSI 1m = 74 , ADX 1m = 31
+===========> WIN ,percent (+) 101
+
+time 2024-02-22 06:45:00, Price = 51905 , RSI 1m = 76, max = 76, min  = 63, signal_type = SELL
+Time 2024-02-22 08:50:00, Price = 51191 , RSI 1m = 26 , ADX 1m = 28
+===========> WIN ,percent (+) 119
+
+time 2024-02-22 20:15:00, Price = 51272 , RSI 1m = 24, max = 46, min  = 24, signal_type = BUY
+Time 2024-02-23 03:25:00, Price = 51954 , RSI 1m = 72 , ADX 1m = 15
+===========> WIN ,percent (+) 113
+
+time 2024-02-23 14:45:00, Price = 50937 , RSI 1m = 25, max = 58, min  = 25, signal_type = BUY
+Time 2024-02-25 00:35:00, Price = 51562 , RSI 1m = 87 , ADX 1m = 37
+===========> WIN ,percent (+) 104
+
+time 2024-02-25 00:35:00, Price = 51562 , RSI 1m = 87, max = 87, min  = 60, signal_type = SELL
+Time 2024-02-26 22:15:00, Price = 52248 , RSI 1m = 90 , ADX 1m = 41
+===========> LOSS ,percent (-) 114
+
+time 2024-02-26 22:15:00, Price = 52248 , RSI 1m = 90, max = 90, min  = 60, signal_type = SELL
+Time 2024-02-26 22:55:00, Price = 52872 , RSI 1m = 91 , ADX 1m = 63
+===========> LOSS ,percent (-) 104
+
+time 2024-02-26 22:55:00, Price = 52872 , RSI 1m = 91, max = 93, min  = 85, signal_type = SELL
+Time 2024-02-26 23:05:00, Price = 53481 , RSI 1m = 94 , ADX 1m = 67
+===========> LOSS ,percent (-) 101
+
+time 2024-02-26 23:05:00, Price = 53481 , RSI 1m = 94, max = 94, min  = 88, signal_type = SELL
+Time 2024-02-27 02:15:00, Price = 54148 , RSI 1m = 75 , ADX 1m = 39
+===========> LOSS ,percent (-) 111
+
+time 2024-02-27 02:15:00, Price = 54148 , RSI 1m = 75, max = 75, min  = 55, signal_type = SELL
+Time 2024-02-27 03:05:00, Price = 54957 , RSI 1m = 79 , ADX 1m = 52
+===========> LOSS ,percent (-) 134
+
+time 2024-02-27 03:05:00, Price = 54957 , RSI 1m = 79, max = 80, min  = 70, signal_type = SELL
+Time 2024-02-27 08:50:00, Price = 55772 , RSI 1m = 87 , ADX 1m = 34
+===========> LOSS ,percent (-) 135
+
+time 2024-02-27 08:50:00, Price = 55772 , RSI 1m = 87, max = 87, min  = 53, signal_type = SELL
+Time 2024-02-27 09:05:00, Price = 56799 , RSI 1m = 89 , ADX 1m = 44
+===========> LOSS ,percent (-) 171
+
+time 2024-02-27 09:05:00, Price = 56799 , RSI 1m = 89, max = 89, min  = 57, signal_type = SELL
+Time 2024-02-27 10:50:00, Price = 56040 , RSI 1m = 46 , ADX 1m = 52
+===========> WIN ,percent (+) 126
+
+time 2024-02-27 19:40:00, Price = 57449 , RSI 1m = 80, max = 80, min  = 47, signal_type = SELL
+Time 2024-02-27 19:55:00, Price = 56842 , RSI 1m = 50 , ADX 1m = 31
+===========> WIN ,percent (+) 101
+
+time 2024-02-28 14:30:00, Price = 57537 , RSI 1m = 76, max = 76, min  = 49, signal_type = SELL
+Time 2024-02-28 14:50:00, Price = 58335 , RSI 1m = 90 , ADX 1m = 39
+===========> LOSS ,percent (-) 133
+
+time 2024-02-28 14:50:00, Price = 58335 , RSI 1m = 90, max = 90, min  = 53, signal_type = SELL
+Time 2024-02-28 15:45:00, Price = 59013 , RSI 1m = 85 , ADX 1m = 58
+===========> LOSS ,percent (-) 112
+
+time 2024-02-28 15:45:00, Price = 59013 , RSI 1m = 85, max = 91, min  = 80, signal_type = SELL
+Time 2024-02-28 20:05:00, Price = 59880 , RSI 1m = 75 , ADX 1m = 18
+===========> LOSS ,percent (-) 144
+
+time 2024-02-28 20:05:00, Price = 59880 , RSI 1m = 75, max = 75, min  = 51, signal_type = SELL
+Time 2024-02-28 20:30:00, Price = 60552 , RSI 1m = 83 , ADX 1m = 29
+===========> LOSS ,percent (-) 112
+
+time 2024-02-28 20:30:00, Price = 60552 , RSI 1m = 83, max = 84, min  = 58, signal_type = SELL
+Time 2024-02-28 21:30:00, Price = 59911 , RSI 1m = 45 , ADX 1m = 41
+===========> WIN ,percent (+) 106
+
+time 2024-02-28 23:55:00, Price = 62530 , RSI 1m = 78, max = 78, min  = 57, signal_type = SELL
+Time 2024-02-29 00:10:00, Price = 63971 , RSI 1m = 85 , ADX 1m = 49
+===========> LOSS ,percent (-) 240
+
+time 2024-02-29 00:10:00, Price = 63971 , RSI 1m = 85, max = 85, min  = 61, signal_type = SELL
+Time 2024-02-29 00:15:00, Price = 63320 , RSI 1m = 71 , ADX 1m = 51
+===========> WIN ,percent (+) 108
+
+time 2024-02-29 06:15:00, Price = 62430 , RSI 1m = 75, max = 75, min  = 57, signal_type = SELL
+Time 2024-02-29 07:10:00, Price = 61803 , RSI 1m = 48 , ADX 1m = 33
+===========> WIN ,percent (+) 104
+
+time 2024-02-29 11:45:00, Price = 62519 , RSI 1m = 76, max = 76, min  = 46, signal_type = SELL
+Time 2024-02-29 12:15:00, Price = 61905 , RSI 1m = 49 , ADX 1m = 24
+===========> WIN ,percent (+) 102
+
+time 2024-02-29 13:10:00, Price = 63282 , RSI 1m = 75, max = 75, min  = 52, signal_type = SELL
+Time 2024-02-29 14:45:00, Price = 62679 , RSI 1m = 45 , ADX 1m = 27
+===========> WIN ,percent (+) 100
+
+time 2024-03-01 00:40:00, Price = 61077 , RSI 1m = 23, max = 44, min  = 23, signal_type = BUY
+Time 2024-03-01 02:55:00, Price = 61681 , RSI 1m = 60 , ADX 1m = 26
+===========> WIN ,percent (+) 100
+
+time 2024-03-01 22:45:00, Price = 61375 , RSI 1m = 25, max = 43, min  = 25, signal_type = BUY
+Time 2024-03-02 00:30:00, Price = 62101 , RSI 1m = 62 , ADX 1m = 27
+===========> WIN ,percent (+) 121
+
+time 2024-03-03 14:25:00, Price = 61635 , RSI 1m = 25, max = 51, min  = 25, signal_type = BUY
+Time 2024-03-03 19:05:00, Price = 62235 , RSI 1m = 78 , ADX 1m = 18
+===========> WIN ,percent (+) 100
+
+time 2024-03-03 19:05:00, Price = 62235 , RSI 1m = 78, max = 78, min  = 49, signal_type = SELL
+Time 2024-03-03 23:45:00, Price = 62856 , RSI 1m = 77 , ADX 1m = 20
+===========> LOSS ,percent (-) 103
+
+time 2024-03-03 23:45:00, Price = 62856 , RSI 1m = 77, max = 77, min  = 45, signal_type = SELL
+Time 2024-03-04 07:15:00, Price = 63506 , RSI 1m = 76 , ADX 1m = 21
+===========> LOSS ,percent (-) 108
+
+time 2024-03-04 07:15:00, Price = 63506 , RSI 1m = 76, max = 76, min  = 46, signal_type = SELL
+Time 2024-03-04 07:40:00, Price = 64302 , RSI 1m = 89 , ADX 1m = 36
+===========> LOSS ,percent (-) 132
+
+time 2024-03-04 07:40:00, Price = 64302 , RSI 1m = 89, max = 89, min  = 63, signal_type = SELL
+Time 2024-03-04 07:45:00, Price = 62492 , RSI 1m = 35 , ADX 1m = 35
+===========> WIN ,percent (+) 301
+
+time 2024-03-04 15:05:00, Price = 64805 , RSI 1m = 79, max = 79, min  = 58, signal_type = SELL
+Time 2024-03-04 15:40:00, Price = 65609 , RSI 1m = 84 , ADX 1m = 42
+===========> LOSS ,percent (-) 134
+
+time 2024-03-04 15:40:00, Price = 65609 , RSI 1m = 84, max = 84, min  = 61, signal_type = SELL
+Time 2024-03-04 17:35:00, Price = 64872 , RSI 1m = 44 , ADX 1m = 27
+===========> WIN ,percent (+) 122
+
+time 2024-03-05 12:00:00, Price = 66412 , RSI 1m = 21, max = 48, min  = 21, signal_type = BUY
+Time 2024-03-05 12:20:00, Price = 67080 , RSI 1m = 40 , ADX 1m = 38
+===========> WIN ,percent (+) 111
+
+time 2024-03-05 15:05:00, Price = 65631 , RSI 1m = 21, max = 46, min  = 21, signal_type = BUY
+Time 2024-03-05 15:10:00, Price = 66496 , RSI 1m = 43 , ADX 1m = 43
+===========> WIN ,percent (+) 144
+
+time 2024-03-05 20:10:00, Price = 67919 , RSI 1m = 76, max = 76, min  = 54, signal_type = SELL
+Time 2024-03-05 21:45:00, Price = 68615 , RSI 1m = 69 , ADX 1m = 23
+===========> LOSS ,percent (-) 115
+
+time 2024-03-05 23:15:00, Price = 65185 , RSI 1m = 24, max = 45, min  = 24, signal_type = BUY
+Time 2024-03-05 23:20:00, Price = 65842 , RSI 1m = 35 , ADX 1m = 38
+===========> WIN ,percent (+) 109
+
+time 2024-03-06 02:35:00, Price = 61825 , RSI 1m = 23, max = 39, min  = 23, signal_type = BUY
+Time 2024-03-06 03:00:00, Price = 62514 , RSI 1m = 40 , ADX 1m = 57
+===========> WIN ,percent (+) 114
+
+time 2024-03-06 11:55:00, Price = 64652 , RSI 1m = 77, max = 77, min  = 53, signal_type = SELL
+Time 2024-03-06 12:10:00, Price = 65408 , RSI 1m = 80 , ADX 1m = 29
+===========> LOSS ,percent (-) 126
+
+time 2024-03-06 12:10:00, Price = 65408 , RSI 1m = 80, max = 80, min  = 53, signal_type = SELL
+Time 2024-03-06 12:35:00, Price = 66208 , RSI 1m = 81 , ADX 1m = 45
+===========> LOSS ,percent (-) 133
+
+time 2024-03-06 12:35:00, Price = 66208 , RSI 1m = 81, max = 83, min  = 66, signal_type = SELL
+Time 2024-03-06 15:05:00, Price = 66966 , RSI 1m = 71 , ADX 1m = 38
+===========> LOSS ,percent (-) 126
+
+time 2024-03-06 15:10:00, Price = 67372 , RSI 1m = 76, max = 76, min  = 55, signal_type = SELL
+Time 2024-03-06 16:30:00, Price = 66748 , RSI 1m = 47 , ADX 1m = 36
+===========> WIN ,percent (+) 104
+
+time 2024-03-07 15:15:00, Price = 66982 , RSI 1m = 76, max = 76, min  = 56, signal_type = SELL
+Time 2024-03-07 21:30:00, Price = 67625 , RSI 1m = 77 , ADX 1m = 18
+===========> LOSS ,percent (-) 107
+
+time 2024-03-07 21:30:00, Price = 67625 , RSI 1m = 77, max = 77, min  = 54, signal_type = SELL
+Time 2024-03-07 22:05:00, Price = 66982 , RSI 1m = 46 , ADX 1m = 16
+===========> WIN ,percent (+) 107
+
+time 2024-03-08 13:55:00, Price = 67634 , RSI 1m = 79, max = 79, min  = 44, signal_type = SELL
+Time 2024-03-08 21:30:00, Price = 68384 , RSI 1m = 72 , ADX 1m = 25
+===========> LOSS ,percent (-) 125
+
+time 2024-03-08 22:05:00, Price = 68790 , RSI 1m = 77, max = 77, min  = 61, signal_type = SELL
+Time 2024-03-08 22:25:00, Price = 69755 , RSI 1m = 88 , ADX 1m = 30
+===========> LOSS ,percent (-) 160
+
+time 2024-03-08 22:25:00, Price = 69755 , RSI 1m = 88, max = 88, min  = 71, signal_type = SELL
+Time 2024-03-08 22:30:00, Price = 68517 , RSI 1m = 52 , ADX 1m = 28
+===========> WIN ,percent (+) 206
+
+time 2024-03-10 08:10:00, Price = 69047 , RSI 1m = 77, max = 77, min  = 41, signal_type = SELL
+Time 2024-03-10 15:35:00, Price = 69654 , RSI 1m = 66 , ADX 1m = 11
+===========> LOSS ,percent (-) 101
+
+time 2024-03-10 21:40:00, Price = 68944 , RSI 1m = 25, max = 41, min  = 25, signal_type = BUY
+Time 2024-03-10 23:15:00, Price = 69696 , RSI 1m = 62 , ADX 1m = 38
+===========> WIN ,percent (+) 125
+
+time 2024-03-11 05:15:00, Price = 68658 , RSI 1m = 20, max = 46, min  = 20, signal_type = BUY
+Time 2024-03-11 07:50:00, Price = 67917 , RSI 1m = 21 , ADX 1m = 44
+===========> LOSS ,percent (-) 123
+
+time 2024-03-11 07:50:00, Price = 67917 , RSI 1m = 21, max = 52, min  = 21, signal_type = BUY
+Time 2024-03-11 09:10:00, Price = 68590 , RSI 1m = 56 , ADX 1m = 46
+===========> WIN ,percent (+) 112
+
+time 2024-03-11 13:55:00, Price = 69393 , RSI 1m = 76, max = 76, min  = 43, signal_type = SELL
+Time 2024-03-11 14:10:00, Price = 70729 , RSI 1m = 89 , ADX 1m = 31
+===========> LOSS ,percent (-) 222
+
+time 2024-03-11 14:10:00, Price = 70729 , RSI 1m = 89, max = 89, min  = 47, signal_type = SELL
+Time 2024-03-11 14:35:00, Price = 71481 , RSI 1m = 86 , ADX 1m = 48
+===========> LOSS ,percent (-) 125
+
+time 2024-03-11 14:35:00, Price = 71481 , RSI 1m = 86, max = 89, min  = 60, signal_type = SELL
+Time 2024-03-11 18:40:00, Price = 72143 , RSI 1m = 65 , ADX 1m = 25
+===========> LOSS ,percent (-) 110
+
+time 2024-03-12 10:25:00, Price = 71737 , RSI 1m = 25, max = 48, min  = 25, signal_type = BUY
+Time 2024-03-12 18:20:00, Price = 72408 , RSI 1m = 68 , ADX 1m = 17
+===========> WIN ,percent (+) 111
+
+time 2024-03-12 23:20:00, Price = 70932 , RSI 1m = 25, max = 53, min  = 25, signal_type = BUY
+Time 2024-03-13 00:05:00, Price = 69828 , RSI 1m = 20 , ADX 1m = 42
+===========> LOSS ,percent (-) 184
+
+time 2024-03-13 00:05:00, Price = 69828 , RSI 1m = 20, max = 32, min  = 20, signal_type = BUY
+Time 2024-03-13 00:45:00, Price = 70655 , RSI 1m = 50 , ADX 1m = 49
+===========> WIN ,percent (+) 137
+
+time 2024-03-13 13:35:00, Price = 72755 , RSI 1m = 79, max = 79, min  = 54, signal_type = SELL
+Time 2024-03-13 15:20:00, Price = 73479 , RSI 1m = 76 , ADX 1m = 47
+===========> LOSS ,percent (-) 120
+
+time 2024-03-13 15:20:00, Price = 73479 , RSI 1m = 76, max = 76, min  = 60, signal_type = SELL
+Time 2024-03-13 19:35:00, Price = 72603 , RSI 1m = 22 , ADX 1m = 22
+===========> WIN ,percent (+) 146
+
+time 2024-03-13 19:35:00, Price = 72603 , RSI 1m = 22, max = 46, min  = 22, signal_type = BUY
+Time 2024-03-14 01:30:00, Price = 73204 , RSI 1m = 64 , ADX 1m = 14
+===========> WIN ,percent (+) 100
+
+time 2024-03-14 11:10:00, Price = 73632 , RSI 1m = 75, max = 75, min  = 59, signal_type = SELL
+Time 2024-03-14 11:40:00, Price = 72990 , RSI 1m = 37 , ADX 1m = 27
+===========> WIN ,percent (+) 107
+
+time 2024-03-14 18:10:00, Price = 72767 , RSI 1m = 25, max = 47, min  = 25, signal_type = BUY
+Time 2024-03-14 20:35:00, Price = 72078 , RSI 1m = 28 , ADX 1m = 46
+===========> LOSS ,percent (-) 114
+
+time 2024-03-14 20:50:00, Price = 71623 , RSI 1m = 24, max = 51, min  = 24, signal_type = BUY
+Time 2024-03-14 21:15:00, Price = 72261 , RSI 1m = 45 , ADX 1m = 49
+===========> WIN ,percent (+) 106
+
+time 2024-03-15 01:50:00, Price = 69560 , RSI 1m = 25, max = 44, min  = 25, signal_type = BUY
+Time 2024-03-15 02:00:00, Price = 70194 , RSI 1m = 41 , ADX 1m = 35
+===========> WIN ,percent (+) 105
+
+time 2024-03-15 02:35:00, Price = 68960 , RSI 1m = 25, max = 41, min  = 25, signal_type = BUY
+Time 2024-03-15 02:50:00, Price = 69848 , RSI 1m = 45 , ADX 1m = 43
+===========> WIN ,percent (+) 148
+
+time 2024-03-15 09:25:00, Price = 70758 , RSI 1m = 22, max = 55, min  = 22, signal_type = BUY
+Time 2024-03-15 09:35:00, Price = 69831 , RSI 1m = 14 , ADX 1m = 30
+===========> LOSS ,percent (-) 154
+
+time 2024-03-15 09:35:00, Price = 69831 , RSI 1m = 14, max = 50, min  = 14, signal_type = BUY
+Time 2024-03-15 09:50:00, Price = 68476 , RSI 1m = 8 , ADX 1m = 41
+===========> LOSS ,percent (-) 225
+
+time 2024-03-15 09:50:00, Price = 68476 , RSI 1m = 8, max = 45, min  = 8, signal_type = BUY
+Time 2024-03-15 10:00:00, Price = 69385 , RSI 1m = 29 , ADX 1m = 46
+===========> WIN ,percent (+) 151
+
+time 2024-03-15 10:20:00, Price = 68008 , RSI 1m = 22, max = 30, min  = 8, signal_type = BUY
+Time 2024-03-15 10:45:00, Price = 68734 , RSI 1m = 40 , ADX 1m = 56
+===========> WIN ,percent (+) 121
+
+time 2024-03-15 16:05:00, Price = 66186 , RSI 1m = 21, max = 47, min  = 21, signal_type = BUY
+Time 2024-03-15 16:15:00, Price = 66968 , RSI 1m = 39 , ADX 1m = 37
+===========> WIN ,percent (+) 130
+
+time 2024-03-16 01:40:00, Price = 69303 , RSI 1m = 77, max = 77, min  = 53, signal_type = SELL
+Time 2024-03-16 01:50:00, Price = 70368 , RSI 1m = 86 , ADX 1m = 30
+===========> LOSS ,percent (-) 177
+
+time 2024-03-16 01:50:00, Price = 70368 , RSI 1m = 86, max = 86, min  = 56, signal_type = SELL
+Time 2024-03-16 02:35:00, Price = 69551 , RSI 1m = 55 , ADX 1m = 40
+===========> WIN ,percent (+) 136
+
+time 2024-03-16 17:15:00, Price = 68583 , RSI 1m = 21, max = 46, min  = 21, signal_type = BUY
+Time 2024-03-16 18:25:00, Price = 67962 , RSI 1m = 18 , ADX 1m = 40
+===========> LOSS ,percent (-) 103
+
+time 2024-03-16 18:25:00, Price = 67962 , RSI 1m = 18, max = 35, min  = 18, signal_type = BUY
+Time 2024-03-17 00:55:00, Price = 67325 , RSI 1m = 22 , ADX 1m = 27
+===========> LOSS ,percent (-) 106
+
+time 2024-03-17 00:55:00, Price = 67325 , RSI 1m = 22, max = 47, min  = 22, signal_type = BUY
+Time 2024-03-17 04:15:00, Price = 66624 , RSI 1m = 37 , ADX 1m = 28
+===========> LOSS ,percent (-) 116
+
+time 2024-03-17 06:10:00, Price = 65379 , RSI 1m = 24, max = 50, min  = 24, signal_type = BUY
+Time 2024-03-17 07:00:00, Price = 66052 , RSI 1m = 51 , ADX 1m = 34
+===========> WIN ,percent (+) 112
+
+time 2024-03-17 13:55:00, Price = 65007 , RSI 1m = 22, max = 45, min  = 22, signal_type = BUY
+Time 2024-03-17 14:45:00, Price = 65702 , RSI 1m = 51 , ADX 1m = 48
+===========> WIN ,percent (+) 115
+
+time 2024-03-18 08:00:00, Price = 66929 , RSI 1m = 22, max = 43, min  = 22, signal_type = BUY
+Time 2024-03-18 08:15:00, Price = 67539 , RSI 1m = 42 , ADX 1m = 32
+===========> WIN ,percent (+) 101
+
+time 2024-03-18 15:20:00, Price = 67670 , RSI 1m = 23, max = 43, min  = 23, signal_type = BUY
+Time 2024-03-18 18:15:00, Price = 68276 , RSI 1m = 59 , ADX 1m = 16
+===========> WIN ,percent (+) 101
+
+time 2024-03-19 08:30:00, Price = 66053 , RSI 1m = 22, max = 40, min  = 22, signal_type = BUY
+Time 2024-03-19 10:30:00, Price = 65270 , RSI 1m = 30 , ADX 1m = 50
+===========> LOSS ,percent (-) 130
+
+time 2024-03-20 00:00:00, Price = 65330 , RSI 1m = 77, max = 77, min  = 64, signal_type = SELL
+Time 2024-03-20 01:05:00, Price = 64379 , RSI 1m = 41 , ADX 1m = 36
+===========> WIN ,percent (+) 158
+
+time 2024-03-20 05:50:00, Price = 62594 , RSI 1m = 24, max = 45, min  = 24, signal_type = BUY
+Time 2024-03-20 06:10:00, Price = 61977 , RSI 1m = 19 , ADX 1m = 45
+===========> LOSS ,percent (-) 102
+
+time 2024-03-20 06:10:00, Price = 61977 , RSI 1m = 19, max = 33, min  = 19, signal_type = BUY
+Time 2024-03-20 07:15:00, Price = 62614 , RSI 1m = 53 , ADX 1m = 45
+===========> WIN ,percent (+) 106
+
+time 2024-03-20 14:40:00, Price = 62979 , RSI 1m = 75, max = 75, min  = 50, signal_type = SELL
+Time 2024-03-20 18:25:00, Price = 63875 , RSI 1m = 73 , ADX 1m = 25
+===========> LOSS ,percent (-) 149
+
+time 2024-03-21 03:30:00, Price = 67421 , RSI 1m = 78, max = 78, min  = 65, signal_type = SELL
+Time 2024-03-21 07:40:00, Price = 68097 , RSI 1m = 60 , ADX 1m = 24
+===========> LOSS ,percent (-) 112
+
+time 2024-03-21 10:45:00, Price = 66759 , RSI 1m = 24, max = 48, min  = 24, signal_type = BUY
+Time 2024-03-21 15:05:00, Price = 67381 , RSI 1m = 61 , ADX 1m = 18
+===========> WIN ,percent (+) 103
+
+time 2024-03-22 01:10:00, Price = 65291 , RSI 1m = 21, max = 46, min  = 21, signal_type = BUY
+Time 2024-03-22 07:15:00, Price = 65984 , RSI 1m = 69 , ADX 1m = 18
+===========> WIN ,percent (+) 115
+
+time 2024-03-22 16:40:00, Price = 65491 , RSI 1m = 24, max = 44, min  = 24, signal_type = BUY
+Time 2024-03-22 17:25:00, Price = 64891 , RSI 1m = 18 , ADX 1m = 44
+===========> LOSS ,percent (-) 100
+
+time 2024-03-22 17:25:00, Price = 64891 , RSI 1m = 18, max = 29, min  = 18, signal_type = BUY
+Time 2024-03-22 18:50:00, Price = 64245 , RSI 1m = 22 , ADX 1m = 49
+===========> LOSS ,percent (-) 107
+
+time 2024-03-22 18:50:00, Price = 64245 , RSI 1m = 22, max = 35, min  = 19, signal_type = BUY
+Time 2024-03-22 20:45:00, Price = 63440 , RSI 1m = 22 , ADX 1m = 44
+===========> LOSS ,percent (-) 134
+
+time 2024-03-22 20:45:00, Price = 63440 , RSI 1m = 22, max = 40, min  = 22, signal_type = BUY
+Time 2024-03-22 21:50:00, Price = 62817 , RSI 1m = 30 , ADX 1m = 58
+===========> LOSS ,percent (-) 103
+
+time 2024-03-23 04:35:00, Price = 62442 , RSI 1m = 21, max = 44, min  = 21, signal_type = BUY
+Time 2024-03-23 05:30:00, Price = 63088 , RSI 1m = 49 , ADX 1m = 37
+===========> WIN ,percent (+) 107
+
+time 2024-03-23 14:05:00, Price = 64572 , RSI 1m = 75, max = 75, min  = 54, signal_type = SELL
+Time 2024-03-23 21:30:00, Price = 65325 , RSI 1m = 74 , ADX 1m = 17
+===========> LOSS ,percent (-) 125
+
+time 2024-03-24 02:40:00, Price = 64867 , RSI 1m = 23, max = 45, min  = 23, signal_type = BUY
+Time 2024-03-24 06:50:00, Price = 64265 , RSI 1m = 25 , ADX 1m = 27
+===========> LOSS ,percent (-) 100
+
+time 2024-03-24 06:50:00, Price = 64265 , RSI 1m = 25, max = 41, min  = 25, signal_type = BUY
+Time 2024-03-24 15:10:00, Price = 64927 , RSI 1m = 75 , ADX 1m = 24
+===========> WIN ,percent (+) 110
+
+time 2024-03-24 15:10:00, Price = 64927 , RSI 1m = 75, max = 75, min  = 42, signal_type = SELL
+Time 2024-03-24 19:05:00, Price = 65533 , RSI 1m = 69 , ADX 1m = 31
+===========> LOSS ,percent (-) 101
+
+time 2024-03-25 20:55:00, Price = 68046 , RSI 1m = 79, max = 79, min  = 44, signal_type = SELL
+Time 2024-03-25 21:15:00, Price = 68867 , RSI 1m = 86 , ADX 1m = 32
+===========> LOSS ,percent (-) 136
+
+time 2024-03-25 21:15:00, Price = 68867 , RSI 1m = 86, max = 86, min  = 45, signal_type = SELL
+Time 2024-03-25 22:00:00, Price = 69670 , RSI 1m = 84 , ADX 1m = 44
+===========> LOSS ,percent (-) 133
+
+time 2024-03-25 22:00:00, Price = 69670 , RSI 1m = 84, max = 88, min  = 79, signal_type = SELL
+Time 2024-03-26 00:00:00, Price = 70318 , RSI 1m = 69 , ADX 1m = 37
+===========> LOSS ,percent (-) 108
+
+time 2024-03-26 04:25:00, Price = 69866 , RSI 1m = 25, max = 58, min  = 25, signal_type = BUY
+Time 2024-03-26 05:35:00, Price = 70561 , RSI 1m = 56 , ADX 1m = 25
+===========> WIN ,percent (+) 115
+
+time 2024-03-26 14:20:00, Price = 71461 , RSI 1m = 81, max = 81, min  = 48, signal_type = SELL
+Time 2024-03-26 14:50:00, Price = 70689 , RSI 1m = 45 , ADX 1m = 37
+===========> WIN ,percent (+) 128
+
+time 2024-03-27 14:25:00, Price = 69875 , RSI 1m = 25, max = 47, min  = 25, signal_type = BUY
+Time 2024-03-27 20:00:00, Price = 70899 , RSI 1m = 74 , ADX 1m = 19
+===========> WIN ,percent (+) 170
+
+time 2024-03-27 20:05:00, Price = 70982 , RSI 1m = 75, max = 75, min  = 42, signal_type = SELL
+Time 2024-03-27 20:25:00, Price = 71728 , RSI 1m = 82 , ADX 1m = 34
+===========> LOSS ,percent (-) 124
+
+time 2024-03-27 20:25:00, Price = 71728 , RSI 1m = 82, max = 82, min  = 42, signal_type = SELL
+Time 2024-03-27 20:35:00, Price = 70900 , RSI 1m = 55 , ADX 1m = 37
+===========> WIN ,percent (+) 138
+
+time 2024-03-29 10:25:00, Price = 70349 , RSI 1m = 24, max = 47, min  = 24, signal_type = BUY
+Time 2024-03-29 16:35:00, Price = 69738 , RSI 1m = 33 , ADX 1m = 32
+===========> LOSS ,percent (-) 101
+
+time 2024-03-29 22:35:00, Price = 69446 , RSI 1m = 18, max = 52, min  = 18, signal_type = BUY
+Time 2024-03-30 08:15:00, Price = 70102 , RSI 1m = 70 , ADX 1m = 24
+===========> WIN ,percent (+) 109
+
+time 2024-03-30 12:00:00, Price = 70304 , RSI 1m = 76, max = 76, min  = 45, signal_type = SELL
+Time 2024-03-31 06:20:00, Price = 69687 , RSI 1m = 39 , ADX 1m = 21
+===========> WIN ,percent (+) 102
+
+time 2024-03-31 12:45:00, Price = 70520 , RSI 1m = 76, max = 76, min  = 62, signal_type = SELL
+Time 2024-04-01 01:45:00, Price = 71306 , RSI 1m = 82 , ADX 1m = 22
+===========> LOSS ,percent (-) 131
+
+time 2024-04-01 01:45:00, Price = 71306 , RSI 1m = 82, max = 82, min  = 45, signal_type = SELL
+Time 2024-04-01 10:25:00, Price = 70679 , RSI 1m = 31 , ADX 1m = 19
+===========> WIN ,percent (+) 104
+
+time 2024-04-01 12:35:00, Price = 70289 , RSI 1m = 22, max = 36, min  = 22, signal_type = BUY
+Time 2024-04-01 12:45:00, Price = 69642 , RSI 1m = 9 , ADX 1m = 57
+===========> LOSS ,percent (-) 107
+
+time 2024-04-01 12:45:00, Price = 69642 , RSI 1m = 9, max = 35, min  = 9, signal_type = BUY
+Time 2024-04-01 21:50:00, Price = 68894 , RSI 1m = 23 , ADX 1m = 37
+===========> LOSS ,percent (-) 124
+
+time 2024-04-01 21:50:00, Price = 68894 , RSI 1m = 23, max = 49, min  = 23, signal_type = BUY
+Time 2024-04-01 22:55:00, Price = 68281 , RSI 1m = 26 , ADX 1m = 48
+===========> LOSS ,percent (-) 102
+
+time 2024-04-02 02:20:00, Price = 69529 , RSI 1m = 77, max = 77, min  = 55, signal_type = SELL
+Time 2024-04-02 09:25:00, Price = 68491 , RSI 1m = 18 , ADX 1m = 24
+===========> WIN ,percent (+) 173
+
+time 2024-04-02 09:25:00, Price = 68491 , RSI 1m = 18, max = 52, min  = 18, signal_type = BUY
+Time 2024-04-02 09:35:00, Price = 66445 , RSI 1m = 6 , ADX 1m = 32
+===========> LOSS ,percent (-) 341
+
+time 2024-04-02 09:35:00, Price = 66445 , RSI 1m = 6, max = 47, min  = 6, signal_type = BUY
+Time 2024-04-02 10:00:00, Price = 67139 , RSI 1m = 25 , ADX 1m = 48
+===========> WIN ,percent (+) 115
+
+time 2024-04-02 10:00:00, Price = 67139 , RSI 1m = 25, max = 38, min  = 6, signal_type = BUY
+Time 2024-04-02 11:15:00, Price = 66411 , RSI 1m = 26 , ADX 1m = 63
+===========> LOSS ,percent (-) 121
+
+time 2024-04-02 16:00:00, Price = 65854 , RSI 1m = 23, max = 47, min  = 23, signal_type = BUY
+Time 2024-04-02 18:35:00, Price = 65227 , RSI 1m = 32 , ADX 1m = 42
+===========> LOSS ,percent (-) 104
+
+time 2024-04-03 07:35:00, Price = 64823 , RSI 1m = 25, max = 48, min  = 25, signal_type = BUY
+Time 2024-04-03 07:55:00, Price = 65433 , RSI 1m = 49 , ADX 1m = 26
+===========> WIN ,percent (+) 101
+
+time 2024-04-03 18:05:00, Price = 65611 , RSI 1m = 23, max = 50, min  = 23, signal_type = BUY
+Time 2024-04-03 21:00:00, Price = 66457 , RSI 1m = 66 , ADX 1m = 16
+===========> WIN ,percent (+) 141
+
+time 2024-04-04 09:25:00, Price = 65609 , RSI 1m = 23, max = 48, min  = 23, signal_type = BUY
+Time 2024-04-04 14:35:00, Price = 66250 , RSI 1m = 74 , ADX 1m = 28
+===========> WIN ,percent (+) 106
+
+time 2024-04-04 20:15:00, Price = 67279 , RSI 1m = 80, max = 80, min  = 61, signal_type = SELL
+Time 2024-04-04 23:20:00, Price = 68015 , RSI 1m = 69 , ADX 1m = 38
+===========> LOSS ,percent (-) 122
+
+time 2024-04-05 00:50:00, Price = 68764 , RSI 1m = 80, max = 80, min  = 53, signal_type = SELL
+Time 2024-04-05 03:00:00, Price = 68157 , RSI 1m = 37 , ADX 1m = 27
+===========> WIN ,percent (+) 101
+
+time 2024-04-05 12:15:00, Price = 66869 , RSI 1m = 22, max = 46, min  = 22, signal_type = BUY
+Time 2024-04-05 15:20:00, Price = 67648 , RSI 1m = 70 , ADX 1m = 27
+===========> WIN ,percent (+) 129
+
+time 2024-04-05 21:45:00, Price = 68483 , RSI 1m = 76, max = 76, min  = 61, signal_type = SELL
+Time 2024-04-05 22:15:00, Price = 67699 , RSI 1m = 52 , ADX 1m = 26
+===========> WIN ,percent (+) 130
+
+time 2024-04-06 22:10:00, Price = 68246 , RSI 1m = 75, max = 75, min  = 53, signal_type = SELL
+Time 2024-04-07 05:50:00, Price = 69042 , RSI 1m = 78 , ADX 1m = 31
+===========> LOSS ,percent (-) 132
+
+time 2024-04-07 05:50:00, Price = 69042 , RSI 1m = 78, max = 78, min  = 54, signal_type = SELL
+Time 2024-04-07 09:05:00, Price = 69683 , RSI 1m = 69 , ADX 1m = 30
+===========> LOSS ,percent (-) 106
+
+time 2024-04-08 14:30:00, Price = 70426 , RSI 1m = 79, max = 79, min  = 52, signal_type = SELL
+Time 2024-04-08 15:10:00, Price = 71378 , RSI 1m = 79 , ADX 1m = 54
+===========> LOSS ,percent (-) 158
+
+time 2024-04-08 15:10:00, Price = 71378 , RSI 1m = 79, max = 85, min  = 68, signal_type = SELL
+Time 2024-04-08 15:50:00, Price = 72027 , RSI 1m = 80 , ADX 1m = 61
+===========> LOSS ,percent (-) 108
+
+time 2024-04-08 15:50:00, Price = 72027 , RSI 1m = 80, max = 80, min  = 69, signal_type = SELL
+Time 2024-04-08 19:05:00, Price = 72654 , RSI 1m = 67 , ADX 1m = 42
+===========> LOSS ,percent (-) 104
+
+time 2024-04-09 08:10:00, Price = 71122 , RSI 1m = 25, max = 41, min  = 25, signal_type = BUY
+Time 2024-04-09 14:40:00, Price = 70519 , RSI 1m = 31 , ADX 1m = 30
+===========> LOSS ,percent (-) 100
+
+time 2024-04-09 15:05:00, Price = 69841 , RSI 1m = 19, max = 37, min  = 19, signal_type = BUY
+Time 2024-04-09 15:50:00, Price = 70512 , RSI 1m = 51 , ADX 1m = 44
+===========> WIN ,percent (+) 111
+
+time 2024-04-09 20:55:00, Price = 69979 , RSI 1m = 25, max = 49, min  = 25, signal_type = BUY
+Time 2024-04-09 21:40:00, Price = 69216 , RSI 1m = 22 , ADX 1m = 28
+===========> LOSS ,percent (-) 127
+
+time 2024-04-09 21:40:00, Price = 69216 , RSI 1m = 22, max = 47, min  = 22, signal_type = BUY
+Time 2024-04-10 00:10:00, Price = 68452 , RSI 1m = 32 , ADX 1m = 45
+===========> LOSS ,percent (-) 127
+
+time 2024-04-10 15:00:00, Price = 68908 , RSI 1m = 25, max = 60, min  = 25, signal_type = BUY
+Time 2024-04-10 19:35:00, Price = 67657 , RSI 1m = 17 , ADX 1m = 18
+===========> LOSS ,percent (-) 208
+
+time 2024-04-10 19:35:00, Price = 67657 , RSI 1m = 17, max = 55, min  = 17, signal_type = BUY
+Time 2024-04-10 20:55:00, Price = 68300 , RSI 1m = 52 , ADX 1m = 32
+===========> WIN ,percent (+) 107
+
+time 2024-04-11 02:55:00, Price = 70121 , RSI 1m = 76, max = 76, min  = 51, signal_type = SELL
+Time 2024-04-11 05:20:00, Price = 70920 , RSI 1m = 80 , ADX 1m = 33
+===========> LOSS ,percent (-) 133
+
+time 2024-04-11 05:20:00, Price = 70920 , RSI 1m = 80, max = 80, min  = 43, signal_type = SELL
+Time 2024-04-11 18:50:00, Price = 70152 , RSI 1m = 27 , ADX 1m = 37
+===========> WIN ,percent (+) 128
+
+time 2024-04-11 18:55:00, Price = 70043 , RSI 1m = 24, max = 45, min  = 24, signal_type = BUY
+Time 2024-04-11 19:30:00, Price = 70759 , RSI 1m = 59 , ADX 1m = 42
+===========> WIN ,percent (+) 119
+
+time 2024-04-12 09:20:00, Price = 70712 , RSI 1m = 77, max = 77, min  = 49, signal_type = SELL
+Time 2024-04-12 20:20:00, Price = 70111 , RSI 1m = 30 , ADX 1m = 34
+===========> WIN ,percent (+) 100
+
+time 2024-04-12 20:45:00, Price = 69694 , RSI 1m = 25, max = 38, min  = 24, signal_type = BUY
+Time 2024-04-12 23:15:00, Price = 68944 , RSI 1m = 30 , ADX 1m = 33
+===========> LOSS ,percent (-) 125
+
+time 2024-04-13 00:20:00, Price = 68304 , RSI 1m = 24, max = 39, min  = 24, signal_type = BUY
+Time 2024-04-13 01:25:00, Price = 67677 , RSI 1m = 26 , ADX 1m = 42
+===========> LOSS ,percent (-) 104
+
+time 2024-04-13 01:30:00, Price = 66558 , RSI 1m = 16, max = 40, min  = 16, signal_type = BUY
+Time 2024-04-13 02:30:00, Price = 67158 , RSI 1m = 45 , ADX 1m = 48
+===========> WIN ,percent (+) 100
+
+time 2024-04-13 08:50:00, Price = 66067 , RSI 1m = 24, max = 42, min  = 24, signal_type = BUY
+Time 2024-04-13 10:20:00, Price = 66735 , RSI 1m = 58 , ADX 1m = 23
+===========> WIN ,percent (+) 111
+
+time 2024-04-13 11:25:00, Price = 67413 , RSI 1m = 75, max = 75, min  = 65, signal_type = SELL
+Time 2024-04-14 00:35:00, Price = 66713 , RSI 1m = 28 , ADX 1m = 39
+===========> WIN ,percent (+) 116
+
+time 2024-04-14 02:45:00, Price = 66033 , RSI 1m = 24, max = 54, min  = 24, signal_type = BUY
+Time 2024-04-14 02:50:00, Price = 64513 , RSI 1m = 13 , ADX 1m = 28
+===========> LOSS ,percent (-) 253
+
+time 2024-04-14 02:50:00, Price = 64513 , RSI 1m = 13, max = 53, min  = 13, signal_type = BUY
+Time 2024-04-14 03:05:00, Price = 61734 , RSI 1m = 10 , ADX 1m = 39
+===========> LOSS ,percent (-) 463
+
+time 2024-04-14 03:05:00, Price = 61734 , RSI 1m = 10, max = 52, min  = 10, signal_type = BUY
+Time 2024-04-14 03:10:00, Price = 62563 , RSI 1m = 21 , ADX 1m = 43
+===========> WIN ,percent (+) 138
+
+time 2024-04-14 03:10:00, Price = 62563 , RSI 1m = 21, max = 52, min  = 10, signal_type = BUY
+Time 2024-04-14 03:45:00, Price = 61644 , RSI 1m = 23 , ADX 1m = 60
+===========> LOSS ,percent (-) 153
+
+time 2024-04-14 03:45:00, Price = 61644 , RSI 1m = 23, max = 27, min  = 10, signal_type = BUY
+Time 2024-04-14 04:00:00, Price = 62467 , RSI 1m = 36 , ADX 1m = 63
+===========> WIN ,percent (+) 137
+
+time 2024-04-14 10:05:00, Price = 62454 , RSI 1m = 25, max = 43, min  = 25, signal_type = BUY
+Time 2024-04-14 10:35:00, Price = 63329 , RSI 1m = 53 , ADX 1m = 24
+===========> WIN ,percent (+) 145
+
+time 2024-04-15 00:20:00, Price = 62738 , RSI 1m = 19, max = 62, min  = 19, signal_type = BUY
+Time 2024-04-15 00:30:00, Price = 63710 , RSI 1m = 44 , ADX 1m = 30
+===========> WIN ,percent (+) 162
+
+time 2024-04-15 05:05:00, Price = 65175 , RSI 1m = 77, max = 77, min  = 29, signal_type = SELL
+Time 2024-04-15 13:15:00, Price = 65929 , RSI 1m = 79 , ADX 1m = 37
+===========> LOSS ,percent (-) 125
+
+time 2024-04-15 13:15:00, Price = 65929 , RSI 1m = 79, max = 79, min  = 55, signal_type = SELL
+Time 2024-04-15 16:20:00, Price = 66583 , RSI 1m = 66 , ADX 1m = 34
+===========> LOSS ,percent (-) 109
+
+time 2024-04-15 21:10:00, Price = 65196 , RSI 1m = 25, max = 57, min  = 25, signal_type = BUY
+Time 2024-04-15 21:45:00, Price = 64415 , RSI 1m = 20 , ADX 1m = 41
+===========> LOSS ,percent (-) 130
+
+time 2024-04-15 21:45:00, Price = 64415 , RSI 1m = 20, max = 40, min  = 20, signal_type = BUY
+Time 2024-04-16 00:25:00, Price = 63773 , RSI 1m = 33 , ADX 1m = 34
+===========> LOSS ,percent (-) 107
+
+time 2024-04-16 14:30:00, Price = 63589 , RSI 1m = 75, max = 75, min  = 58, signal_type = SELL
+Time 2024-04-16 17:15:00, Price = 62600 , RSI 1m = 26 , ADX 1m = 17
+===========> WIN ,percent (+) 164
+
+time 2024-04-16 17:20:00, Price = 62416 , RSI 1m = 23, max = 58, min  = 23, signal_type = BUY
+Time 2024-04-16 18:50:00, Price = 63055 , RSI 1m = 57 , ADX 1m = 25
+===========> WIN ,percent (+) 106
+
+time 2024-04-17 04:20:00, Price = 63751 , RSI 1m = 79, max = 79, min  = 52, signal_type = SELL
+Time 2024-04-17 12:15:00, Price = 64383 , RSI 1m = 66 , ADX 1m = 22
+===========> LOSS ,percent (-) 105
+
+time 2024-04-17 17:10:00, Price = 62875 , RSI 1m = 24, max = 50, min  = 24, signal_type = BUY
+Time 2024-04-17 19:35:00, Price = 62232 , RSI 1m = 23 , ADX 1m = 42
+===========> LOSS ,percent (-) 107
+
+time 2024-04-17 19:35:00, Price = 62232 , RSI 1m = 23, max = 39, min  = 23, signal_type = BUY
+Time 2024-04-17 21:15:00, Price = 61491 , RSI 1m = 24 , ADX 1m = 31
+===========> LOSS ,percent (-) 123
+
+time 2024-04-17 21:15:00, Price = 61491 , RSI 1m = 24, max = 61, min  = 24, signal_type = BUY
+Time 2024-04-17 21:30:00, Price = 60886 , RSI 1m = 21 , ADX 1m = 37
+===========> LOSS ,percent (-) 100
+
+time 2024-04-17 21:30:00, Price = 60886 , RSI 1m = 21, max = 57, min  = 21, signal_type = BUY
+Time 2024-04-17 21:40:00, Price = 61800 , RSI 1m = 44 , ADX 1m = 39
+===========> WIN ,percent (+) 152
+
+time 2024-04-18 12:55:00, Price = 61051 , RSI 1m = 25, max = 46, min  = 25, signal_type = BUY
+Time 2024-04-18 17:35:00, Price = 61695 , RSI 1m = 63 , ADX 1m = 32
+===========> WIN ,percent (+) 107
+
+time 2024-04-18 18:10:00, Price = 62374 , RSI 1m = 78, max = 78, min  = 55, signal_type = SELL
+Time 2024-04-18 19:30:00, Price = 61734 , RSI 1m = 36 , ADX 1m = 44
+===========> WIN ,percent (+) 106
+
+time 2024-04-19 01:10:00, Price = 62359 , RSI 1m = 25, max = 47, min  = 25, signal_type = BUY
+Time 2024-04-19 01:40:00, Price = 63150 , RSI 1m = 52 , ADX 1m = 26
+===========> WIN ,percent (+) 131
+
+time 2024-04-19 08:05:00, Price = 62472 , RSI 1m = 25, max = 42, min  = 25, signal_type = BUY
+Time 2024-04-19 08:30:00, Price = 61624 , RSI 1m = 17 , ADX 1m = 42
+===========> LOSS ,percent (-) 141
+
+time 2024-04-19 08:30:00, Price = 61624 , RSI 1m = 17, max = 41, min  = 17, signal_type = BUY
+Time 2024-04-19 08:40:00, Price = 61017 , RSI 1m = 13 , ADX 1m = 48
+===========> LOSS ,percent (-) 101
+
+time 2024-04-19 08:40:00, Price = 61017 , RSI 1m = 13, max = 38, min  = 13, signal_type = BUY
+Time 2024-04-19 09:15:00, Price = 60225 , RSI 1m = 15 , ADX 1m = 63
+===========> LOSS ,percent (-) 132
+
+time 2024-04-19 09:15:00, Price = 60225 , RSI 1m = 15, max = 23, min  = 13, signal_type = BUY
+Time 2024-04-19 09:50:00, Price = 60898 , RSI 1m = 45 , ADX 1m = 69
+===========> WIN ,percent (+) 112
+
+time 2024-04-19 13:40:00, Price = 63619 , RSI 1m = 76, max = 76, min  = 45, signal_type = SELL
+Time 2024-04-19 13:50:00, Price = 64666 , RSI 1m = 83 , ADX 1m = 26
+===========> LOSS ,percent (-) 174
+
+time 2024-04-19 13:50:00, Price = 64666 , RSI 1m = 83, max = 83, min  = 45, signal_type = SELL
+Time 2024-04-19 18:35:00, Price = 65300 , RSI 1m = 66 , ADX 1m = 32
+===========> LOSS ,percent (-) 105
+
+time 2024-04-20 06:00:00, Price = 63204 , RSI 1m = 21, max = 62, min  = 21, signal_type = BUY
+Time 2024-04-20 06:45:00, Price = 63927 , RSI 1m = 51 , ADX 1m = 33
+===========> WIN ,percent (+) 120
+
+time 2024-04-20 16:05:00, Price = 63494 , RSI 1m = 25, max = 45, min  = 25, signal_type = BUY
+Time 2024-04-20 22:30:00, Price = 64133 , RSI 1m = 67 , ADX 1m = 15
+===========> WIN ,percent (+) 106
+
+time 2024-04-20 22:40:00, Price = 64532 , RSI 1m = 78, max = 78, min  = 45, signal_type = SELL
+Time 2024-04-21 00:15:00, Price = 65287 , RSI 1m = 72 , ADX 1m = 55
+===========> LOSS ,percent (-) 125
+
+time 2024-04-21 09:25:00, Price = 65288 , RSI 1m = 76, max = 76, min  = 54, signal_type = SELL
+Time 2024-04-21 23:05:00, Price = 64535 , RSI 1m = 30 , ADX 1m = 21
+===========> WIN ,percent (+) 125
+
+time 2024-04-22 08:20:00, Price = 65565 , RSI 1m = 75, max = 75, min  = 39, signal_type = SELL
+Time 2024-04-22 08:25:00, Price = 64886 , RSI 1m = 47 , ADX 1m = 19
+===========> WIN ,percent (+) 113
+
+time 2024-04-22 10:40:00, Price = 65661 , RSI 1m = 76, max = 76, min  = 47, signal_type = SELL
+Time 2024-04-22 12:55:00, Price = 66342 , RSI 1m = 74 , ADX 1m = 40
+===========> LOSS ,percent (-) 113
+
+time 2024-04-23 05:50:00, Price = 67128 , RSI 1m = 77, max = 77, min  = 57, signal_type = SELL
+Time 2024-04-23 10:35:00, Price = 66522 , RSI 1m = 35 , ADX 1m = 23
+===========> WIN ,percent (+) 101
+
+time 2024-04-23 21:10:00, Price = 66757 , RSI 1m = 76, max = 76, min  = 50, signal_type = SELL
+Time 2024-04-24 03:15:00, Price = 66048 , RSI 1m = 19 , ADX 1m = 29
+===========> WIN ,percent (+) 118
+
+time 2024-04-24 03:15:00, Price = 66048 , RSI 1m = 19, max = 40, min  = 19, signal_type = BUY
+Time 2024-04-24 07:40:00, Price = 66685 , RSI 1m = 68 , ADX 1m = 20
+===========> WIN ,percent (+) 106
+
+time 2024-04-24 21:25:00, Price = 65437 , RSI 1m = 20, max = 42, min  = 20, signal_type = BUY
+Time 2024-04-24 22:20:00, Price = 64810 , RSI 1m = 26 , ADX 1m = 50
+===========> LOSS ,percent (-) 104
+
+time 2024-04-25 01:50:00, Price = 64243 , RSI 1m = 25, max = 44, min  = 25, signal_type = BUY
+Time 2024-04-25 17:20:00, Price = 63418 , RSI 1m = 26 , ADX 1m = 28
+===========> LOSS ,percent (-) 137
+
+time 2024-04-26 00:00:00, Price = 64548 , RSI 1m = 77, max = 77, min  = 62, signal_type = SELL
+Time 2024-04-26 19:50:00, Price = 63947 , RSI 1m = 32 , ADX 1m = 21
+===========> WIN ,percent (+) 100
+
+time 2024-04-27 07:40:00, Price = 62978 , RSI 1m = 16, max = 55, min  = 16, signal_type = BUY
+Time 2024-04-28 07:25:00, Price = 63710 , RSI 1m = 76 , ADX 1m = 36
+===========> WIN ,percent (+) 122
+
+time 2024-04-28 07:25:00, Price = 63710 , RSI 1m = 76, max = 76, min  = 58, signal_type = SELL
+Time 2024-04-29 06:00:00, Price = 62941 , RSI 1m = 18 , ADX 1m = 54
+===========> WIN ,percent (+) 128
+
+time 2024-04-29 06:00:00, Price = 62941 , RSI 1m = 18, max = 33, min  = 18, signal_type = BUY
+Time 2024-04-29 10:55:00, Price = 62259 , RSI 1m = 28 , ADX 1m = 45
+===========> LOSS ,percent (-) 113
+
+time 2024-04-30 05:30:00, Price = 63808 , RSI 1m = 81, max = 81, min  = 54, signal_type = SELL
+Time 2024-04-30 07:50:00, Price = 64586 , RSI 1m = 82 , ADX 1m = 43
+===========> LOSS ,percent (-) 129
+
+time 2024-04-30 07:50:00, Price = 64586 , RSI 1m = 82, max = 82, min  = 51, signal_type = SELL
+Time 2024-04-30 08:50:00, Price = 63905 , RSI 1m = 42 , ADX 1m = 31
+===========> WIN ,percent (+) 113
+
+time 2024-04-30 09:00:00, Price = 63214 , RSI 1m = 24, max = 65, min  = 24, signal_type = BUY
+Time 2024-04-30 09:50:00, Price = 63832 , RSI 1m = 50 , ADX 1m = 29
+===========> WIN ,percent (+) 103
+
+time 2024-04-30 15:30:00, Price = 62298 , RSI 1m = 19, max = 43, min  = 19, signal_type = BUY
+Time 2024-04-30 16:30:00, Price = 61624 , RSI 1m = 20 , ADX 1m = 52
+===========> LOSS ,percent (-) 112
+
+time 2024-04-30 16:30:00, Price = 61624 , RSI 1m = 20, max = 29, min  = 13, signal_type = BUY
+Time 2024-04-30 20:50:00, Price = 60762 , RSI 1m = 30 , ADX 1m = 43
+===========> LOSS ,percent (-) 143
+
+time 2024-05-01 13:55:00, Price = 59504 , RSI 1m = 25, max = 41, min  = 25, signal_type = BUY
+Time 2024-05-01 14:05:00, Price = 58423 , RSI 1m = 10 , ADX 1m = 38
+===========> LOSS ,percent (-) 180
+
+time 2024-05-01 14:05:00, Price = 58423 , RSI 1m = 10, max = 41, min  = 10, signal_type = BUY
+Time 2024-05-01 14:30:00, Price = 57547 , RSI 1m = 8 , ADX 1m = 54
+===========> LOSS ,percent (-) 146
+
+time 2024-05-01 14:30:00, Price = 57547 , RSI 1m = 8, max = 36, min  = 8, signal_type = BUY
+Time 2024-05-01 15:40:00, Price = 56862 , RSI 1m = 19 , ADX 1m = 71
+===========> LOSS ,percent (-) 114
+
+time 2024-05-01 15:40:00, Price = 56862 , RSI 1m = 19, max = 22, min  = 14, signal_type = BUY
+Time 2024-05-01 17:40:00, Price = 57567 , RSI 1m = 56 , ADX 1m = 31
+===========> WIN ,percent (+) 117
+
+time 2024-05-02 01:50:00, Price = 59403 , RSI 1m = 80, max = 80, min  = 57, signal_type = SELL
+Time 2024-05-02 02:00:00, Price = 58800 , RSI 1m = 65 , ADX 1m = 43
+===========> WIN ,percent (+) 100
+
+time 2024-05-02 08:35:00, Price = 56996 , RSI 1m = 24, max = 44, min  = 24, signal_type = BUY
+Time 2024-05-02 10:25:00, Price = 57650 , RSI 1m = 57 , ADX 1m = 21
+===========> WIN ,percent (+) 109
+
+time 2024-05-02 19:05:00, Price = 58754 , RSI 1m = 75, max = 75, min  = 60, signal_type = SELL
+Time 2024-05-03 01:00:00, Price = 59376 , RSI 1m = 68 , ADX 1m = 17
+===========> LOSS ,percent (-) 103
+
+time 2024-05-03 09:10:00, Price = 59724 , RSI 1m = 75, max = 75, min  = 55, signal_type = SELL
+Time 2024-05-03 14:45:00, Price = 59106 , RSI 1m = 30 , ADX 1m = 27
+===========> WIN ,percent (+) 103
+
+time 2024-05-03 17:45:00, Price = 58891 , RSI 1m = 24, max = 57, min  = 24, signal_type = BUY
+Time 2024-05-03 19:30:00, Price = 60072 , RSI 1m = 77 , ADX 1m = 18
+===========> WIN ,percent (+) 196
+
+time 2024-05-03 19:30:00, Price = 60072 , RSI 1m = 77, max = 77, min  = 43, signal_type = SELL
+Time 2024-05-03 20:00:00, Price = 61106 , RSI 1m = 85 , ADX 1m = 36
+===========> LOSS ,percent (-) 172
+
+time 2024-05-03 20:00:00, Price = 61106 , RSI 1m = 85, max = 85, min  = 43, signal_type = SELL
+Time 2024-05-03 21:40:00, Price = 61780 , RSI 1m = 75 , ADX 1m = 58
+===========> LOSS ,percent (-) 112
+
+time 2024-05-03 21:40:00, Price = 61780 , RSI 1m = 75, max = 82, min  = 70, signal_type = SELL
+Time 2024-05-04 03:20:00, Price = 62724 , RSI 1m = 81 , ADX 1m = 33
+===========> LOSS ,percent (-) 157
+
+time 2024-05-04 03:20:00, Price = 62724 , RSI 1m = 81, max = 81, min  = 49, signal_type = SELL
+Time 2024-05-04 08:25:00, Price = 63546 , RSI 1m = 74 , ADX 1m = 24
+===========> LOSS ,percent (-) 137
+
+time 2024-05-04 17:40:00, Price = 63802 , RSI 1m = 80, max = 80, min  = 49, signal_type = SELL

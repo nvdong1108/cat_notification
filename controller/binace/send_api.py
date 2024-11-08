@@ -1,10 +1,12 @@
+import time
+
 from logger.logger_setup import logger
 from config.config import BINANCE_API_KEY, BINANCE_API_SECRET
 from binance.client import Client
 from binance.exceptions import BinanceAPIException
 from controller.binace.time_server import synchronize_time
 from config.storage import ShareState
-
+from logger.print_until import print_time
 client = Client(BINANCE_API_KEY, BINANCE_API_SECRET)
 listen_key = client.futures_stream_get_listen_key()
 
@@ -97,3 +99,32 @@ def create_take_profit_order(side, price):
         print(f"Error: Create_take_profit_order Unexpected error creating take profit order: {e}")
         logger.error(f"Error: Create_take_profit_order Unexpected error creating take profit order: {e}")
         return None
+
+
+def get_position_information(retries=3):
+    """
+    :return:
+    """
+    while retries > 0:
+        try:
+            positions = client.futures_position_information(timestamp=synchronize_time(),
+                                                        recvWindow=10000)
+            open_positions = [position for position in positions if float(position['positionAmt']) != 0]
+            return open_positions
+        except Exception as e:
+            ms = f"Error at get_position_information: retries = {retries} {e}"
+            print_time(ms)
+            logger.error(ms)
+            retries -= 1
+            time.sleep(5)
+    # call error return -1
+    return -1
+
+
+def get_info_order(order_id):
+    order = client.futures_get_order(
+        symbol='BTCUSDT',
+        orderId=order_id
+    )
+    return order
+

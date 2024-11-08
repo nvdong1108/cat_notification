@@ -1,0 +1,2051 @@
+time 2023-11-07 16:35:00, Price = 34764 , RSI 1m = 24, max = 49, min  = 24, pending_buy True WAITING
+time 2023-11-07 16:40:00, Price = 34830 , RSI 1m = 40, max = 48, min  = 24, signal_type = BUY
+Time 2023-11-08 01:45:00, Price = 35449 , RSI 1m = 78 , ADX 1m = 39
+===========> WIN ,percent (+) 103
+
+time 2023-11-08 01:45:00, Price = 35449 , RSI 1m = 78, max = 86, min  = 65, pending_sell False signal_type = SELL
+Time 2023-11-09 08:45:00, Price = 36055 , RSI 1m = 71 , ADX 1m = 40
+===========> LOSS ,percent (-) 101
+
+time 2023-11-09 09:20:00, Price = 36316 , RSI 1m = 76 , max = 76, min  = 55 pending_sell True, WAITING
+time 2023-11-09 09:25:00, Price = 36386 , RSI 1m = 78 , max = 78, min  = 55 pending_sell True, WAITING
+time 2023-11-09 09:30:00, Price = 36517 , RSI 1m = 81 , max = 81, min  = 55 pending_sell True, WAITING
+time 2023-11-09 09:35:00, Price = 36444 , RSI 1m = 75, max = 81, min  = 55, pending_sell False signal_type = SELL
+Time 2023-11-09 20:45:00, Price = 37078 , RSI 1m = 63 , ADX 1m = 26
+===========> LOSS ,percent (-) 105
+
+time 2023-11-09 21:10:00, Price = 37634 , RSI 1m = 81 , max = 81, min  = 46 pending_sell True, WAITING
+time 2023-11-09 21:15:00, Price = 37617 , RSI 1m = 80 , max = 81, min  = 46 pending_sell True, WAITING
+time 2023-11-09 21:20:00, Price = 37657 , RSI 1m = 81 , max = 81, min  = 46 pending_sell True, WAITING
+time 2023-11-09 21:25:00, Price = 37573 , RSI 1m = 74, max = 81, min  = 46, signal_type = SELL
+Time 2023-11-09 23:05:00, Price = 36948 , RSI 1m = 33 , ADX 1m = 40
+===========> WIN ,percent (+) 104
+
+time 2023-11-09 23:30:00, Price = 36513 , RSI 1m = 25, max = 48, min  = 25, pending_buy True WAITING
+time 2023-11-09 23:35:00, Price = 35981 , RSI 1m = 17, max = 46, min  = 17, pending_buy True WAITING
+time 2023-11-09 23:40:00, Price = 36293 , RSI 1m = 30, max = 46, min  = 17, signal_type = BUY
+Time 2023-11-10 10:10:00, Price = 36923 , RSI 1m = 70 , ADX 1m = 25
+===========> WIN ,percent (+) 105
+
+time 2023-11-10 18:00:00, Price = 36946 , RSI 1m = 76 , max = 76, min  = 48 pending_sell True, WAITING
+time 2023-11-10 18:05:00, Price = 36997 , RSI 1m = 78 , max = 78, min  = 48 pending_sell True, WAITING
+time 2023-11-10 18:10:00, Price = 36878 , RSI 1m = 65, max = 78, min  = 48, signal_type = SELL
+Time 2023-11-14 07:55:00, Price = 36270 , RSI 1m = 32 , ADX 1m = 36
+===========> WIN ,percent (+) 101
+
+time 2023-11-14 17:00:00, Price = 36422 , RSI 1m = 24, max = 46, min  = 24, pending_buy True WAITING
+time 2023-11-14 17:05:00, Price = 36522 , RSI 1m = 39, max = 42, min  = 24, signal_type = BUY
+Time 2023-11-15 01:10:00, Price = 35889 , RSI 1m = 24 , ADX 1m = 30
+===========> LOSS ,percent (-) 105
+
+time 2023-11-15 01:10:00, Price = 35889 , RSI 1m = 24, max = 49, min  = 24, pending_buy True WAITING
+time 2023-11-15 01:15:00, Price = 35909 , RSI 1m = 26, max = 48, min  = 24, signal_type = BUY
+Time 2023-11-15 01:50:00, Price = 35136 , RSI 1m = 14 , ADX 1m = 42
+===========> LOSS ,percent (-) 128
+
+time 2023-11-15 01:50:00, Price = 35136 , RSI 1m = 14, max = 36, min  = 14, pending_buy True WAITING
+time 2023-11-15 01:55:00, Price = 35239 , RSI 1m = 21, max = 36, min  = 14, pending_buy False signal_type = BUY
+Time 2023-11-15 16:10:00, Price = 35844 , RSI 1m = 66 , ADX 1m = 41
+===========> WIN ,percent (+) 100
+
+time 2023-11-15 18:20:00, Price = 36130 , RSI 1m = 78 , max = 78, min  = 50 pending_sell True, WAITING
+time 2023-11-15 18:25:00, Price = 36186 , RSI 1m = 80 , max = 80, min  = 54 pending_sell True, WAITING
+time 2023-11-15 18:30:00, Price = 36146 , RSI 1m = 74, max = 80, min  = 54, signal_type = SELL
+Time 2023-11-16 01:10:00, Price = 37092 , RSI 1m = 85 , ADX 1m = 28
+===========> LOSS ,percent (-) 157
+
+time 2023-11-16 01:10:00, Price = 37092 , RSI 1m = 85 , max = 85, min  = 54 pending_sell True, WAITING
+time 2023-11-16 01:15:00, Price = 37234 , RSI 1m = 87 , max = 87, min  = 55 pending_sell True, WAITING
+time 2023-11-16 01:20:00, Price = 36802 , RSI 1m = 60, max = 87, min  = 55, signal_type = SELL
+Time 2023-11-16 01:50:00, Price = 37417 , RSI 1m = 69 , ADX 1m = 39
+===========> LOSS ,percent (-) 102
+
+time 2023-11-17 02:20:00, Price = 35783 , RSI 1m = 24, max = 42, min  = 24, pending_buy True WAITING
+time 2023-11-17 02:25:00, Price = 35777 , RSI 1m = 23, max = 42, min  = 23, pending_buy True WAITING
+time 2023-11-17 02:30:00, Price = 35578 , RSI 1m = 19, max = 42, min  = 19, pending_buy True WAITING
+time 2023-11-17 02:35:00, Price = 35520 , RSI 1m = 18, max = 42, min  = 18, pending_buy True WAITING
+time 2023-11-17 02:40:00, Price = 35818 , RSI 1m = 37, max = 42, min  = 18, signal_type = BUY
+Time 2023-11-17 08:35:00, Price = 36436 , RSI 1m = 67 , ADX 1m = 22
+===========> WIN ,percent (+) 103
+
+time 2023-11-17 08:55:00, Price = 36572 , RSI 1m = 75 , max = 75, min  = 57 pending_sell True, WAITING
+time 2023-11-17 09:00:00, Price = 36571 , RSI 1m = 75 , max = 75, min  = 57 pending_sell True, WAITING
+time 2023-11-17 09:05:00, Price = 36544 , RSI 1m = 71, max = 75, min  = 57, signal_type = SELL
+Time 2023-11-17 21:50:00, Price = 35907 , RSI 1m = 23 , ADX 1m = 24
+===========> WIN ,percent (+) 106
+
+time 2023-11-17 21:50:00, Price = 35907 , RSI 1m = 23, max = 49, min  = 23, pending_buy True WAITING
+time 2023-11-17 21:55:00, Price = 36030 , RSI 1m = 33, max = 46, min  = 23, signal_type = BUY
+Time 2023-11-18 06:05:00, Price = 36678 , RSI 1m = 72 , ADX 1m = 26
+===========> WIN ,percent (+) 108
+
+time 2023-11-18 14:00:00, Price = 36222 , RSI 1m = 22, max = 51, min  = 22, pending_buy True WAITING
+time 2023-11-18 14:05:00, Price = 36285 , RSI 1m = 40, max = 51, min  = 22, signal_type = BUY
+Time 2023-11-20 01:50:00, Price = 36899 , RSI 1m = 84 , ADX 1m = 33
+===========> WIN ,percent (+) 102
+
+time 2023-11-20 01:50:00, Price = 36899 , RSI 1m = 84 , max = 84, min  = 58 pending_sell True, WAITING
+time 2023-11-20 01:55:00, Price = 36851 , RSI 1m = 73, max = 84, min  = 58, signal_type = SELL
+Time 2023-11-20 06:20:00, Price = 37511 , RSI 1m = 84 , ADX 1m = 42
+===========> LOSS ,percent (-) 110
+
+time 2023-11-20 06:20:00, Price = 37511 , RSI 1m = 84 , max = 84, min  = 49 pending_sell True, WAITING
+time 2023-11-20 06:25:00, Price = 37350 , RSI 1m = 66, max = 84, min  = 49, signal_type = SELL
+Time 2023-11-21 21:40:00, Price = 36697 , RSI 1m = 14 , ADX 1m = 61
+===========> WIN ,percent (+) 108
+
+time 2023-11-21 21:40:00, Price = 36697 , RSI 1m = 14, max = 33, min  = 14, pending_buy True WAITING
+time 2023-11-21 21:45:00, Price = 36688 , RSI 1m = 14, max = 28, min  = 14, pending_buy True WAITING
+time 2023-11-21 21:50:00, Price = 36531 , RSI 1m = 10, max = 28, min  = 10, pending_buy True WAITING
+time 2023-11-21 21:55:00, Price = 36646 , RSI 1m = 26, max = 28, min  = 10, signal_type = BUY
+Time 2023-11-22 00:00:00, Price = 37257 , RSI 1m = 67 , ADX 1m = 32
+===========> WIN ,percent (+) 101
+
+time 2023-11-22 06:00:00, Price = 36278 , RSI 1m = 24, max = 40, min  = 24, pending_buy True WAITING
+time 2023-11-22 06:05:00, Price = 36366 , RSI 1m = 31, max = 36, min  = 24, signal_type = BUY
+Time 2023-11-22 06:55:00, Price = 35737 , RSI 1m = 16 , ADX 1m = 60
+===========> LOSS ,percent (-) 104
+
+time 2023-11-22 06:55:00, Price = 35737 , RSI 1m = 16, max = 31, min  = 16, pending_buy True WAITING
+time 2023-11-22 07:00:00, Price = 35882 , RSI 1m = 27, max = 28, min  = 16, signal_type = BUY
+Time 2023-11-22 13:30:00, Price = 36509 , RSI 1m = 64 , ADX 1m = 18
+===========> WIN ,percent (+) 104
+
+time 2023-11-23 01:15:00, Price = 36974 , RSI 1m = 76 , max = 76, min  = 51 pending_sell True, WAITING
+time 2023-11-23 01:20:00, Price = 37053 , RSI 1m = 78 , max = 78, min  = 51 pending_sell True, WAITING
+time 2023-11-23 01:25:00, Price = 37108 , RSI 1m = 80 , max = 80, min  = 51 pending_sell True, WAITING
+time 2023-11-23 01:30:00, Price = 37203 , RSI 1m = 82 , max = 82, min  = 51 pending_sell True, WAITING
+time 2023-11-23 01:35:00, Price = 37180 , RSI 1m = 80 , max = 82, min  = 51 pending_sell True, WAITING
+time 2023-11-23 01:40:00, Price = 37156 , RSI 1m = 77, max = 82, min  = 54, pending_sell False signal_type = SELL
+Time 2023-11-23 04:25:00, Price = 37823 , RSI 1m = 74 , ADX 1m = 53
+===========> LOSS ,percent (-) 111
+
+time 2023-11-23 18:20:00, Price = 37219 , RSI 1m = 20, max = 51, min  = 20, pending_buy True WAITING
+time 2023-11-23 18:25:00, Price = 37274 , RSI 1m = 30, max = 51, min  = 20, signal_type = BUY
+Time 2023-11-24 17:30:00, Price = 37948 , RSI 1m = 77 , ADX 1m = 52
+===========> WIN ,percent (+) 112
+
+time 2023-11-24 17:30:00, Price = 37948 , RSI 1m = 77 , max = 77, min  = 60 pending_sell True, WAITING
+time 2023-11-24 17:35:00, Price = 37831 , RSI 1m = 65, max = 77, min  = 60, signal_type = SELL
+Time 2023-11-26 23:35:00, Price = 37210 , RSI 1m = 27 , ADX 1m = 37
+===========> WIN ,percent (+) 103
+
+time 2023-11-27 03:45:00, Price = 37613 , RSI 1m = 83 , max = 83, min  = 60 pending_sell True, WAITING
+time 2023-11-27 03:50:00, Price = 37578 , RSI 1m = 76, max = 83, min  = 60, pending_sell False signal_type = SELL
+Time 2023-11-27 18:05:00, Price = 36958 , RSI 1m = 23 , ADX 1m = 42
+===========> WIN ,percent (+) 103
+
+time 2023-11-27 18:05:00, Price = 36958 , RSI 1m = 23, max = 37, min  = 18, pending_buy False signal_type = BUY
+Time 2023-11-28 23:00:00, Price = 37578 , RSI 1m = 65 , ADX 1m = 29
+===========> WIN ,percent (+) 103
+
+time 2023-11-29 00:20:00, Price = 38180 , RSI 1m = 77 , max = 77, min  = 62 pending_sell True, WAITING
+time 2023-11-29 00:25:00, Price = 38074 , RSI 1m = 69, max = 77, min  = 63, signal_type = SELL
+Time 2023-12-01 16:55:00, Price = 38706 , RSI 1m = 74 , ADX 1m = 45
+===========> LOSS ,percent (-) 105
+
+time 2023-12-01 17:00:00, Price = 38800 , RSI 1m = 78 , max = 80, min  = 69 pending_sell True, WAITING
+time 2023-12-01 17:05:00, Price = 38649 , RSI 1m = 62, max = 80, min  = 62, signal_type = SELL
+Time 2023-12-03 02:10:00, Price = 39435 , RSI 1m = 90 , ADX 1m = 49
+===========> LOSS ,percent (-) 131
+
+time 2023-12-03 02:10:00, Price = 39435 , RSI 1m = 90 , max = 90, min  = 58 pending_sell True, WAITING
+time 2023-12-03 02:15:00, Price = 39070 , RSI 1m = 58, max = 90, min  = 58, signal_type = SELL
+Time 2023-12-03 20:30:00, Price = 39676 , RSI 1m = 74 , ADX 1m = 27
+===========> LOSS ,percent (-) 101
+
+time 2023-12-04 05:20:00, Price = 39928 , RSI 1m = 79 , max = 79, min  = 61 pending_sell True, WAITING
+time 2023-12-04 05:25:00, Price = 39901 , RSI 1m = 74, max = 79, min  = 61, signal_type = SELL
+Time 2023-12-04 08:20:00, Price = 40651 , RSI 1m = 80 , ADX 1m = 42
+===========> LOSS ,percent (-) 125
+
+time 2023-12-04 08:20:00, Price = 40651 , RSI 1m = 80 , max = 80, min  = 57 pending_sell True, WAITING
+time 2023-12-04 08:25:00, Price = 40661 , RSI 1m = 80 , max = 80, min  = 57 pending_sell True, WAITING
+time 2023-12-04 08:30:00, Price = 40746 , RSI 1m = 82 , max = 82, min  = 57 pending_sell True, WAITING
+time 2023-12-04 08:35:00, Price = 40695 , RSI 1m = 77, max = 82, min  = 59, pending_sell False signal_type = SELL
+Time 2023-12-04 12:15:00, Price = 41295 , RSI 1m = 83 , ADX 1m = 51
+===========> LOSS ,percent (-) 100
+
+time 2023-12-04 12:15:00, Price = 41295 , RSI 1m = 83 , max = 83, min  = 52 pending_sell True, WAITING
+time 2023-12-04 12:20:00, Price = 41482 , RSI 1m = 86 , max = 86, min  = 53 pending_sell True, WAITING
+time 2023-12-04 12:25:00, Price = 41287 , RSI 1m = 69, max = 86, min  = 60, signal_type = SELL
+Time 2023-12-04 17:35:00, Price = 41924 , RSI 1m = 67 , ADX 1m = 24
+===========> LOSS ,percent (-) 106
+
+time 2023-12-04 22:30:00, Price = 41190 , RSI 1m = 25, max = 49, min  = 25, pending_buy True WAITING
+time 2023-12-04 22:35:00, Price = 41252 , RSI 1m = 30, max = 49, min  = 25, signal_type = BUY
+Time 2023-12-05 02:15:00, Price = 41882 , RSI 1m = 68 , ADX 1m = 26
+===========> WIN ,percent (+) 105
+
+time 2023-12-05 05:10:00, Price = 42318 , RSI 1m = 75 , max = 75, min  = 49 pending_sell True, WAITING
+time 2023-12-05 05:15:00, Price = 42398 , RSI 1m = 77 , max = 77, min  = 49 pending_sell True, WAITING
+time 2023-12-05 05:20:00, Price = 42270 , RSI 1m = 67, max = 77, min  = 51, signal_type = SELL
+Time 2023-12-05 14:00:00, Price = 41645 , RSI 1m = 31 , ADX 1m = 30
+===========> WIN ,percent (+) 104
+
+time 2023-12-05 14:20:00, Price = 41523 , RSI 1m = 25, max = 38, min  = 25, pending_buy True WAITING
+time 2023-12-05 14:25:00, Price = 41543 , RSI 1m = 28, max = 38, min  = 25, signal_type = BUY
+Time 2023-12-05 21:30:00, Price = 42145 , RSI 1m = 70 , ADX 1m = 34
+===========> WIN ,percent (+) 100
+
+time 2023-12-06 00:10:00, Price = 43199 , RSI 1m = 77 , max = 77, min  = 60 pending_sell True, WAITING
+time 2023-12-06 00:15:00, Price = 42961 , RSI 1m = 65, max = 77, min  = 60, signal_type = SELL
+Time 2023-12-06 00:25:00, Price = 43771 , RSI 1m = 78 , ADX 1m = 47
+===========> LOSS ,percent (-) 135
+
+time 2023-12-06 00:25:00, Price = 43771 , RSI 1m = 78 , max = 78, min  = 60 pending_sell True, WAITING
+time 2023-12-06 00:30:00, Price = 43637 , RSI 1m = 73, max = 78, min  = 65, signal_type = SELL
+Time 2023-12-06 05:15:00, Price = 44333 , RSI 1m = 72 , ADX 1m = 21
+===========> LOSS ,percent (-) 115
+
+time 2023-12-06 05:25:00, Price = 44428 , RSI 1m = 75 , max = 75, min  = 55 pending_sell True, WAITING
+time 2023-12-06 05:30:00, Price = 44300 , RSI 1m = 66, max = 75, min  = 55, signal_type = SELL
+Time 2023-12-06 09:30:00, Price = 43617 , RSI 1m = 29 , ADX 1m = 22
+===========> WIN ,percent (+) 113
+
+time 2023-12-07 15:20:00, Price = 43688 , RSI 1m = 23, max = 50, min  = 23, pending_buy True WAITING
+time 2023-12-07 15:25:00, Price = 43674 , RSI 1m = 23, max = 50, min  = 23, pending_buy True WAITING
+time 2023-12-07 15:30:00, Price = 43704 , RSI 1m = 28, max = 50, min  = 23, signal_type = BUY
+Time 2023-12-07 16:25:00, Price = 43083 , RSI 1m = 8 , ADX 1m = 53
+===========> LOSS ,percent (-) 103
+
+time 2023-12-07 16:25:00, Price = 43083 , RSI 1m = 8, max = 33, min  = 8, pending_buy True WAITING
+time 2023-12-07 16:30:00, Price = 43171 , RSI 1m = 19, max = 33, min  = 8, pending_buy False signal_type = BUY
+Time 2023-12-07 22:20:00, Price = 43773 , RSI 1m = 76 , ADX 1m = 28
+===========> WIN ,percent (+) 100
+
+time 2023-12-07 22:20:00, Price = 43773 , RSI 1m = 76 , max = 76, min  = 56 pending_sell True, WAITING
+time 2023-12-07 22:25:00, Price = 43860 , RSI 1m = 79 , max = 79, min  = 56 pending_sell True, WAITING
+time 2023-12-07 22:30:00, Price = 43798 , RSI 1m = 72, max = 79, min  = 56, signal_type = SELL
+Time 2023-12-08 02:25:00, Price = 43160 , RSI 1m = 31 , ADX 1m = 32
+===========> WIN ,percent (+) 106
+
+time 2023-12-08 14:20:00, Price = 43219 , RSI 1m = 24, max = 44, min  = 24, pending_buy True WAITING
+time 2023-12-08 14:25:00, Price = 43163 , RSI 1m = 21, max = 44, min  = 21, pending_buy True WAITING
+time 2023-12-08 14:30:00, Price = 43210 , RSI 1m = 29, max = 44, min  = 21, signal_type = BUY
+Time 2023-12-08 21:35:00, Price = 43918 , RSI 1m = 68 , ADX 1m = 23
+===========> WIN ,percent (+) 118
+
+time 2023-12-09 03:30:00, Price = 44175 , RSI 1m = 78 , max = 78, min  = 62 pending_sell True, WAITING
+time 2023-12-09 03:35:00, Price = 44125 , RSI 1m = 70, max = 78, min  = 63, signal_type = SELL
+Time 2023-12-11 08:05:00, Price = 43384 , RSI 1m = 20 , ADX 1m = 35
+===========> WIN ,percent (+) 123
+
+time 2023-12-11 08:05:00, Price = 43384 , RSI 1m = 20, max = 47, min  = 20, pending_buy True WAITING
+time 2023-12-11 08:10:00, Price = 43408 , RSI 1m = 23, max = 47, min  = 20, pending_buy False signal_type = BUY
+Time 2023-12-11 09:05:00, Price = 42736 , RSI 1m = 14 , ADX 1m = 61
+===========> LOSS ,percent (-) 112
+
+time 2023-12-11 09:05:00, Price = 42736 , RSI 1m = 14, max = 33, min  = 14, pending_buy True WAITING
+time 2023-12-11 09:10:00, Price = 41725 , RSI 1m = 7, max = 33, min  = 7, pending_buy True WAITING
+time 2023-12-11 09:15:00, Price = 42041 , RSI 1m = 20, max = 33, min  = 7, pending_buy False signal_type = BUY
+Time 2023-12-11 23:15:00, Price = 41420 , RSI 1m = 23 , ADX 1m = 39
+===========> LOSS ,percent (-) 103
+
+time 2023-12-11 23:15:00, Price = 41420 , RSI 1m = 23, max = 44, min  = 23, pending_buy True WAITING
+time 2023-12-11 23:20:00, Price = 41717 , RSI 1m = 43, max = 44, min  = 23, signal_type = BUY
+Time 2023-12-12 01:10:00, Price = 41045 , RSI 1m = 24 , ADX 1m = 44
+===========> LOSS ,percent (-) 112
+
+time 2023-12-12 01:10:00, Price = 41045 , RSI 1m = 24, max = 44, min  = 24, pending_buy True WAITING
+time 2023-12-12 01:15:00, Price = 41177 , RSI 1m = 32, max = 44, min  = 24, signal_type = BUY
+Time 2023-12-12 02:20:00, Price = 40552 , RSI 1m = 29 , ADX 1m = 57
+===========> LOSS ,percent (-) 104
+
+time 2023-12-12 11:55:00, Price = 41411 , RSI 1m = 25, max = 47, min  = 25, pending_buy True WAITING
+time 2023-12-12 12:00:00, Price = 41500 , RSI 1m = 35, max = 44, min  = 25, signal_type = BUY
+Time 2023-12-13 00:30:00, Price = 40829 , RSI 1m = 29 , ADX 1m = 35
+===========> LOSS ,percent (-) 111
+
+time 2023-12-13 08:25:00, Price = 41033 , RSI 1m = 25, max = 59, min  = 25, pending_buy True WAITING
+time 2023-12-13 08:30:00, Price = 41200 , RSI 1m = 40, max = 59, min  = 25, signal_type = BUY
+Time 2023-12-13 22:00:00, Price = 41815 , RSI 1m = 77 , ADX 1m = 23
+===========> WIN ,percent (+) 102
+
+time 2023-12-13 22:00:00, Price = 41815 , RSI 1m = 77 , max = 77, min  = 53 pending_sell True, WAITING
+time 2023-12-13 22:05:00, Price = 41824 , RSI 1m = 78 , max = 78, min  = 53 pending_sell True, WAITING
+time 2023-12-13 22:10:00, Price = 41833 , RSI 1m = 78 , max = 78, min  = 53 pending_sell True, WAITING
+time 2023-12-13 22:15:00, Price = 41877 , RSI 1m = 79 , max = 79, min  = 53 pending_sell True, WAITING
+time 2023-12-13 22:20:00, Price = 41873 , RSI 1m = 79 , max = 79, min  = 53 pending_sell True, WAITING
+time 2023-12-13 22:25:00, Price = 41780 , RSI 1m = 68, max = 79, min  = 53, signal_type = SELL
+Time 2023-12-14 02:05:00, Price = 42387 , RSI 1m = 71 , ADX 1m = 17
+===========> LOSS ,percent (-) 101
+
+time 2023-12-14 02:35:00, Price = 42796 , RSI 1m = 82 , max = 82, min  = 57 pending_sell True, WAITING
+time 2023-12-14 02:40:00, Price = 42747 , RSI 1m = 78, max = 82, min  = 57, pending_sell False signal_type = SELL
+Time 2023-12-14 05:10:00, Price = 43383 , RSI 1m = 72 , ADX 1m = 41
+===========> LOSS ,percent (-) 106
+
+time 2023-12-14 13:20:00, Price = 43111 , RSI 1m = 82 , max = 82, min  = 51 pending_sell True, WAITING
+time 2023-12-14 13:25:00, Price = 43020 , RSI 1m = 68, max = 82, min  = 51, signal_type = SELL
+Time 2023-12-14 20:30:00, Price = 41960 , RSI 1m = 16 , ADX 1m = 36
+===========> WIN ,percent (+) 176
+
+time 2023-12-14 20:30:00, Price = 41960 , RSI 1m = 16, max = 60, min  = 16, pending_buy True WAITING
+time 2023-12-14 20:35:00, Price = 42225 , RSI 1m = 29, max = 60, min  = 16, signal_type = BUY
+Time 2023-12-15 00:25:00, Price = 42878 , RSI 1m = 67 , ADX 1m = 24
+===========> WIN ,percent (+) 108
+
+time 2023-12-15 00:30:00, Price = 43159 , RSI 1m = 76 , max = 76, min  = 53 pending_sell True, WAITING
+time 2023-12-15 00:35:00, Price = 43283 , RSI 1m = 79 , max = 79, min  = 53 pending_sell True, WAITING
+time 2023-12-15 00:40:00, Price = 43288 , RSI 1m = 79 , max = 79, min  = 53 pending_sell True, WAITING
+time 2023-12-15 00:45:00, Price = 43303 , RSI 1m = 79 , max = 79, min  = 53 pending_sell True, WAITING
+time 2023-12-15 00:50:00, Price = 43352 , RSI 1m = 80 , max = 80, min  = 58 pending_sell True, WAITING
+time 2023-12-15 00:55:00, Price = 43216 , RSI 1m = 69, max = 80, min  = 58, signal_type = SELL
+Time 2023-12-15 12:55:00, Price = 42609 , RSI 1m = 33 , ADX 1m = 46
+===========> WIN ,percent (+) 101
+
+time 2023-12-15 16:00:00, Price = 42984 , RSI 1m = 75 , max = 75, min  = 48 pending_sell True, WAITING
+time 2023-12-15 16:05:00, Price = 42955 , RSI 1m = 71, max = 75, min  = 52, signal_type = SELL
+Time 2023-12-15 20:35:00, Price = 42321 , RSI 1m = 22 , ADX 1m = 48
+===========> WIN ,percent (+) 105
+
+time 2023-12-15 20:35:00, Price = 42321 , RSI 1m = 22, max = 44, min  = 22, pending_buy True WAITING
+time 2023-12-15 20:40:00, Price = 42322 , RSI 1m = 22, max = 38, min  = 22, pending_buy True WAITING
+time 2023-12-15 20:45:00, Price = 42310 , RSI 1m = 22, max = 38, min  = 22, pending_buy True WAITING
+time 2023-12-15 20:50:00, Price = 42264 , RSI 1m = 20, max = 38, min  = 20, pending_buy True WAITING
+time 2023-12-15 20:55:00, Price = 42311 , RSI 1m = 27, max = 38, min  = 20, signal_type = BUY
+Time 2023-12-17 21:30:00, Price = 41705 , RSI 1m = 30 , ADX 1m = 17
+===========> LOSS ,percent (-) 101
+
+time 2023-12-18 00:00:00, Price = 42254 , RSI 1m = 75 , max = 75, min  = 45 pending_sell True, WAITING
+time 2023-12-18 00:05:00, Price = 42241 , RSI 1m = 74, max = 75, min  = 45, signal_type = SELL
+Time 2023-12-18 06:20:00, Price = 41640 , RSI 1m = 28 , ADX 1m = 35
+===========> WIN ,percent (+) 100
+
+time 2023-12-18 06:30:00, Price = 41301 , RSI 1m = 16, max = 39, min  = 16, pending_buy True WAITING
+time 2023-12-18 06:35:00, Price = 41360 , RSI 1m = 22, max = 39, min  = 16, pending_buy False signal_type = BUY
+Time 2023-12-18 17:25:00, Price = 40745 , RSI 1m = 29 , ADX 1m = 28
+===========> LOSS ,percent (-) 102
+
+time 2023-12-18 21:45:00, Price = 41772 , RSI 1m = 75 , max = 75, min  = 57 pending_sell True, WAITING
+time 2023-12-18 21:50:00, Price = 41618 , RSI 1m = 63, max = 75, min  = 57, signal_type = SELL
+Time 2023-12-19 04:05:00, Price = 42427 , RSI 1m = 86 , ADX 1m = 40
+===========> LOSS ,percent (-) 134
+
+time 2023-12-19 04:05:00, Price = 42427 , RSI 1m = 86 , max = 86, min  = 50 pending_sell True, WAITING
+time 2023-12-19 04:10:00, Price = 42462 , RSI 1m = 87 , max = 87, min  = 51 pending_sell True, WAITING
+time 2023-12-19 04:15:00, Price = 42477 , RSI 1m = 87 , max = 87, min  = 60 pending_sell True, WAITING
+time 2023-12-19 04:20:00, Price = 42413 , RSI 1m = 80, max = 87, min  = 64, pending_sell False signal_type = SELL
+Time 2023-12-19 08:45:00, Price = 43060 , RSI 1m = 69 , ADX 1m = 46
+===========> LOSS ,percent (-) 107
+
+time 2023-12-19 08:50:00, Price = 43275 , RSI 1m = 76 , max = 76, min  = 49 pending_sell True, WAITING
+time 2023-12-19 08:55:00, Price = 43346 , RSI 1m = 77 , max = 77, min  = 49 pending_sell True, WAITING
+time 2023-12-19 09:00:00, Price = 43256 , RSI 1m = 71, max = 77, min  = 49, signal_type = SELL
+Time 2023-12-19 21:10:00, Price = 42649 , RSI 1m = 20 , ADX 1m = 19
+===========> WIN ,percent (+) 101
+
+time 2023-12-19 21:10:00, Price = 42649 , RSI 1m = 20, max = 51, min  = 20, pending_buy True WAITING
+time 2023-12-19 21:15:00, Price = 42644 , RSI 1m = 20, max = 51, min  = 20, pending_buy True WAITING
+time 2023-12-19 21:20:00, Price = 42707 , RSI 1m = 29, max = 51, min  = 20, signal_type = BUY
+Time 2023-12-20 00:10:00, Price = 42038 , RSI 1m = 23 , ADX 1m = 36
+===========> LOSS ,percent (-) 111
+
+time 2023-12-20 00:10:00, Price = 42038 , RSI 1m = 23, max = 45, min  = 23, pending_buy True WAITING
+time 2023-12-20 00:15:00, Price = 41994 , RSI 1m = 22, max = 42, min  = 22, pending_buy True WAITING
+time 2023-12-20 00:20:00, Price = 41925 , RSI 1m = 21, max = 42, min  = 21, pending_buy True WAITING
+time 2023-12-20 00:25:00, Price = 41995 , RSI 1m = 27, max = 42, min  = 21, signal_type = BUY
+Time 2023-12-20 11:25:00, Price = 42634 , RSI 1m = 71 , ADX 1m = 24
+===========> WIN ,percent (+) 106
+
+time 2023-12-20 11:35:00, Price = 42724 , RSI 1m = 76 , max = 76, min  = 47 pending_sell True, WAITING
+time 2023-12-20 11:40:00, Price = 42649 , RSI 1m = 65, max = 76, min  = 47, signal_type = SELL
+Time 2023-12-20 20:20:00, Price = 43304 , RSI 1m = 73 , ADX 1m = 24
+===========> LOSS ,percent (-) 109
+
+time 2023-12-20 20:25:00, Price = 43430 , RSI 1m = 77 , max = 77, min  = 52 pending_sell True, WAITING
+time 2023-12-20 20:30:00, Price = 43310 , RSI 1m = 66, max = 77, min  = 52, signal_type = SELL
+Time 2023-12-20 21:00:00, Price = 43925 , RSI 1m = 82 , ADX 1m = 46
+===========> LOSS ,percent (-) 102
+
+time 2023-12-20 21:00:00, Price = 43925 , RSI 1m = 82 , max = 82, min  = 66 pending_sell True, WAITING
+time 2023-12-20 21:05:00, Price = 43739 , RSI 1m = 69, max = 82, min  = 66, signal_type = SELL
+Time 2023-12-22 13:30:00, Price = 44449 , RSI 1m = 73 , ADX 1m = 22
+===========> LOSS ,percent (-) 118
+
+time 2023-12-23 01:30:00, Price = 43960 , RSI 1m = 76 , max = 76, min  = 56 pending_sell True, WAITING
+time 2023-12-23 01:35:00, Price = 43900 , RSI 1m = 67, max = 76, min  = 56, signal_type = SELL
+Time 2023-12-25 05:10:00, Price = 43058 , RSI 1m = 18 , ADX 1m = 27
+===========> WIN ,percent (+) 140
+
+time 2023-12-25 05:10:00, Price = 43058 , RSI 1m = 18, max = 53, min  = 18, pending_buy True WAITING
+time 2023-12-25 05:15:00, Price = 42927 , RSI 1m = 15, max = 53, min  = 15, pending_buy True WAITING
+time 2023-12-25 05:20:00, Price = 43153 , RSI 1m = 34, max = 53, min  = 15, signal_type = BUY
+Time 2023-12-25 20:00:00, Price = 43794 , RSI 1m = 82 , ADX 1m = 27
+===========> WIN ,percent (+) 106
+
+time 2023-12-25 20:00:00, Price = 43794 , RSI 1m = 82 , max = 82, min  = 42 pending_sell True, WAITING
+time 2023-12-25 20:05:00, Price = 43685 , RSI 1m = 72, max = 82, min  = 42, signal_type = SELL
+Time 2023-12-26 12:30:00, Price = 42895 , RSI 1m = 11 , ADX 1m = 39
+===========> WIN ,percent (+) 131
+
+time 2023-12-26 12:30:00, Price = 42895 , RSI 1m = 11, max = 50, min  = 11, pending_buy True WAITING
+time 2023-12-26 12:35:00, Price = 42793 , RSI 1m = 10, max = 50, min  = 10, pending_buy True WAITING
+time 2023-12-26 12:40:00, Price = 42783 , RSI 1m = 10, max = 50, min  = 10, pending_buy True WAITING
+time 2023-12-26 12:45:00, Price = 42810 , RSI 1m = 13, max = 50, min  = 10, pending_buy False signal_type = BUY
+Time 2023-12-27 00:35:00, Price = 41836 , RSI 1m = 24 , ADX 1m = 50
+===========> LOSS ,percent (-) 162
+
+time 2023-12-27 00:35:00, Price = 41836 , RSI 1m = 24, max = 44, min  = 24, pending_buy True WAITING
+time 2023-12-27 00:40:00, Price = 42015 , RSI 1m = 35, max = 44, min  = 24, signal_type = BUY
+Time 2023-12-27 15:30:00, Price = 42707 , RSI 1m = 73 , ADX 1m = 17
+===========> WIN ,percent (+) 115
+
+time 2023-12-27 15:40:00, Price = 42765 , RSI 1m = 76 , max = 76, min  = 46 pending_sell True, WAITING
+time 2023-12-27 15:45:00, Price = 42688 , RSI 1m = 64, max = 76, min  = 46, signal_type = SELL
+Time 2023-12-28 03:20:00, Price = 43289 , RSI 1m = 63 , ADX 1m = 18
+===========> LOSS ,percent (-) 100
+
+time 2023-12-28 05:10:00, Price = 43656 , RSI 1m = 76 , max = 76, min  = 50 pending_sell True, WAITING
+time 2023-12-28 05:15:00, Price = 43628 , RSI 1m = 72, max = 76, min  = 50, signal_type = SELL
+Time 2023-12-28 14:10:00, Price = 43028 , RSI 1m = 33 , ADX 1m = 47
+===========> WIN ,percent (+) 100
+
+time 2023-12-28 20:10:00, Price = 42724 , RSI 1m = 24, max = 39, min  = 24, pending_buy True WAITING
+time 2023-12-28 20:15:00, Price = 42835 , RSI 1m = 37, max = 39, min  = 24, signal_type = BUY
+Time 2023-12-29 22:50:00, Price = 42222 , RSI 1m = 20 , ADX 1m = 32
+===========> LOSS ,percent (-) 102
+
+time 2023-12-29 22:50:00, Price = 42222 , RSI 1m = 20, max = 59, min  = 20, pending_buy True WAITING
+time 2023-12-29 22:55:00, Price = 42301 , RSI 1m = 26, max = 50, min  = 20, signal_type = BUY
+Time 2023-12-30 15:50:00, Price = 41672 , RSI 1m = 15 , ADX 1m = 30
+===========> LOSS ,percent (-) 104
+
+time 2023-12-30 15:50:00, Price = 41672 , RSI 1m = 15, max = 43, min  = 15, pending_buy True WAITING
+time 2023-12-30 15:55:00, Price = 41613 , RSI 1m = 13, max = 43, min  = 13, pending_buy True WAITING
+time 2023-12-30 16:00:00, Price = 41725 , RSI 1m = 31, max = 39, min  = 13, signal_type = BUY
+Time 2023-12-30 22:45:00, Price = 42342 , RSI 1m = 67 , ADX 1m = 37
+===========> WIN ,percent (+) 102
+
+time 2023-12-30 23:05:00, Price = 42498 , RSI 1m = 75 , max = 75, min  = 56 pending_sell True, WAITING
+time 2023-12-30 23:10:00, Price = 42591 , RSI 1m = 79 , max = 79, min  = 56 pending_sell True, WAITING
+time 2023-12-30 23:15:00, Price = 42572 , RSI 1m = 77 , max = 79, min  = 59 pending_sell True, WAITING
+time 2023-12-30 23:20:00, Price = 42571 , RSI 1m = 76, max = 79, min  = 60, pending_sell False signal_type = SELL
+Time 2024-01-02 01:40:00, Price = 43183 , RSI 1m = 72 , ADX 1m = 37
+===========> LOSS ,percent (-) 102
+
+time 2024-01-02 02:25:00, Price = 43300 , RSI 1m = 76 , max = 76, min  = 67 pending_sell True, WAITING
+time 2024-01-02 02:30:00, Price = 43403 , RSI 1m = 81 , max = 81, min  = 67 pending_sell True, WAITING
+time 2024-01-02 02:35:00, Price = 43430 , RSI 1m = 82 , max = 82, min  = 67 pending_sell True, WAITING
+time 2024-01-02 02:40:00, Price = 43425 , RSI 1m = 81 , max = 82, min  = 67 pending_sell True, WAITING
+time 2024-01-02 02:45:00, Price = 43499 , RSI 1m = 84 , max = 84, min  = 67 pending_sell True, WAITING
+time 2024-01-02 02:50:00, Price = 43567 , RSI 1m = 86 , max = 86, min  = 70 pending_sell True, WAITING
+time 2024-01-02 02:55:00, Price = 43556 , RSI 1m = 84 , max = 86, min  = 71 pending_sell True, WAITING
+time 2024-01-02 03:00:00, Price = 43740 , RSI 1m = 88 , max = 88, min  = 71 pending_sell True, WAITING
+time 2024-01-02 03:05:00, Price = 43742 , RSI 1m = 88 , max = 88, min  = 71 pending_sell True, WAITING
+time 2024-01-02 03:10:00, Price = 43692 , RSI 1m = 81, max = 88, min  = 73, pending_sell False signal_type = SELL
+Time 2024-01-02 07:00:00, Price = 44341 , RSI 1m = 80 , ADX 1m = 43
+===========> LOSS ,percent (-) 108
+
+time 2024-01-02 07:00:00, Price = 44341 , RSI 1m = 80 , max = 80, min  = 60 pending_sell True, WAITING
+time 2024-01-02 07:00:00, Price = 44341 , RSI 1m = 80 , max = 80, min  = 64 pending_sell True, WAITING
+time 2024-01-02 07:05:00, Price = 44468 , RSI 1m = 83 , max = 83, min  = 68 pending_sell True, WAITING
+time 2024-01-02 07:10:00, Price = 44744 , RSI 1m = 88 , max = 88, min  = 74 pending_sell True, WAITING
+time 2024-01-02 07:15:00, Price = 44640 , RSI 1m = 79, max = 88, min  = 74, pending_sell False signal_type = SELL
+Time 2024-01-02 08:05:00, Price = 45287 , RSI 1m = 80 , ADX 1m = 69
+===========> LOSS ,percent (-) 107
+
+time 2024-01-02 08:05:00, Price = 45287 , RSI 1m = 80, max = 83, min  = 68, pending_sell False signal_type = SELL
+Time 2024-01-03 18:20:00, Price = 44560 , RSI 1m = 24 , ADX 1m = 32
+===========> WIN ,percent (+) 121
+
+time 2024-01-03 18:20:00, Price = 44560 , RSI 1m = 24, max = 51, min  = 24, pending_buy True WAITING
+time 2024-01-03 18:25:00, Price = 44380 , RSI 1m = 21, max = 43, min  = 21, pending_buy True WAITING
+time 2024-01-03 18:30:00, Price = 44525 , RSI 1m = 29, max = 43, min  = 21, signal_type = BUY
+Time 2024-01-03 18:55:00, Price = 43728 , RSI 1m = 18 , ADX 1m = 48
+===========> LOSS ,percent (-) 132
+
+time 2024-01-03 18:55:00, Price = 43728 , RSI 1m = 18, max = 32, min  = 18, pending_buy True WAITING
+time 2024-01-03 19:00:00, Price = 42967 , RSI 1m = 12, max = 31, min  = 12, pending_buy True WAITING
+time 2024-01-03 19:05:00, Price = 40436 , RSI 1m = 5, max = 31, min  = 5, pending_buy True WAITING
+time 2024-01-03 19:10:00, Price = 41948 , RSI 1m = 29, max = 31, min  = 5, signal_type = BUY
+Time 2024-01-03 19:50:00, Price = 42771 , RSI 1m = 42 , ADX 1m = 58
+===========> WIN ,percent (+) 137
+
+time 2024-01-04 22:10:00, Price = 43821 , RSI 1m = 75 , max = 75, min  = 47 pending_sell True, WAITING
+time 2024-01-04 22:15:00, Price = 43889 , RSI 1m = 77 , max = 77, min  = 47 pending_sell True, WAITING
+time 2024-01-04 22:20:00, Price = 43798 , RSI 1m = 69, max = 77, min  = 47, signal_type = SELL
+Time 2024-01-05 03:35:00, Price = 44454 , RSI 1m = 69 , ADX 1m = 19
+===========> LOSS ,percent (-) 109
+
+time 2024-01-05 08:45:00, Price = 43173 , RSI 1m = 14, max = 51, min  = 14, pending_buy True WAITING
+time 2024-01-05 08:50:00, Price = 43348 , RSI 1m = 25, max = 51, min  = 14, pending_buy False signal_type = BUY
+Time 2024-01-05 16:00:00, Price = 44130 , RSI 1m = 70 , ADX 1m = 19
+===========> WIN ,percent (+) 130
+
+time 2024-01-06 03:50:00, Price = 44126 , RSI 1m = 78 , max = 78, min  = 54 pending_sell True, WAITING
+time 2024-01-06 03:55:00, Price = 43951 , RSI 1m = 64, max = 78, min  = 54, signal_type = SELL
+Time 2024-01-08 09:50:00, Price = 43295 , RSI 1m = 24 , ADX 1m = 45
+===========> WIN ,percent (+) 109
+
+time 2024-01-08 09:50:00, Price = 43295 , RSI 1m = 24, max = 51, min  = 24, pending_buy True WAITING
+time 2024-01-08 09:55:00, Price = 43354 , RSI 1m = 30, max = 51, min  = 24, signal_type = BUY
+Time 2024-01-08 13:20:00, Price = 44050 , RSI 1m = 77 , ADX 1m = 22
+===========> WIN ,percent (+) 115
+
+time 2024-01-08 13:20:00, Price = 44050 , RSI 1m = 77 , max = 77, min  = 48 pending_sell True, WAITING
+time 2024-01-08 13:25:00, Price = 44142 , RSI 1m = 79 , max = 79, min  = 48 pending_sell True, WAITING
+time 2024-01-08 13:30:00, Price = 44053 , RSI 1m = 72, max = 79, min  = 51, signal_type = SELL
+Time 2024-01-08 19:00:00, Price = 44963 , RSI 1m = 87 , ADX 1m = 31
+===========> LOSS ,percent (-) 151
+
+time 2024-01-08 19:00:00, Price = 44963 , RSI 1m = 87 , max = 87, min  = 55 pending_sell True, WAITING
+time 2024-01-08 19:05:00, Price = 44923 , RSI 1m = 83, max = 87, min  = 55, pending_sell False signal_type = SELL
+Time 2024-01-09 00:55:00, Price = 45643 , RSI 1m = 79 , ADX 1m = 41
+===========> LOSS ,percent (-) 120
+
+time 2024-01-09 00:55:00, Price = 45643 , RSI 1m = 79 , max = 79, min  = 54 pending_sell True, WAITING
+time 2024-01-09 01:00:00, Price = 45987 , RSI 1m = 85 , max = 85, min  = 62 pending_sell True, WAITING
+time 2024-01-09 01:05:00, Price = 45850 , RSI 1m = 75, max = 85, min  = 63, pending_sell False signal_type = SELL
+Time 2024-01-09 01:35:00, Price = 46664 , RSI 1m = 85 , ADX 1m = 60
+===========> LOSS ,percent (-) 135
+
+time 2024-01-09 01:35:00, Price = 46664 , RSI 1m = 85 , max = 85, min  = 72 pending_sell True, WAITING
+time 2024-01-09 01:40:00, Price = 46960 , RSI 1m = 88 , max = 88, min  = 74 pending_sell True, WAITING
+time 2024-01-09 01:45:00, Price = 46896 , RSI 1m = 84, max = 88, min  = 75, pending_sell False signal_type = SELL
+Time 2024-01-09 19:55:00, Price = 46175 , RSI 1m = 29 , ADX 1m = 27
+===========> WIN ,percent (+) 120
+
+time 2024-01-10 04:10:00, Price = 47983 , RSI 1m = 84 , max = 84, min  = 41 pending_sell True, WAITING
+time 2024-01-10 04:15:00, Price = 46543 , RSI 1m = 45, max = 84, min  = 41, signal_type = SELL
+Time 2024-01-10 04:25:00, Price = 45899 , RSI 1m = 37 , ADX 1m = 16
+===========> WIN ,percent (+) 107
+
+time 2024-01-10 15:50:00, Price = 45535 , RSI 1m = 24, max = 44, min  = 24, pending_buy True WAITING
+time 2024-01-10 15:55:00, Price = 45328 , RSI 1m = 17, max = 44, min  = 17, pending_buy True WAITING
+time 2024-01-10 16:00:00, Price = 45461 , RSI 1m = 31, max = 39, min  = 17, signal_type = BUY
+Time 2024-01-10 19:50:00, Price = 44705 , RSI 1m = 18 , ADX 1m = 47
+===========> LOSS ,percent (-) 126
+
+time 2024-01-10 19:50:00, Price = 44705 , RSI 1m = 18, max = 52, min  = 18, pending_buy True WAITING
+time 2024-01-10 19:55:00, Price = 44679 , RSI 1m = 18, max = 49, min  = 18, pending_buy True WAITING
+time 2024-01-10 20:00:00, Price = 44709 , RSI 1m = 20, max = 44, min  = 18, pending_buy True WAITING
+time 2024-01-10 20:05:00, Price = 44906 , RSI 1m = 34, max = 40, min  = 18, signal_type = BUY
+Time 2024-01-10 22:55:00, Price = 45569 , RSI 1m = 64 , ADX 1m = 20
+===========> WIN ,percent (+) 110
+
+time 2024-01-11 00:40:00, Price = 46299 , RSI 1m = 77 , max = 77, min  = 49 pending_sell True, WAITING
+time 2024-01-11 00:45:00, Price = 46116 , RSI 1m = 68, max = 77, min  = 49, signal_type = SELL
+Time 2024-01-11 03:40:00, Price = 45470 , RSI 1m = 37 , ADX 1m = 36
+===========> WIN ,percent (+) 107
+
+time 2024-01-11 06:10:00, Price = 47491 , RSI 1m = 75 , max = 75, min  = 58 pending_sell True, WAITING
+time 2024-01-11 06:15:00, Price = 47635 , RSI 1m = 77 , max = 77, min  = 58 pending_sell True, WAITING
+time 2024-01-11 06:20:00, Price = 47200 , RSI 1m = 63, max = 77, min  = 58, signal_type = SELL
+Time 2024-01-11 06:35:00, Price = 46541 , RSI 1m = 48 , ADX 1m = 25
+===========> WIN ,percent (+) 109
+
+time 2024-01-11 12:40:00, Price = 46027 , RSI 1m = 23, max = 47, min  = 23, pending_buy True WAITING
+time 2024-01-11 12:45:00, Price = 46057 , RSI 1m = 26, max = 43, min  = 23, signal_type = BUY
+Time 2024-01-11 17:40:00, Price = 46725 , RSI 1m = 77 , ADX 1m = 30
+===========> WIN ,percent (+) 111
+
+time 2024-01-11 17:40:00, Price = 46725 , RSI 1m = 77 , max = 77, min  = 49 pending_sell True, WAITING
+time 2024-01-11 17:45:00, Price = 46757 , RSI 1m = 78 , max = 78, min  = 49 pending_sell True, WAITING
+time 2024-01-11 17:50:00, Price = 46840 , RSI 1m = 80 , max = 80, min  = 49 pending_sell True, WAITING
+time 2024-01-11 17:55:00, Price = 46870 , RSI 1m = 81 , max = 81, min  = 49 pending_sell True, WAITING
+time 2024-01-11 18:00:00, Price = 46750 , RSI 1m = 69, max = 81, min  = 52, signal_type = SELL
+Time 2024-01-11 19:50:00, Price = 47359 , RSI 1m = 68 , ADX 1m = 39
+===========> LOSS ,percent (-) 101
+
+time 2024-01-11 21:40:00, Price = 48569 , RSI 1m = 80 , max = 80, min  = 57 pending_sell True, WAITING
+time 2024-01-11 21:45:00, Price = 48908 , RSI 1m = 83 , max = 83, min  = 59 pending_sell True, WAITING
+time 2024-01-11 21:50:00, Price = 48664 , RSI 1m = 74, max = 83, min  = 62, signal_type = SELL
+Time 2024-01-11 22:05:00, Price = 47992 , RSI 1m = 54 , ADX 1m = 29
+===========> WIN ,percent (+) 112
+
+time 2024-01-12 22:20:00, Price = 44772 , RSI 1m = 23, max = 41, min  = 23, pending_buy True WAITING
+time 2024-01-12 22:25:00, Price = 44958 , RSI 1m = 32, max = 41, min  = 23, signal_type = BUY
+Time 2024-01-12 23:15:00, Price = 44036 , RSI 1m = 23 , ADX 1m = 49
+===========> LOSS ,percent (-) 153
+
+time 2024-01-12 23:15:00, Price = 44036 , RSI 1m = 23, max = 35, min  = 23, pending_buy True WAITING
+time 2024-01-12 23:20:00, Price = 44190 , RSI 1m = 29, max = 35, min  = 23, signal_type = BUY
+Time 2024-01-12 23:50:00, Price = 43275 , RSI 1m = 25 , ADX 1m = 57
+===========> LOSS ,percent (-) 152
+
+time 2024-01-12 23:50:00, Price = 43275 , RSI 1m = 25, max = 35, min  = 21, pending_buy False signal_type = BUY
+Time 2024-01-13 01:00:00, Price = 43905 , RSI 1m = 48 , ADX 1m = 50
+===========> WIN ,percent (+) 105
+
+time 2024-01-13 05:00:00, Price = 42529 , RSI 1m = 22, max = 53, min  = 22, pending_buy True WAITING
+time 2024-01-13 05:05:00, Price = 42686 , RSI 1m = 28, max = 49, min  = 22, signal_type = BUY
+Time 2024-01-13 05:20:00, Price = 41993 , RSI 1m = 20 , ADX 1m = 45
+===========> LOSS ,percent (-) 115
+
+time 2024-01-13 05:20:00, Price = 41993 , RSI 1m = 20, max = 43, min  = 20, pending_buy True WAITING
+time 2024-01-13 05:25:00, Price = 41906 , RSI 1m = 19, max = 43, min  = 19, pending_buy True WAITING
+time 2024-01-13 05:30:00, Price = 42350 , RSI 1m = 33, max = 43, min  = 19, signal_type = BUY
+Time 2024-01-13 07:10:00, Price = 42973 , RSI 1m = 54 , ADX 1m = 40
+===========> WIN ,percent (+) 103
+
+time 2024-01-13 17:10:00, Price = 42713 , RSI 1m = 25, max = 45, min  = 25, pending_buy True WAITING
+time 2024-01-13 17:15:00, Price = 42832 , RSI 1m = 38, max = 45, min  = 25, signal_type = BUY
+Time 2024-01-15 04:30:00, Price = 42162 , RSI 1m = 26 , ADX 1m = 55
+===========> LOSS ,percent (-) 111
+
+time 2024-01-15 04:35:00, Price = 42133 , RSI 1m = 25, max = 47, min  = 25, pending_buy True WAITING
+time 2024-01-15 04:40:00, Price = 42312 , RSI 1m = 38, max = 43, min  = 25, signal_type = BUY
+Time 2024-01-15 20:50:00, Price = 42915 , RSI 1m = 70 , ADX 1m = 18
+===========> WIN ,percent (+) 100
+
+time 2024-01-15 21:50:00, Price = 42206 , RSI 1m = 24, max = 54, min  = 24, pending_buy True WAITING
+time 2024-01-15 21:55:00, Price = 42204 , RSI 1m = 24, max = 43, min  = 24, pending_buy True WAITING
+time 2024-01-15 22:00:00, Price = 42279 , RSI 1m = 32, max = 43, min  = 24, signal_type = BUY
+Time 2024-01-16 01:20:00, Price = 42932 , RSI 1m = 71 , ADX 1m = 36
+===========> WIN ,percent (+) 108
+
+time 2024-01-16 01:25:00, Price = 43171 , RSI 1m = 78 , max = 78, min  = 59 pending_sell True, WAITING
+time 2024-01-16 01:30:00, Price = 43222 , RSI 1m = 80 , max = 80, min  = 59 pending_sell True, WAITING
+time 2024-01-16 01:35:00, Price = 43283 , RSI 1m = 81 , max = 81, min  = 59 pending_sell True, WAITING
+time 2024-01-16 01:40:00, Price = 43334 , RSI 1m = 82 , max = 82, min  = 59 pending_sell True, WAITING
+time 2024-01-16 01:45:00, Price = 43138 , RSI 1m = 66, max = 82, min  = 59, signal_type = SELL
+Time 2024-01-16 05:10:00, Price = 42488 , RSI 1m = 26 , ADX 1m = 18
+===========> WIN ,percent (+) 108
+
+time 2024-01-16 05:15:00, Price = 42465 , RSI 1m = 25, max = 44, min  = 25, pending_buy True WAITING
+time 2024-01-16 05:20:00, Price = 42580 , RSI 1m = 36, max = 44, min  = 25, signal_type = BUY
+Time 2024-01-16 22:35:00, Price = 43304 , RSI 1m = 65 , ADX 1m = 31
+===========> WIN ,percent (+) 120
+
+time 2024-01-18 17:45:00, Price = 42528 , RSI 1m = 23, max = 48, min  = 23, pending_buy True WAITING
+time 2024-01-18 17:50:00, Price = 42462 , RSI 1m = 20, max = 48, min  = 20, pending_buy True WAITING
+time 2024-01-18 17:55:00, Price = 42450 , RSI 1m = 19, max = 48, min  = 19, pending_buy True WAITING
+time 2024-01-18 18:00:00, Price = 42484 , RSI 1m = 26, max = 48, min  = 19, signal_type = BUY
+Time 2024-01-18 23:45:00, Price = 41828 , RSI 1m = 15 , ADX 1m = 28
+===========> LOSS ,percent (-) 109
+
+time 2024-01-18 23:45:00, Price = 41828 , RSI 1m = 15, max = 48, min  = 15, pending_buy True WAITING
+time 2024-01-18 23:50:00, Price = 41898 , RSI 1m = 21, max = 43, min  = 15, pending_buy False signal_type = BUY
+Time 2024-01-19 02:50:00, Price = 41161 , RSI 1m = 32 , ADX 1m = 39
+===========> LOSS ,percent (-) 122
+
+time 2024-01-19 03:30:00, Price = 40756 , RSI 1m = 25, max = 39, min  = 25, pending_buy True WAITING
+time 2024-01-19 03:35:00, Price = 40822 , RSI 1m = 29, max = 37, min  = 25, signal_type = BUY
+Time 2024-01-19 13:45:00, Price = 41459 , RSI 1m = 80 , ADX 1m = 20
+===========> WIN ,percent (+) 106
+
+time 2024-01-19 13:45:00, Price = 41459 , RSI 1m = 80 , max = 80, min  = 58 pending_sell True, WAITING
+time 2024-01-19 13:50:00, Price = 41435 , RSI 1m = 75, max = 80, min  = 61, pending_sell False signal_type = SELL
+Time 2024-01-19 22:25:00, Price = 40826 , RSI 1m = 34 , ADX 1m = 24
+===========> WIN ,percent (+) 101
+
+time 2024-01-19 23:40:00, Price = 40373 , RSI 1m = 25, max = 47, min  = 25, pending_buy True WAITING
+time 2024-01-19 23:45:00, Price = 40499 , RSI 1m = 34, max = 45, min  = 25, signal_type = BUY
+Time 2024-01-20 00:45:00, Price = 41111 , RSI 1m = 64 , ADX 1m = 29
+===========> WIN ,percent (+) 102
+
+time 2024-01-20 01:45:00, Price = 41622 , RSI 1m = 76 , max = 76, min  = 60 pending_sell True, WAITING
+time 2024-01-20 01:50:00, Price = 41874 , RSI 1m = 81 , max = 81, min  = 60 pending_sell True, WAITING
+time 2024-01-20 01:55:00, Price = 41810 , RSI 1m = 76, max = 81, min  = 60, pending_sell False signal_type = SELL
+Time 2024-01-22 10:15:00, Price = 41196 , RSI 1m = 34 , ADX 1m = 24
+===========> WIN ,percent (+) 102
+
+time 2024-01-22 11:25:00, Price = 41007 , RSI 1m = 25, max = 40, min  = 25, pending_buy True WAITING
+time 2024-01-22 11:30:00, Price = 41050 , RSI 1m = 32, max = 40, min  = 25, signal_type = BUY
+Time 2024-01-22 17:25:00, Price = 40376 , RSI 1m = 22 , ADX 1m = 41
+===========> LOSS ,percent (-) 112
+
+time 2024-01-22 17:25:00, Price = 40376 , RSI 1m = 22, max = 47, min  = 22, pending_buy True WAITING
+time 2024-01-22 17:30:00, Price = 40517 , RSI 1m = 33, max = 47, min  = 22, signal_type = BUY
+Time 2024-01-22 20:05:00, Price = 41143 , RSI 1m = 70 , ADX 1m = 18
+===========> WIN ,percent (+) 104
+
+time 2024-01-23 02:40:00, Price = 39553 , RSI 1m = 24, max = 46, min  = 24, pending_buy True WAITING
+time 2024-01-23 02:45:00, Price = 39653 , RSI 1m = 29, max = 46, min  = 24, signal_type = BUY
+Time 2024-01-23 03:30:00, Price = 40288 , RSI 1m = 55 , ADX 1m = 30
+===========> WIN ,percent (+) 105
+
+time 2024-01-23 14:50:00, Price = 39688 , RSI 1m = 24, max = 45, min  = 24, pending_buy True WAITING
+time 2024-01-23 14:55:00, Price = 39773 , RSI 1m = 36, max = 45, min  = 24, signal_type = BUY
+Time 2024-01-23 16:10:00, Price = 39125 , RSI 1m = 18 , ADX 1m = 52
+===========> LOSS ,percent (-) 108
+
+time 2024-01-23 16:10:00, Price = 39125 , RSI 1m = 18, max = 35, min  = 18, pending_buy True WAITING
+time 2024-01-23 16:15:00, Price = 39234 , RSI 1m = 28, max = 35, min  = 18, signal_type = BUY
+Time 2024-01-23 21:15:00, Price = 38615 , RSI 1m = 34 , ADX 1m = 20
+===========> LOSS ,percent (-) 103
+
+time 2024-01-24 07:45:00, Price = 40090 , RSI 1m = 75 , max = 75, min  = 62 pending_sell True, WAITING
+time 2024-01-24 07:50:00, Price = 40197 , RSI 1m = 79 , max = 79, min  = 62 pending_sell True, WAITING
+time 2024-01-24 07:55:00, Price = 40166 , RSI 1m = 75, max = 79, min  = 62, pending_sell False signal_type = SELL
+Time 2024-01-25 03:55:00, Price = 39548 , RSI 1m = 35 , ADX 1m = 22
+===========> WIN ,percent (+) 103
+
+time 2024-01-25 06:45:00, Price = 40156 , RSI 1m = 75 , max = 75, min  = 57 pending_sell True, WAITING
+time 2024-01-25 06:50:00, Price = 40136 , RSI 1m = 71, max = 75, min  = 59, signal_type = SELL
+Time 2024-01-26 18:00:00, Price = 40855 , RSI 1m = 78 , ADX 1m = 38
+===========> LOSS ,percent (-) 119
+
+time 2024-01-26 18:00:00, Price = 40855 , RSI 1m = 78 , max = 78, min  = 47 pending_sell True, WAITING
+time 2024-01-26 18:05:00, Price = 40780 , RSI 1m = 72, max = 78, min  = 55, signal_type = SELL
+Time 2024-01-26 19:25:00, Price = 41453 , RSI 1m = 79 , ADX 1m = 69
+===========> LOSS ,percent (-) 112
+
+time 2024-01-26 19:25:00, Price = 41453 , RSI 1m = 79, max = 83, min  = 73, pending_sell False signal_type = SELL
+Time 2024-01-27 01:05:00, Price = 42056 , RSI 1m = 67 , ADX 1m = 44
+===========> LOSS ,percent (-) 100
+
+time 2024-01-27 14:15:00, Price = 41637 , RSI 1m = 25, max = 48, min  = 25, pending_buy True WAITING
+time 2024-01-27 14:20:00, Price = 41607 , RSI 1m = 22, max = 42, min  = 22, pending_buy True WAITING
+time 2024-01-27 14:25:00, Price = 41615 , RSI 1m = 25, max = 36, min  = 22, pending_buy False signal_type = BUY
+Time 2024-01-28 11:00:00, Price = 42293 , RSI 1m = 78 , ADX 1m = 23
+===========> WIN ,percent (+) 112
+
+time 2024-01-28 11:00:00, Price = 42293 , RSI 1m = 78 , max = 78, min  = 49 pending_sell True, WAITING
+time 2024-01-28 11:05:00, Price = 42246 , RSI 1m = 67, max = 78, min  = 49, signal_type = SELL
+Time 2024-01-29 23:20:00, Price = 42977 , RSI 1m = 77 , ADX 1m = 38
+===========> LOSS ,percent (-) 121
+
+time 2024-01-29 23:20:00, Price = 42977 , RSI 1m = 77 , max = 77, min  = 46 pending_sell True, WAITING
+time 2024-01-29 23:25:00, Price = 42932 , RSI 1m = 74, max = 77, min  = 49, signal_type = SELL
+Time 2024-01-30 09:10:00, Price = 43562 , RSI 1m = 68 , ADX 1m = 36
+===========> LOSS ,percent (-) 105
+
+time 2024-01-30 19:15:00, Price = 43698 , RSI 1m = 78 , max = 78, min  = 54 pending_sell True, WAITING
+time 2024-01-30 19:20:00, Price = 43759 , RSI 1m = 81 , max = 81, min  = 54 pending_sell True, WAITING
+time 2024-01-30 19:25:00, Price = 43392 , RSI 1m = 42, max = 81, min  = 42, signal_type = SELL
+Time 2024-01-31 06:40:00, Price = 42769 , RSI 1m = 17 , ADX 1m = 45
+===========> WIN ,percent (+) 103
+
+time 2024-01-31 06:40:00, Price = 42769 , RSI 1m = 17, max = 34, min  = 15, pending_buy True WAITING
+time 2024-01-31 06:45:00, Price = 42803 , RSI 1m = 21, max = 29, min  = 15, pending_buy False signal_type = BUY
+Time 2024-01-31 23:00:00, Price = 43432 , RSI 1m = 74 , ADX 1m = 36
+===========> WIN ,percent (+) 104
+
+time 2024-01-31 23:05:00, Price = 43459 , RSI 1m = 75 , max = 75, min  = 47 pending_sell True, WAITING
+time 2024-01-31 23:10:00, Price = 43496 , RSI 1m = 76 , max = 76, min  = 55 pending_sell True, WAITING
+time 2024-01-31 23:15:00, Price = 43428 , RSI 1m = 70, max = 76, min  = 62, signal_type = SELL
+Time 2024-02-01 03:35:00, Price = 42810 , RSI 1m = 30 , ADX 1m = 33
+===========> WIN ,percent (+) 103
+
+time 2024-02-01 03:55:00, Price = 42534 , RSI 1m = 25, max = 37, min  = 25, pending_buy True WAITING
+time 2024-02-01 04:00:00, Price = 42575 , RSI 1m = 28, max = 37, min  = 25, signal_type = BUY
+Time 2024-02-01 08:35:00, Price = 41907 , RSI 1m = 20 , ADX 1m = 39
+===========> LOSS ,percent (-) 111
+
+time 2024-02-01 08:35:00, Price = 41907 , RSI 1m = 20, max = 45, min  = 20, pending_buy True WAITING
+time 2024-02-01 08:40:00, Price = 42035 , RSI 1m = 32, max = 45, min  = 20, signal_type = BUY
+Time 2024-02-01 21:55:00, Price = 42635 , RSI 1m = 79 , ADX 1m = 32
+===========> WIN ,percent (+) 100
+
+time 2024-02-01 21:55:00, Price = 42635 , RSI 1m = 79 , max = 79, min  = 57 pending_sell True, WAITING
+time 2024-02-01 22:00:00, Price = 42719 , RSI 1m = 81 , max = 81, min  = 57 pending_sell True, WAITING
+time 2024-02-01 22:05:00, Price = 42746 , RSI 1m = 82 , max = 82, min  = 65 pending_sell True, WAITING
+time 2024-02-01 22:10:00, Price = 42766 , RSI 1m = 83 , max = 83, min  = 65 pending_sell True, WAITING
+time 2024-02-01 22:15:00, Price = 42694 , RSI 1m = 73, max = 83, min  = 65, signal_type = SELL
+Time 2024-02-02 07:15:00, Price = 43303 , RSI 1m = 77 , ADX 1m = 25
+===========> LOSS ,percent (-) 101
+
+time 2024-02-02 07:15:00, Price = 43303 , RSI 1m = 77 , max = 77, min  = 55 pending_sell True, WAITING
+time 2024-02-02 07:20:00, Price = 43395 , RSI 1m = 81 , max = 81, min  = 55 pending_sell True, WAITING
+time 2024-02-02 07:25:00, Price = 43269 , RSI 1m = 65, max = 81, min  = 57, signal_type = SELL
+Time 2024-02-02 20:45:00, Price = 42669 , RSI 1m = 22 , ADX 1m = 25
+===========> WIN ,percent (+) 100
+
+time 2024-02-02 20:45:00, Price = 42669 , RSI 1m = 22, max = 50, min  = 22, pending_buy True WAITING
+time 2024-02-02 20:50:00, Price = 42611 , RSI 1m = 21, max = 50, min  = 21, pending_buy True WAITING
+time 2024-02-02 20:55:00, Price = 42671 , RSI 1m = 27, max = 46, min  = 21, signal_type = BUY
+Time 2024-02-02 23:00:00, Price = 43382 , RSI 1m = 72 , ADX 1m = 33
+===========> WIN ,percent (+) 118
+
+time 2024-02-03 07:25:00, Price = 43341 , RSI 1m = 75 , max = 75, min  = 54 pending_sell True, WAITING
+time 2024-02-03 07:30:00, Price = 43311 , RSI 1m = 69, max = 75, min  = 54, signal_type = SELL
+Time 2024-02-05 02:05:00, Price = 42632 , RSI 1m = 22 , ADX 1m = 25
+===========> WIN ,percent (+) 113
+
+time 2024-02-05 02:05:00, Price = 42632 , RSI 1m = 22, max = 43, min  = 22, pending_buy True WAITING
+time 2024-02-05 02:10:00, Price = 42637 , RSI 1m = 23, max = 37, min  = 22, pending_buy True WAITING
+time 2024-02-05 02:15:00, Price = 42663 , RSI 1m = 28, max = 37, min  = 22, signal_type = BUY
+Time 2024-02-05 20:00:00, Price = 43301 , RSI 1m = 70 , ADX 1m = 21
+===========> WIN ,percent (+) 106
+
+time 2024-02-05 22:15:00, Price = 42844 , RSI 1m = 24, max = 55, min  = 24, pending_buy True WAITING
+time 2024-02-05 22:20:00, Price = 42832 , RSI 1m = 23, max = 55, min  = 23, pending_buy True WAITING
+time 2024-02-05 22:25:00, Price = 42841 , RSI 1m = 24, max = 46, min  = 23, pending_buy True WAITING
+time 2024-02-05 22:30:00, Price = 42906 , RSI 1m = 31, max = 46, min  = 23, signal_type = BUY
+Time 2024-02-08 00:25:00, Price = 43531 , RSI 1m = 78 , ADX 1m = 27
+===========> WIN ,percent (+) 104
+
+time 2024-02-08 00:25:00, Price = 43531 , RSI 1m = 78 , max = 78, min  = 48 pending_sell True, WAITING
+time 2024-02-08 00:30:00, Price = 43496 , RSI 1m = 74, max = 78, min  = 53, signal_type = SELL
+Time 2024-02-08 03:15:00, Price = 44130 , RSI 1m = 81 , ADX 1m = 26
+===========> LOSS ,percent (-) 105
+
+time 2024-02-08 03:15:00, Price = 44130 , RSI 1m = 81 , max = 81, min  = 45 pending_sell True, WAITING
+time 2024-02-08 03:20:00, Price = 44137 , RSI 1m = 81 , max = 81, min  = 45 pending_sell True, WAITING
+time 2024-02-08 03:25:00, Price = 44047 , RSI 1m = 73, max = 81, min  = 49, signal_type = SELL
+Time 2024-02-08 07:55:00, Price = 44656 , RSI 1m = 76 , ADX 1m = 48
+===========> LOSS ,percent (-) 101
+
+time 2024-02-08 07:55:00, Price = 44656 , RSI 1m = 76 , max = 76, min  = 60 pending_sell True, WAITING
+time 2024-02-08 08:00:00, Price = 44549 , RSI 1m = 63, max = 76, min  = 60, signal_type = SELL
+Time 2024-02-08 21:10:00, Price = 45159 , RSI 1m = 78 , ADX 1m = 30
+===========> LOSS ,percent (-) 101
+
+time 2024-02-08 21:10:00, Price = 45159 , RSI 1m = 78 , max = 78, min  = 47 pending_sell True, WAITING
+time 2024-02-08 21:15:00, Price = 45050 , RSI 1m = 66, max = 78, min  = 47, signal_type = SELL
+Time 2024-02-09 09:15:00, Price = 45704 , RSI 1m = 79 , ADX 1m = 25
+===========> LOSS ,percent (-) 109
+
+time 2024-02-09 09:15:00, Price = 45704 , RSI 1m = 79 , max = 79, min  = 48 pending_sell True, WAITING
+time 2024-02-09 09:20:00, Price = 45749 , RSI 1m = 81 , max = 81, min  = 48 pending_sell True, WAITING
+time 2024-02-09 09:25:00, Price = 45775 , RSI 1m = 81 , max = 81, min  = 53 pending_sell True, WAITING
+time 2024-02-09 09:30:00, Price = 45716 , RSI 1m = 73, max = 81, min  = 55, signal_type = SELL
+Time 2024-02-09 14:35:00, Price = 46345 , RSI 1m = 66 , ADX 1m = 22
+===========> LOSS ,percent (-) 104
+
+time 2024-02-09 18:45:00, Price = 47128 , RSI 1m = 78 , max = 78, min  = 58 pending_sell True, WAITING
+time 2024-02-09 18:50:00, Price = 47263 , RSI 1m = 82 , max = 82, min  = 58 pending_sell True, WAITING
+time 2024-02-09 18:55:00, Price = 47155 , RSI 1m = 72, max = 82, min  = 58, signal_type = SELL
+Time 2024-02-10 01:00:00, Price = 47760 , RSI 1m = 70 , ADX 1m = 25
+===========> LOSS ,percent (-) 100
+
+time 2024-02-10 01:20:00, Price = 48128 , RSI 1m = 77 , max = 77, min  = 58 pending_sell True, WAITING
+time 2024-02-10 01:25:00, Price = 48053 , RSI 1m = 72, max = 77, min  = 58, signal_type = SELL
+Time 2024-02-10 02:05:00, Price = 47345 , RSI 1m = 38 , ADX 1m = 32
+===========> WIN ,percent (+) 118
+
+time 2024-02-10 17:55:00, Price = 46872 , RSI 1m = 25, max = 49, min  = 25, pending_buy True WAITING
+time 2024-02-10 18:00:00, Price = 46958 , RSI 1m = 37, max = 49, min  = 25, signal_type = BUY
+Time 2024-02-11 02:35:00, Price = 47595 , RSI 1m = 81 , ADX 1m = 41
+===========> WIN ,percent (+) 106
+
+time 2024-02-11 02:35:00, Price = 47595 , RSI 1m = 81 , max = 81, min  = 56 pending_sell True, WAITING
+time 2024-02-11 02:40:00, Price = 47615 , RSI 1m = 82 , max = 82, min  = 56 pending_sell True, WAITING
+time 2024-02-11 02:45:00, Price = 47568 , RSI 1m = 73, max = 82, min  = 56, signal_type = SELL
+Time 2024-02-11 10:30:00, Price = 48179 , RSI 1m = 82 , ADX 1m = 30
+===========> LOSS ,percent (-) 101
+
+time 2024-02-11 10:30:00, Price = 48179 , RSI 1m = 82 , max = 82, min  = 52 pending_sell True, WAITING
+time 2024-02-11 10:35:00, Price = 48294 , RSI 1m = 85 , max = 85, min  = 53 pending_sell True, WAITING
+time 2024-02-11 10:40:00, Price = 48269 , RSI 1m = 82, max = 85, min  = 53, pending_sell False signal_type = SELL
+Time 2024-02-12 22:00:00, Price = 48874 , RSI 1m = 89 , ADX 1m = 42
+===========> LOSS ,percent (-) 100
+
+time 2024-02-12 22:00:00, Price = 48874 , RSI 1m = 89 , max = 89, min  = 62 pending_sell True, WAITING
+time 2024-02-12 22:05:00, Price = 48979 , RSI 1m = 90 , max = 90, min  = 62 pending_sell True, WAITING
+time 2024-02-12 22:10:00, Price = 49097 , RSI 1m = 91 , max = 91, min  = 66 pending_sell True, WAITING
+time 2024-02-12 22:15:00, Price = 48738 , RSI 1m = 65, max = 91, min  = 65, signal_type = SELL
+Time 2024-02-12 22:30:00, Price = 49398 , RSI 1m = 78 , ADX 1m = 57
+===========> LOSS ,percent (-) 110
+
+time 2024-02-12 22:30:00, Price = 49398 , RSI 1m = 78, max = 91, min  = 65, pending_sell False signal_type = SELL
+Time 2024-02-13 00:15:00, Price = 50120 , RSI 1m = 75 , ADX 1m = 42
+===========> LOSS ,percent (-) 120
+
+time 2024-02-13 00:15:00, Price = 50120 , RSI 1m = 75 , max = 75, min  = 59 pending_sell True, WAITING
+time 2024-02-13 00:20:00, Price = 49986 , RSI 1m = 67, max = 75, min  = 59, signal_type = SELL
+Time 2024-02-13 21:10:00, Price = 49159 , RSI 1m = 26 , ADX 1m = 34
+===========> WIN ,percent (+) 137
+
+time 2024-02-13 21:20:00, Price = 48701 , RSI 1m = 21, max = 44, min  = 21, pending_buy True WAITING
+time 2024-02-13 21:25:00, Price = 48974 , RSI 1m = 32, max = 44, min  = 21, signal_type = BUY
+Time 2024-02-14 04:10:00, Price = 49622 , RSI 1m = 71 , ADX 1m = 21
+===========> WIN ,percent (+) 108
+
+time 2024-02-14 15:50:00, Price = 50237 , RSI 1m = 80 , max = 80, min  = 54 pending_sell True, WAITING
+time 2024-02-14 15:55:00, Price = 50801 , RSI 1m = 89 , max = 89, min  = 54 pending_sell True, WAITING
+time 2024-02-14 16:00:00, Price = 50809 , RSI 1m = 89 , max = 89, min  = 55 pending_sell True, WAITING
+time 2024-02-14 16:05:00, Price = 50988 , RSI 1m = 90 , max = 90, min  = 55 pending_sell True, WAITING
+time 2024-02-14 16:10:00, Price = 51006 , RSI 1m = 90 , max = 90, min  = 55 pending_sell True, WAITING
+time 2024-02-14 16:15:00, Price = 51246 , RSI 1m = 92 , max = 92, min  = 55 pending_sell True, WAITING
+time 2024-02-14 16:20:00, Price = 51289 , RSI 1m = 92 , max = 92, min  = 57 pending_sell True, WAITING
+time 2024-02-14 16:25:00, Price = 51289 , RSI 1m = 92 , max = 92, min  = 62 pending_sell True, WAITING
+time 2024-02-14 16:30:00, Price = 51240 , RSI 1m = 88, max = 92, min  = 62, pending_sell False signal_type = SELL
+Time 2024-02-14 21:45:00, Price = 51875 , RSI 1m = 61 , ADX 1m = 34
+===========> LOSS ,percent (-) 105
+
+time 2024-02-15 07:20:00, Price = 52379 , RSI 1m = 82 , max = 82, min  = 52 pending_sell True, WAITING
+time 2024-02-15 07:25:00, Price = 52299 , RSI 1m = 75, max = 82, min  = 52, pending_sell False signal_type = SELL
+Time 2024-02-15 15:00:00, Price = 51674 , RSI 1m = 29 , ADX 1m = 33
+===========> WIN ,percent (+) 104
+
+time 2024-02-16 04:55:00, Price = 51349 , RSI 1m = 24, max = 44, min  = 24, pending_buy True WAITING
+time 2024-02-16 05:00:00, Price = 51524 , RSI 1m = 39, max = 44, min  = 24, signal_type = BUY
+Time 2024-02-16 09:10:00, Price = 52165 , RSI 1m = 64 , ADX 1m = 21
+===========> WIN ,percent (+) 106
+
+time 2024-02-17 15:30:00, Price = 51792 , RSI 1m = 25, max = 49, min  = 25, pending_buy True WAITING
+time 2024-02-17 15:35:00, Price = 51797 , RSI 1m = 26, max = 49, min  = 25, signal_type = BUY
+Time 2024-02-17 20:50:00, Price = 51184 , RSI 1m = 24 , ADX 1m = 38
+===========> LOSS ,percent (-) 102
+
+time 2024-02-17 20:50:00, Price = 51184 , RSI 1m = 24, max = 47, min  = 21, pending_buy False signal_type = BUY
+Time 2024-02-18 04:20:00, Price = 51917 , RSI 1m = 81 , ADX 1m = 39
+===========> WIN ,percent (+) 122
+
+time 2024-02-18 04:20:00, Price = 51917 , RSI 1m = 81 , max = 81, min  = 58 pending_sell True, WAITING
+time 2024-02-18 04:25:00, Price = 51886 , RSI 1m = 78, max = 81, min  = 60, pending_sell False signal_type = SELL
+Time 2024-02-18 09:45:00, Price = 51285 , RSI 1m = 27 , ADX 1m = 29
+===========> WIN ,percent (+) 100
+
+time 2024-02-18 16:15:00, Price = 51963 , RSI 1m = 75 , max = 75, min  = 57 pending_sell True, WAITING
+time 2024-02-18 16:20:00, Price = 51950 , RSI 1m = 73, max = 75, min  = 57, signal_type = SELL
+Time 2024-02-20 08:20:00, Price = 51330 , RSI 1m = 25 , ADX 1m = 36
+===========> WIN ,percent (+) 103
+
+time 2024-02-20 08:20:00, Price = 51330 , RSI 1m = 25, max = 46, min  = 25, pending_buy True WAITING
+time 2024-02-20 08:25:00, Price = 51471 , RSI 1m = 36, max = 43, min  = 25, signal_type = BUY
+Time 2024-02-20 17:30:00, Price = 52077 , RSI 1m = 66 , ADX 1m = 30
+===========> WIN ,percent (+) 101
+
+time 2024-02-20 18:00:00, Price = 52338 , RSI 1m = 77 , max = 77, min  = 58 pending_sell True, WAITING
+time 2024-02-20 18:05:00, Price = 52308 , RSI 1m = 74, max = 77, min  = 58, signal_type = SELL
+Time 2024-02-20 20:35:00, Price = 52988 , RSI 1m = 80 , ADX 1m = 33
+===========> LOSS ,percent (-) 113
+
+time 2024-02-20 20:35:00, Price = 52988 , RSI 1m = 80 , max = 80, min  = 45 pending_sell True, WAITING
+time 2024-02-20 20:40:00, Price = 52932 , RSI 1m = 76, max = 80, min  = 45, pending_sell False signal_type = SELL
+Time 2024-02-20 21:10:00, Price = 52290 , RSI 1m = 43 , ADX 1m = 36
+===========> WIN ,percent (+) 107
+
+time 2024-02-21 00:20:00, Price = 50850 , RSI 1m = 19, max = 43, min  = 19, pending_buy True WAITING
+time 2024-02-21 00:25:00, Price = 50984 , RSI 1m = 27, max = 41, min  = 19, signal_type = BUY
+Time 2024-02-21 02:25:00, Price = 51752 , RSI 1m = 66 , ADX 1m = 23
+===========> WIN ,percent (+) 128
+
+time 2024-02-21 02:45:00, Price = 52015 , RSI 1m = 75 , max = 75, min  = 52 pending_sell True, WAITING
+time 2024-02-21 02:50:00, Price = 52080 , RSI 1m = 77 , max = 77, min  = 52 pending_sell True, WAITING
+time 2024-02-21 02:55:00, Price = 52131 , RSI 1m = 79 , max = 79, min  = 52 pending_sell True, WAITING
+time 2024-02-21 03:00:00, Price = 51996 , RSI 1m = 67, max = 79, min  = 55, signal_type = SELL
+Time 2024-02-21 16:25:00, Price = 51377 , RSI 1m = 27 , ADX 1m = 25
+===========> WIN ,percent (+) 103
+
+time 2024-02-21 16:55:00, Price = 51115 , RSI 1m = 22, max = 37, min  = 22, pending_buy True WAITING
+time 2024-02-21 17:00:00, Price = 51164 , RSI 1m = 27, max = 37, min  = 22, signal_type = BUY
+Time 2024-02-22 06:45:00, Price = 51905 , RSI 1m = 76 , ADX 1m = 36
+===========> WIN ,percent (+) 123
+
+time 2024-02-22 06:45:00, Price = 51905 , RSI 1m = 76 , max = 76, min  = 63 pending_sell True, WAITING
+time 2024-02-22 06:50:00, Price = 51880 , RSI 1m = 73, max = 76, min  = 63, signal_type = SELL
+Time 2024-02-22 08:50:00, Price = 51191 , RSI 1m = 26 , ADX 1m = 28
+===========> WIN ,percent (+) 114
+
+time 2024-02-22 20:15:00, Price = 51272 , RSI 1m = 24, max = 46, min  = 24, pending_buy True WAITING
+time 2024-02-22 20:20:00, Price = 51257 , RSI 1m = 23, max = 40, min  = 23, pending_buy True WAITING
+time 2024-02-22 20:25:00, Price = 51294 , RSI 1m = 28, max = 40, min  = 23, signal_type = BUY
+Time 2024-02-23 03:25:00, Price = 51954 , RSI 1m = 72 , ADX 1m = 15
+===========> WIN ,percent (+) 110
+
+time 2024-02-23 14:45:00, Price = 50937 , RSI 1m = 25, max = 58, min  = 25, pending_buy True WAITING
+time 2024-02-23 14:50:00, Price = 50955 , RSI 1m = 27, max = 58, min  = 25, signal_type = BUY
+Time 2024-02-25 00:35:00, Price = 51562 , RSI 1m = 87 , ADX 1m = 37
+===========> WIN ,percent (+) 101
+
+time 2024-02-25 00:35:00, Price = 51562 , RSI 1m = 87 , max = 87, min  = 60 pending_sell True, WAITING
+time 2024-02-25 00:40:00, Price = 51588 , RSI 1m = 88 , max = 88, min  = 60 pending_sell True, WAITING
+time 2024-02-25 00:45:00, Price = 51658 , RSI 1m = 90 , max = 90, min  = 67 pending_sell True, WAITING
+time 2024-02-25 00:50:00, Price = 51691 , RSI 1m = 90 , max = 90, min  = 71 pending_sell True, WAITING
+time 2024-02-25 00:55:00, Price = 51570 , RSI 1m = 70, max = 90, min  = 70, signal_type = SELL
+Time 2024-02-26 22:15:00, Price = 52248 , RSI 1m = 90 , ADX 1m = 41
+===========> LOSS ,percent (-) 112
+
+time 2024-02-26 22:15:00, Price = 52248 , RSI 1m = 90 , max = 90, min  = 60 pending_sell True, WAITING
+time 2024-02-26 22:20:00, Price = 52279 , RSI 1m = 90 , max = 90, min  = 68 pending_sell True, WAITING
+time 2024-02-26 22:25:00, Price = 52407 , RSI 1m = 92 , max = 92, min  = 69 pending_sell True, WAITING
+time 2024-02-26 22:30:00, Price = 52644 , RSI 1m = 93 , max = 93, min  = 71 pending_sell True, WAITING
+time 2024-02-26 22:35:00, Price = 52615 , RSI 1m = 91 , max = 93, min  = 78 pending_sell True, WAITING
+time 2024-02-26 22:40:00, Price = 52583 , RSI 1m = 88, max = 93, min  = 78, pending_sell False signal_type = SELL
+Time 2024-02-26 23:05:00, Price = 53481 , RSI 1m = 94 , ADX 1m = 67
+===========> LOSS ,percent (-) 149
+
+time 2024-02-26 23:05:00, Price = 53481 , RSI 1m = 94 , max = 94, min  = 88 pending_sell True, WAITING
+time 2024-02-26 23:10:00, Price = 53562 , RSI 1m = 94 , max = 94, min  = 88 pending_sell True, WAITING
+time 2024-02-26 23:15:00, Price = 53339 , RSI 1m = 81, max = 94, min  = 81, pending_sell False signal_type = SELL
+Time 2024-02-27 02:15:00, Price = 54148 , RSI 1m = 75 , ADX 1m = 39
+===========> LOSS ,percent (-) 134
+
+time 2024-02-27 02:15:00, Price = 54148 , RSI 1m = 75 , max = 75, min  = 55 pending_sell True, WAITING
+time 2024-02-27 02:20:00, Price = 54435 , RSI 1m = 80 , max = 80, min  = 55 pending_sell True, WAITING
+time 2024-02-27 02:25:00, Price = 54294 , RSI 1m = 72, max = 80, min  = 55, signal_type = SELL
+Time 2024-02-27 03:05:00, Price = 54957 , RSI 1m = 79 , ADX 1m = 52
+===========> LOSS ,percent (-) 110
+
+time 2024-02-27 03:05:00, Price = 54957 , RSI 1m = 79 , max = 80, min  = 70 pending_sell True, WAITING
+time 2024-02-27 03:10:00, Price = 54600 , RSI 1m = 64, max = 80, min  = 64, signal_type = SELL
+Time 2024-02-27 08:40:00, Price = 55204 , RSI 1m = 78 , ADX 1m = 26
+===========> LOSS ,percent (-) 100
+
+time 2024-02-27 08:40:00, Price = 55204 , RSI 1m = 78 , max = 78, min  = 46 pending_sell True, WAITING
+time 2024-02-27 08:45:00, Price = 55535 , RSI 1m = 84 , max = 84, min  = 52 pending_sell True, WAITING
+time 2024-02-27 08:50:00, Price = 55772 , RSI 1m = 87 , max = 87, min  = 53 pending_sell True, WAITING
+time 2024-02-27 08:55:00, Price = 55857 , RSI 1m = 88 , max = 88, min  = 57 pending_sell True, WAITING
+time 2024-02-27 09:00:00, Price = 55736 , RSI 1m = 80, max = 88, min  = 57, pending_sell False signal_type = SELL
+Time 2024-02-27 09:05:00, Price = 56799 , RSI 1m = 89 , ADX 1m = 44
+===========> LOSS ,percent (-) 177
+
+time 2024-02-27 09:05:00, Price = 56799 , RSI 1m = 89 , max = 89, min  = 57 pending_sell True, WAITING
+time 2024-02-27 09:10:00, Price = 56498 , RSI 1m = 78, max = 89, min  = 60, pending_sell False signal_type = SELL
+Time 2024-02-27 10:55:00, Price = 55774 , RSI 1m = 40 , ADX 1m = 50
+===========> WIN ,percent (+) 120
+
+time 2024-02-27 19:40:00, Price = 57449 , RSI 1m = 80 , max = 80, min  = 47 pending_sell True, WAITING
+time 2024-02-27 19:45:00, Price = 57268 , RSI 1m = 69, max = 80, min  = 51, signal_type = SELL
+Time 2024-02-27 23:05:00, Price = 56345 , RSI 1m = 34 , ADX 1m = 14
+===========> WIN ,percent (+) 153
+
+time 2024-02-28 14:30:00, Price = 57537 , RSI 1m = 76 , max = 76, min  = 49 pending_sell True, WAITING
+time 2024-02-28 14:35:00, Price = 57741 , RSI 1m = 82 , max = 82, min  = 49 pending_sell True, WAITING
+time 2024-02-28 14:40:00, Price = 57897 , RSI 1m = 85 , max = 85, min  = 50 pending_sell True, WAITING
+time 2024-02-28 14:45:00, Price = 57944 , RSI 1m = 86 , max = 86, min  = 53 pending_sell True, WAITING
+time 2024-02-28 14:50:00, Price = 58335 , RSI 1m = 90 , max = 90, min  = 53 pending_sell True, WAITING
+time 2024-02-28 14:55:00, Price = 58300 , RSI 1m = 88 , max = 90, min  = 61 pending_sell True, WAITING
+time 2024-02-28 15:00:00, Price = 58660 , RSI 1m = 91 , max = 91, min  = 63 pending_sell True, WAITING
+time 2024-02-28 15:05:00, Price = 58520 , RSI 1m = 82, max = 91, min  = 69, pending_sell False signal_type = SELL
+Time 2024-02-28 15:50:00, Price = 59316 , RSI 1m = 88 , ADX 1m = 60
+===========> LOSS ,percent (-) 132
+
+time 2024-02-28 15:50:00, Price = 59316 , RSI 1m = 88, max = 91, min  = 80, pending_sell False signal_type = SELL
+Time 2024-02-28 20:20:00, Price = 60438 , RSI 1m = 84 , ADX 1m = 23
+===========> LOSS ,percent (-) 187
+
+time 2024-02-28 20:20:00, Price = 60438 , RSI 1m = 84 , max = 84, min  = 58 pending_sell True, WAITING
+time 2024-02-28 20:25:00, Price = 60380 , RSI 1m = 80, max = 84, min  = 58, pending_sell False signal_type = SELL
+Time 2024-02-28 21:55:00, Price = 61025 , RSI 1m = 68 , ADX 1m = 36
+===========> LOSS ,percent (-) 107
+
+time 2024-02-28 23:55:00, Price = 62530 , RSI 1m = 78 , max = 78, min  = 57 pending_sell True, WAITING
+time 2024-02-29 00:00:00, Price = 62902 , RSI 1m = 81 , max = 81, min  = 58 pending_sell True, WAITING
+time 2024-02-29 00:05:00, Price = 62790 , RSI 1m = 78, max = 81, min  = 61, pending_sell False signal_type = SELL
+Time 2024-02-29 00:10:00, Price = 63971 , RSI 1m = 85 , ADX 1m = 49
+===========> LOSS ,percent (-) 196
+
+time 2024-02-29 00:10:00, Price = 63971 , RSI 1m = 85 , max = 85, min  = 61 pending_sell True, WAITING
+time 2024-02-29 00:15:00, Price = 63320 , RSI 1m = 71, max = 85, min  = 65, signal_type = SELL
+Time 2024-02-29 00:25:00, Price = 61994 , RSI 1m = 51 , ADX 1m = 48
+===========> WIN ,percent (+) 221
+
+time 2024-02-29 06:15:00, Price = 62430 , RSI 1m = 75 , max = 75, min  = 57 pending_sell True, WAITING
+time 2024-02-29 06:20:00, Price = 62329 , RSI 1m = 72, max = 75, min  = 57, signal_type = SELL
+Time 2024-02-29 07:25:00, Price = 61726 , RSI 1m = 46 , ADX 1m = 29
+===========> WIN ,percent (+) 100
+
+time 2024-02-29 11:45:00, Price = 62519 , RSI 1m = 76 , max = 76, min  = 46 pending_sell True, WAITING
+time 2024-02-29 11:50:00, Price = 62620 , RSI 1m = 77 , max = 77, min  = 46 pending_sell True, WAITING
+time 2024-02-29 11:55:00, Price = 62531 , RSI 1m = 73, max = 77, min  = 47, signal_type = SELL
+Time 2024-02-29 12:15:00, Price = 61905 , RSI 1m = 49 , ADX 1m = 24
+===========> WIN ,percent (+) 104
+
+time 2024-02-29 13:10:00, Price = 63282 , RSI 1m = 75 , max = 75, min  = 52 pending_sell True, WAITING
+time 2024-02-29 13:15:00, Price = 63453 , RSI 1m = 77 , max = 77, min  = 52 pending_sell True, WAITING
+time 2024-02-29 13:20:00, Price = 63349 , RSI 1m = 73, max = 77, min  = 52, signal_type = SELL
+Time 2024-02-29 14:25:00, Price = 62710 , RSI 1m = 46 , ADX 1m = 32
+===========> WIN ,percent (+) 106
+
+time 2024-03-01 00:40:00, Price = 61077 , RSI 1m = 23, max = 44, min  = 23, pending_buy True WAITING
+time 2024-03-01 00:45:00, Price = 60859 , RSI 1m = 21, max = 44, min  = 21, pending_buy True WAITING
+time 2024-03-01 00:50:00, Price = 60906 , RSI 1m = 23, max = 44, min  = 21, pending_buy True WAITING
+time 2024-03-01 00:55:00, Price = 61082 , RSI 1m = 29, max = 40, min  = 21, signal_type = BUY
+Time 2024-03-01 03:05:00, Price = 61812 , RSI 1m = 63 , ADX 1m = 25
+===========> WIN ,percent (+) 121
+
+time 2024-03-01 22:45:00, Price = 61375 , RSI 1m = 25, max = 43, min  = 25, pending_buy True WAITING
+time 2024-03-01 22:50:00, Price = 61247 , RSI 1m = 23, max = 43, min  = 23, pending_buy True WAITING
+time 2024-03-01 22:55:00, Price = 61335 , RSI 1m = 28, max = 41, min  = 23, signal_type = BUY
+Time 2024-03-02 00:20:00, Price = 61961 , RSI 1m = 61 , ADX 1m = 28
+===========> WIN ,percent (+) 104
+
+time 2024-03-03 14:25:00, Price = 61635 , RSI 1m = 25, max = 51, min  = 25, pending_buy True WAITING
+time 2024-03-03 14:30:00, Price = 61603 , RSI 1m = 24, max = 47, min  = 24, pending_buy True WAITING
+time 2024-03-03 14:35:00, Price = 61625 , RSI 1m = 26, max = 47, min  = 24, signal_type = BUY
+Time 2024-03-03 19:05:00, Price = 62235 , RSI 1m = 78 , ADX 1m = 18
+===========> WIN ,percent (+) 101
+
+time 2024-03-03 19:05:00, Price = 62235 , RSI 1m = 78 , max = 78, min  = 49 pending_sell True, WAITING
+time 2024-03-03 19:10:00, Price = 62307 , RSI 1m = 80 , max = 80, min  = 49 pending_sell True, WAITING
+time 2024-03-03 19:15:00, Price = 62429 , RSI 1m = 83 , max = 83, min  = 49 pending_sell True, WAITING
+time 2024-03-03 19:20:00, Price = 62500 , RSI 1m = 85 , max = 85, min  = 52 pending_sell True, WAITING
+time 2024-03-03 19:25:00, Price = 62643 , RSI 1m = 87 , max = 87, min  = 54 pending_sell True, WAITING
+time 2024-03-03 19:30:00, Price = 62541 , RSI 1m = 78, max = 87, min  = 54, pending_sell False signal_type = SELL
+Time 2024-03-04 05:20:00, Price = 63245 , RSI 1m = 76 , ADX 1m = 22
+===========> LOSS ,percent (-) 117
+
+time 2024-03-04 05:20:00, Price = 63245 , RSI 1m = 76 , max = 76, min  = 47 pending_sell True, WAITING
+time 2024-03-04 05:25:00, Price = 63236 , RSI 1m = 74, max = 76, min  = 54, signal_type = SELL
+Time 2024-03-04 07:25:00, Price = 63861 , RSI 1m = 83 , ADX 1m = 26
+===========> LOSS ,percent (-) 104
+
+time 2024-03-04 07:25:00, Price = 63861 , RSI 1m = 83 , max = 83, min  = 52 pending_sell True, WAITING
+time 2024-03-04 07:30:00, Price = 63913 , RSI 1m = 84 , max = 84, min  = 56 pending_sell True, WAITING
+time 2024-03-04 07:35:00, Price = 64060 , RSI 1m = 86 , max = 86, min  = 61 pending_sell True, WAITING
+time 2024-03-04 07:40:00, Price = 64302 , RSI 1m = 89 , max = 89, min  = 63 pending_sell True, WAITING
+time 2024-03-04 07:45:00, Price = 62492 , RSI 1m = 35, max = 89, min  = 35, signal_type = SELL
+Time 2024-03-04 07:50:00, Price = 63344 , RSI 1m = 50 , ADX 1m = 34
+===========> LOSS ,percent (-) 142
+
+time 2024-03-04 15:05:00, Price = 64805 , RSI 1m = 79 , max = 79, min  = 58 pending_sell True, WAITING
+time 2024-03-04 15:10:00, Price = 64880 , RSI 1m = 80 , max = 80, min  = 61 pending_sell True, WAITING
+time 2024-03-04 15:15:00, Price = 64750 , RSI 1m = 74, max = 80, min  = 61, signal_type = SELL
+Time 2024-03-04 15:40:00, Price = 65609 , RSI 1m = 84 , ADX 1m = 42
+===========> LOSS ,percent (-) 143
+
+time 2024-03-04 15:40:00, Price = 65609 , RSI 1m = 84 , max = 84, min  = 61 pending_sell True, WAITING
+time 2024-03-04 15:45:00, Price = 65289 , RSI 1m = 71, max = 84, min  = 65, signal_type = SELL
+Time 2024-03-04 21:35:00, Price = 65977 , RSI 1m = 66 , ADX 1m = 18
+===========> LOSS ,percent (-) 114
+
+time 2024-03-05 12:00:00, Price = 66412 , RSI 1m = 21, max = 48, min  = 21, pending_buy True WAITING
+time 2024-03-05 12:05:00, Price = 66618 , RSI 1m = 27, max = 48, min  = 21, signal_type = BUY
+Time 2024-03-05 13:15:00, Price = 67317 , RSI 1m = 52 , ADX 1m = 41
+===========> WIN ,percent (+) 116
+
+time 2024-03-05 15:05:00, Price = 65631 , RSI 1m = 21, max = 46, min  = 21, pending_buy True WAITING
+time 2024-03-05 15:10:00, Price = 66496 , RSI 1m = 43, max = 44, min  = 21, signal_type = BUY
+Time 2024-03-05 17:30:00, Price = 67191 , RSI 1m = 63 , ADX 1m = 29
+===========> WIN ,percent (+) 115
+
+time 2024-03-05 20:10:00, Price = 67919 , RSI 1m = 76 , max = 76, min  = 54 pending_sell True, WAITING
+time 2024-03-05 20:15:00, Price = 68003 , RSI 1m = 77 , max = 77, min  = 55 pending_sell True, WAITING
+time 2024-03-05 20:20:00, Price = 67977 , RSI 1m = 76 , max = 77, min  = 59 pending_sell True, WAITING
+time 2024-03-05 20:25:00, Price = 67750 , RSI 1m = 65, max = 77, min  = 59, signal_type = SELL
+Time 2024-03-05 21:40:00, Price = 68475 , RSI 1m = 68 , ADX 1m = 22
+===========> LOSS ,percent (-) 120
+
+time 2024-03-05 23:15:00, Price = 65185 , RSI 1m = 24, max = 45, min  = 24, pending_buy True WAITING
+time 2024-03-05 23:20:00, Price = 65842 , RSI 1m = 35, max = 45, min  = 24, signal_type = BUY
+Time 2024-03-05 23:40:00, Price = 65208 , RSI 1m = 30 , ADX 1m = 42
+===========> LOSS ,percent (-) 105
+
+time 2024-03-06 02:35:00, Price = 61825 , RSI 1m = 23, max = 39, min  = 23, pending_buy True WAITING
+time 2024-03-06 02:40:00, Price = 62412 , RSI 1m = 32, max = 39, min  = 23, signal_type = BUY
+Time 2024-03-06 02:50:00, Price = 61437 , RSI 1m = 26 , ADX 1m = 55
+===========> LOSS ,percent (-) 162
+
+time 2024-03-06 11:55:00, Price = 64652 , RSI 1m = 77 , max = 77, min  = 53 pending_sell True, WAITING
+time 2024-03-06 12:00:00, Price = 64471 , RSI 1m = 71, max = 77, min  = 53, signal_type = SELL
+Time 2024-03-06 12:10:00, Price = 65408 , RSI 1m = 80 , ADX 1m = 29
+===========> LOSS ,percent (-) 156
+
+time 2024-03-06 12:10:00, Price = 65408 , RSI 1m = 80 , max = 80, min  = 53 pending_sell True, WAITING
+time 2024-03-06 12:15:00, Price = 65389 , RSI 1m = 80 , max = 80, min  = 53 pending_sell True, WAITING
+time 2024-03-06 12:20:00, Price = 65706 , RSI 1m = 82 , max = 82, min  = 56 pending_sell True, WAITING
+time 2024-03-06 12:25:00, Price = 65816 , RSI 1m = 83 , max = 83, min  = 59 pending_sell True, WAITING
+time 2024-03-06 12:30:00, Price = 65636 , RSI 1m = 77, max = 83, min  = 60, pending_sell False signal_type = SELL
+Time 2024-03-06 12:55:00, Price = 66475 , RSI 1m = 78 , ADX 1m = 52
+===========> LOSS ,percent (-) 139
+
+time 2024-03-06 12:55:00, Price = 66475 , RSI 1m = 78, max = 83, min  = 74, pending_sell False signal_type = SELL
+Time 2024-03-06 13:20:00, Price = 65849 , RSI 1m = 60 , ADX 1m = 54
+===========> WIN ,percent (+) 104
+
+time 2024-03-06 15:10:00, Price = 67372 , RSI 1m = 76 , max = 76, min  = 55 pending_sell True, WAITING
+time 2024-03-06 15:15:00, Price = 67614 , RSI 1m = 78 , max = 78, min  = 55 pending_sell True, WAITING
+time 2024-03-06 15:20:00, Price = 67494 , RSI 1m = 74, max = 78, min  = 55, signal_type = SELL
+Time 2024-03-06 16:30:00, Price = 66748 , RSI 1m = 47 , ADX 1m = 36
+===========> WIN ,percent (+) 124
+
+time 2024-03-07 15:15:00, Price = 66982 , RSI 1m = 76 , max = 76, min  = 56 pending_sell True, WAITING
+time 2024-03-07 15:20:00, Price = 66960 , RSI 1m = 74, max = 76, min  = 56, signal_type = SELL
+Time 2024-03-07 21:30:00, Price = 67625 , RSI 1m = 77 , ADX 1m = 18
+===========> LOSS ,percent (-) 110
+
+time 2024-03-07 21:30:00, Price = 67625 , RSI 1m = 77 , max = 77, min  = 54 pending_sell True, WAITING
+time 2024-03-07 21:35:00, Price = 67925 , RSI 1m = 82 , max = 82, min  = 55 pending_sell True, WAITING
+time 2024-03-07 21:40:00, Price = 67257 , RSI 1m = 53, max = 82, min  = 53, signal_type = SELL
+Time 2024-03-08 00:10:00, Price = 67932 , RSI 1m = 68 , ADX 1m = 17
+===========> LOSS ,percent (-) 112
+
+time 2024-03-08 13:55:00, Price = 67634 , RSI 1m = 79 , max = 79, min  = 44 pending_sell True, WAITING
+time 2024-03-08 14:00:00, Price = 67509 , RSI 1m = 69, max = 79, min  = 44, signal_type = SELL
+Time 2024-03-08 21:30:00, Price = 68384 , RSI 1m = 72 , ADX 1m = 25
+===========> LOSS ,percent (-) 145
+
+time 2024-03-08 22:05:00, Price = 68790 , RSI 1m = 77 , max = 77, min  = 61 pending_sell True, WAITING
+time 2024-03-08 22:10:00, Price = 68882 , RSI 1m = 78 , max = 78, min  = 61 pending_sell True, WAITING
+time 2024-03-08 22:15:00, Price = 68884 , RSI 1m = 78 , max = 78, min  = 61 pending_sell True, WAITING
+time 2024-03-08 22:20:00, Price = 68892 , RSI 1m = 78 , max = 78, min  = 71 pending_sell True, WAITING
+time 2024-03-08 22:25:00, Price = 69755 , RSI 1m = 88 , max = 88, min  = 71 pending_sell True, WAITING
+time 2024-03-08 22:30:00, Price = 68517 , RSI 1m = 52, max = 88, min  = 52, signal_type = SELL
+Time 2024-03-08 22:55:00, Price = 67685 , RSI 1m = 40 , ADX 1m = 23
+===========> WIN ,percent (+) 138
+
+time 2024-03-10 08:10:00, Price = 69047 , RSI 1m = 77 , max = 77, min  = 41 pending_sell True, WAITING
+time 2024-03-10 08:15:00, Price = 69187 , RSI 1m = 79 , max = 79, min  = 41 pending_sell True, WAITING
+time 2024-03-10 08:20:00, Price = 69202 , RSI 1m = 80 , max = 80, min  = 41 pending_sell True, WAITING
+time 2024-03-10 08:25:00, Price = 68968 , RSI 1m = 65, max = 80, min  = 41, signal_type = SELL
+Time 2024-03-10 11:10:00, Price = 69597 , RSI 1m = 74 , ADX 1m = 23
+===========> LOSS ,percent (-) 104
+
+time 2024-03-10 11:15:00, Price = 69635 , RSI 1m = 75 , max = 75, min  = 52 pending_sell True, WAITING
+time 2024-03-10 11:20:00, Price = 69587 , RSI 1m = 71, max = 75, min  = 52, signal_type = SELL
+Time 2024-03-10 21:40:00, Price = 68944 , RSI 1m = 25 , ADX 1m = 45
+===========> WIN ,percent (+) 107
+
+time 2024-03-10 21:40:00, Price = 68944 , RSI 1m = 25, max = 41, min  = 25, pending_buy True WAITING
+time 2024-03-10 21:45:00, Price = 69275 , RSI 1m = 42, max = 42, min  = 25, signal_type = BUY
+Time 2024-03-11 05:15:00, Price = 68658 , RSI 1m = 20 , ADX 1m = 23
+===========> LOSS ,percent (-) 102
+
+time 2024-03-11 05:15:00, Price = 68658 , RSI 1m = 20, max = 46, min  = 20, pending_buy True WAITING
+time 2024-03-11 05:20:00, Price = 68846 , RSI 1m = 33, max = 46, min  = 20, signal_type = BUY
+Time 2024-03-11 07:45:00, Price = 68080 , RSI 1m = 24 , ADX 1m = 41
+===========> LOSS ,percent (-) 127
+
+time 2024-03-11 07:45:00, Price = 68080 , RSI 1m = 24, max = 52, min  = 24, pending_buy True WAITING
+time 2024-03-11 07:50:00, Price = 67917 , RSI 1m = 21, max = 52, min  = 21, pending_buy True WAITING
+time 2024-03-11 07:55:00, Price = 68149 , RSI 1m = 33, max = 52, min  = 21, signal_type = BUY
+Time 2024-03-11 11:00:00, Price = 68771 , RSI 1m = 62 , ADX 1m = 19
+===========> WIN ,percent (+) 103
+
+time 2024-03-11 13:55:00, Price = 69393 , RSI 1m = 76 , max = 76, min  = 43 pending_sell True, WAITING
+time 2024-03-11 14:00:00, Price = 69889 , RSI 1m = 82 , max = 82, min  = 43 pending_sell True, WAITING
+time 2024-03-11 14:05:00, Price = 69975 , RSI 1m = 83 , max = 83, min  = 47 pending_sell True, WAITING
+time 2024-03-11 14:10:00, Price = 70729 , RSI 1m = 89 , max = 89, min  = 47 pending_sell True, WAITING
+time 2024-03-11 14:15:00, Price = 70488 , RSI 1m = 80, max = 89, min  = 47, pending_sell False signal_type = SELL
+Time 2024-03-11 14:30:00, Price = 71110 , RSI 1m = 84 , ADX 1m = 45
+===========> LOSS ,percent (-) 103
+
+time 2024-03-11 14:30:00, Price = 71110 , RSI 1m = 84, max = 89, min  = 57, pending_sell False signal_type = SELL
+Time 2024-03-11 15:20:00, Price = 71800 , RSI 1m = 74 , ADX 1m = 51
+===========> LOSS ,percent (-) 114
+
+time 2024-03-12 10:25:00, Price = 71737 , RSI 1m = 25, max = 48, min  = 25, pending_buy True WAITING
+time 2024-03-12 10:30:00, Price = 71861 , RSI 1m = 34, max = 48, min  = 25, signal_type = BUY
+Time 2024-03-12 21:00:00, Price = 72634 , RSI 1m = 63 , ADX 1m = 17
+===========> WIN ,percent (+) 128
+
+time 2024-03-12 23:20:00, Price = 70932 , RSI 1m = 25, max = 53, min  = 25, pending_buy True WAITING
+time 2024-03-12 23:25:00, Price = 70667 , RSI 1m = 21, max = 51, min  = 21, pending_buy True WAITING
+time 2024-03-12 23:30:00, Price = 70722 , RSI 1m = 24, max = 48, min  = 21, pending_buy False signal_type = BUY
+Time 2024-03-13 00:05:00, Price = 69828 , RSI 1m = 20 , ADX 1m = 42
+===========> LOSS ,percent (-) 149
+
+time 2024-03-13 00:05:00, Price = 69828 , RSI 1m = 20, max = 32, min  = 20, pending_buy True WAITING
+time 2024-03-13 00:10:00, Price = 69894 , RSI 1m = 22, max = 31, min  = 20, pending_buy True WAITING
+time 2024-03-13 00:15:00, Price = 69595 , RSI 1m = 19, max = 31, min  = 19, pending_buy True WAITING
+time 2024-03-13 00:20:00, Price = 69585 , RSI 1m = 19, max = 31, min  = 19, pending_buy True WAITING
+time 2024-03-13 00:25:00, Price = 69299 , RSI 1m = 17, max = 31, min  = 17, pending_buy True WAITING
+time 2024-03-13 00:30:00, Price = 69858 , RSI 1m = 33, max = 33, min  = 17, signal_type = BUY
+Time 2024-03-13 00:45:00, Price = 70655 , RSI 1m = 50 , ADX 1m = 49
+===========> WIN ,percent (+) 132
+
+time 2024-03-13 13:35:00, Price = 72755 , RSI 1m = 79 , max = 79, min  = 54 pending_sell True, WAITING
+time 2024-03-13 13:40:00, Price = 72633 , RSI 1m = 68, max = 79, min  = 54, signal_type = SELL
+Time 2024-03-13 15:05:00, Price = 73275 , RSI 1m = 71 , ADX 1m = 47
+===========> LOSS ,percent (-) 107
+
+time 2024-03-13 15:20:00, Price = 73479 , RSI 1m = 76 , max = 76, min  = 60 pending_sell True, WAITING
+time 2024-03-13 15:25:00, Price = 73587 , RSI 1m = 78 , max = 78, min  = 60 pending_sell True, WAITING
+time 2024-03-13 15:30:00, Price = 73504 , RSI 1m = 73, max = 78, min  = 60, signal_type = SELL
+Time 2024-03-13 19:35:00, Price = 72603 , RSI 1m = 22 , ADX 1m = 22
+===========> WIN ,percent (+) 150
+
+time 2024-03-13 19:35:00, Price = 72603 , RSI 1m = 22, max = 46, min  = 22, pending_buy True WAITING
+time 2024-03-13 19:40:00, Price = 72814 , RSI 1m = 34, max = 46, min  = 22, signal_type = BUY
+Time 2024-03-13 20:50:00, Price = 72098 , RSI 1m = 25 , ADX 1m = 39
+===========> LOSS ,percent (-) 119
+
+time 2024-03-13 20:50:00, Price = 72098 , RSI 1m = 25, max = 45, min  = 25, pending_buy True WAITING
+time 2024-03-13 20:55:00, Price = 72240 , RSI 1m = 31, max = 45, min  = 25, signal_type = BUY
+Time 2024-03-13 22:15:00, Price = 72945 , RSI 1m = 59 , ADX 1m = 28
+===========> WIN ,percent (+) 117
+
+time 2024-03-14 11:10:00, Price = 73632 , RSI 1m = 75 , max = 75, min  = 59 pending_sell True, WAITING
+time 2024-03-14 11:15:00, Price = 73612 , RSI 1m = 73, max = 75, min  = 59, signal_type = SELL
+Time 2024-03-14 11:40:00, Price = 72990 , RSI 1m = 37 , ADX 1m = 27
+===========> WIN ,percent (+) 103
+
+time 2024-03-14 18:10:00, Price = 72767 , RSI 1m = 25, max = 47, min  = 25, pending_buy True WAITING
+time 2024-03-14 18:15:00, Price = 72942 , RSI 1m = 38, max = 47, min  = 25, signal_type = BUY
+Time 2024-03-14 20:30:00, Price = 72332 , RSI 1m = 33 , ADX 1m = 44
+===========> LOSS ,percent (-) 101
+
+time 2024-03-14 20:50:00, Price = 71623 , RSI 1m = 24, max = 51, min  = 24, pending_buy True WAITING
+time 2024-03-14 20:55:00, Price = 71951 , RSI 1m = 35, max = 42, min  = 24, signal_type = BUY
+Time 2024-03-14 22:25:00, Price = 70906 , RSI 1m = 29 , ADX 1m = 37
+===========> LOSS ,percent (-) 174
+
+time 2024-03-15 01:50:00, Price = 69560 , RSI 1m = 25, max = 44, min  = 25, pending_buy True WAITING
+time 2024-03-15 01:55:00, Price = 70154 , RSI 1m = 40, max = 43, min  = 25, signal_type = BUY
+Time 2024-03-15 02:30:00, Price = 69109 , RSI 1m = 27 , ADX 1m = 40
+===========> LOSS ,percent (-) 174
+
+time 2024-03-15 02:35:00, Price = 68960 , RSI 1m = 25, max = 41, min  = 25, pending_buy True WAITING
+time 2024-03-15 02:40:00, Price = 69054 , RSI 1m = 28, max = 41, min  = 25, signal_type = BUY
+Time 2024-03-15 02:50:00, Price = 69848 , RSI 1m = 45 , ADX 1m = 43
+===========> WIN ,percent (+) 132
+
+time 2024-03-15 09:25:00, Price = 70758 , RSI 1m = 22, max = 55, min  = 22, pending_buy True WAITING
+time 2024-03-15 09:30:00, Price = 70472 , RSI 1m = 19, max = 54, min  = 19, pending_buy True WAITING
+time 2024-03-15 09:35:00, Price = 69831 , RSI 1m = 14, max = 50, min  = 14, pending_buy True WAITING
+time 2024-03-15 09:40:00, Price = 69748 , RSI 1m = 13, max = 45, min  = 13, pending_buy True WAITING
+time 2024-03-15 09:45:00, Price = 69419 , RSI 1m = 11, max = 45, min  = 11, pending_buy True WAITING
+time 2024-03-15 09:50:00, Price = 68476 , RSI 1m = 8, max = 45, min  = 8, pending_buy True WAITING
+time 2024-03-15 09:55:00, Price = 69062 , RSI 1m = 23, max = 45, min  = 8, pending_buy False signal_type = BUY
+Time 2024-03-15 10:20:00, Price = 68008 , RSI 1m = 22 , ADX 1m = 52
+===========> LOSS ,percent (-) 175
+
+time 2024-03-15 10:20:00, Price = 68008 , RSI 1m = 22, max = 30, min  = 8, pending_buy False signal_type = BUY
+Time 2024-03-15 10:45:00, Price = 68734 , RSI 1m = 40 , ADX 1m = 56
+===========> WIN ,percent (+) 121
+
+time 2024-03-15 16:05:00, Price = 66186 , RSI 1m = 21, max = 47, min  = 21, pending_buy True WAITING
+time 2024-03-15 16:10:00, Price = 66165 , RSI 1m = 21, max = 42, min  = 21, pending_buy True WAITING
+time 2024-03-15 16:15:00, Price = 66968 , RSI 1m = 39, max = 42, min  = 21, signal_type = BUY
+Time 2024-03-15 16:35:00, Price = 67778 , RSI 1m = 53 , ADX 1m = 36
+===========> WIN ,percent (+) 135
+
+time 2024-03-16 01:40:00, Price = 69303 , RSI 1m = 77 , max = 77, min  = 53 pending_sell True, WAITING
+time 2024-03-16 01:45:00, Price = 69647 , RSI 1m = 81 , max = 81, min  = 54 pending_sell True, WAITING
+time 2024-03-16 01:50:00, Price = 70368 , RSI 1m = 86 , max = 86, min  = 56 pending_sell True, WAITING
+time 2024-03-16 01:55:00, Price = 70276 , RSI 1m = 83, max = 86, min  = 56, pending_sell False signal_type = SELL
+Time 2024-03-16 02:35:00, Price = 69551 , RSI 1m = 55 , ADX 1m = 40
+===========> WIN ,percent (+) 120
+
+time 2024-03-16 17:15:00, Price = 68583 , RSI 1m = 21, max = 46, min  = 21, pending_buy True WAITING
+time 2024-03-16 17:20:00, Price = 68673 , RSI 1m = 28, max = 44, min  = 21, signal_type = BUY
+Time 2024-03-16 18:25:00, Price = 67962 , RSI 1m = 18 , ADX 1m = 40
+===========> LOSS ,percent (-) 118
+
+time 2024-03-16 18:25:00, Price = 67962 , RSI 1m = 18, max = 35, min  = 18, pending_buy True WAITING
+time 2024-03-16 18:30:00, Price = 68139 , RSI 1m = 30, max = 35, min  = 18, signal_type = BUY
+Time 2024-03-17 00:55:00, Price = 67325 , RSI 1m = 22 , ADX 1m = 27
+===========> LOSS ,percent (-) 135
+
+time 2024-03-17 00:55:00, Price = 67325 , RSI 1m = 22, max = 47, min  = 22, pending_buy True WAITING
+time 2024-03-17 01:00:00, Price = 67175 , RSI 1m = 20, max = 44, min  = 20, pending_buy True WAITING
+time 2024-03-17 01:05:00, Price = 66949 , RSI 1m = 17, max = 43, min  = 17, pending_buy True WAITING
+time 2024-03-17 01:10:00, Price = 67118 , RSI 1m = 26, max = 41, min  = 17, signal_type = BUY
+Time 2024-03-17 02:05:00, Price = 67746 , RSI 1m = 58 , ADX 1m = 38
+===========> WIN ,percent (+) 104
+
+time 2024-03-17 06:10:00, Price = 65379 , RSI 1m = 24, max = 50, min  = 24, pending_buy True WAITING
+time 2024-03-17 06:15:00, Price = 65067 , RSI 1m = 21, max = 50, min  = 21, pending_buy True WAITING
+time 2024-03-17 06:20:00, Price = 65860 , RSI 1m = 41, max = 50, min  = 21, signal_type = BUY
+Time 2024-03-17 09:25:00, Price = 66471 , RSI 1m = 62 , ADX 1m = 12
+===========> WIN ,percent (+) 101
+
+time 2024-03-17 13:55:00, Price = 65007 , RSI 1m = 22, max = 45, min  = 22, pending_buy True WAITING
+time 2024-03-17 14:00:00, Price = 65372 , RSI 1m = 35, max = 44, min  = 22, signal_type = BUY
+Time 2024-03-17 15:30:00, Price = 66102 , RSI 1m = 61 , ADX 1m = 33
+===========> WIN ,percent (+) 121
+
+time 2024-03-18 08:00:00, Price = 66929 , RSI 1m = 22, max = 43, min  = 22, pending_buy True WAITING
+time 2024-03-18 08:05:00, Price = 67097 , RSI 1m = 29, max = 43, min  = 22, signal_type = BUY
+Time 2024-03-18 08:50:00, Price = 67819 , RSI 1m = 52 , ADX 1m = 27
+===========> WIN ,percent (+) 120
+
+time 2024-03-18 15:20:00, Price = 67670 , RSI 1m = 23, max = 43, min  = 23, pending_buy True WAITING
+time 2024-03-18 15:25:00, Price = 67580 , RSI 1m = 21, max = 43, min  = 21, pending_buy True WAITING
+time 2024-03-18 15:30:00, Price = 67802 , RSI 1m = 34, max = 43, min  = 21, signal_type = BUY
+Time 2024-03-18 18:25:00, Price = 68449 , RSI 1m = 65 , ADX 1m = 20
+===========> WIN ,percent (+) 107
+
+time 2024-03-19 08:30:00, Price = 66053 , RSI 1m = 22, max = 40, min  = 22, pending_buy True WAITING
+time 2024-03-19 08:35:00, Price = 65967 , RSI 1m = 21, max = 38, min  = 21, pending_buy True WAITING
+time 2024-03-19 08:40:00, Price = 66152 , RSI 1m = 28, max = 35, min  = 21, signal_type = BUY
+Time 2024-03-19 10:30:00, Price = 65270 , RSI 1m = 30 , ADX 1m = 50
+===========> LOSS ,percent (-) 147
+
+time 2024-03-20 00:00:00, Price = 65330 , RSI 1m = 77 , max = 77, min  = 64 pending_sell True, WAITING
+time 2024-03-20 00:05:00, Price = 65263 , RSI 1m = 74, max = 77, min  = 64, signal_type = SELL
+Time 2024-03-20 01:05:00, Price = 64379 , RSI 1m = 41 , ADX 1m = 36
+===========> WIN ,percent (+) 147
+
+time 2024-03-20 05:50:00, Price = 62594 , RSI 1m = 24, max = 45, min  = 24, pending_buy True WAITING
+time 2024-03-20 05:55:00, Price = 62682 , RSI 1m = 27, max = 44, min  = 24, signal_type = BUY
+Time 2024-03-20 06:10:00, Price = 61977 , RSI 1m = 19 , ADX 1m = 45
+===========> LOSS ,percent (-) 117
+
+time 2024-03-20 06:10:00, Price = 61977 , RSI 1m = 19, max = 33, min  = 19, pending_buy True WAITING
+time 2024-03-20 06:15:00, Price = 62143 , RSI 1m = 25, max = 33, min  = 19, pending_buy False signal_type = BUY
+Time 2024-03-20 07:20:00, Price = 62834 , RSI 1m = 58 , ADX 1m = 42
+===========> WIN ,percent (+) 115
+
+time 2024-03-20 14:40:00, Price = 62979 , RSI 1m = 75 , max = 75, min  = 50 pending_sell True, WAITING
+time 2024-03-20 14:45:00, Price = 62858 , RSI 1m = 70, max = 75, min  = 50, signal_type = SELL
+Time 2024-03-20 18:25:00, Price = 63875 , RSI 1m = 73 , ADX 1m = 25
+===========> LOSS ,percent (-) 169
+
+time 2024-03-21 03:30:00, Price = 67421 , RSI 1m = 78 , max = 78, min  = 65 pending_sell True, WAITING
+time 2024-03-21 03:35:00, Price = 67585 , RSI 1m = 79 , max = 79, min  = 65 pending_sell True, WAITING
+time 2024-03-21 03:40:00, Price = 67512 , RSI 1m = 77 , max = 79, min  = 65 pending_sell True, WAITING
+time 2024-03-21 03:45:00, Price = 67355 , RSI 1m = 73, max = 79, min  = 65, signal_type = SELL
+Time 2024-03-21 05:00:00, Price = 67994 , RSI 1m = 72 , ADX 1m = 51
+===========> LOSS ,percent (-) 106
+
+time 2024-03-21 10:45:00, Price = 66759 , RSI 1m = 24, max = 48, min  = 24, pending_buy True WAITING
+time 2024-03-21 10:50:00, Price = 66548 , RSI 1m = 21, max = 48, min  = 21, pending_buy True WAITING
+time 2024-03-21 10:55:00, Price = 66707 , RSI 1m = 28, max = 48, min  = 21, signal_type = BUY
+Time 2024-03-21 14:25:00, Price = 67323 , RSI 1m = 60 , ADX 1m = 22
+===========> WIN ,percent (+) 102
+
+time 2024-03-22 01:10:00, Price = 65291 , RSI 1m = 21, max = 46, min  = 21, pending_buy True WAITING
+time 2024-03-22 01:15:00, Price = 65443 , RSI 1m = 27, max = 39, min  = 21, signal_type = BUY
+Time 2024-03-22 03:00:00, Price = 64740 , RSI 1m = 32 , ADX 1m = 39
+===========> LOSS ,percent (-) 117
+
+time 2024-03-22 16:40:00, Price = 65491 , RSI 1m = 24, max = 44, min  = 24, pending_buy True WAITING
+time 2024-03-22 16:45:00, Price = 65464 , RSI 1m = 24, max = 44, min  = 24, pending_buy True WAITING
+time 2024-03-22 16:50:00, Price = 65476 , RSI 1m = 25, max = 44, min  = 24, pending_buy True WAITING
+time 2024-03-22 16:55:00, Price = 65536 , RSI 1m = 29, max = 44, min  = 24, signal_type = BUY
+Time 2024-03-22 17:25:00, Price = 64891 , RSI 1m = 18 , ADX 1m = 44
+===========> LOSS ,percent (-) 107
+
+time 2024-03-22 17:25:00, Price = 64891 , RSI 1m = 18, max = 29, min  = 18, pending_buy True WAITING
+time 2024-03-22 17:30:00, Price = 64844 , RSI 1m = 18, max = 29, min  = 18, pending_buy True WAITING
+time 2024-03-22 17:35:00, Price = 64886 , RSI 1m = 20, max = 29, min  = 18, pending_buy True WAITING
+time 2024-03-22 17:40:00, Price = 64903 , RSI 1m = 22, max = 29, min  = 18, pending_buy False signal_type = BUY
+Time 2024-03-22 18:50:00, Price = 64245 , RSI 1m = 22 , ADX 1m = 49
+===========> LOSS ,percent (-) 109
+
+time 2024-03-22 18:50:00, Price = 64245 , RSI 1m = 22, max = 35, min  = 19, pending_buy False signal_type = BUY
+Time 2024-03-22 20:45:00, Price = 63440 , RSI 1m = 22 , ADX 1m = 44
+===========> LOSS ,percent (-) 134
+
+time 2024-03-22 20:45:00, Price = 63440 , RSI 1m = 22, max = 40, min  = 22, pending_buy True WAITING
+time 2024-03-22 20:50:00, Price = 63242 , RSI 1m = 19, max = 40, min  = 19, pending_buy True WAITING
+time 2024-03-22 20:55:00, Price = 63097 , RSI 1m = 18, max = 40, min  = 18, pending_buy True WAITING
+time 2024-03-22 21:00:00, Price = 63450 , RSI 1m = 32, max = 40, min  = 18, signal_type = BUY
+Time 2024-03-22 21:50:00, Price = 62817 , RSI 1m = 30 , ADX 1m = 58
+===========> LOSS ,percent (-) 105
+
+time 2024-03-23 04:35:00, Price = 62442 , RSI 1m = 21, max = 44, min  = 21, pending_buy True WAITING
+time 2024-03-23 04:40:00, Price = 62707 , RSI 1m = 32, max = 44, min  = 21, signal_type = BUY
+Time 2024-03-23 06:10:00, Price = 63313 , RSI 1m = 56 , ADX 1m = 24
+===========> WIN ,percent (+) 101
+
+time 2024-03-23 14:05:00, Price = 64572 , RSI 1m = 75 , max = 75, min  = 54 pending_sell True, WAITING
+time 2024-03-23 14:10:00, Price = 64531 , RSI 1m = 72, max = 75, min  = 54, signal_type = SELL
+Time 2024-03-23 21:30:00, Price = 65325 , RSI 1m = 74 , ADX 1m = 17
+===========> LOSS ,percent (-) 132
+
+time 2024-03-24 02:40:00, Price = 64867 , RSI 1m = 23, max = 45, min  = 23, pending_buy True WAITING
+time 2024-03-24 02:45:00, Price = 64923 , RSI 1m = 27, max = 45, min  = 23, signal_type = BUY
+Time 2024-03-24 06:50:00, Price = 64265 , RSI 1m = 25 , ADX 1m = 27
+===========> LOSS ,percent (-) 109
+
+time 2024-03-24 06:50:00, Price = 64265 , RSI 1m = 25, max = 41, min  = 25, pending_buy True WAITING
+time 2024-03-24 06:55:00, Price = 64020 , RSI 1m = 20, max = 41, min  = 20, pending_buy True WAITING
+time 2024-03-24 07:00:00, Price = 64211 , RSI 1m = 32, max = 41, min  = 20, signal_type = BUY
+Time 2024-03-24 15:10:00, Price = 64927 , RSI 1m = 75 , ADX 1m = 24
+===========> WIN ,percent (+) 119
+
+time 2024-03-24 15:10:00, Price = 64927 , RSI 1m = 75 , max = 75, min  = 42 pending_sell True, WAITING
+time 2024-03-24 15:15:00, Price = 64780 , RSI 1m = 66, max = 75, min  = 42, signal_type = SELL
+Time 2024-03-24 19:00:00, Price = 65509 , RSI 1m = 68 , ADX 1m = 29
+===========> LOSS ,percent (-) 121
+
+time 2024-03-25 20:55:00, Price = 68046 , RSI 1m = 79 , max = 79, min  = 44 pending_sell True, WAITING
+time 2024-03-25 21:00:00, Price = 68006 , RSI 1m = 77 , max = 79, min  = 44 pending_sell True, WAITING
+time 2024-03-25 21:05:00, Price = 68437 , RSI 1m = 82 , max = 82, min  = 44 pending_sell True, WAITING
+time 2024-03-25 21:10:00, Price = 68635 , RSI 1m = 84 , max = 84, min  = 44 pending_sell True, WAITING
+time 2024-03-25 21:15:00, Price = 68867 , RSI 1m = 86 , max = 86, min  = 45 pending_sell True, WAITING
+time 2024-03-25 21:20:00, Price = 69217 , RSI 1m = 88 , max = 88, min  = 53 pending_sell True, WAITING
+time 2024-03-25 21:25:00, Price = 69237 , RSI 1m = 88 , max = 88, min  = 57 pending_sell True, WAITING
+time 2024-03-25 21:30:00, Price = 69249 , RSI 1m = 88 , max = 88, min  = 58 pending_sell True, WAITING
+time 2024-03-25 21:35:00, Price = 69044 , RSI 1m = 79, max = 88, min  = 60, pending_sell False signal_type = SELL
+Time 2024-03-25 22:00:00, Price = 69670 , RSI 1m = 84 , ADX 1m = 44
+===========> LOSS ,percent (-) 104
+
+time 2024-03-25 22:00:00, Price = 69670 , RSI 1m = 84, max = 88, min  = 79, pending_sell False signal_type = SELL
+Time 2024-03-26 00:00:00, Price = 70318 , RSI 1m = 69 , ADX 1m = 37
+===========> LOSS ,percent (-) 108
+
+time 2024-03-26 04:25:00, Price = 69866 , RSI 1m = 25, max = 58, min  = 25, pending_buy True WAITING
+time 2024-03-26 04:30:00, Price = 70053 , RSI 1m = 33, max = 58, min  = 25, signal_type = BUY
+Time 2024-03-26 11:00:00, Price = 70718 , RSI 1m = 66 , ADX 1m = 20
+===========> WIN ,percent (+) 110
+
+time 2024-03-26 14:20:00, Price = 71461 , RSI 1m = 81 , max = 81, min  = 48 pending_sell True, WAITING
+time 2024-03-26 14:25:00, Price = 71541 , RSI 1m = 82 , max = 82, min  = 48 pending_sell True, WAITING
+time 2024-03-26 14:30:00, Price = 71462 , RSI 1m = 77, max = 82, min  = 48, pending_sell False signal_type = SELL
+Time 2024-03-26 14:50:00, Price = 70689 , RSI 1m = 45 , ADX 1m = 37
+===========> WIN ,percent (+) 128
+
+time 2024-03-27 14:25:00, Price = 69875 , RSI 1m = 25, max = 47, min  = 25, pending_buy True WAITING
+time 2024-03-27 14:30:00, Price = 69837 , RSI 1m = 24, max = 47, min  = 24, pending_buy True WAITING
+time 2024-03-27 14:35:00, Price = 69966 , RSI 1m = 34, max = 47, min  = 24, signal_type = BUY
+Time 2024-03-27 20:00:00, Price = 70899 , RSI 1m = 74 , ADX 1m = 19
+===========> WIN ,percent (+) 155
+
+time 2024-03-27 20:05:00, Price = 70982 , RSI 1m = 75 , max = 75, min  = 42 pending_sell True, WAITING
+time 2024-03-27 20:10:00, Price = 71300 , RSI 1m = 80 , max = 80, min  = 42 pending_sell True, WAITING
+time 2024-03-27 20:15:00, Price = 71202 , RSI 1m = 75, max = 80, min  = 42, pending_sell False signal_type = SELL
+Time 2024-03-27 20:45:00, Price = 70314 , RSI 1m = 43 , ADX 1m = 34
+===========> WIN ,percent (+) 148
+
+time 2024-03-29 10:25:00, Price = 70349 , RSI 1m = 24, max = 47, min  = 24, pending_buy True WAITING
+time 2024-03-29 10:30:00, Price = 70497 , RSI 1m = 37, max = 47, min  = 24, signal_type = BUY
+Time 2024-03-29 14:55:00, Price = 69855 , RSI 1m = 25 , ADX 1m = 33
+===========> LOSS ,percent (-) 107
+
+time 2024-03-29 14:55:00, Price = 69855 , RSI 1m = 25, max = 50, min  = 25, pending_buy True WAITING
+time 2024-03-29 15:00:00, Price = 70019 , RSI 1m = 38, max = 46, min  = 25, signal_type = BUY
+Time 2024-03-29 22:50:00, Price = 69360 , RSI 1m = 19 , ADX 1m = 35
+===========> LOSS ,percent (-) 109
+
+time 2024-03-29 22:50:00, Price = 69360 , RSI 1m = 19, max = 36, min  = 18, pending_buy True WAITING
+time 2024-03-29 22:55:00, Price = 69240 , RSI 1m = 17, max = 36, min  = 17, pending_buy True WAITING
+time 2024-03-29 23:00:00, Price = 69356 , RSI 1m = 25, max = 36, min  = 17, pending_buy False signal_type = BUY
+Time 2024-03-30 07:55:00, Price = 69985 , RSI 1m = 66 , ADX 1m = 18
+===========> WIN ,percent (+) 104
+
+time 2024-03-30 12:00:00, Price = 70304 , RSI 1m = 76 , max = 76, min  = 45 pending_sell True, WAITING
+time 2024-03-30 12:05:00, Price = 70280 , RSI 1m = 73, max = 76, min  = 47, signal_type = SELL
+Time 2024-03-31 06:25:00, Price = 69598 , RSI 1m = 33 , ADX 1m = 22
+===========> WIN ,percent (+) 113
+
+time 2024-03-31 12:45:00, Price = 70520 , RSI 1m = 76 , max = 76, min  = 62 pending_sell True, WAITING
+time 2024-03-31 12:50:00, Price = 70404 , RSI 1m = 64, max = 76, min  = 62, signal_type = SELL
+Time 2024-04-01 01:35:00, Price = 71054 , RSI 1m = 77 , ADX 1m = 15
+===========> LOSS ,percent (-) 108
+
+time 2024-04-01 01:35:00, Price = 71054 , RSI 1m = 77 , max = 77, min  = 45 pending_sell True, WAITING
+time 2024-04-01 01:40:00, Price = 71056 , RSI 1m = 77 , max = 77, min  = 45 pending_sell True, WAITING
+time 2024-04-01 01:45:00, Price = 71306 , RSI 1m = 82 , max = 82, min  = 45 pending_sell True, WAITING
+time 2024-04-01 01:50:00, Price = 71200 , RSI 1m = 74, max = 82, min  = 45, signal_type = SELL
+Time 2024-04-01 11:40:00, Price = 70568 , RSI 1m = 34 , ADX 1m = 33
+===========> WIN ,percent (+) 105
+
+time 2024-04-01 12:35:00, Price = 70289 , RSI 1m = 22, max = 36, min  = 22, pending_buy True WAITING
+time 2024-04-01 12:40:00, Price = 70228 , RSI 1m = 20, max = 36, min  = 20, pending_buy True WAITING
+time 2024-04-01 12:45:00, Price = 69642 , RSI 1m = 9, max = 35, min  = 9, pending_buy True WAITING
+time 2024-04-01 12:50:00, Price = 69293 , RSI 1m = 7, max = 35, min  = 7, pending_buy True WAITING
+time 2024-04-01 12:55:00, Price = 69212 , RSI 1m = 7, max = 35, min  = 7, pending_buy True WAITING
+time 2024-04-01 13:00:00, Price = 69374 , RSI 1m = 17, max = 35, min  = 7, pending_buy False signal_type = BUY
+Time 2024-04-01 20:25:00, Price = 70079 , RSI 1m = 68 , ADX 1m = 32
+===========> WIN ,percent (+) 117
+
+time 2024-04-01 21:50:00, Price = 68894 , RSI 1m = 23, max = 49, min  = 23, pending_buy True WAITING
+time 2024-04-01 21:55:00, Price = 68950 , RSI 1m = 27, max = 49, min  = 23, signal_type = BUY
+Time 2024-04-01 22:55:00, Price = 68281 , RSI 1m = 26 , ADX 1m = 48
+===========> LOSS ,percent (-) 111
+
+time 2024-04-02 02:20:00, Price = 69529 , RSI 1m = 77 , max = 77, min  = 55 pending_sell True, WAITING
+time 2024-04-02 02:25:00, Price = 69391 , RSI 1m = 68, max = 77, min  = 55, signal_type = SELL
+Time 2024-04-02 09:25:00, Price = 68491 , RSI 1m = 18 , ADX 1m = 24
+===========> WIN ,percent (+) 150
+
+time 2024-04-02 09:25:00, Price = 68491 , RSI 1m = 18, max = 52, min  = 18, pending_buy True WAITING
+time 2024-04-02 09:30:00, Price = 68246 , RSI 1m = 15, max = 50, min  = 15, pending_buy True WAITING
+time 2024-04-02 09:35:00, Price = 66445 , RSI 1m = 6, max = 47, min  = 6, pending_buy True WAITING
+time 2024-04-02 09:40:00, Price = 66683 , RSI 1m = 13, max = 47, min  = 6, pending_buy False signal_type = BUY
+Time 2024-04-02 16:00:00, Price = 65854 , RSI 1m = 23 , ADX 1m = 28
+===========> LOSS ,percent (-) 138
+
+time 2024-04-02 16:00:00, Price = 65854 , RSI 1m = 23, max = 47, min  = 23, pending_buy True WAITING
+time 2024-04-02 16:05:00, Price = 66100 , RSI 1m = 35, max = 47, min  = 23, signal_type = BUY
+Time 2024-04-02 18:20:00, Price = 65407 , RSI 1m = 29 , ADX 1m = 36
+===========> LOSS ,percent (-) 115
+
+time 2024-04-03 07:35:00, Price = 64823 , RSI 1m = 25, max = 48, min  = 25, pending_buy True WAITING
+time 2024-04-03 07:40:00, Price = 65217 , RSI 1m = 42, max = 48, min  = 25, signal_type = BUY
+Time 2024-04-03 08:55:00, Price = 65829 , RSI 1m = 62 , ADX 1m = 16
+===========> WIN ,percent (+) 102
+
+time 2024-04-03 18:05:00, Price = 65611 , RSI 1m = 23, max = 50, min  = 23, pending_buy True WAITING
+time 2024-04-03 18:10:00, Price = 65713 , RSI 1m = 29, max = 49, min  = 23, signal_type = BUY
+Time 2024-04-03 21:00:00, Price = 66457 , RSI 1m = 66 , ADX 1m = 16
+===========> WIN ,percent (+) 124
+
+time 2024-04-04 09:25:00, Price = 65609 , RSI 1m = 23, max = 48, min  = 23, pending_buy True WAITING
+time 2024-04-04 09:30:00, Price = 65666 , RSI 1m = 27, max = 48, min  = 23, signal_type = BUY
+Time 2024-04-04 15:10:00, Price = 66380 , RSI 1m = 72 , ADX 1m = 31
+===========> WIN ,percent (+) 119
+
+time 2024-04-04 20:15:00, Price = 67279 , RSI 1m = 80 , max = 80, min  = 61 pending_sell True, WAITING
+time 2024-04-04 20:20:00, Price = 67259 , RSI 1m = 78 , max = 80, min  = 61 pending_sell True, WAITING
+time 2024-04-04 20:25:00, Price = 67279 , RSI 1m = 79 , max = 80, min  = 61 pending_sell True, WAITING
+time 2024-04-04 20:30:00, Price = 67280 , RSI 1m = 79 , max = 80, min  = 61 pending_sell True, WAITING
+time 2024-04-04 20:35:00, Price = 67295 , RSI 1m = 79 , max = 80, min  = 61 pending_sell True, WAITING
+time 2024-04-04 20:40:00, Price = 67350 , RSI 1m = 80 , max = 80, min  = 61 pending_sell True, WAITING
+time 2024-04-04 20:45:00, Price = 67411 , RSI 1m = 82 , max = 82, min  = 64 pending_sell True, WAITING
+time 2024-04-04 20:50:00, Price = 67383 , RSI 1m = 79, max = 82, min  = 68, pending_sell False signal_type = SELL
+Time 2024-04-04 23:20:00, Price = 68015 , RSI 1m = 69 , ADX 1m = 38
+===========> LOSS ,percent (-) 105
+
+time 2024-04-05 00:50:00, Price = 68764 , RSI 1m = 80 , max = 80, min  = 53 pending_sell True, WAITING
+time 2024-04-05 00:55:00, Price = 68847 , RSI 1m = 81 , max = 81, min  = 53 pending_sell True, WAITING
+time 2024-04-05 01:00:00, Price = 69061 , RSI 1m = 84 , max = 84, min  = 53 pending_sell True, WAITING
+time 2024-04-05 01:05:00, Price = 68892 , RSI 1m = 75, max = 84, min  = 53, pending_sell False signal_type = SELL
+Time 2024-04-05 03:00:00, Price = 68157 , RSI 1m = 37 , ADX 1m = 27
+===========> WIN ,percent (+) 122
+
+time 2024-04-05 12:15:00, Price = 66869 , RSI 1m = 22, max = 46, min  = 22, pending_buy True WAITING
+time 2024-04-05 12:20:00, Price = 66544 , RSI 1m = 18, max = 46, min  = 18, pending_buy True WAITING
+time 2024-04-05 12:25:00, Price = 66673 , RSI 1m = 24, max = 46, min  = 18, pending_buy False signal_type = BUY
+Time 2024-04-05 15:10:00, Price = 67319 , RSI 1m = 63 , ADX 1m = 25
+===========> WIN ,percent (+) 107
+
+time 2024-04-05 21:45:00, Price = 68483 , RSI 1m = 76 , max = 76, min  = 61 pending_sell True, WAITING
+time 2024-04-05 21:50:00, Price = 68307 , RSI 1m = 70, max = 76, min  = 61, signal_type = SELL
+Time 2024-04-05 22:15:00, Price = 67699 , RSI 1m = 52 , ADX 1m = 26
+===========> WIN ,percent (+) 101
+
+time 2024-04-06 22:10:00, Price = 68246 , RSI 1m = 75 , max = 75, min  = 53 pending_sell True, WAITING
+time 2024-04-06 22:15:00, Price = 68155 , RSI 1m = 67, max = 75, min  = 53, signal_type = SELL
+Time 2024-04-07 05:50:00, Price = 69042 , RSI 1m = 78 , ADX 1m = 31
+===========> LOSS ,percent (-) 147
+
+time 2024-04-07 05:50:00, Price = 69042 , RSI 1m = 78 , max = 78, min  = 54 pending_sell True, WAITING
+time 2024-04-07 05:55:00, Price = 69040 , RSI 1m = 78 , max = 78, min  = 54 pending_sell True, WAITING
+time 2024-04-07 06:00:00, Price = 69261 , RSI 1m = 82 , max = 82, min  = 54 pending_sell True, WAITING
+time 2024-04-07 06:05:00, Price = 69562 , RSI 1m = 86 , max = 86, min  = 54 pending_sell True, WAITING
+time 2024-04-07 06:10:00, Price = 69572 , RSI 1m = 86 , max = 86, min  = 64 pending_sell True, WAITING
+time 2024-04-07 06:15:00, Price = 69505 , RSI 1m = 81, max = 86, min  = 64, pending_sell False signal_type = SELL
+Time 2024-04-07 06:55:00, Price = 68901 , RSI 1m = 48 , ADX 1m = 38
+===========> WIN ,percent (+) 100
+
+time 2024-04-08 14:30:00, Price = 70426 , RSI 1m = 79 , max = 79, min  = 52 pending_sell True, WAITING
+time 2024-04-08 14:35:00, Price = 70835 , RSI 1m = 85 , max = 85, min  = 56 pending_sell True, WAITING
+time 2024-04-08 14:40:00, Price = 70694 , RSI 1m = 77, max = 85, min  = 58, pending_sell False signal_type = SELL
+Time 2024-04-08 15:10:00, Price = 71378 , RSI 1m = 79 , ADX 1m = 54
+===========> LOSS ,percent (-) 113
+
+time 2024-04-08 15:10:00, Price = 71378 , RSI 1m = 79, max = 85, min  = 68, pending_sell False signal_type = SELL
+Time 2024-04-08 15:50:00, Price = 72027 , RSI 1m = 80 , ADX 1m = 61
+===========> LOSS ,percent (-) 108
+
+time 2024-04-08 15:50:00, Price = 72027 , RSI 1m = 80 , max = 80, min  = 69 pending_sell True, WAITING
+time 2024-04-08 15:55:00, Price = 72057 , RSI 1m = 80 , max = 80, min  = 69 pending_sell True, WAITING
+time 2024-04-08 16:00:00, Price = 71987 , RSI 1m = 77, max = 80, min  = 69, pending_sell False signal_type = SELL
+Time 2024-04-08 19:05:00, Price = 72654 , RSI 1m = 67 , ADX 1m = 42
+===========> LOSS ,percent (-) 111
+
+time 2024-04-09 08:10:00, Price = 71122 , RSI 1m = 25, max = 41, min  = 25, pending_buy True WAITING
+time 2024-04-09 08:15:00, Price = 71036 , RSI 1m = 22, max = 41, min  = 22, pending_buy True WAITING
+time 2024-04-09 08:20:00, Price = 71205 , RSI 1m = 35, max = 41, min  = 22, signal_type = BUY
+Time 2024-04-09 14:40:00, Price = 70519 , RSI 1m = 31 , ADX 1m = 30
+===========> LOSS ,percent (-) 114
+
+time 2024-04-09 15:05:00, Price = 69841 , RSI 1m = 19, max = 37, min  = 19, pending_buy True WAITING
+time 2024-04-09 15:10:00, Price = 69928 , RSI 1m = 23, max = 36, min  = 19, pending_buy False signal_type = BUY
+Time 2024-04-09 15:55:00, Price = 70544 , RSI 1m = 52 , ADX 1m = 41
+===========> WIN ,percent (+) 102
+
+time 2024-04-09 20:55:00, Price = 69979 , RSI 1m = 25, max = 49, min  = 25, pending_buy True WAITING
+time 2024-04-09 21:00:00, Price = 70169 , RSI 1m = 34, max = 49, min  = 25, signal_type = BUY
+Time 2024-04-09 21:35:00, Price = 69418 , RSI 1m = 25 , ADX 1m = 25
+===========> LOSS ,percent (-) 125
+
+time 2024-04-09 21:35:00, Price = 69418 , RSI 1m = 25, max = 47, min  = 25, pending_buy True WAITING
+time 2024-04-09 21:40:00, Price = 69216 , RSI 1m = 22, max = 47, min  = 22, pending_buy True WAITING
+time 2024-04-09 21:45:00, Price = 68890 , RSI 1m = 19, max = 47, min  = 19, pending_buy True WAITING
+time 2024-04-09 21:50:00, Price = 69267 , RSI 1m = 31, max = 47, min  = 19, signal_type = BUY
+Time 2024-04-09 23:55:00, Price = 68662 , RSI 1m = 34 , ADX 1m = 44
+===========> LOSS ,percent (-) 100
+
+time 2024-04-10 15:00:00, Price = 68908 , RSI 1m = 25, max = 60, min  = 25, pending_buy True WAITING
+time 2024-04-10 15:05:00, Price = 68950 , RSI 1m = 28, max = 58, min  = 25, signal_type = BUY
+Time 2024-04-10 19:30:00, Price = 68312 , RSI 1m = 25 , ADX 1m = 14
+===========> LOSS ,percent (-) 106
+
+time 2024-04-10 19:30:00, Price = 68312 , RSI 1m = 25, max = 55, min  = 25, pending_buy True WAITING
+time 2024-04-10 19:35:00, Price = 67657 , RSI 1m = 17, max = 55, min  = 17, pending_buy True WAITING
+time 2024-04-10 19:40:00, Price = 68010 , RSI 1m = 30, max = 55, min  = 17, signal_type = BUY
+Time 2024-04-10 21:20:00, Price = 68830 , RSI 1m = 61 , ADX 1m = 26
+===========> WIN ,percent (+) 136
+
+time 2024-04-11 02:55:00, Price = 70121 , RSI 1m = 76 , max = 76, min  = 51 pending_sell True, WAITING
+time 2024-04-11 03:00:00, Price = 69847 , RSI 1m = 61, max = 76, min  = 55, signal_type = SELL
+Time 2024-04-11 05:05:00, Price = 70517 , RSI 1m = 73 , ADX 1m = 27
+===========> LOSS ,percent (-) 111
+
+time 2024-04-11 05:15:00, Price = 70620 , RSI 1m = 75 , max = 75, min  = 43 pending_sell True, WAITING
+time 2024-04-11 05:20:00, Price = 70920 , RSI 1m = 80 , max = 80, min  = 43 pending_sell True, WAITING
+time 2024-04-11 05:25:00, Price = 70973 , RSI 1m = 81 , max = 81, min  = 43 pending_sell True, WAITING
+time 2024-04-11 05:30:00, Price = 71153 , RSI 1m = 83 , max = 83, min  = 43 pending_sell True, WAITING
+time 2024-04-11 05:35:00, Price = 70964 , RSI 1m = 73, max = 83, min  = 52, signal_type = SELL
+Time 2024-04-11 18:35:00, Price = 70323 , RSI 1m = 30 , ADX 1m = 30
+===========> WIN ,percent (+) 106
+
+time 2024-04-11 18:55:00, Price = 70043 , RSI 1m = 24, max = 45, min  = 24, pending_buy True WAITING
+time 2024-04-11 19:00:00, Price = 70150 , RSI 1m = 32, max = 45, min  = 24, signal_type = BUY
+Time 2024-04-11 19:30:00, Price = 70759 , RSI 1m = 59 , ADX 1m = 42
+===========> WIN ,percent (+) 101
+
+time 2024-04-12 09:20:00, Price = 70712 , RSI 1m = 77 , max = 77, min  = 49 pending_sell True, WAITING
+time 2024-04-12 09:25:00, Price = 70749 , RSI 1m = 78 , max = 78, min  = 51 pending_sell True, WAITING
+time 2024-04-12 09:30:00, Price = 70716 , RSI 1m = 74, max = 78, min  = 51, signal_type = SELL
+Time 2024-04-12 20:20:00, Price = 70111 , RSI 1m = 30 , ADX 1m = 34
+===========> WIN ,percent (+) 100
+
+time 2024-04-12 20:45:00, Price = 69694 , RSI 1m = 25, max = 38, min  = 24, pending_buy True WAITING
+time 2024-04-12 20:50:00, Price = 69910 , RSI 1m = 34, max = 37, min  = 24, signal_type = BUY
+Time 2024-04-12 21:55:00, Price = 69289 , RSI 1m = 30 , ADX 1m = 43
+===========> LOSS ,percent (-) 103
+
+time 2024-04-13 00:20:00, Price = 68304 , RSI 1m = 24, max = 39, min  = 24, pending_buy True WAITING
+time 2024-04-13 00:25:00, Price = 67920 , RSI 1m = 19, max = 39, min  = 19, pending_buy True WAITING
+time 2024-04-13 00:30:00, Price = 67847 , RSI 1m = 18, max = 39, min  = 18, pending_buy True WAITING
+time 2024-04-13 00:35:00, Price = 68230 , RSI 1m = 33, max = 39, min  = 18, signal_type = BUY
+Time 2024-04-13 01:30:00, Price = 66558 , RSI 1m = 16 , ADX 1m = 44
+===========> LOSS ,percent (-) 278
+
+time 2024-04-13 01:30:00, Price = 66558 , RSI 1m = 16, max = 40, min  = 16, pending_buy True WAITING
+time 2024-04-13 01:35:00, Price = 66083 , RSI 1m = 13, max = 40, min  = 13, pending_buy True WAITING
+time 2024-04-13 01:40:00, Price = 66558 , RSI 1m = 25, max = 40, min  = 13, pending_buy False signal_type = BUY
+Time 2024-04-13 02:30:00, Price = 67158 , RSI 1m = 45 , ADX 1m = 48
+===========> WIN ,percent (+) 100
+
+time 2024-04-13 08:50:00, Price = 66067 , RSI 1m = 24, max = 42, min  = 24, pending_buy True WAITING
+time 2024-04-13 08:55:00, Price = 65928 , RSI 1m = 22, max = 39, min  = 22, pending_buy True WAITING
+time 2024-04-13 09:00:00, Price = 66202 , RSI 1m = 36, max = 38, min  = 22, signal_type = BUY
+Time 2024-04-13 10:25:00, Price = 66811 , RSI 1m = 60 , ADX 1m = 23
+===========> WIN ,percent (+) 101
+
+time 2024-04-13 11:25:00, Price = 67413 , RSI 1m = 75 , max = 75, min  = 65 pending_sell True, WAITING
+time 2024-04-13 11:30:00, Price = 67333 , RSI 1m = 69, max = 75, min  = 66, signal_type = SELL
+Time 2024-04-14 00:35:00, Price = 66713 , RSI 1m = 28 , ADX 1m = 39
+===========> WIN ,percent (+) 103
+
+time 2024-04-14 02:45:00, Price = 66033 , RSI 1m = 24, max = 54, min  = 24, pending_buy True WAITING
+time 2024-04-14 02:50:00, Price = 64513 , RSI 1m = 13, max = 53, min  = 13, pending_buy True WAITING
+time 2024-04-14 02:55:00, Price = 64779 , RSI 1m = 20, max = 53, min  = 13, pending_buy False signal_type = BUY
+Time 2024-04-14 03:00:00, Price = 64113 , RSI 1m = 16 , ADX 1m = 35
+===========> LOSS ,percent (-) 111
+
+time 2024-04-14 03:00:00, Price = 64113 , RSI 1m = 16, max = 52, min  = 13, pending_buy False signal_type = BUY
+Time 2024-04-14 03:05:00, Price = 61734 , RSI 1m = 10 , ADX 1m = 39
+===========> LOSS ,percent (-) 396
+
+time 2024-04-14 03:05:00, Price = 61734 , RSI 1m = 10, max = 52, min  = 10, pending_buy True WAITING
+time 2024-04-14 03:10:00, Price = 62563 , RSI 1m = 21, max = 52, min  = 10, pending_buy False signal_type = BUY
+Time 2024-04-14 03:45:00, Price = 61644 , RSI 1m = 23 , ADX 1m = 60
+===========> LOSS ,percent (-) 153
+
+time 2024-04-14 03:45:00, Price = 61644 , RSI 1m = 23, max = 27, min  = 10, pending_buy False signal_type = BUY
+Time 2024-04-14 04:00:00, Price = 62467 , RSI 1m = 36 , ADX 1m = 63
+===========> WIN ,percent (+) 137
+
+time 2024-04-14 10:05:00, Price = 62454 , RSI 1m = 25, max = 43, min  = 25, pending_buy True WAITING
+time 2024-04-14 10:10:00, Price = 62187 , RSI 1m = 22, max = 43, min  = 22, pending_buy True WAITING
+time 2024-04-14 10:15:00, Price = 62654 , RSI 1m = 36, max = 43, min  = 22, signal_type = BUY
+Time 2024-04-14 10:35:00, Price = 63329 , RSI 1m = 53 , ADX 1m = 24
+===========> WIN ,percent (+) 112
+
+time 2024-04-15 00:20:00, Price = 62738 , RSI 1m = 19, max = 62, min  = 19, pending_buy True WAITING
+time 2024-04-15 00:25:00, Price = 63100 , RSI 1m = 30, max = 61, min  = 19, signal_type = BUY
+Time 2024-04-15 00:30:00, Price = 63710 , RSI 1m = 44 , ADX 1m = 30
+===========> WIN ,percent (+) 101
+
+time 2024-04-15 05:05:00, Price = 65175 , RSI 1m = 77 , max = 77, min  = 29 pending_sell True, WAITING
+time 2024-04-15 05:10:00, Price = 64909 , RSI 1m = 69, max = 77, min  = 29, signal_type = SELL
+Time 2024-04-15 06:35:00, Price = 65606 , RSI 1m = 67 , ADX 1m = 41
+===========> LOSS ,percent (-) 116
+
+time 2024-04-15 13:15:00, Price = 65929 , RSI 1m = 79 , max = 79, min  = 55 pending_sell True, WAITING
+time 2024-04-15 13:20:00, Price = 65922 , RSI 1m = 79 , max = 79, min  = 59 pending_sell True, WAITING
+time 2024-04-15 13:25:00, Price = 66308 , RSI 1m = 84 , max = 84, min  = 59 pending_sell True, WAITING
+time 2024-04-15 13:30:00, Price = 66231 , RSI 1m = 80, max = 84, min  = 61, pending_sell False signal_type = SELL
+Time 2024-04-15 21:05:00, Price = 65599 , RSI 1m = 33 , ADX 1m = 24
+===========> WIN ,percent (+) 105
+
+time 2024-04-15 21:10:00, Price = 65196 , RSI 1m = 25, max = 57, min  = 25, pending_buy True WAITING
+time 2024-04-15 21:15:00, Price = 65466 , RSI 1m = 36, max = 57, min  = 25, signal_type = BUY
+Time 2024-04-15 21:40:00, Price = 64830 , RSI 1m = 25 , ADX 1m = 39
+===========> LOSS ,percent (-) 106
+
+time 2024-04-15 21:40:00, Price = 64830 , RSI 1m = 25, max = 46, min  = 25, pending_buy True WAITING
+time 2024-04-15 21:45:00, Price = 64415 , RSI 1m = 20, max = 40, min  = 20, pending_buy True WAITING
+time 2024-04-15 21:50:00, Price = 64432 , RSI 1m = 21, max = 39, min  = 20, pending_buy True WAITING
+time 2024-04-15 21:55:00, Price = 64221 , RSI 1m = 18, max = 36, min  = 18, pending_buy True WAITING
+time 2024-04-15 22:00:00, Price = 64325 , RSI 1m = 23, max = 36, min  = 18, pending_buy False signal_type = BUY
+Time 2024-04-16 00:40:00, Price = 63680 , RSI 1m = 34 , ADX 1m = 35
+===========> LOSS ,percent (-) 107
+
+time 2024-04-16 14:30:00, Price = 63589 , RSI 1m = 75 , max = 75, min  = 58 pending_sell True, WAITING
+time 2024-04-16 14:35:00, Price = 63581 , RSI 1m = 74, max = 75, min  = 62, signal_type = SELL
+Time 2024-04-16 17:15:00, Price = 62600 , RSI 1m = 26 , ADX 1m = 17
+===========> WIN ,percent (+) 163
+
+time 2024-04-16 17:20:00, Price = 62416 , RSI 1m = 23, max = 58, min  = 23, pending_buy True WAITING
+time 2024-04-16 17:25:00, Price = 61862 , RSI 1m = 16, max = 58, min  = 16, pending_buy True WAITING
+time 2024-04-16 17:30:00, Price = 61832 , RSI 1m = 16, max = 49, min  = 16, pending_buy True WAITING
+time 2024-04-16 17:35:00, Price = 62167 , RSI 1m = 30, max = 49, min  = 16, signal_type = BUY
+Time 2024-04-16 18:00:00, Price = 62799 , RSI 1m = 49 , ADX 1m = 30
+===========> WIN ,percent (+) 105
+
+time 2024-04-17 04:20:00, Price = 63751 , RSI 1m = 79 , max = 79, min  = 52 pending_sell True, WAITING
+time 2024-04-17 04:25:00, Price = 63627 , RSI 1m = 72, max = 79, min  = 52, signal_type = SELL
+Time 2024-04-17 04:45:00, Price = 64316 , RSI 1m = 82 , ADX 1m = 41
+===========> LOSS ,percent (-) 114
+
+time 2024-04-17 04:45:00, Price = 64316 , RSI 1m = 82 , max = 82, min  = 60 pending_sell True, WAITING
+time 2024-04-17 04:50:00, Price = 64109 , RSI 1m = 73, max = 82, min  = 63, signal_type = SELL
+Time 2024-04-17 14:05:00, Price = 63414 , RSI 1m = 28 , ADX 1m = 20
+===========> WIN ,percent (+) 115
+
+time 2024-04-17 17:10:00, Price = 62875 , RSI 1m = 24, max = 50, min  = 24, pending_buy True WAITING
+time 2024-04-17 17:15:00, Price = 62922 , RSI 1m = 28, max = 50, min  = 24, signal_type = BUY
+Time 2024-04-17 19:35:00, Price = 62232 , RSI 1m = 23 , ADX 1m = 42
+===========> LOSS ,percent (-) 114
+
+time 2024-04-17 19:35:00, Price = 62232 , RSI 1m = 23, max = 39, min  = 23, pending_buy True WAITING
+time 2024-04-17 19:40:00, Price = 62234 , RSI 1m = 24, max = 39, min  = 23, pending_buy True WAITING
+time 2024-04-17 19:45:00, Price = 62291 , RSI 1m = 28, max = 39, min  = 23, signal_type = BUY
+Time 2024-04-17 21:15:00, Price = 61491 , RSI 1m = 24 , ADX 1m = 31
+===========> LOSS ,percent (-) 133
+
+time 2024-04-17 21:15:00, Price = 61491 , RSI 1m = 24, max = 61, min  = 24, pending_buy True WAITING
+time 2024-04-17 21:20:00, Price = 61300 , RSI 1m = 22, max = 61, min  = 22, pending_buy True WAITING
+time 2024-04-17 21:25:00, Price = 61464 , RSI 1m = 28, max = 61, min  = 22, signal_type = BUY
+Time 2024-04-17 22:10:00, Price = 60776 , RSI 1m = 31 , ADX 1m = 43
+===========> LOSS ,percent (-) 114
+
+time 2024-04-18 12:55:00, Price = 61051 , RSI 1m = 25, max = 46, min  = 25, pending_buy True WAITING
+time 2024-04-18 13:00:00, Price = 61142 , RSI 1m = 31, max = 46, min  = 25, signal_type = BUY
+Time 2024-04-18 17:55:00, Price = 61789 , RSI 1m = 64 , ADX 1m = 34
+===========> WIN ,percent (+) 107
+
+time 2024-04-18 18:10:00, Price = 62374 , RSI 1m = 78 , max = 78, min  = 55 pending_sell True, WAITING
+time 2024-04-18 18:15:00, Price = 62651 , RSI 1m = 82 , max = 82, min  = 55 pending_sell True, WAITING
+time 2024-04-18 18:20:00, Price = 62754 , RSI 1m = 83 , max = 83, min  = 55 pending_sell True, WAITING
+time 2024-04-18 18:25:00, Price = 62894 , RSI 1m = 85 , max = 85, min  = 55 pending_sell True, WAITING
+time 2024-04-18 18:30:00, Price = 62767 , RSI 1m = 78, max = 85, min  = 55, pending_sell False signal_type = SELL
+Time 2024-04-18 19:25:00, Price = 62098 , RSI 1m = 45 , ADX 1m = 45
+===========> WIN ,percent (+) 111
+
+time 2024-04-19 01:10:00, Price = 62359 , RSI 1m = 25, max = 47, min  = 25, pending_buy True WAITING
+time 2024-04-19 01:15:00, Price = 62606 , RSI 1m = 35, max = 47, min  = 25, signal_type = BUY
+Time 2024-04-19 02:00:00, Price = 63394 , RSI 1m = 58 , ADX 1m = 22
+===========> WIN ,percent (+) 131
+
+time 2024-04-19 08:05:00, Price = 62472 , RSI 1m = 25, max = 42, min  = 25, pending_buy True WAITING
+time 2024-04-19 08:10:00, Price = 62115 , RSI 1m = 19, max = 42, min  = 19, pending_buy True WAITING
+time 2024-04-19 08:15:00, Price = 62116 , RSI 1m = 19, max = 42, min  = 19, pending_buy True WAITING
+time 2024-04-19 08:20:00, Price = 61951 , RSI 1m = 17, max = 42, min  = 17, pending_buy True WAITING
+time 2024-04-19 08:25:00, Price = 62059 , RSI 1m = 23, max = 41, min  = 17, pending_buy False signal_type = BUY
+Time 2024-04-19 08:35:00, Price = 61123 , RSI 1m = 13 , ADX 1m = 45
+===========> LOSS ,percent (-) 156
+
+time 2024-04-19 08:35:00, Price = 61123 , RSI 1m = 13, max = 41, min  = 13, pending_buy True WAITING
+time 2024-04-19 08:40:00, Price = 61017 , RSI 1m = 13, max = 38, min  = 13, pending_buy True WAITING
+time 2024-04-19 08:45:00, Price = 61182 , RSI 1m = 19, max = 30, min  = 13, pending_buy False signal_type = BUY
+Time 2024-04-19 09:15:00, Price = 60225 , RSI 1m = 15 , ADX 1m = 63
+===========> LOSS ,percent (-) 159
+
+time 2024-04-19 09:15:00, Price = 60225 , RSI 1m = 15, max = 23, min  = 13, pending_buy True WAITING
+time 2024-04-19 09:20:00, Price = 60230 , RSI 1m = 15, max = 23, min  = 13, pending_buy True WAITING
+time 2024-04-19 09:25:00, Price = 59653 , RSI 1m = 12, max = 23, min  = 12, pending_buy True WAITING
+time 2024-04-19 09:30:00, Price = 60164 , RSI 1m = 27, max = 27, min  = 12, signal_type = BUY
+Time 2024-04-19 09:50:00, Price = 60898 , RSI 1m = 45 , ADX 1m = 69
+===========> WIN ,percent (+) 122
+
+time 2024-04-19 13:40:00, Price = 63619 , RSI 1m = 76 , max = 76, min  = 45 pending_sell True, WAITING
+time 2024-04-19 13:45:00, Price = 63955 , RSI 1m = 78 , max = 78, min  = 45 pending_sell True, WAITING
+time 2024-04-19 13:50:00, Price = 64666 , RSI 1m = 83 , max = 83, min  = 45 pending_sell True, WAITING
+time 2024-04-19 13:55:00, Price = 64596 , RSI 1m = 81 , max = 83, min  = 45 pending_sell True, WAITING
+time 2024-04-19 14:00:00, Price = 64847 , RSI 1m = 82 , max = 83, min  = 45 pending_sell True, WAITING
+time 2024-04-19 14:05:00, Price = 64650 , RSI 1m = 77, max = 83, min  = 45, pending_sell False signal_type = SELL
+Time 2024-04-19 18:35:00, Price = 65300 , RSI 1m = 66 , ADX 1m = 32
+===========> LOSS ,percent (-) 108
+
+time 2024-04-20 06:00:00, Price = 63204 , RSI 1m = 21, max = 62, min  = 21, pending_buy True WAITING
+time 2024-04-20 06:05:00, Price = 63384 , RSI 1m = 29, max = 56, min  = 21, signal_type = BUY
+Time 2024-04-20 07:20:00, Price = 63984 , RSI 1m = 53 , ADX 1m = 25
+===========> WIN ,percent (+) 100
+
+time 2024-04-20 16:05:00, Price = 63494 , RSI 1m = 25, max = 45, min  = 25, pending_buy True WAITING
+time 2024-04-20 16:10:00, Price = 63521 , RSI 1m = 28, max = 45, min  = 25, signal_type = BUY
+Time 2024-04-20 22:30:00, Price = 64133 , RSI 1m = 67 , ADX 1m = 15
+===========> WIN ,percent (+) 102
+
+time 2024-04-20 22:40:00, Price = 64532 , RSI 1m = 78 , max = 78, min  = 45 pending_sell True, WAITING
+time 2024-04-20 22:45:00, Price = 64765 , RSI 1m = 82 , max = 82, min  = 45 pending_sell True, WAITING
+time 2024-04-20 22:50:00, Price = 64743 , RSI 1m = 81 , max = 82, min  = 45 pending_sell True, WAITING
+time 2024-04-20 22:55:00, Price = 64771 , RSI 1m = 81 , max = 82, min  = 45 pending_sell True, WAITING
+time 2024-04-20 23:00:00, Price = 64576 , RSI 1m = 68, max = 82, min  = 48, signal_type = SELL
+Time 2024-04-21 00:15:00, Price = 65287 , RSI 1m = 72 , ADX 1m = 55
+===========> LOSS ,percent (-) 118
+
+time 2024-04-21 09:25:00, Price = 65288 , RSI 1m = 76 , max = 76, min  = 54 pending_sell True, WAITING
+time 2024-04-21 09:30:00, Price = 65293 , RSI 1m = 77 , max = 77, min  = 54 pending_sell True, WAITING
+time 2024-04-21 09:35:00, Price = 65100 , RSI 1m = 58, max = 77, min  = 54, signal_type = SELL
+Time 2024-04-21 23:10:00, Price = 64486 , RSI 1m = 28 , ADX 1m = 23
+===========> WIN ,percent (+) 102
+
+time 2024-04-22 08:20:00, Price = 65565 , RSI 1m = 75 , max = 75, min  = 39 pending_sell True, WAITING
+time 2024-04-22 08:25:00, Price = 64886 , RSI 1m = 47, max = 75, min  = 40, signal_type = SELL
+Time 2024-04-22 10:40:00, Price = 65661 , RSI 1m = 76 , ADX 1m = 24
+===========> LOSS ,percent (-) 129
+
+time 2024-04-22 10:40:00, Price = 65661 , RSI 1m = 76 , max = 76, min  = 47 pending_sell True, WAITING
+time 2024-04-22 10:45:00, Price = 65920 , RSI 1m = 80 , max = 80, min  = 49 pending_sell True, WAITING
+time 2024-04-22 10:50:00, Price = 65921 , RSI 1m = 80 , max = 80, min  = 54 pending_sell True, WAITING
+time 2024-04-22 10:55:00, Price = 65677 , RSI 1m = 67, max = 80, min  = 57, signal_type = SELL
+Time 2024-04-22 12:55:00, Price = 66342 , RSI 1m = 74 , ADX 1m = 40
+===========> LOSS ,percent (-) 110
+
+time 2024-04-23 05:50:00, Price = 67128 , RSI 1m = 77 , max = 77, min  = 57 pending_sell True, WAITING
+time 2024-04-23 05:55:00, Price = 67000 , RSI 1m = 68, max = 77, min  = 57, signal_type = SELL
+Time 2024-04-23 11:25:00, Price = 66297 , RSI 1m = 29 , ADX 1m = 41
+===========> WIN ,percent (+) 117
+
+time 2024-04-23 21:10:00, Price = 66757 , RSI 1m = 76 , max = 76, min  = 50 pending_sell True, WAITING
+time 2024-04-23 21:15:00, Price = 66741 , RSI 1m = 75 , max = 76, min  = 52 pending_sell True, WAITING
+time 2024-04-23 21:20:00, Price = 66816 , RSI 1m = 77 , max = 77, min  = 57 pending_sell True, WAITING
+time 2024-04-23 21:25:00, Price = 66689 , RSI 1m = 67, max = 77, min  = 63, signal_type = SELL
+Time 2024-04-24 03:15:00, Price = 66048 , RSI 1m = 19 , ADX 1m = 29
+===========> WIN ,percent (+) 106
+
+time 2024-04-24 03:15:00, Price = 66048 , RSI 1m = 19, max = 40, min  = 19, pending_buy True WAITING
+time 2024-04-24 03:20:00, Price = 66083 , RSI 1m = 23, max = 40, min  = 19, pending_buy False signal_type = BUY
+Time 2024-04-24 07:40:00, Price = 66685 , RSI 1m = 68 , ADX 1m = 20
+===========> WIN ,percent (+) 100
+
+time 2024-04-24 21:25:00, Price = 65437 , RSI 1m = 20, max = 42, min  = 20, pending_buy True WAITING
+time 2024-04-24 21:30:00, Price = 65074 , RSI 1m = 15, max = 42, min  = 15, pending_buy True WAITING
+time 2024-04-24 21:35:00, Price = 65042 , RSI 1m = 15, max = 42, min  = 15, pending_buy True WAITING
+time 2024-04-24 21:40:00, Price = 64894 , RSI 1m = 14, max = 42, min  = 14, pending_buy True WAITING
+time 2024-04-24 21:45:00, Price = 65229 , RSI 1m = 30, max = 42, min  = 14, signal_type = BUY
+Time 2024-04-24 22:40:00, Price = 64551 , RSI 1m = 27 , ADX 1m = 52
+===========> LOSS ,percent (-) 112
+
+time 2024-04-25 01:50:00, Price = 64243 , RSI 1m = 25, max = 44, min  = 25, pending_buy True WAITING
+time 2024-04-25 01:55:00, Price = 64100 , RSI 1m = 22, max = 44, min  = 22, pending_buy True WAITING
+time 2024-04-25 02:00:00, Price = 63997 , RSI 1m = 20, max = 44, min  = 20, pending_buy True WAITING
+time 2024-04-25 02:05:00, Price = 64207 , RSI 1m = 33, max = 44, min  = 20, signal_type = BUY
+Time 2024-04-25 17:20:00, Price = 63418 , RSI 1m = 26 , ADX 1m = 28
+===========> LOSS ,percent (-) 131
+
+time 2024-04-26 00:00:00, Price = 64548 , RSI 1m = 77 , max = 77, min  = 62 pending_sell True, WAITING
+time 2024-04-26 00:05:00, Price = 64758 , RSI 1m = 81 , max = 81, min  = 62 pending_sell True, WAITING
+time 2024-04-26 00:10:00, Price = 64591 , RSI 1m = 70, max = 81, min  = 62, signal_type = SELL
+Time 2024-04-26 08:15:00, Price = 63955 , RSI 1m = 29 , ADX 1m = 39
+===========> WIN ,percent (+) 106
+
+time 2024-04-27 07:40:00, Price = 62978 , RSI 1m = 16, max = 55, min  = 16, pending_buy True WAITING
+time 2024-04-27 07:45:00, Price = 63049 , RSI 1m = 21, max = 55, min  = 16, pending_buy False signal_type = BUY
+Time 2024-04-28 07:25:00, Price = 63710 , RSI 1m = 76 , ADX 1m = 36
+===========> WIN ,percent (+) 110
+
+time 2024-04-28 07:25:00, Price = 63710 , RSI 1m = 76 , max = 76, min  = 58 pending_sell True, WAITING
+time 2024-04-28 07:30:00, Price = 63597 , RSI 1m = 63, max = 76, min  = 58, signal_type = SELL
+Time 2024-04-28 10:05:00, Price = 64215 , RSI 1m = 83 , ADX 1m = 33
+===========> LOSS ,percent (-) 103
+
+time 2024-04-28 10:05:00, Price = 64215 , RSI 1m = 83 , max = 83, min  = 50 pending_sell True, WAITING
+time 2024-04-28 10:10:00, Price = 64283 , RSI 1m = 84 , max = 84, min  = 51 pending_sell True, WAITING
+time 2024-04-28 10:15:00, Price = 64150 , RSI 1m = 72, max = 84, min  = 52, signal_type = SELL
+Time 2024-04-28 17:10:00, Price = 63549 , RSI 1m = 31 , ADX 1m = 27
+===========> WIN ,percent (+) 100
+
+time 2024-04-29 05:30:00, Price = 63182 , RSI 1m = 19, max = 48, min  = 19, pending_buy True WAITING
+time 2024-04-29 05:35:00, Price = 63145 , RSI 1m = 18, max = 48, min  = 18, pending_buy True WAITING
+time 2024-04-29 05:40:00, Price = 63207 , RSI 1m = 25, max = 48, min  = 18, pending_buy False signal_type = BUY
+Time 2024-04-29 10:00:00, Price = 62524 , RSI 1m = 17 , ADX 1m = 34
+===========> LOSS ,percent (-) 113
+
+time 2024-04-29 10:00:00, Price = 62524 , RSI 1m = 17, max = 45, min  = 17, pending_buy True WAITING
+time 2024-04-29 10:05:00, Price = 62478 , RSI 1m = 16, max = 44, min  = 16, pending_buy True WAITING
+time 2024-04-29 10:10:00, Price = 62520 , RSI 1m = 21, max = 42, min  = 16, pending_buy False signal_type = BUY
+Time 2024-04-29 20:45:00, Price = 61841 , RSI 1m = 27 , ADX 1m = 19
+===========> LOSS ,percent (-) 113
+
+time 2024-04-30 05:30:00, Price = 63808 , RSI 1m = 81 , max = 81, min  = 54 pending_sell True, WAITING
+time 2024-04-30 05:35:00, Price = 63748 , RSI 1m = 77, max = 81, min  = 58, pending_sell False signal_type = SELL
+Time 2024-04-30 07:45:00, Price = 64370 , RSI 1m = 78 , ADX 1m = 41
+===========> LOSS ,percent (-) 103
+
+time 2024-04-30 07:45:00, Price = 64370 , RSI 1m = 78 , max = 78, min  = 51 pending_sell True, WAITING
+time 2024-04-30 07:50:00, Price = 64586 , RSI 1m = 82 , max = 82, min  = 51 pending_sell True, WAITING
+time 2024-04-30 07:55:00, Price = 64565 , RSI 1m = 81 , max = 82, min  = 51 pending_sell True, WAITING
+time 2024-04-30 08:00:00, Price = 64478 , RSI 1m = 74, max = 82, min  = 51, signal_type = SELL
+Time 2024-04-30 08:55:00, Price = 63580 , RSI 1m = 32 , ADX 1m = 31
+===========> WIN ,percent (+) 149
+
+time 2024-04-30 09:00:00, Price = 63214 , RSI 1m = 24, max = 65, min  = 24, pending_buy True WAITING
+time 2024-04-30 09:05:00, Price = 63456 , RSI 1m = 35, max = 65, min  = 24, signal_type = BUY
+Time 2024-04-30 15:10:00, Price = 62825 , RSI 1m = 28 , ADX 1m = 14
+===========> LOSS ,percent (-) 105
+
+time 2024-04-30 15:30:00, Price = 62298 , RSI 1m = 19, max = 43, min  = 19, pending_buy True WAITING
+time 2024-04-30 15:35:00, Price = 62277 , RSI 1m = 19, max = 43, min  = 19, pending_buy True WAITING
+time 2024-04-30 15:40:00, Price = 62184 , RSI 1m = 17, max = 43, min  = 17, pending_buy True WAITING
+time 2024-04-30 15:45:00, Price = 62094 , RSI 1m = 16, max = 43, min  = 16, pending_buy True WAITING
+time 2024-04-30 15:50:00, Price = 61947 , RSI 1m = 14, max = 43, min  = 14, pending_buy True WAITING
+time 2024-04-30 15:55:00, Price = 61904 , RSI 1m = 14, max = 38, min  = 14, pending_buy True WAITING
+time 2024-04-30 16:00:00, Price = 61851 , RSI 1m = 13, max = 32, min  = 13, pending_buy True WAITING
+time 2024-04-30 16:05:00, Price = 61920 , RSI 1m = 18, max = 32, min  = 13, pending_buy False signal_type = BUY
+Time 2024-04-30 18:25:00, Price = 61276 , RSI 1m = 29 , ADX 1m = 67
+===========> LOSS ,percent (-) 107
+
+time 2024-05-01 13:55:00, Price = 59504 , RSI 1m = 25, max = 41, min  = 25, pending_buy True WAITING
+time 2024-05-01 14:00:00, Price = 59278 , RSI 1m = 20, max = 41, min  = 20, pending_buy True WAITING
+time 2024-05-01 14:05:00, Price = 58423 , RSI 1m = 10, max = 41, min  = 10, pending_buy True WAITING
+time 2024-05-01 14:10:00, Price = 58485 , RSI 1m = 14, max = 36, min  = 10, pending_buy False signal_type = BUY
+Time 2024-05-01 14:30:00, Price = 57547 , RSI 1m = 8 , ADX 1m = 54
+===========> LOSS ,percent (-) 156
+
+time 2024-05-01 14:30:00, Price = 57547 , RSI 1m = 8, max = 36, min  = 8, pending_buy True WAITING
+time 2024-05-01 14:35:00, Price = 57406 , RSI 1m = 7, max = 32, min  = 7, pending_buy True WAITING
+time 2024-05-01 14:40:00, Price = 57694 , RSI 1m = 19, max = 31, min  = 7, pending_buy False signal_type = BUY
+Time 2024-05-01 15:15:00, Price = 56950 , RSI 1m = 18 , ADX 1m = 69
+===========> LOSS ,percent (-) 124
+
+time 2024-05-01 15:15:00, Price = 56950 , RSI 1m = 18, max = 22, min  = 7, pending_buy False signal_type = BUY
+Time 2024-05-01 17:40:00, Price = 57567 , RSI 1m = 56 , ADX 1m = 31
+===========> WIN ,percent (+) 102
+
+time 2024-05-02 01:50:00, Price = 59403 , RSI 1m = 80 , max = 80, min  = 57 pending_sell True, WAITING
+time 2024-05-02 01:55:00, Price = 58884 , RSI 1m = 67, max = 80, min  = 57, signal_type = SELL
+Time 2024-05-02 02:25:00, Price = 58040 , RSI 1m = 49 , ADX 1m = 40
+===========> WIN ,percent (+) 140
+
+time 2024-05-02 08:35:00, Price = 56996 , RSI 1m = 24, max = 44, min  = 24, pending_buy True WAITING
+time 2024-05-02 08:40:00, Price = 57158 , RSI 1m = 31, max = 44, min  = 24, signal_type = BUY
+Time 2024-05-02 14:05:00, Price = 57784 , RSI 1m = 64 , ADX 1m = 15
+===========> WIN ,percent (+) 104
+
+time 2024-05-02 19:05:00, Price = 58754 , RSI 1m = 75 , max = 75, min  = 60 pending_sell True, WAITING
+time 2024-05-02 19:10:00, Price = 58838 , RSI 1m = 77 , max = 77, min  = 60 pending_sell True, WAITING
+time 2024-05-02 19:15:00, Price = 59034 , RSI 1m = 80 , max = 80, min  = 60 pending_sell True, WAITING
+time 2024-05-02 19:20:00, Price = 58769 , RSI 1m = 66, max = 80, min  = 60, signal_type = SELL
+Time 2024-05-03 01:00:00, Price = 59376 , RSI 1m = 68 , ADX 1m = 17
+===========> LOSS ,percent (-) 101
+
+time 2024-05-03 09:10:00, Price = 59724 , RSI 1m = 75 , max = 75, min  = 55 pending_sell True, WAITING
+time 2024-05-03 09:15:00, Price = 59662 , RSI 1m = 70, max = 75, min  = 55, signal_type = SELL
+Time 2024-05-03 17:40:00, Price = 58995 , RSI 1m = 28 , ADX 1m = 21
+===========> WIN ,percent (+) 111
+
+time 2024-05-03 17:45:00, Price = 58891 , RSI 1m = 24, max = 57, min  = 24, pending_buy True WAITING
+time 2024-05-03 17:50:00, Price = 58885 , RSI 1m = 24, max = 52, min  = 24, pending_buy True WAITING
+time 2024-05-03 17:55:00, Price = 59009 , RSI 1m = 35, max = 49, min  = 24, signal_type = BUY
+Time 2024-05-03 19:30:00, Price = 60072 , RSI 1m = 77 , ADX 1m = 18
+===========> WIN ,percent (+) 177
+
+time 2024-05-03 19:30:00, Price = 60072 , RSI 1m = 77 , max = 77, min  = 43 pending_sell True, WAITING
+time 2024-05-03 19:35:00, Price = 60134 , RSI 1m = 78 , max = 78, min  = 43 pending_sell True, WAITING
+time 2024-05-03 19:40:00, Price = 60424 , RSI 1m = 81 , max = 81, min  = 43 pending_sell True, WAITING
+time 2024-05-03 19:45:00, Price = 60359 , RSI 1m = 78, max = 81, min  = 43, pending_sell False signal_type = SELL
+Time 2024-05-03 20:00:00, Price = 61106 , RSI 1m = 85 , ADX 1m = 36
+===========> LOSS ,percent (-) 124
+
+time 2024-05-03 20:00:00, Price = 61106 , RSI 1m = 85 , max = 85, min  = 43 pending_sell True, WAITING
+time 2024-05-03 20:05:00, Price = 61037 , RSI 1m = 82, max = 85, min  = 43, pending_sell False signal_type = SELL
+Time 2024-05-03 20:55:00, Price = 61654 , RSI 1m = 82 , ADX 1m = 56
+===========> LOSS ,percent (-) 102
+
+time 2024-05-03 20:55:00, Price = 61654 , RSI 1m = 82 , max = 84, min  = 77 pending_sell True, WAITING
+time 2024-05-03 21:00:00, Price = 61682 , RSI 1m = 82 , max = 84, min  = 77 pending_sell True, WAITING
+time 2024-05-03 21:05:00, Price = 61700 , RSI 1m = 82 , max = 84, min  = 77 pending_sell True, WAITING
+time 2024-05-03 21:10:00, Price = 61570 , RSI 1m = 75, max = 84, min  = 75, pending_sell False signal_type = SELL
+Time 2024-05-04 03:15:00, Price = 62364 , RSI 1m = 75 , ADX 1m = 30
+===========> LOSS ,percent (-) 132
+
+time 2024-05-04 03:15:00, Price = 62364 , RSI 1m = 75 , max = 75, min  = 49 pending_sell True, WAITING
+time 2024-05-04 03:20:00, Price = 62724 , RSI 1m = 81 , max = 81, min  = 49 pending_sell True, WAITING
+time 2024-05-04 03:25:00, Price = 62735 , RSI 1m = 82 , max = 82, min  = 54 pending_sell True, WAITING
+time 2024-05-04 03:30:00, Price = 62730 , RSI 1m = 81 , max = 82, min  = 54 pending_sell True, WAITING
+time 2024-05-04 03:35:00, Price = 62840 , RSI 1m = 83 , max = 83, min  = 56 pending_sell True, WAITING
+time 2024-05-04 03:40:00, Price = 62905 , RSI 1m = 84 , max = 84, min  = 60 pending_sell True, WAITING
+time 2024-05-04 03:45:00, Price = 63132 , RSI 1m = 87 , max = 87, min  = 62 pending_sell True, WAITING
+time 2024-05-04 03:50:00, Price = 62782 , RSI 1m = 67, max = 87, min  = 62, signal_type = SELL
+Time 2024-05-04 08:25:00, Price = 63546 , RSI 1m = 74 , ADX 1m = 24
+===========> LOSS ,percent (-) 127
+
+time 2024-05-04 17:40:00, Price = 63802 , RSI 1m = 80 , max = 80, min  = 49 pending_sell True, WAITING
+time 2024-05-04 17:45:00, Price = 63874 , RSI 1m = 81 , max = 81, min  = 49 pending_sell True, WAITING
+time 2024-05-04 17:50:00, Price = 64034 , RSI 1m = 84 , max = 84, min  = 49 pending_sell True, WAITING
+time 2024-05-04 17:55:00, Price = 64393 , RSI 1m = 88 , max = 88, min  = 51 pending_sell True, WAITING
+time 2024-05-04 18:00:00, Price = 64326 , RSI 1m = 83, max = 88, min  = 51, pending_sell False signal_type = SELL
+Time 2024-05-04 20:25:00, Price = 63717 , RSI 1m = 42 , ADX 1m = 17
+===========> WIN ,percent (+) 101
+
+time 2024-05-05 02:50:00, Price = 63982 , RSI 1m = 75 , max = 75, min  = 48 pending_sell True, WAITING
+time 2024-05-05 02:55:00, Price = 63885 , RSI 1m = 66, max = 75, min  = 48, signal_type = SELL

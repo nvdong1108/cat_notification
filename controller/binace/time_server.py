@@ -6,7 +6,9 @@ from logger.logger_setup import logger
 from config.config import BINANCE_API_KEY, BINANCE_API_SECRET
 from binance.client import Client
 from binance.exceptions import BinanceAPIException
+
 import time
+
 
 client = Client(BINANCE_API_KEY, BINANCE_API_SECRET)
 listen_key = client.futures_stream_get_listen_key()

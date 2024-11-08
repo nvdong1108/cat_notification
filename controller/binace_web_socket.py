@@ -16,7 +16,8 @@ from binance.exceptions import BinanceAPIException
 from config.config import BINANCE_API_KEY, BINANCE_API_SECRET
 from config.storage import ShareState
 from logger.logger_setup import logger
-from controller.binace_controller import handle_stop_market, handle_take_profit, get_position_information
+from logger.print_until import print_time
+from controller.binace_controller import handle_stop_market, handle_take_profit
 
 client = Client(BINANCE_API_KEY, BINANCE_API_SECRET)
 
@@ -28,19 +29,22 @@ async def process_order_update(order: dict):
     """
     try:
         if not order:
-            print(f"[process_order_update] not had info order from socket do handle")
-            logger.error(f"[process_order_update] not had info order from socket do handle")
+            m_error = f"[process_order_update] not had info order from socket do handle"
+            print_time(m_error)
+            logger.error(m_error)
             return
 
-        logger.info(f"response information order from websocket {order}")
+        m_order = f"\nResponse information order from websocket"
+        logger.info(f"{m_order} {order}")
+        print_time(m_order)
+
         order_id = order.get('i')  # Order ID
         symbol = order.get('s')  # Symbol
         side = order.get('S')  # SIDE: BUY hoặc SELL
         order_type = order.get('o')  # Order Type
         status = order.get('X')  # Status
-        price = order.get('p')  # Price
-        logger.info(f"\nResponse information order from websocket")
-        print(f"\nResponse information order from websocket")
+        price = order.get('ap')
+
         body = (
             f"Order ID: {order_id}\n"
             f"Side: {side}\n"
@@ -48,14 +52,16 @@ async def process_order_update(order: dict):
             f"Status: {status}\n"
             f"Price: {price}"
         )
-        print(body)
+        print_time(body)
         logger.info(body)
 
         if ShareState.equals_order_id(order_id):
             ShareState.update_order(order_id=order_id, status=status)
             if status == 'NEW':
-                print("update info ShareState.status_order = NEW in response from websocket")
-                logger.info("update info ShareState.status_order = NEW in response from websocket")
+                m_in4 = "STEP 1. UPDATE INFO ShareState.status_order = NEW in response from websocket"
+                print_time(m_in4)
+                logger.info(m_in4)
+
             elif status == 'FILLED':
                 order_stop = handle_stop_market(symbol, side, int(price))
                 if order_stop:

@@ -9,11 +9,13 @@ from logger.logger_setup import logger
 from controller.binace_controller import check_open_order
 from controller.binace_web_socket import start_websocket
 from controller.rsi_fetcher import main
+from common.power_shell_until import schedule_sync
 
 
 async def run_all_tasks():
     await asyncio.gather(
         start_websocket(),
+        schedule_sync(),
         main()
     )
 

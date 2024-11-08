@@ -3,7 +3,8 @@ from common.format_until import format_percent, format_amt
 from logger.logger_setup import logger
 
 from controller.binace.time_server import synchronize_time
-from controller.binace.send_api import create_take_profit_order, open_stop_market, open_orders
+from controller.binace.send_api import (create_take_profit_order, open_stop_market,
+                                        open_orders, get_position_information)
 from config.storage import ShareState
 from common.constants import *
 
@@ -14,7 +15,6 @@ from binance.exceptions import BinanceAPIException
 from binance.client import Client
 from config.config import BINANCE_API_KEY, BINANCE_API_SECRET
 
-from controller.binace.change_order import handle_change_stop_loss, handle_change_profit
 
 session = Session()
 session.timeout = 20
@@ -23,18 +23,22 @@ client = Client(BINANCE_API_KEY, BINANCE_API_SECRET)
 listen_key = client.futures_stream_get_listen_key()
 
 
-def get_latest_orders(symbol, side):
+def get_latest_orders(symbol, side, order_id=None):
     try:
         orders = client.futures_get_all_orders(symbol=symbol)
         if side:
             orders = [order for order in orders if order['side'] == side]
 
-        sorted_orders = sorted(orders, key=lambda x: x['time'], reverse=True)
-        if sorted_orders:
-            latest_order = sorted_orders[0]
-            return latest_order
+        if orders is None or len(orders) == 0:
+            return None
 
-        return None
+        sorted_orders = sorted(orders, key=lambda x: x['time'], reverse=True)
+        if order_id is None:
+            return sorted_orders[0]
+
+        for order in sorted_orders:
+            if order['orderId'] == order_id:
+                return order
 
     except BinanceAPIException as e:
         logger.error(f"Binance API Exception while fetching orders: {e}")
@@ -44,38 +48,21 @@ def get_latest_orders(symbol, side):
         return None
 
 
-def get_position_information():
-    """
-    :return:
-    """
-    try:
-        positions = client.futures_position_information(timestamp=synchronize_time(),
-                                                        recvWindow=10000)
-        open_positions = [position for position in positions if float(position['positionAmt']) != 0]
-        return open_positions
-    except Exception as e:
-        ms = f"Error at get_position_information: {e}"
-        print_time(ms)
-        logger.error(ms)
-        return None
-    
-    
-
-
 def get_profit_position():
     try:
-        open_positions = get_position_information()
-        if open_positions is None:
-            message = f"*** POSITIONS profit None percentage is None "
+        open_positions = get_position_information(retries=1)
+        if open_positions == -1:
+            return None
+
+        if open_positions is None or len(open_positions) == 0:
+            message = f"***⚠️ POSITIONS profit None percentage is None"
+            print_time(message)
+            logger.info(message)
+            ShareState.reset_order()
             return None
         
-        if len(open_positions) > 1:
-            print("Error: Multiple open positions detected!")
-            logger.error(f"Error: Multiple open positions detected {len(open_positions)} !")
-            return False
         amt_profit = float(open_positions[0]['unRealizedProfit'])
         total_amt = float(open_positions[0]['isolatedWallet'])
-        mark_price = round(float(open_positions[0]['markPrice']), 2)
         profit_percentage = (amt_profit / total_amt) * 100
         if amt_profit > ShareState.get_condition_change_loss():
             """ change stop loss"""
@@ -96,10 +83,12 @@ def get_profit_position():
 
 def check_open_order():
     try:
-
         open_positions = get_position_information()
+        if open_positions == -1:
+            return False
+
         print("****************** goto *********************** ")
-        if open_positions:
+        if open_positions and len(open_positions) > 0:
             if len(open_positions) > 1:
                 print("Error: Multiple open positions detected!")
                 logger.error(f"Error: Multiple open positions detected {len(open_positions)} !")
@@ -115,7 +104,7 @@ def check_open_order():
                 if symbol != 'BTCUSDT':
                     logger.error(f"ignore order {symbol} ")
                     continue
-
+                """ here don't know order_id"""
                 orders_open_filled = get_latest_orders('BTCUSDT', side)
 
                 if orders_open_filled is None:
@@ -191,8 +180,6 @@ def check_open_order():
         return False
 
 
-
-
 def buy_futures_btcusdt():
     synchronize_time()
     return open_orders("BUY", "BTCUSDT", QUANTITY_PER_TRADE, LEVERAGE)
@@ -206,18 +193,23 @@ def sell_futures_btcusdt():
 def handle_stop_market(symbol, side, price):
     if symbol != 'BTCUSDT':
         return None
-    order_stop = None
 
+    if price == 0:
+        m_error = f"ERROR at handle STOP_MARKET: PRICE = 0"
+        print_time(m_error)
+        logger.error(m_error)
+        return None
+
+    order_stop = None
     if side == 'SELL':
         price = int(price) + 600
         order_stop = open_stop_market('BUY', QUANTITY_PER_TRADE, price)
     elif side == 'BUY':
         price = int(price) - 600
         order_stop = open_stop_market('SELL', QUANTITY_PER_TRADE, price)
-    else:
-        print(f"Error: Side handle stop market order wrong side = {side}")
 
-    logger.info(f"handle stop market order success with info order = {order_stop}")
+    logger.info(f"STEP 3.1. handle STOP MARKET order success with info order = {order_stop}")
+
     return order_stop
 
 
@@ -225,16 +217,20 @@ def handle_take_profit(symbol, side, price):
     if symbol != 'BTCUSDT':
         return None
     order_stop = None
+    if price == 0:
+        m_error = f"ERROR at handle_take_profit: PRICE = 0"
+        print_time(m_error)
+        logger.error(m_error)
+        return None
+
     if side == 'SELL':
         price_stop = int(price) - 600
         order_stop = create_take_profit_order('BUY', price_stop)
     elif side == 'BUY':
         price_stop = int(price) + 600
         order_stop = create_take_profit_order('SELL', price_stop)
-    else:
-        print(f"Error: Side handle stop market order wrong side = {side}")
 
-    logger.info(f"handle handle_take_profit order success with info order = {order_stop}")
+    logger.info(f"STEP 3.2 . handle TAKE_PROFIT order success with info order = {order_stop}")
     return order_stop
 
 
@@ -246,16 +242,25 @@ def handle_recheck_bug_stop_profit():
     """
 
     open_positions = get_position_information()
-    if open_positions is None or len(open_positions) == 0:
-        print("Error: Don't recheck open positions.")
-        logger.error("Error: Don't recheck open positions.!")
+    if open_positions == -1:
+        """ignore and handle in next time
+        this case call api to server three time but response is error"""
         return False
 
-    orders_open_filled = get_latest_orders('BTCUSDT', ShareState.get_side())
+    if open_positions is None or len(open_positions) == 0:
+        """ no position but info in Share.Order don't reset"""
+        message = "Error: Don't recheck open position Reset ShareState.reset_order "
+        print_time(message)
+        logger.error(message)
+        ShareState.reset_order()
+        return False
+
+    orders_open_filled = get_latest_orders('BTCUSDT', ShareState.get_side(), ShareState.get_order_id())
     if orders_open_filled is None:
         print("Error: Don't get_latest_orders")
         logger.error("Error: get_latest_orders")
         return False
+
     position = open_positions[0]
     symbol = position['symbol']
     side = 'BUY' if float(position['positionAmt']) > 0 else 'SELL'
